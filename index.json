@@ -1,1 +1,91 @@
-[]
+[
+  {
+    "fileName": "A1.toml",
+    "name": "A1",
+    "compatible": [
+      "a1"
+    ],
+    "version": "2026.04",
+    "size": 1421,
+    "releaseTime": "2026-04-22 23:20:00",
+    "sha256": "710510d6201f33f8c7e85da3e000f3d8b7539b485116012ece13ca3807618d53",
+    "author": "",
+    "changelog": ""
+  },
+  {
+    "fileName": "A1F.toml",
+    "name": "A1F",
+    "compatible": [
+      "a1"
+    ],
+    "version": "2026.05",
+    "size": 1421,
+    "releaseTime": "2026-05-06 23:20:00",
+    "sha256": "817819e0a70906f6458769876694425ca386d5acbdcd7a3aea4a2f394cd08a14",
+    "author": "",
+    "changelog": ""
+  },
+  {
+    "fileName": "A1M.toml",
+    "name": "A1M",
+    "compatible": [
+      "a1 mini"
+    ],
+    "version": "2026.04",
+    "size": 1822,
+    "releaseTime": "2026-04-25 22:56:09",
+    "sha256": "828c0ec9fc0a221da1beae1f5eb0f69cb5547be475b8a402dd27a739a59570f2",
+    "author": "",
+    "changelog": ""
+  },
+  {
+    "fileName": "A1MF.toml",
+    "name": "A1MF",
+    "compatible": [
+      "a1 mini"
+    ],
+    "version": "2026.05",
+    "size": 1366,
+    "releaseTime": "2026-05-06 22:04:09",
+    "sha256": "f6c6b5b9d67e38da1e051b4d0db49405dd2e2c50f93c7c4090ad135174b39272",
+    "author": "",
+    "changelog": ""
+  },
+  {
+    "fileName": "P2.toml",
+    "name": "P2",
+    "compatible": [
+      "p2"
+    ],
+    "version": "2025.02",
+    "size": 1605,
+    "releaseTime": "2025-02-21 12:15:01",
+    "sha256": "eae07d566a2028cf114c08c2cbfc7713d394217b795cb793f00d0b1bbdfcc971",
+    "author": "",
+    "changelog": ""
+  },
+  {
+    "fileName": "S1C.toml",
+    "name": "S1C",
+    "compatible": [],
+    "version": "2026.03",
+    "size": 1242,
+    "releaseTime": "2026-03-02 22:25:01",
+    "sha256": "a6fc4ad5497af1f3e9f68fd2fabf8f70013c7763f17447c16dfd4ac3308fa909",
+    "author": "",
+    "changelog": ""
+  },
+  {
+    "fileName": "X1.toml",
+    "name": "X1",
+    "compatible": [
+      "x1"
+    ],
+    "version": "2025.03",
+    "size": 1601,
+    "releaseTime": "2025-03-11 12:15:01",
+    "sha256": "d17e0447c380481ea0f29c3ed3119695ae0777697a88158145aaeb55e945487c",
+    "author": "",
+    "changelog": ""
+  }
+]
