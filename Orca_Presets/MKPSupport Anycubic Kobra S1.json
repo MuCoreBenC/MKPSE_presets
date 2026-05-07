@@ -1,0 +1,13 @@
+{
+    "from": "User",
+    "inherits": "Anycubic Kobra S1 0.4 nozzle",
+    "name": "MKPSupport Anycubic Kobra S1",
+    "printer_extruder_id": [
+        "1"
+    ],
+    "printer_extruder_variant": [
+        "Direct Drive Standard"
+    ],
+    "printer_settings_id": "MKPSupport Anycubic Kobra S1",
+    "version": "2.3.1.10"
+}

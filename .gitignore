@@ -1,0 +1,11 @@
+.DS_Store
+Thumbs.db
+*.tmp
+*.downloading
+*.bak
+*.swp
+*~
+node_modules/
+desktop.ini
+backups/
+fromJH/

@@ -1,0 +1,15 @@
+{
+    "from": "User",
+    "inherits": "Bambu Lab P2S 0.4 nozzle",
+    "name": "MKPSupport P2S",
+    "printer_extruder_id": [
+        "1",
+        "1"
+    ],
+    "printer_extruder_variant": [
+        "Direct Drive Standard",
+        "Direct Drive High Flow"
+    ],
+    "printer_settings_id": "MKPSupport P2S",
+    "version": "2.5.0.14"
+}

@@ -1,0 +1,166 @@
+{
+  "version": "1.0",
+  "updated": "2026-05-02T16:30:39+08:00",
+  "items": [
+    {
+      "id": "faq-001",
+      "category": "基础入门",
+      "categoryColor": "",
+      "question": "如何开始使用支撑面改善工具？",
+      "answer": "\u003cp\u003e1. 首先在\u003cspan class=\"text-blue-600 font-medium\"\u003e选择机型\u003c/span\u003e页面选择您的 3D 打印机型号\u003c/p\u003e\u003cp\u003e2. 进入\u003cspan class=\"text-blue-600 font-medium\"\u003e下载预设\u003c/span\u003e页面，应用或下载对应的 JSON 预设文件\u003c/p\u003e\u003cp\u003e3. 在切片软件中配置后处理脚本路径\u003c/p\u003e\u003cp\u003e4. 在本软件中进行 Z 轴和 XY 轴校准，获取最佳打印效果\u003c/p\u003e",
+      "order": 1
+    },
+    {
+      "id": "faq-002",
+      "category": "基础入门",
+      "categoryColor": "",
+      "question": "版本之间有什么区别（标准/快拆/Lite）？",
+      "answer": "\u003cp\u003e\u003cspan class=\"font-medium text-neutral-900\"\u003e标准版：\u003c/span\u003e适用于原厂标准喷嘴配置的打印机\u003c/p\u003e\u003cp\u003e\u003cspan class=\"font-medium text-neutral-900\"\u003e快拆版：\u003c/span\u003e针对使用第三方快拆喷嘴的物理高度落差进行了专项补偿优化\u003c/p\u003e\u003cp\u003e\u003cspan class=\"font-medium text-neutral-900\"\u003eLite 版：\u003c/span\u003e精简版参数，适用于性能受限的旧款单片机机型\u003c/p\u003e",
+      "order": 2
+    },
+    {
+      "id": "faq-003",
+      "category": "基础入门",
+      "categoryColor": "",
+      "question": "软件支持哪些操作系统？",
+      "answer": "\u003cp\u003e目前软件支持 \u003cstrong\u003eWindows 10/11 (64位)\u003c/strong\u003e 以及 \u003cstrong\u003emacOS 12.0 及以上版本\u003c/strong\u003e（包含 Intel 与 Apple Silicon M系列芯片）。\u003c/p\u003e\u003cp\u003eLinux 版本目前在内测中，敬请期待。\u003c/p\u003e",
+      "order": 3
+    },
+    {
+      "id": "faq-004",
+      "category": "基础入门",
+      "categoryColor": "",
+      "question": "使用该工具需要全程联网吗？",
+      "answer": "\u003cp\u003e\u003cstrong\u003e不需要。\u003c/strong\u003e\u003c/p\u003e\u003cp\u003e本工具核心处理引擎完全在本地离线运行，不会上传您的任何模型数据。仅在首次下载云端预设、检查版本更新以及获取官方公告时需要短暂连接互联网。\u003c/p\u003e",
+      "order": 4
+    },
+    {
+      "id": "faq-005",
+      "category": "基础入门",
+      "categoryColor": "",
+      "question": "软件是免费的吗？",
+      "answer": "\u003cp\u003e是的，MKP SupportE 的\u003cstrong\u003e核心支撑优化功能永久免费\u003c/strong\u003e。我们致力于为 3D 打印社区提供好用的生产力工具。未来可能会推出针对企业用户或云端 AI 切片的高级订阅服务，但不会影响基础版本的使用。\u003c/p\u003e",
+      "order": 5
+    },
+    {
+      "id": "faq-006",
+      "category": "软件配置",
+      "categoryColor": "",
+      "question": "后处理脚本如何配置？",
+      "answer": "\u003cp\u003e在 Bambu Studio 或 OrcaSlicer 中：\u003c/p\u003e\u003cp\u003e1. 打开切片软件，进入\u003cspan class=\"text-blue-600 font-medium\"\u003e工艺 → 其他\u003c/span\u003e\u003c/p\u003e\u003cp\u003e2. 找到\u003cspan class=\"text-blue-600 font-medium\"\u003e后处理脚本\u003c/span\u003e选项框\u003c/p\u003e\u003cp\u003e3. 点击本软件右上角的复制按钮，将命令粘贴进去\u003c/p\u003e\u003cp\u003e4. 保存设置并重新切片即可生效\u003c/p\u003e",
+      "order": 6
+    },
+    {
+      "id": "faq-007",
+      "category": "软件配置",
+      "categoryColor": "",
+      "question": "找不到切片软件的\"后处理脚本\"选项卡？",
+      "answer": "\u003cp\u003e如果您使用的是 Bambu Studio，请确保您已经开启了\u003cstrong\u003e\"高级（Advanced）\"\u003c/strong\u003e或\u003cstrong\u003e\"开发者模式\"\u003c/strong\u003e开关（通常位于参数设置面板的右上角）。只有在高级模式下，底部的\"其他\"选项卡才会显示后处理脚本输入框。\u003c/p\u003e",
+      "order": 7
+    },
+    {
+      "id": "faq-008",
+      "category": "软件配置",
+      "categoryColor": "",
+      "question": "切片后提示\"找不到脚本文件\"怎么办？",
+      "answer": "\u003cp\u003e这通常是因为路径解析错误导致的，请检查以下几点：\u003c/p\u003e\u003cp\u003e1. 软件安装路径中是否包含\u003cstrong\u003e中文或特殊符号\u003c/strong\u003e？建议移动到全英文路径下（如 \u003ccode\u003eD:\\MKPSupportE\u003c/code\u003e）。\u003c/p\u003e\u003cp\u003e2. 检查切片软件填写的路径两端是否遗漏了英文双引号 \u003ccode\u003e\"\"\u003c/code\u003e。\u003c/p\u003e",
+      "order": 8
+    },
+    {
+      "id": "faq-009",
+      "category": "校准指南",
+      "categoryColor": "",
+      "question": "Z 轴偏移校准的原理是什么？",
+      "answer": "\u003cp\u003eZ 轴偏移校准用于微调打印头与打印床之间的极限物理距离。\u003c/p\u003e\u003cp\u003e• 距离合适：支撑接触面完美粘附并容易拆除\u003c/p\u003e\u003cp\u003e• 距离过近：导致底层\"象脚\"或撞床风险\u003c/p\u003e\u003cp class=\"text-neutral-500 italic mt-1\"\u003e警告：请勿随意大幅度调整负值补偿。\u003c/p\u003e",
+      "order": 9
+    },
+    {
+      "id": "faq-010",
+      "category": "校准指南",
+      "categoryColor": "",
+      "question": "XY 轴偏移校准有什么作用？",
+      "answer": "\u003cp\u003eXY 轴偏移校准用于调整支撑结构与模型之间的水平间距。主要作用包括确保支撑不咬合主模型侧壁、提高支撑与模型的脱离精度，以及减少拆除后的横向残留痕迹。\u003c/p\u003e",
+      "order": 10
+    },
+    {
+      "id": "faq-011",
+      "category": "校准指南",
+      "categoryColor": "",
+      "question": "第一层太薄或太厚，该如何微调？",
+      "answer": "\u003cp\u003e建议使用 \u003cstrong\u003eZ 轴微调\u003c/strong\u003e 功能。如果首层太薄甚至刮花底板，请增加补偿值（如 \u003ccode\u003e+0.05mm\u003c/code\u003e）；如果首层不粘床，请减小补偿值（如 \u003ccode\u003e-0.05mm\u003c/code\u003e）。请以 0.02mm 为步进单位谨慎调试。\u003c/p\u003e",
+      "order": 11
+    },
+    {
+      "id": "faq-012",
+      "category": "校准指南",
+      "categoryColor": "",
+      "question": "更换不同品牌的耗材后，需要重新校准吗？",
+      "answer": "\u003cp\u003e\u003cstrong\u003e强烈建议重新校准。\u003c/strong\u003e\u003c/p\u003e\u003cp\u003e不同材质（如 PLA 与 PETG）或不同品牌耗材的流动性、热膨胀系数均不同。特别是从 PLA 切换到 PETG 时，通常需要略微增大 Z 轴间距以防过度粘连。\u003c/p\u003e",
+      "order": 12
+    },
+    {
+      "id": "faq-013",
+      "category": "进阶技巧",
+      "categoryColor": "",
+      "question": "如何自定义支撑界面间距（Z Distance）？",
+      "answer": "\u003cp\u003e本工具负责底层框架逻辑，具体的界面间距（Top/Bottom Z Distance）仍由您的切片软件控制。\u003c/p\u003e\u003cp\u003e请在切片软件的\"支撑\"设置中，找到\"顶部 Z 距离\"和\"底部 Z 距离\"进行手动修改。通常 PLA 建议设置在 \u003ccode\u003e0.15mm - 0.20mm\u003c/code\u003e 之间。\u003c/p\u003e",
+      "order": 13
+    },
+    {
+      "id": "faq-014",
+      "category": "进阶技巧",
+      "categoryColor": "",
+      "question": "多色打印（AMS/MMU）下的支撑策略建议",
+      "answer": "\u003cp\u003e在使用多色系统时，强烈建议使用 \u003cstrong\u003ePETG 作为 PLA 的支撑接口层\u003c/strong\u003e（或反之）。由于这两种材料互不粘合，您可以将支撑 Z 距离设置为 \u003ccode\u003e0mm\u003c/code\u003e，结合本软件的接触面平滑算法，可以获得如注塑件般完美的底部表面。\u003c/p\u003e",
+      "order": 14
+    },
+    {
+      "id": "faq-015",
+      "category": "进阶技巧",
+      "categoryColor": "",
+      "question": "擦嘴塔（Wipe Tower）参数优化建议",
+      "answer": "\u003cp\u003e如果在支撑面上发现混色或杂质，可能是擦嘴塔冲刷量不足。请进入\"修改参数\"页面，将\"强制擦嘴冲刷倍率\"从 1.0 提高到 1.5 左右，以确保喷嘴内的残余耗材被彻底挤出。\u003c/p\u003e",
+      "order": 15
+    },
+    {
+      "id": "faq-016",
+      "category": "故障排查",
+      "categoryColor": "",
+      "question": "切片后软件卡死，或提示\"内存不足\"？",
+      "answer": "\u003cp\u003e当处理极其复杂的模型（如高精度雕像）时，G-code 行数可能达到数千万行，解析引擎需要大量内存。\u003c/p\u003e\u003cp\u003e\u003cstrong\u003e解决方法：\u003c/strong\u003e在切片软件中降低网格分辨率（Mesh Resolution），或在您的电脑上增加虚拟内存容量。\u003c/p\u003e",
+      "order": 16
+    },
+    {
+      "id": "faq-017",
+      "category": "故障排查",
+      "categoryColor": "",
+      "question": "导出的 G-code 被杀毒软件误删拦截？",
+      "answer": "\u003cp\u003e部分严格的杀毒软件（如 360 或 Windows Defender）可能会将后台静默修改文件的脚本判定为风险行为。请将本软件的安装目录以及切片软件的导出目录添加到杀毒软件的\u003cstrong\u003e信任白名单/排除项\u003c/strong\u003e中。\u003c/p\u003e",
+      "order": 17
+    },
+    {
+      "id": "faq-018",
+      "category": "故障排查",
+      "categoryColor": "",
+      "question": "打印机无法识别处理后的 G-code 文件？",
+      "answer": "\u003cp\u003e请检查文件后缀名。部分打印机（如旧款 Creality 或 Anycubic）只识别 \u003ccode\u003e.gcode\u003c/code\u003e 后缀，如果切片软件默认导出了 \u003ccode\u003e.bgcode\u003c/code\u003e（二进制格式），请在切片软件设置中取消勾选\"导出为二进制 G-code\"。\u003c/p\u003e",
+      "order": 18
+    },
+    {
+      "id": "faq-019",
+      "category": "故障排查",
+      "categoryColor": "",
+      "question": "处理后打印速度明显变慢？",
+      "answer": "\u003cp\u003e这是正常现象。为了保证支撑界面的高质量成型，我们在底层自动介入并降低了悬垂桥接区域和支撑顶层的打印速度。您可以在\"修改参数\"中调整\"速度惩罚系数\"来恢复速度，但这可能会牺牲部分表面质量。\u003c/p\u003e",
+      "order": 19
+    },
+    {
+      "id": "faq-020",
+      "category": "社区支持",
+      "categoryColor": "",
+      "question": "遇到解决不了的问题，如何获取官方帮助？",
+      "answer": "\u003cp\u003e欢迎加入我们的官方交流社区，开发者及热心用户会为您解答：\u003c/p\u003e\u003cp\u003e• 官方 QQ 群\u003c/p\u003e\u003cp\u003e• B站动态\u003c/p\u003e",
+      "order": 20
+    }
+  ]
+}

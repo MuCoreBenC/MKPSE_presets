@@ -1,0 +1,132 @@
+{
+  "version": "1.0",
+  "updatedAt": "2026-05-07",
+  "brands": [
+    {
+      "id": "Bambu Lab",
+      "name": "拓竹 (Bambu Lab)",
+      "logo": "bambu-logo.png"
+    }
+  ],
+  "models": {
+    "Bambu Lab": [
+      {
+        "id": "A1",
+        "name": "A1",
+        "image": "a1.webp",
+        "compatible": "a1",
+        "versions": [
+          {
+            "id": "standard",
+            "name": "官方标准版",
+            "tag": "推荐",
+            "description": "官方标准配置，适合大多数用户",
+            "downloads": [
+              { "type": "mkp_toml", "fileName": "A1.toml", "url": "/presets/A1.toml" },
+              { "type": "bbs_machine", "fileName": "MKPSupport A1 0.4.json", "url": "/BBS_Presets/Support/0.4mm/MKPSupport%20A1%200.4.json" },
+              { "type": "bbs_process", "fileName": "MKPProcess A1 0.4 0.20.json", "url": "/BBS_Presets/Process/0.4mm/MKPProcess%20A1%200.4%200.20.json" }
+            ]
+          },
+          {
+            "id": "quick_release",
+            "name": "官改快拆版",
+            "tag": "热门",
+            "description": "支持快拆配件的改装配置",
+            "downloads": [
+              { "type": "mkp_toml", "fileName": "A1Q.toml", "url": "/presets/A1Q.toml" },
+              { "type": "bbs_machine", "fileName": "MKPSupport A1 0.4.json", "url": "/BBS_Presets/Support/0.4mm/MKPSupport%20A1%200.4.json" },
+              { "type": "bbs_process", "fileName": "MKPProcess A1 0.4 0.20.json", "url": "/BBS_Presets/Process/0.4mm/MKPProcess%20A1%200.4%200.20.json" }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "A1 mini",
+        "name": "A1 mini",
+        "image": "a1mini.webp",
+        "compatible": "a1 mini",
+        "versions": [
+          {
+            "id": "standard",
+            "name": "官方标准版",
+            "tag": "推荐",
+            "description": "官方标准配置",
+            "downloads": [
+              { "type": "mkp_toml", "fileName": "A1M.toml", "url": "/presets/A1M.toml" },
+              { "type": "bbs_machine", "fileName": "MKPSupport A1 mini 0.4.json", "url": "/BBS_Presets/Support/0.4mm/MKPSupport%20A1%20mini%200.4.json" },
+              { "type": "bbs_process", "fileName": "MKPProcess A1 mini 0.4 0.20.json", "url": "/BBS_Presets/Process/0.4mm/MKPProcess%20A1%20mini%200.4%200.20.json" }
+            ]
+          },
+          {
+            "id": "quick_release",
+            "name": "官改快拆版",
+            "tag": "热门",
+            "description": "支持快拆配件的改装配置",
+            "downloads": [
+              { "type": "mkp_toml", "fileName": "A1MQ.toml", "url": "/presets/A1MQ.toml" },
+              { "type": "bbs_machine", "fileName": "MKPSupport A1 mini 0.4.json", "url": "/BBS_Presets/Support/0.4mm/MKPSupport%20A1%20mini%200.4.json" },
+              { "type": "bbs_process", "fileName": "MKPProcess A1 mini 0.4 0.20.json", "url": "/BBS_Presets/Process/0.4mm/MKPProcess%20A1%20mini%200.4%200.20.json" }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "P1S",
+        "name": "P1S",
+        "image": "p1s.webp",
+        "compatible": "x1",
+        "versions": [
+          {
+            "id": "lite",
+            "name": "lite版",
+            "tag": "精简",
+            "description": "精简配置，适合轻量使用",
+            "downloads": [
+              { "type": "mkp_toml", "fileName": "X1.toml", "url": "/presets/X1.toml" },
+              { "type": "bbs_machine", "fileName": "MKPSupport P1S 0.4.json", "url": "/BBS_Presets/Support/0.4mm/MKPSupport%20P1S%200.4.json" },
+              { "type": "bbs_process", "fileName": "MKPProcess P1S 0.4 0.24.json", "url": "/BBS_Presets/Process/0.4mm/MKPProcess%20P1S%200.4%200.24.json" }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "P2S",
+        "name": "P2S",
+        "image": "p2s.webp",
+        "compatible": "p2",
+        "versions": [
+          {
+            "id": "standard",
+            "name": "标准版",
+            "tag": "推荐",
+            "description": "标准配置",
+            "downloads": [
+              { "type": "mkp_toml", "fileName": "P2.toml", "url": "/presets/P2.toml" },
+              { "type": "bbs_machine", "fileName": "MKPSupport P2S 0.4.json", "url": "/BBS_Presets/Support/0.4mm/MKPSupport%20P2S%200.4.json" },
+              { "type": "bbs_process", "fileName": "MKPProcess P2S 0.4 0.24.json", "url": "/BBS_Presets/Process/0.4mm/MKPProcess%20P2S%200.4%200.24.json" }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "X1C",
+        "name": "X1C",
+        "image": "x1.webp",
+        "compatible": "x1",
+        "versions": [
+          {
+            "id": "lite",
+            "name": "lite版",
+            "tag": "精简",
+            "description": "精简配置，适合轻量使用",
+            "downloads": [
+              { "type": "mkp_toml", "fileName": "X1.toml", "url": "/presets/X1.toml" },
+              { "type": "bbs_machine", "fileName": "MKPSupport X1 0.4.json", "url": "/BBS_Presets/Support/0.4mm/MKPSupport%20X1%200.4.json" },
+              { "type": "bbs_process", "fileName": "MKPProcess X1 0.4 0.24.json", "url": "/BBS_Presets/Process/0.4mm/MKPProcess%20X1%200.4%200.24.json" }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

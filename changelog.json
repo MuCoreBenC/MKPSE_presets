@@ -1,0 +1,441 @@
+{
+    "latest":  "0.0.8",
+    "versions":  [
+                     {
+                         "zhCN":  "\r\n### 核心功能\r\n1. FileRegistry状态管理器（按机型分区持久化applied+UUID唯一标识）\r\n2. SaveActivePreset IPC+OnWriteSuccess回调（写入后自动广播事件）\r\n3. 事件广播机制（emitConfigChanged/emitRegistryUpdated）\r\n4. CLI备份配对保存（原始+处理后同时间戳，保留3对）\r\n5. 诊断导出新增CLI备份打包（gcode_cli_backup最多6文件）\r\n\r\n### 问题修复\r\n6. 修复GetActivePreset空参数遍历所有机组（CRITICAL）\r\n7. 修复校准保存未检查返回值（失败时setSaveStatus error）\r\n8. 修复UnapplyPreset未清空MiniMode预设数据\r\n9. 修复gcode备份静默吞错+冗余备份调用\r\n10. 修复CLI模式未调Init导致configDir为空\r\n11. 统一TOML库为pelletier/go-toml/v2（解决双库维护）\r\n\r\n### 架构优化\r\n12. 预设应用/取消改用Go IPC（移除persistentStorage）\r\n13. 校准保存改用SaveActivePreset（移除手动EventsEmit）\r\n14. DeviceSelectionPage/MiniMode集成FileRegistry",
+                         "isMajor":  false,
+                         "type":  "fix",
+                         "version":  "0.0.8",
+                         "summary":  "### 核心功能",
+                         "en":  "",
+                         "sections":  [
+                                          {
+                                              "heading":  "核心功能\r",
+                                              "item":  "FileRegistry状态管理器（按机型分区持久化applied+UUID唯一标识）"
+                                          },
+                                          {
+                                              "heading":  "核心功能\r",
+                                              "item":  "SaveActivePreset IPC+OnWriteSuccess回调（写入后自动广播事件）"
+                                          },
+                                          {
+                                              "heading":  "核心功能\r",
+                                              "item":  "事件广播机制（emitConfigChanged/emitRegistryUpdated）"
+                                          },
+                                          {
+                                              "heading":  "核心功能\r",
+                                              "item":  "CLI备份配对保存（原始+处理后同时间戳，保留3对）"
+                                          },
+                                          {
+                                              "heading":  "核心功能\r",
+                                              "item":  "诊断导出新增CLI备份打包（gcode_cli_backup最多6文件）"
+                                          },
+                                          {
+                                              "heading":  "问题修复\r",
+                                              "item":  "修复GetActivePreset空参数遍历所有机组（CRITICAL）"
+                                          },
+                                          {
+                                              "heading":  "问题修复\r",
+                                              "item":  "修复校准保存未检查返回值（失败时setSaveStatus error）"
+                                          },
+                                          {
+                                              "heading":  "问题修复\r",
+                                              "item":  "修复UnapplyPreset未清空MiniMode预设数据"
+                                          },
+                                          {
+                                              "heading":  "问题修复\r",
+                                              "item":  "修复gcode备份静默吞错+冗余备份调用"
+                                          },
+                                          {
+                                              "heading":  "问题修复\r",
+                                              "item":  "修复CLI模式未调Init导致configDir为空"
+                                          },
+                                          {
+                                              "heading":  "问题修复\r",
+                                              "item":  "统一TOML库为pelletier/go-toml/v2（解决双库维护）"
+                                          },
+                                          {
+                                              "heading":  "架构优化\r",
+                                              "item":  "预设应用/取消改用Go IPC（移除persistentStorage）"
+                                          },
+                                          {
+                                              "heading":  "架构优化\r",
+                                              "item":  "校准保存改用SaveActivePreset（移除手动EventsEmit）"
+                                          },
+                                          {
+                                              "heading":  "架构优化\r",
+                                              "item":  "DeviceSelectionPage/MiniMode集成FileRegistry"
+                                          }
+                                      ],
+                         "date":  "2026-05-07",
+                         "title":  "0.0.8"
+                     },
+                     {
+                         "zhCN":  "\r\n### 核心功能\r\n1. SettingToggleSwitch组件（快线/慢线切换+未保存/已恢复状态）\r\n2. SettingSegmentedControl组件（分段选择器+变更追踪+恢复提示）\r\n3. HelpTooltip组件（参数说明悬浮提示+自适应边界定位）\r\n4. ParamsPage大幅重构（新组件替换+22项参数描述丰富化）\r\n5. MiniMode窗口高度提升至320+新增最小化按钮\r\n6. 启动流程优化（isLoading+window:ready事件避免闪烁）\r\n\r\n### 问题修复\r\n7. 修复刷新时窗口大小不匹配（水合后调用Enter/ExitMiniMode）\r\n8. 修复ParamsPage废弃参数残留（移除DebugMode等8个字段）\r\n\r\n### 架构优化\r\n9. Go后端参数精简（移除ExtraTowerHeight/RemoveG3Flag/IroningSpeed等）\r\n10. MiniMode迷你模式DOM精简（仅渲染CustomTitleBar+MiniMode）",
+                         "isMajor":  false,
+                         "type":  "fix",
+                         "version":  "0.0.7",
+                         "summary":  "### 核心功能",
+                         "en":  "",
+                         "sections":  [
+                                          {
+                                              "heading":  "核心功能\r",
+                                              "item":  "SettingToggleSwitch组件（快线/慢线切换+未保存/已恢复状态）"
+                                          },
+                                          {
+                                              "heading":  "核心功能\r",
+                                              "item":  "SettingSegmentedControl组件（分段选择器+变更追踪+恢复提示）"
+                                          },
+                                          {
+                                              "heading":  "核心功能\r",
+                                              "item":  "HelpTooltip组件（参数说明悬浮提示+自适应边界定位）"
+                                          },
+                                          {
+                                              "heading":  "核心功能\r",
+                                              "item":  "ParamsPage大幅重构（新组件替换+22项参数描述丰富化）"
+                                          },
+                                          {
+                                              "heading":  "核心功能\r",
+                                              "item":  "MiniMode窗口高度提升至320+新增最小化按钮"
+                                          },
+                                          {
+                                              "heading":  "核心功能\r",
+                                              "item":  "启动流程优化（isLoading+window:ready事件避免闪烁）"
+                                          },
+                                          {
+                                              "heading":  "问题修复\r",
+                                              "item":  "修复刷新时窗口大小不匹配（水合后调用Enter/ExitMiniMode）"
+                                          },
+                                          {
+                                              "heading":  "问题修复\r",
+                                              "item":  "修复ParamsPage废弃参数残留（移除DebugMode等8个字段）"
+                                          },
+                                          {
+                                              "heading":  "架构优化\r",
+                                              "item":  "Go后端参数精简（移除ExtraTowerHeight/RemoveG3Flag/IroningSpeed等）"
+                                          },
+                                          {
+                                              "heading":  "架构优化\r",
+                                              "item":  "MiniMode迷你模式DOM精简（仅渲染CustomTitleBar+MiniMode）"
+                                          }
+                                      ],
+                         "date":  "2026-05-07",
+                         "title":  "0.0.7"
+                     },
+                     {
+                         "zhCN":  "\r\n### 核心功能\r\n1. MiniMode完全重写匹配mockup（折叠动画+脚本路径+偏移值卡片）\r\n2. MiniMode窗口尺寸平滑过渡（requestAnimationFrame+ease-out缓动）\r\n3. MiniMode窗口锁尺寸（MinSize/MaxSize替代setInterval防回弹）\r\n4. 偏移值使用记录后端+校准页面板（offset包+BarChart3）\r\n5. AutoScrollText共享组件（悬停无限滚动+内容循环+离开复位）\r\n6. 机型选择交互重构（自动应用预设+未应用回退step2）\r\n\r\n### 问题修复\r\n7. 修复MiniMode刷新崩溃（水合完成后再恢复isMiniMode）\r\n8. 修复MiniMode背景黄色（bg-white/dark:#18181b）\r\n9. 修复MKP云端预设消失（useCallback依赖缺serverUrl）\r\n10. 修复诊断导出addGcodeHistoryToZip重复调用\r\n11. 修复主题色闪蓝（useEffect监听themeMode/themeColor变化）\r\n12. 修复迷你模式窗口大小不变化（MinSize须在SetSize前调用）\r\n\r\n### 架构优化\r\n13. 移除全局热键功能（删除hotkey/clipboard包+设置页卡片）\r\n14. 新手引导菜单从侧边栏移至设备卡片右键（BookX/BookOpen图标）\r\n15. 合并诊断导出双G-code复选框为单个",
+                         "isMajor":  false,
+                         "type":  "fix",
+                         "version":  "0.0.6",
+                         "summary":  "### 核心功能",
+                         "en":  "",
+                         "sections":  [
+                                          {
+                                              "heading":  "核心功能\r",
+                                              "item":  "MiniMode完全重写匹配mockup（折叠动画+脚本路径+偏移值卡片）"
+                                          },
+                                          {
+                                              "heading":  "核心功能\r",
+                                              "item":  "MiniMode窗口尺寸平滑过渡（requestAnimationFrame+ease-out缓动）"
+                                          },
+                                          {
+                                              "heading":  "核心功能\r",
+                                              "item":  "MiniMode窗口锁尺寸（MinSize/MaxSize替代setInterval防回弹）"
+                                          },
+                                          {
+                                              "heading":  "核心功能\r",
+                                              "item":  "偏移值使用记录后端+校准页面板（offset包+BarChart3）"
+                                          },
+                                          {
+                                              "heading":  "核心功能\r",
+                                              "item":  "AutoScrollText共享组件（悬停无限滚动+内容循环+离开复位）"
+                                          },
+                                          {
+                                              "heading":  "核心功能\r",
+                                              "item":  "机型选择交互重构（自动应用预设+未应用回退step2）"
+                                          },
+                                          {
+                                              "heading":  "问题修复\r",
+                                              "item":  "修复MiniMode刷新崩溃（水合完成后再恢复isMiniMode）"
+                                          },
+                                          {
+                                              "heading":  "问题修复\r",
+                                              "item":  "修复MiniMode背景黄色（bg-white/dark:#18181b）"
+                                          },
+                                          {
+                                              "heading":  "问题修复\r",
+                                              "item":  "修复MKP云端预设消失（useCallback依赖缺serverUrl）"
+                                          },
+                                          {
+                                              "heading":  "问题修复\r",
+                                              "item":  "修复诊断导出addGcodeHistoryToZip重复调用"
+                                          },
+                                          {
+                                              "heading":  "问题修复\r",
+                                              "item":  "修复主题色闪蓝（useEffect监听themeMode/themeColor变化）"
+                                          },
+                                          {
+                                              "heading":  "问题修复\r",
+                                              "item":  "修复迷你模式窗口大小不变化（MinSize须在SetSize前调用）"
+                                          },
+                                          {
+                                              "heading":  "架构优化\r",
+                                              "item":  "移除全局热键功能（删除hotkey/clipboard包+设置页卡片）"
+                                          },
+                                          {
+                                              "heading":  "架构优化\r",
+                                              "item":  "新手引导菜单从侧边栏移至设备卡片右键（BookX/BookOpen图标）"
+                                          },
+                                          {
+                                              "heading":  "架构优化\r",
+                                              "item":  "合并诊断导出双G-code复选框为单个"
+                                          }
+                                      ],
+                         "date":  "2026-05-06",
+                         "title":  "0.0.6"
+                     },
+                     {
+                         "zhCN":  "\r\n### 核心功能\r\n1. Frameless模式+自定义标题栏（拖拽/控制按钮/Mac适配/三主题）\r\n2. 小窗口模式（后端绑定+前端组件+启动偏好）\r\n3. 全局热键（注册快捷键+剪贴板写入+5槽位设置UI）\r\n4. G-code处理进度条（6阶段标签+浮动卡片+自动隐藏）\r\n5. 数据目录自定义（定位/验证/浏览+启动校验+无效提示）\r\n6. 校准启动音乐（M1006旋律4秒47行G-code）\r\n7. 诊断导出增强（SHA256+中间态备份+gcode历史ZIP）\r\n\r\n### 问题修复\r\n8. 修复WritePresetToml历史记录不保存（移除不可序列化参数）\r\n9. 修复4个参数snake_case→camelCase映射bug\r\n10. 修复eReplaceRegex误删注释中E值（按;分割处理）\r\n11. 修复12345占位符失效（改用正则直接删除E值）\r\n\r\n### 架构优化\r\n12. 暗黑主题重命名+擦料塔UI重构（SettingToggle+策略标签页调整）\r\n13. SecondPass流式处理+塔模板缓存（Scanner+滑动窗口+预计算）\r\n14. CLI进度条+日志精简（spinner动画+计数摘要）\r\n15. 性能优化（正则预编译/批量插入/切片消除/流式写入/FirstPass合并）",
+                         "isMajor":  false,
+                         "type":  "fix",
+                         "version":  "0.0.5",
+                         "summary":  "### 核心功能",
+                         "en":  "",
+                         "sections":  [
+                                          {
+                                              "heading":  "核心功能\r",
+                                              "item":  "Frameless模式+自定义标题栏（拖拽/控制按钮/Mac适配/三主题）"
+                                          },
+                                          {
+                                              "heading":  "核心功能\r",
+                                              "item":  "小窗口模式（后端绑定+前端组件+启动偏好）"
+                                          },
+                                          {
+                                              "heading":  "核心功能\r",
+                                              "item":  "全局热键（注册快捷键+剪贴板写入+5槽位设置UI）"
+                                          },
+                                          {
+                                              "heading":  "核心功能\r",
+                                              "item":  "G-code处理进度条（6阶段标签+浮动卡片+自动隐藏）"
+                                          },
+                                          {
+                                              "heading":  "核心功能\r",
+                                              "item":  "数据目录自定义（定位/验证/浏览+启动校验+无效提示）"
+                                          },
+                                          {
+                                              "heading":  "核心功能\r",
+                                              "item":  "校准启动音乐（M1006旋律4秒47行G-code）"
+                                          },
+                                          {
+                                              "heading":  "核心功能\r",
+                                              "item":  "诊断导出增强（SHA256+中间态备份+gcode历史ZIP）"
+                                          },
+                                          {
+                                              "heading":  "问题修复\r",
+                                              "item":  "修复WritePresetToml历史记录不保存（移除不可序列化参数）"
+                                          },
+                                          {
+                                              "heading":  "问题修复\r",
+                                              "item":  "修复4个参数snake_case→camelCase映射bug"
+                                          },
+                                          {
+                                              "heading":  "问题修复\r",
+                                              "item":  "修复eReplaceRegex误删注释中E值（按;分割处理）"
+                                          },
+                                          {
+                                              "heading":  "问题修复\r",
+                                              "item":  "修复12345占位符失效（改用正则直接删除E值）"
+                                          },
+                                          {
+                                              "heading":  "架构优化\r",
+                                              "item":  "暗黑主题重命名+擦料塔UI重构（SettingToggle+策略标签页调整）"
+                                          },
+                                          {
+                                              "heading":  "架构优化\r",
+                                              "item":  "SecondPass流式处理+塔模板缓存（Scanner+滑动窗口+预计算）"
+                                          },
+                                          {
+                                              "heading":  "架构优化\r",
+                                              "item":  "CLI进度条+日志精简（spinner动画+计数摘要）"
+                                          },
+                                          {
+                                              "heading":  "架构优化\r",
+                                              "item":  "性能优化（正则预编译/批量插入/切片消除/流式写入/FirstPass合并）"
+                                          }
+                                      ],
+                         "date":  "2026-05-06",
+                         "title":  "0.0.5"
+                     },
+                     {
+                         "zhCN":  "\r\n### 核心功能\r\n1. 版本控制Markdown更新日志解析（parseChangelog）\r\n2. 语义化版本号排序（parseSemver）\r\n3. 当前版本卡片自动生成（断网可用）\r\n4. 彩蛋触发条件收紧（ALT+连续点击）\r\n\r\n### 问题修复\r\n5. 修复后续下载不触发通知（timestamp字段）\r\n6. 修复JellySwitch OLED模式颜色偏蓝\r\n7. 修复FAQPage深色模式灰色不协调\r\n\r\n### 架构优化\r\n8. 创建seeds/目录统一管理种子文件\r\n9. 删除docs/目录，README回归根目录\r\n10. 更新machine_catalog机型目录",
+                         "isMajor":  false,
+                         "type":  "fix",
+                         "version":  "0.0.4",
+                         "summary":  "### 核心功能",
+                         "en":  "",
+                         "sections":  [
+                                          {
+                                              "heading":  "核心功能\r",
+                                              "item":  "版本控制Markdown更新日志解析（parseChangelog）"
+                                          },
+                                          {
+                                              "heading":  "核心功能\r",
+                                              "item":  "语义化版本号排序（parseSemver）"
+                                          },
+                                          {
+                                              "heading":  "核心功能\r",
+                                              "item":  "当前版本卡片自动生成（断网可用）"
+                                          },
+                                          {
+                                              "heading":  "核心功能\r",
+                                              "item":  "彩蛋触发条件收紧（ALT+连续点击）"
+                                          },
+                                          {
+                                              "heading":  "问题修复\r",
+                                              "item":  "修复后续下载不触发通知（timestamp字段）"
+                                          },
+                                          {
+                                              "heading":  "问题修复\r",
+                                              "item":  "修复JellySwitch OLED模式颜色偏蓝"
+                                          },
+                                          {
+                                              "heading":  "问题修复\r",
+                                              "item":  "修复FAQPage深色模式灰色不协调"
+                                          },
+                                          {
+                                              "heading":  "架构优化\r",
+                                              "item":  "创建seeds/目录统一管理种子文件"
+                                          },
+                                          {
+                                              "heading":  "架构优化\r",
+                                              "item":  "删除docs/目录，README回归根目录"
+                                          },
+                                          {
+                                              "heading":  "架构优化\r",
+                                              "item":  "更新machine_catalog机型目录"
+                                          }
+                                      ],
+                         "date":  "2026-05-03",
+                         "title":  "0.0.4"
+                     },
+                     {
+                         "zhCN":  "\r\n### 问题修复\r\n1. 修复ExportDiagnosticLog参数解析错误\r\n2. 补充发布中心machine-catalog/changelog API",
+                         "isMajor":  false,
+                         "type":  "fix",
+                         "version":  "0.0.3",
+                         "summary":  "### 问题修复",
+                         "en":  "",
+                         "sections":  [
+                                          {
+                                              "heading":  "问题修复\r",
+                                              "item":  "修复ExportDiagnosticLog参数解析错误"
+                                          },
+                                          {
+                                              "heading":  "问题修复\r",
+                                              "item":  "补充发布中心machine-catalog/changelog API"
+                                          }
+                                      ],
+                         "date":  "2026-05-04",
+                         "title":  "0.0.3"
+                     },
+                     {
+                         "zhCN":  "\r\n### 架构重构\r\n1. Go后端15个模块迁移至internal包\r\n2. 根目录Go文件从10+精简为3个\r\n3. 前端调用路径迁移至服务模块\r\n4. mkp-publisher用Go替代Node.js服务器\r\n5. 10个internal包新增约185个单元测试\r\n6. 根目录清理：文档移至docs/，脚本移至scripts/\r\n7. 前端服务器管理简化（移除PID/ForceKill）\r\n\r\n### 核心功能\r\n8. mkp-publisher实现22条API路由\r\n9. 预设/BBS/Orca查询与下载API\r\n10. FAQ与更新清单管理API\r\n11. 统一服务器连接管理（useServerUrl）\r\n\r\n### 问题修复\r\n12. 修复Stale Pointer导致下载卡30%和版本页挂起\r\n13. 修复CLI后处理脚本TOML路径映射错误\r\n14. 修复路径引用不一致（logger/getwd残留）\r\n15. 删除Node.js遗留文件",
+                         "isMajor":  false,
+                         "type":  "fix",
+                         "version":  "0.0.2",
+                         "summary":  "### 架构重构",
+                         "en":  "",
+                         "sections":  [
+                                          {
+                                              "heading":  "架构重构\r",
+                                              "item":  "Go后端15个模块迁移至internal包"
+                                          },
+                                          {
+                                              "heading":  "架构重构\r",
+                                              "item":  "根目录Go文件从10+精简为3个"
+                                          },
+                                          {
+                                              "heading":  "架构重构\r",
+                                              "item":  "前端调用路径迁移至服务模块"
+                                          },
+                                          {
+                                              "heading":  "架构重构\r",
+                                              "item":  "mkp-publisher用Go替代Node.js服务器"
+                                          },
+                                          {
+                                              "heading":  "架构重构\r",
+                                              "item":  "10个internal包新增约185个单元测试"
+                                          },
+                                          {
+                                              "heading":  "架构重构\r",
+                                              "item":  "根目录清理：文档移至docs/，脚本移至scripts/"
+                                          },
+                                          {
+                                              "heading":  "架构重构\r",
+                                              "item":  "前端服务器管理简化（移除PID/ForceKill）"
+                                          },
+                                          {
+                                              "heading":  "核心功能\r",
+                                              "item":  "mkp-publisher实现22条API路由"
+                                          },
+                                          {
+                                              "heading":  "核心功能\r",
+                                              "item":  "预设/BBS/Orca查询与下载API"
+                                          },
+                                          {
+                                              "heading":  "核心功能\r",
+                                              "item":  "FAQ与更新清单管理API"
+                                          },
+                                          {
+                                              "heading":  "核心功能\r",
+                                              "item":  "统一服务器连接管理（useServerUrl）"
+                                          },
+                                          {
+                                              "heading":  "问题修复\r",
+                                              "item":  "修复Stale Pointer导致下载卡30%和版本页挂起"
+                                          },
+                                          {
+                                              "heading":  "问题修复\r",
+                                              "item":  "修复CLI后处理脚本TOML路径映射错误"
+                                          },
+                                          {
+                                              "heading":  "问题修复\r",
+                                              "item":  "修复路径引用不一致（logger/getwd残留）"
+                                          },
+                                          {
+                                              "heading":  "问题修复\r",
+                                              "item":  "删除Node.js遗留文件"
+                                          }
+                                      ],
+                         "date":  "2026-05-04",
+                         "title":  "0.0.2"
+                     },
+                     {
+                         "zhCN":  "\r\n### 核心功能\r\n1. 版本控制页面：查看历史版本、检查更新、下载更新\r\n2. 更新服务器集成（update-manifest.json 端点）\r\n3. Go 后端 CheckAppUpdate / DownloadAndApplyUpdate\r\n4. NSIS 安装脚本支持动态版本号替换",
+                         "isMajor":  false,
+                         "type":  "fix",
+                         "version":  "0.0.1",
+                         "summary":  "### 核心功能",
+                         "en":  "",
+                         "sections":  [
+                                          {
+                                              "heading":  "核心功能\r",
+                                              "item":  "版本控制页面：查看历史版本、检查更新、下载更新"
+                                          },
+                                          {
+                                              "heading":  "核心功能\r",
+                                              "item":  "更新服务器集成（update-manifest.json 端点）"
+                                          },
+                                          {
+                                              "heading":  "核心功能\r",
+                                              "item":  "Go 后端 CheckAppUpdate / DownloadAndApplyUpdate"
+                                          },
+                                          {
+                                              "heading":  "核心功能\r",
+                                              "item":  "NSIS 安装脚本支持动态版本号替换"
+                                          }
+                                      ],
+                         "date":  "2026-05-01",
+                         "title":  "0.0.1"
+                     }
+                 ]
+}
