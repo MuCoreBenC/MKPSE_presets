@@ -9,3 +9,14 @@ node_modules/
 desktop.ini
 backups/
 fromJH/
+
+# === 敏感信息 ===
+*.env
+*credentials*
+*.pem
+*.key
+id_*
+
+# === IDE ===
+.idea/
+.vscode/
