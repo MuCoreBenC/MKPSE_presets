@@ -1,6 +1,134 @@
 {
-    "latest":  "0.0.8",
+    "latest":  "0.1.3",
     "versions":  [
+                     {
+                         "zhCN":  "\r\n### 核心功能\r\n1. FAQ缓存统一至CloudCache（删除独立faq/cache.go，复用预设缓存层支持自定义缓存键）\r\n2. 下载服务新增machineID参数（DownloadSelectedPresetWithMachine/WithMachine系列方法）\r\n3. DeviceSelectionPage历史下载任务功能（非当前机型下载进度独立追踪）\r\n4. 下载镜像策略优化（新增ghps.cc/ghproxy.net备用镜像替代全量轮询）\r\n\r\n### 问题修复\r\n5. 设备选择页卡片动画逻辑修正（移除编辑态缩放依赖，仅保留悬停3D效果）\r\n6. 预设文件名生成优化（getPresetTomlFileName精确匹配brand/model/version）\r\n7. deviceData.js消除硬编码FALLBACK数据（BRANDS/MODELS常量清理）\r\n\r\n### 架构优化\r\n8. 前端新增useBackendEvents hook（统一后端事件监听管理）\r\n9. PremiumCardContent动画参数精简（减少不必要的isEditing依赖）\r\n10. wailsjs绑定同步更新（新增WithMachine方法/UnapplyPreset/FAQ种子数据传参）",
+                         "isMajor":  false,
+                         "type":  "fix",
+                         "version":  "0.1.3",
+                         "summary":  "### 核心功能",
+                         "en":  "",
+                         "sections":  [
+                                          {
+                                              "heading":  "核心功能\r",
+                                              "item":  "FAQ缓存统一至CloudCache（删除独立faq/cache.go，复用预设缓存层支持自定义缓存键）"
+                                          },
+                                          {
+                                              "heading":  "核心功能\r",
+                                              "item":  "下载服务新增machineID参数（DownloadSelectedPresetWithMachine/WithMachine系列方法）"
+                                          },
+                                          {
+                                              "heading":  "核心功能\r",
+                                              "item":  "DeviceSelectionPage历史下载任务功能（非当前机型下载进度独立追踪）"
+                                          },
+                                          {
+                                              "heading":  "核心功能\r",
+                                              "item":  "下载镜像策略优化（新增ghps.cc/ghproxy.net备用镜像替代全量轮询）"
+                                          },
+                                          {
+                                              "heading":  "问题修复\r",
+                                              "item":  "设备选择页卡片动画逻辑修正（移除编辑态缩放依赖，仅保留悬停3D效果）"
+                                          },
+                                          {
+                                              "heading":  "问题修复\r",
+                                              "item":  "预设文件名生成优化（getPresetTomlFileName精确匹配brand/model/version）"
+                                          },
+                                          {
+                                              "heading":  "问题修复\r",
+                                              "item":  "deviceData.js消除硬编码FALLBACK数据（BRANDS/MODELS常量清理）"
+                                          },
+                                          {
+                                              "heading":  "架构优化\r",
+                                              "item":  "前端新增useBackendEvents hook（统一后端事件监听管理）"
+                                          },
+                                          {
+                                              "heading":  "架构优化\r",
+                                              "item":  "PremiumCardContent动画参数精简（减少不必要的isEditing依赖）"
+                                          },
+                                          {
+                                              "heading":  "架构优化\r",
+                                              "item":  "wailsjs绑定同步更新（新增WithMachine方法/UnapplyPreset/FAQ种子数据传参）"
+                                          }
+                                      ],
+                         "date":  "2026-05-08",
+                         "title":  "0.1.3"
+                     },
+                     {
+                         "zhCN":  "\r\n### 核心功能\r\n1. VerifyPresetFileExists文件存在性验证（下载后校验防假成功）\r\n2. FAQ前端localStorage 10分钟缓存（自动加载+手动刷新强制请求）\r\n3. BBS/Orca云端预设数据源统一为Gitee API v5\r\n4. detectMachineModel增加A1MF/A1F精确匹配（防止子串误匹配）\r\n5. 下载镜像策略优化（仅尝试2个最快镜像替代全量轮询）\r\n\r\n### 问题修复\r\n6. Zustand v5 persist中间件接口不兼容（createJSONStorage包装适配器）\r\n7. 红点bug修复（未应用预设时强制paramsHasUnsavedChanges为false）\r\n8. 多预设同时applied bug（ApplyPreset全局清除再设置目标）\r\n9. 下载状态静态闭包Bug（EventsOn回调改用ref引用替代闭包）\r\n10. handleGoToApply TDZ初始化错误（useRef存储函数引用解决循环依赖）\r\n11. parseBBSFileName分类逻辑误归类S1C（startsWith精确匹配替代includes）\r\n12. fetchOrcaCloudPresets目录结构对齐BBS（Process/Support子目录分离）\r\n13. 下载URL构造逻辑修正（移除CLOUD_PATHS重复拼接路径前缀）\r\n\r\n### 架构优化\r\n14. 消除前端硬编码假数据（configData/deviceData零值占位+FALLBACK删除）\r\n15. FAQ种子数据格式统一（种子文件改为裸格式直接透传前端）\r\n16. \"其他机型下载\"面板位置调整（从右侧移至左侧容器内）",
+                         "isMajor":  false,
+                         "type":  "fix",
+                         "version":  "0.1.2",
+                         "summary":  "### 核心功能",
+                         "en":  "",
+                         "sections":  [
+                                          {
+                                              "heading":  "核心功能\r",
+                                              "item":  "VerifyPresetFileExists文件存在性验证（下载后校验防假成功）"
+                                          },
+                                          {
+                                              "heading":  "核心功能\r",
+                                              "item":  "FAQ前端localStorage 10分钟缓存（自动加载+手动刷新强制请求）"
+                                          },
+                                          {
+                                              "heading":  "核心功能\r",
+                                              "item":  "BBS/Orca云端预设数据源统一为Gitee API v5"
+                                          },
+                                          {
+                                              "heading":  "核心功能\r",
+                                              "item":  "detectMachineModel增加A1MF/A1F精确匹配（防止子串误匹配）"
+                                          },
+                                          {
+                                              "heading":  "核心功能\r",
+                                              "item":  "下载镜像策略优化（仅尝试2个最快镜像替代全量轮询）"
+                                          },
+                                          {
+                                              "heading":  "问题修复\r",
+                                              "item":  "Zustand v5 persist中间件接口不兼容（createJSONStorage包装适配器）"
+                                          },
+                                          {
+                                              "heading":  "问题修复\r",
+                                              "item":  "红点bug修复（未应用预设时强制paramsHasUnsavedChanges为false）"
+                                          },
+                                          {
+                                              "heading":  "问题修复\r",
+                                              "item":  "多预设同时applied bug（ApplyPreset全局清除再设置目标）"
+                                          },
+                                          {
+                                              "heading":  "问题修复\r",
+                                              "item":  "下载状态静态闭包Bug（EventsOn回调改用ref引用替代闭包）"
+                                          },
+                                          {
+                                              "heading":  "问题修复\r",
+                                              "item":  "handleGoToApply TDZ初始化错误（useRef存储函数引用解决循环依赖）"
+                                          },
+                                          {
+                                              "heading":  "问题修复\r",
+                                              "item":  "parseBBSFileName分类逻辑误归类S1C（startsWith精确匹配替代includes）"
+                                          },
+                                          {
+                                              "heading":  "问题修复\r",
+                                              "item":  "fetchOrcaCloudPresets目录结构对齐BBS（Process/Support子目录分离）"
+                                          },
+                                          {
+                                              "heading":  "问题修复\r",
+                                              "item":  "下载URL构造逻辑修正（移除CLOUD_PATHS重复拼接路径前缀）"
+                                          },
+                                          {
+                                              "heading":  "架构优化\r",
+                                              "item":  "消除前端硬编码假数据（configData/deviceData零值占位+FALLBACK删除）"
+                                          },
+                                          {
+                                              "heading":  "架构优化\r",
+                                              "item":  "FAQ种子数据格式统一（种子文件改为裸格式直接透传前端）"
+                                          },
+                                          {
+                                              "heading":  "架构优化\r",
+                                              "item":  "\"其他机型下载\"面板位置调整（从右侧移至左侧容器内）"
+                                          }
+                                      ],
+                         "date":  "2026-05-08",
+                         "title":  "0.1.2"
+                     },
                      {
                          "zhCN":  "\r\n### 核心功能\r\n1. FileRegistry状态管理器（按机型分区持久化applied+UUID唯一标识）\r\n2. SaveActivePreset IPC+OnWriteSuccess回调（写入后自动广播事件）\r\n3. 事件广播机制（emitConfigChanged/emitRegistryUpdated）\r\n4. CLI备份配对保存（原始+处理后同时间戳，保留3对）\r\n5. 诊断导出新增CLI备份打包（gcode_cli_backup最多6文件）\r\n\r\n### 问题修复\r\n6. 修复GetActivePreset空参数遍历所有机组（CRITICAL）\r\n7. 修复校准保存未检查返回值（失败时setSaveStatus error）\r\n8. 修复UnapplyPreset未清空MiniMode预设数据\r\n9. 修复gcode备份静默吞错+冗余备份调用\r\n10. 修复CLI模式未调Init导致configDir为空\r\n11. 统一TOML库为pelletier/go-toml/v2（解决双库维护）\r\n\r\n### 架构优化\r\n12. 预设应用/取消改用Go IPC（移除persistentStorage）\r\n13. 校准保存改用SaveActivePreset（移除手动EventsEmit）\r\n14. DeviceSelectionPage/MiniMode集成FileRegistry",
                          "isMajor":  false,
