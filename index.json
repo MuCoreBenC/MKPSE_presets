@@ -65,17 +65,6 @@
     "changelog": ""
   },
   {
-    "fileName": "S1C.toml",
-    "name": "S1C",
-    "compatible": [],
-    "version": "2026.03",
-    "size": 1242,
-    "releaseTime": "2026-03-02 22:25:01",
-    "sha256": "a6fc4ad5497af1f3e9f68fd2fabf8f70013c7763f17447c16dfd4ac3308fa909",
-    "author": "",
-    "changelog": ""
-  },
-  {
     "fileName": "X1.toml",
     "name": "X1",
     "compatible": [
