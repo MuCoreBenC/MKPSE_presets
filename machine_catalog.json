@@ -29,12 +29,12 @@
               },
               {
                 "type": "bbs_machine",
-                "fileName": "MKPSupport A1 0.4.json",
+                "fileName": "0.4mm/MKPSupport A1 0.4.json",
                 "url": "/BBS_Presets/Support/0.4mm/MKPSupport%20A1%200.4.json"
               },
               {
                 "type": "bbs_process",
-                "fileName": "MKPProcess A1 0.4 0.20.json",
+                "fileName": "0.4mm/MKPProcess A1 0.4 0.20.json",
                 "url": "/BBS_Presets/Process/0.4mm/MKPProcess%20A1%200.4%200.20.json"
               }
             ]
@@ -52,12 +52,12 @@
               },
               {
                 "type": "bbs_machine",
-                "fileName": "MKPSupport A1 0.4.json",
+                "fileName": "0.4mm/MKPSupport A1 0.4.json",
                 "url": "/BBS_Presets/Support/0.4mm/MKPSupport%20A1%200.4.json"
               },
               {
                 "type": "bbs_process",
-                "fileName": "MKPProcess A1 0.4 0.20.json",
+                "fileName": "0.4mm/MKPProcess A1 0.4 0.20.json",
                 "url": "/BBS_Presets/Process/0.4mm/MKPProcess%20A1%200.4%200.20.json"
               }
             ]
@@ -83,12 +83,12 @@
               },
               {
                 "type": "bbs_machine",
-                "fileName": "MKPSupport A1 mini 0.4.json",
+                "fileName": "0.4mm/MKPSupport A1 mini 0.4.json",
                 "url": "/BBS_Presets/Support/0.4mm/MKPSupport%20A1%20mini%200.4.json"
               },
               {
                 "type": "bbs_process",
-                "fileName": "MKPProcess A1 mini 0.4 0.20.json",
+                "fileName": "0.4mm/MKPProcess A1 mini 0.4 0.20.json",
                 "url": "/BBS_Presets/Process/0.4mm/MKPProcess%20A1%20mini%200.4%200.20.json"
               }
             ]
@@ -106,12 +106,12 @@
               },
               {
                 "type": "bbs_machine",
-                "fileName": "MKPSupport A1 mini 0.4.json",
+                "fileName": "0.4mm/MKPSupport A1 mini 0.4.json",
                 "url": "/BBS_Presets/Support/0.4mm/MKPSupport%20A1%20mini%200.4.json"
               },
               {
                 "type": "bbs_process",
-                "fileName": "MKPProcess A1 mini 0.4 0.20.json",
+                "fileName": "0.4mm/MKPProcess A1 mini 0.4 0.20.json",
                 "url": "/BBS_Presets/Process/0.4mm/MKPProcess%20A1%20mini%200.4%200.20.json"
               }
             ]
@@ -137,12 +137,12 @@
               },
               {
                 "type": "bbs_machine",
-                "fileName": "MKPSupport P1S 0.4.json",
+                "fileName": "0.4mm/MKPSupport P1S 0.4.json",
                 "url": "/BBS_Presets/Support/0.4mm/MKPSupport%20P1S%200.4.json"
               },
               {
                 "type": "bbs_process",
-                "fileName": "MKPProcess P1S 0.4 0.24.json",
+                "fileName": "0.4mm/MKPProcess P1S 0.4 0.24.json",
                 "url": "/BBS_Presets/Process/0.4mm/MKPProcess%20P1S%200.4%200.24.json"
               }
             ]
@@ -168,12 +168,12 @@
               },
               {
                 "type": "bbs_machine",
-                "fileName": "MKPSupport P2S 0.4.json",
+                "fileName": "0.4mm/MKPSupport P2S 0.4.json",
                 "url": "/BBS_Presets/Support/0.4mm/MKPSupport%20P2S%200.4.json"
               },
               {
                 "type": "bbs_process",
-                "fileName": "MKPProcess P2S 0.4 0.24.json",
+                "fileName": "0.4mm/MKPProcess P2S 0.4 0.24.json",
                 "url": "/BBS_Presets/Process/0.4mm/MKPProcess%20P2S%200.4%200.24.json"
               }
             ]
@@ -199,12 +199,12 @@
               },
               {
                 "type": "bbs_machine",
-                "fileName": "MKPSupport X1 0.4.json",
+                "fileName": "0.4mm/MKPSupport X1 0.4.json",
                 "url": "/BBS_Presets/Support/0.4mm/MKPSupport%20X1%200.4.json"
               },
               {
                 "type": "bbs_process",
-                "fileName": "MKPProcess X1 0.4 0.24.json",
+                "fileName": "0.4mm/MKPProcess X1 0.4 0.24.json",
                 "url": "/BBS_Presets/Process/0.4mm/MKPProcess%20X1%200.4%200.24.json"
               }
             ]
