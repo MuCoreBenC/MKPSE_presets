@@ -1,80 +1,296 @@
-[
-  {
-    "fileName": "A1.toml",
-    "name": "A1",
-    "compatible": [
-      "a1"
-    ],
-    "version": "2026.04",
-    "size": 1421,
-    "releaseTime": "2026-04-22 23:20:00",
-    "sha256": "710510d6201f33f8c7e85da3e000f3d8b7539b485116012ece13ca3807618d53",
-    "author": "",
-    "changelog": ""
-  },
-  {
-    "fileName": "A1F.toml",
-    "name": "A1F",
-    "compatible": [
-      "a1"
-    ],
-    "version": "2026.05",
-    "size": 1421,
-    "releaseTime": "2026-05-06 23:20:00",
-    "sha256": "817819e0a70906f6458769876694425ca386d5acbdcd7a3aea4a2f394cd08a14",
-    "author": "",
-    "changelog": ""
-  },
-  {
-    "fileName": "A1M.toml",
-    "name": "A1M",
-    "compatible": [
-      "a1 mini"
-    ],
-    "version": "2026.04",
-    "size": 1822,
-    "releaseTime": "2026-04-25 22:56:09",
-    "sha256": "828c0ec9fc0a221da1beae1f5eb0f69cb5547be475b8a402dd27a739a59570f2",
-    "author": "",
-    "changelog": ""
-  },
-  {
-    "fileName": "A1MF.toml",
-    "name": "A1MF",
-    "compatible": [
-      "a1 mini"
-    ],
-    "version": "2026.05",
-    "size": 1366,
-    "releaseTime": "2026-05-06 22:04:09",
-    "sha256": "f6c6b5b9d67e38da1e051b4d0db49405dd2e2c50f93c7c4090ad135174b39272",
-    "author": "",
-    "changelog": ""
-  },
-  {
-    "fileName": "P2.toml",
-    "name": "P2",
-    "compatible": [
-      "p2"
-    ],
-    "version": "2025.02",
-    "size": 1605,
-    "releaseTime": "2025-02-21 12:15:01",
-    "sha256": "eae07d566a2028cf114c08c2cbfc7713d394217b795cb793f00d0b1bbdfcc971",
-    "author": "",
-    "changelog": ""
-  },
-  {
-    "fileName": "X1.toml",
-    "name": "X1",
-    "compatible": [
-      "x1"
-    ],
-    "version": "2025.03",
-    "size": 1601,
-    "releaseTime": "2025-03-11 12:15:01",
-    "sha256": "d17e0447c380481ea0f29c3ed3119695ae0777697a88158145aaeb55e945487c",
-    "author": "",
-    "changelog": ""
-  }
-]
+{
+  "version": "2026.05",
+  "updated": "2026-05-08T13:37:03Z",
+  "presets": [
+    {
+      "fileName": "A1.toml",
+      "name": "A1",
+      "brand": "mkp",
+      "compatible": [
+        "a1"
+      ],
+      "version": "2026.04",
+      "size": 1421,
+      "releaseTime": "2026-04-22 23:20:00",
+      "sha256": "710510d6201f33f8c7e85da3e000f3d8b7539b485116012ece13ca3807618d53"
+    },
+    {
+      "fileName": "A1F.toml",
+      "name": "A1F",
+      "brand": "mkp",
+      "compatible": [
+        "a1"
+      ],
+      "version": "2026.05",
+      "size": 1421,
+      "releaseTime": "2026-05-06 23:20:00",
+      "sha256": "817819e0a70906f6458769876694425ca386d5acbdcd7a3aea4a2f394cd08a14"
+    },
+    {
+      "fileName": "A1M.toml",
+      "name": "A1M",
+      "brand": "mkp",
+      "compatible": [
+        "a1 mini"
+      ],
+      "version": "2026.04",
+      "size": 1822,
+      "releaseTime": "2026-04-25 22:56:09",
+      "sha256": "828c0ec9fc0a221da1beae1f5eb0f69cb5547be475b8a402dd27a739a59570f2"
+    },
+    {
+      "fileName": "A1MF.toml",
+      "name": "A1MF",
+      "brand": "mkp",
+      "compatible": [
+        "a1 mini"
+      ],
+      "version": "2026.05",
+      "size": 1366,
+      "releaseTime": "2026-05-06 22:04:09",
+      "sha256": "f6c6b5b9d67e38da1e051b4d0db49405dd2e2c50f93c7c4090ad135174b39272"
+    },
+    {
+      "fileName": "P2.toml",
+      "name": "P2",
+      "brand": "mkp",
+      "compatible": [
+        "p2"
+      ],
+      "version": "2025.02",
+      "size": 1605,
+      "releaseTime": "2025-02-21 12:15:01",
+      "sha256": "eae07d566a2028cf114c08c2cbfc7713d394217b795cb793f00d0b1bbdfcc971"
+    },
+    {
+      "fileName": "X1.toml",
+      "name": "X1",
+      "brand": "mkp",
+      "compatible": [
+        "x1"
+      ],
+      "version": "2025.03",
+      "size": 1601,
+      "releaseTime": "2025-03-11 12:15:01",
+      "sha256": "d17e0447c380481ea0f29c3ed3119695ae0777697a88158145aaeb55e945487c"
+    },
+    {
+      "fileName": "MKPProcess A1 0.2 0.10.json",
+      "name": "MKPProcess A1 0.2",
+      "brand": "bbs",
+      "version": "2.0.0.83",
+      "size": 1348,
+      "releaseTime": "2026-04-15T10:47:40.000Z",
+      "sha256": "3685bb418325c60e42209cc7d659a6654d558d2f40dfe607aa93fd7ad6660bb2",
+      "type": "process",
+      "model": "a1",
+      "nozzle": "0.2",
+      "layerHeight": "0.10",
+      "relativePath": "BBS_Presets/Process/0.2mm/MKPProcess A1 0.2 0.10.json"
+    },
+    {
+      "fileName": "MKPProcess A1 mini 0.2 0.10.json",
+      "name": "MKPProcess A1 mini 0.2",
+      "brand": "bbs",
+      "version": "2.1.0.18",
+      "size": 1358,
+      "releaseTime": "2026-04-15T10:47:40.000Z",
+      "sha256": "95fcd490debb1bcc2d573ac03ad74f72e16628ebdd5fdc867c1649446c14bf2a",
+      "type": "process",
+      "model": "a1 mini",
+      "nozzle": "0.2",
+      "layerHeight": "0.10",
+      "relativePath": "BBS_Presets/Process/0.2mm/MKPProcess A1 mini 0.2 0.10.json"
+    },
+    {
+      "fileName": "MKPProcess P1S 0.2 0.10.json",
+      "name": "MKPProcess P1S 0.2",
+      "brand": "bbs",
+      "version": "1.9.0.26",
+      "size": 1983,
+      "releaseTime": "2026-04-15T10:47:40.000Z",
+      "sha256": "7a57c29a6148287b7aa9be8d587905a9ff33bf8bb0b829b73be11ee07c6a2a55",
+      "type": "process",
+      "model": "p1s",
+      "nozzle": "0.2",
+      "layerHeight": "0.10",
+      "relativePath": "BBS_Presets/Process/0.2mm/MKPProcess P1S 0.2 0.10.json"
+    },
+    {
+      "fileName": "MKPProcess X1 0.2 0.10.json",
+      "name": "MKPProcess X1 0.2",
+      "brand": "bbs",
+      "version": "1.9.0.26",
+      "size": 1981,
+      "releaseTime": "2026-04-15T10:47:40.000Z",
+      "sha256": "47142d21c9a02584cbb2147477668d9395dfb3f0f429a9337a7b79c2d4c14b87",
+      "type": "process",
+      "model": "x1",
+      "nozzle": "0.2",
+      "layerHeight": "0.10",
+      "relativePath": "BBS_Presets/Process/0.2mm/MKPProcess X1 0.2 0.10.json"
+    },
+    {
+      "fileName": "MKPProcess A1 0.4 0.20.json",
+      "name": "MKPProcess A1",
+      "brand": "bbs",
+      "version": "2.0.0.83",
+      "size": 1376,
+      "releaseTime": "2026-04-15T10:47:40.000Z",
+      "sha256": "9f819f2f3d4d6111aca127941e201e45a33287f82d22b0f6945db51fe8351bcb",
+      "type": "process",
+      "model": "a1",
+      "nozzle": "0.4",
+      "layerHeight": "0.20",
+      "relativePath": "BBS_Presets/Process/0.4mm/MKPProcess A1 0.4 0.20.json"
+    },
+    {
+      "fileName": "MKPProcess A1 mini 0.4 0.20.json",
+      "name": "MKPProcess A1 mini",
+      "brand": "bbs",
+      "version": "2.1.0.18",
+      "size": 1342,
+      "releaseTime": "2026-04-15T10:47:40.000Z",
+      "sha256": "8801336687bdf1f707001bc9066d7b64b35ac0e144c0e3f3d8dc68c8cafed054",
+      "type": "process",
+      "model": "a1 mini",
+      "nozzle": "0.4",
+      "layerHeight": "0.20",
+      "relativePath": "BBS_Presets/Process/0.4mm/MKPProcess A1 mini 0.4 0.20.json"
+    },
+    {
+      "fileName": "MKPProcess P1S 0.4 0.24.json",
+      "name": "MKPProcess P1S",
+      "brand": "bbs",
+      "version": "1.9.0.26",
+      "size": 1940,
+      "releaseTime": "2026-04-15T10:47:40.000Z",
+      "sha256": "e21700f4e64148c7bd5160ed3902e48495ad4004d7f5580b84c047566810bd78",
+      "type": "process",
+      "model": "p1s",
+      "nozzle": "0.4",
+      "layerHeight": "0.24",
+      "relativePath": "BBS_Presets/Process/0.4mm/MKPProcess P1S 0.4 0.24.json"
+    },
+    {
+      "fileName": "MKPProcess P2S 0.4 0.24.json",
+      "name": "MKPProcess P2S",
+      "brand": "bbs",
+      "version": "2.5.0.14",
+      "size": 1307,
+      "releaseTime": "2026-04-15T10:47:40.000Z",
+      "sha256": "d7bc82b411bbf67e0144f02b2226be2862db00238ff79a8db74dca2ef3109df3",
+      "type": "process",
+      "model": "p2s",
+      "nozzle": "0.4",
+      "layerHeight": "0.24",
+      "relativePath": "BBS_Presets/Process/0.4mm/MKPProcess P2S 0.4 0.24.json"
+    },
+    {
+      "fileName": "MKPProcess X1 0.4 0.24.json",
+      "name": "MKPProcess X1",
+      "brand": "bbs",
+      "version": "1.9.0.26",
+      "size": 1996,
+      "releaseTime": "2026-04-15T10:47:40.000Z",
+      "sha256": "05c4a058dd67c8f8a414f0c5daa2b4a29fc2c08bf1dba60c25d32c25ce2e9f05",
+      "type": "process",
+      "model": "x1",
+      "nozzle": "0.4",
+      "layerHeight": "0.24",
+      "relativePath": "BBS_Presets/Process/0.4mm/MKPProcess X1 0.4 0.24.json"
+    },
+    {
+      "fileName": "MKPSupport A1 0.4.json",
+      "name": "MKPSupport A1",
+      "brand": "bbs",
+      "version": "2.1.0.18",
+      "size": 22067,
+      "releaseTime": "2026-04-15T10:47:40.000Z",
+      "sha256": "a7e447e908aa2708e4e166291dfda6f7143409737cb68b8608159a589e820642",
+      "type": "support",
+      "model": "a1",
+      "nozzle": "0.4",
+      "relativePath": "BBS_Presets/Support/0.4mm/MKPSupport A1 0.4.json"
+    },
+    {
+      "fileName": "MKPSupport A1 mini 0.4.json",
+      "name": "MKPSupport A1 mini",
+      "brand": "bbs",
+      "version": "2.1.0.18",
+      "size": 25817,
+      "releaseTime": "2026-04-15T10:47:40.000Z",
+      "sha256": "8ddefe285b27193c811c8bd4de27e25219f1128f0a926478d3177bd0e0c31bad",
+      "type": "support",
+      "model": "a1 mini",
+      "nozzle": "0.4",
+      "relativePath": "BBS_Presets/Support/0.4mm/MKPSupport A1 mini 0.4.json"
+    },
+    {
+      "fileName": "MKPSupport P1S 0.4.json",
+      "name": "MKPSupport P1S",
+      "brand": "bbs",
+      "version": "2.1.0.18",
+      "size": 19948,
+      "releaseTime": "2026-04-15T10:47:40.000Z",
+      "sha256": "15564b335276b736e36558fdbaf5c902a37a4213d28058a4bdb9e6faddea0135",
+      "type": "support",
+      "model": "p1s",
+      "nozzle": "0.4",
+      "relativePath": "BBS_Presets/Support/0.4mm/MKPSupport P1S 0.4.json"
+    },
+    {
+      "fileName": "MKPSupport P2S 0.4.json",
+      "name": "MKPSupport P2S",
+      "brand": "bbs",
+      "version": "2.5.0.14",
+      "size": 352,
+      "releaseTime": "2026-04-15T10:47:40.000Z",
+      "sha256": "1bda565387457626dd15a68222da392c6958ed34a89b20c2499df986b3a84488",
+      "type": "support",
+      "model": "p2s",
+      "nozzle": "0.4",
+      "relativePath": "BBS_Presets/Support/0.4mm/MKPSupport P2S 0.4.json"
+    },
+    {
+      "fileName": "MKPSupport X1 0.4.json",
+      "name": "MKPSupport X1",
+      "brand": "bbs",
+      "version": "2.0.0.77",
+      "size": 22228,
+      "releaseTime": "2026-04-15T10:47:40.000Z",
+      "sha256": "f616fda616607dcbf3a5a46608b9d9689dbf8b546fbba56e416728e37bb0c9bb",
+      "type": "support",
+      "model": "x1",
+      "nozzle": "0.4",
+      "relativePath": "BBS_Presets/Support/0.4mm/MKPSupport X1 0.4.json"
+    },
+    {
+      "fileName": "MKPSupport Anycubic Kobra S1.json",
+      "name": "MKPSupport Anycubic Kobra S1",
+      "brand": "orca",
+      "version": "2.3.1.10",
+      "size": 335,
+      "releaseTime": "2026-04-15T10:47:40.000Z",
+      "sha256": "39b76c2c416b82f44e95f4ca777fd9fc122b687ef508b2daed8a2cb5c7600adf",
+      "type": "support",
+      "model": "kobra s1",
+      "nozzle": "0.4",
+      "relativePath": "Orca_Presets/Support/0.4mm/MKPSupport Anycubic Kobra S1.json"
+    },
+    {
+      "fileName": "MKPSupport S1C.json",
+      "name": "MKPProcess S1C",
+      "brand": "orca",
+      "version": "1.3.2412.28",
+      "size": 2466,
+      "releaseTime": "2026-04-15T10:47:40.000Z",
+      "sha256": "09bdcb6cba30ced104e80311da713f29a00f182729fce23d994e7f82f159edac",
+      "type": "support",
+      "model": "s1c",
+      "nozzle": "0.4",
+      "layerHeight": "0.20",
+      "relativePath": "Orca_Presets/Support/0.4mm/MKPSupport S1C.json"
+    }
+  ]
+}
