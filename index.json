@@ -1,6 +1,6 @@
 {
   "version": "2026.05",
-  "updated": "2026-05-09T14:10:49Z",
+  "updated": "2026-05-09T15:43:42Z",
   "presets": [
     {
       "fileName": "A1.toml",
@@ -22,9 +22,9 @@
         "a1"
       ],
       "version": "2026.05",
-      "size": 1421,
+      "size": 1423,
       "releaseTime": "2026-05-06 23:20:00",
-      "sha256": "817819e0a70906f6458769876694425ca386d5acbdcd7a3aea4a2f394cd08a14"
+      "sha256": "f00dceadd25c84ca0d531f1d53ba22c1e5e9b040ee6e64b47a6e29d75dc34aed"
     },
     {
       "fileName": "A1M.toml",
@@ -46,9 +46,9 @@
         "a1 mini"
       ],
       "version": "2026.05",
-      "size": 1366,
+      "size": 1368,
       "releaseTime": "2026-05-06 22:04:09",
-      "sha256": "f6c6b5b9d67e38da1e051b4d0db49405dd2e2c50f93c7c4090ad135174b39272"
+      "sha256": "390e0614a3f5e8a0e0052ac4c9b68e116b3dc3c076e80c0a130d63aa92af6c2a"
     },
     {
       "fileName": "P2.toml",

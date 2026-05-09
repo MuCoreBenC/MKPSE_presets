@@ -2,7 +2,7 @@
 #胶笔配置
 [toolhead]
 speed_limit = 69.0  #涂胶速度限制 (mm/s)
-offset = { x = -0.7, y = 26.3, z = 3.1}# 笔尖偏移
+offset = { x = -0.7, y = 26.3, z = 3.7}# 笔尖偏移
 # 自定义工具头获取 G-code
 custom_mount_gcode = """
 ;CustomLock
