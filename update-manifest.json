@@ -2,7 +2,7 @@
   "latestVersion": "0.1.3",
   "changelog": {
     "en": "",
-    "zh-CN": "\r\n### 核心功能\r\n1. FAQ缓存统一至CloudCache（删除独立faq/cache.go，复用预设缓存层支持自定义缓存键）\r\n2. 下载服务新增machineID参数（DownloadSelectedPresetWithMachine/WithMachine系列方法）\r\n3. DeviceSelectionPage历史下载任务功能（非当前机型下载进度独立追踪）\r\n4. 下载镜像策略优化（新增ghps.cc/ghproxy.net备用镜像替代全量轮询）\r\n\r\n### 问题修复\r\n5. 设备选择页卡片动画逻辑修正（移除编辑态缩放依赖，仅保留悬停3D效果）\r\n6. 预设文件名生成优化（getPresetTomlFileName精确匹配brand/model/version）\r\n7. deviceData.js消除硬编码FALLBACK数据（BRANDS/MODELS常量清理）\r\n\r\n### 架构优化\r\n8. 前端新增useBackendEvents hook（统一后端事件监听管理）\r\n9. PremiumCardContent动画参数精简（减少不必要的isEditing依赖）\r\n10. wailsjs绑定同步更新（新增WithMachine方法/UnapplyPreset/FAQ种子数据传参）"
+    "zh-CN": "## 0.1.3 (2026-05-08)\r\n\r\n### 核心功能\r\n1. FAQ缓存统一至CloudCache（删除独立faq/cache.go，复用预设缓存层支持自定义缓存键）\r\n2. 下载服务新增machineID参数（DownloadSelectedPresetWithMachine/WithMachine系列方法）\r\n3. DeviceSelectionPage历史下载任务功能（非当前机型下载进度独立追踪）\r\n4. 下载镜像策略优化（新增ghps.cc/ghproxy.net备用镜像替代全量轮询）\r\n\r\n### 问题修复\r\n5. 设备选择页卡片动画逻辑修正（移除编辑态缩放依赖，仅保留悬停3D效果）\r\n6. 预设文件名生成优化（getPresetTomlFileName精确匹配brand/model/version）\r\n7. deviceData.js消除硬编码FALLBACK数据（BRANDS/MODELS常量清理）\r\n\r\n### 架构优化\r\n8. 前端新增useBackendEvents hook（统一后端事件监听管理）\r\n9. PremiumCardContent动画参数精简（减少不必要的isEditing依赖）\r\n10. wailsjs绑定同步更新（新增WithMachine方法/UnapplyPreset/FAQ种子数据传参）"
   },
   "versions": [
     {
