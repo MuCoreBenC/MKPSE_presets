@@ -17,6 +17,9 @@ fromJH/
 *.key
 id_*
 
+# === 发布文件（必须跟踪，用于 Gitee raw 下载）===
+!build/
+
 # === IDE ===
 .idea/
 .vscode/
