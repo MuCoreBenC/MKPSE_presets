@@ -1,24 +1,50 @@
 {
-    "latestVersion":  "0.1.7",
+    "latestVersion":  "0.2.1",
     "changelog":  {
                       "zh-CN":  "",
                       "en":  ""
                   },
     "versions":  [
                      {
-                         "downloadUrl":  "https://gitee.com/MuCoreBenC/MKPSE_presets/raw/main/build/mkp-supporte-0.1.7.exe",
-                         "fileName":  "mkp-supporte-0.1.7.exe",
+                         "downloadUrl":  "https://gitee.com/MuCoreBenC/MKPSE_presets/raw/main/build/mkp-supporte-0.2.1.exe",
+                         "fileName":  "mkp-supporte-0.2.1.exe",
                          "hasExe":  true,
                          "forceUpdate":  false,
-                         "version":  "0.1.7",
+                         "version":  "0.2.1",
                          "releaseDate":  "2026-05-10",
-                         "sha256":  "c176578003f9aa274b681ff2a30dcd9ab95a01bc2c964958ca4c2144c4b5c5cc",
+                         "sha256":  "000caec148dc5d732a0091e926c221770fa7fdb898810c1745c083767066555e",
                          "minVersion":  "0.0.1",
                          "changelog":  {
                                            "zh-CN":  "",
                                            "en":  ""
                                        },
-                         "fileSize":  21820928
+                         "fileSize":  21923328
+                     },
+                     {
+                         "version":  "0.2.0",
+                         "releaseDate":  "2026-05-10",
+                         "forceUpdate":  false,
+                         "minVersion":  "0.0.1",
+                         "hasExe":  false,
+                         "changelog":  {
+                                           "en":  "",
+                                           "zh-CN":  "## GCode后处理系统升级 v0.2.0 (2026-05-10)\n\n### 核心功能\n1. CLI百分比进度条(5阶段进度报告：读取→配置→碰撞→FirstPass→SecondPass)\n2. GCode梯形护套系统(螺旋填充/方环/线性收敛/TOML配置/SecondPass集成)\n3. 润笔功能实现(InconsistentCount计数/距离累积/PrimeLength配置/14项测试)\n4. 涂胶Z下降微调(GlueZOffset -0.15mm三处Z高度修改)\n5. Ironing E_Sum阈值保护(IroningESumThreshold 7.9替换硬编码)\n6. PartDryingSpeed动态计算(600+(10000-600)*(eSum/90)公式)\n\n### 问题修复\n7. MoreExtrude E值修正(.2改为.34与Python版本一致)\n8. 设置页面版本号硬编码(改用GetAppInfo动态获取真实版本)\n9. 当前版本说明为空回退(无云端changelog时读取本地CHANGELOG)\n10. 偏移值记录位置修复(移至校准抽屉消除面板挤压)\n11. logger.Warn未定义编译(新增包级别Debug/Info/Warn/Error函数)\n\n### 架构优化\n12. 模型Z映射性能优化(消除grids和seen两次中间分配)\n13. OrcaSlicer Ironing检测(4个参数提取+塔层高计算优化)\n14. 下载模块拆分重构(downloader/service/mirrors三文件解耦)\n\n### 体验优化\n15. 进度条动画增强(shimmer-slide/pulse-glow/connection-pulse效果)\n16. ParamsPage UI优化(非当前应用预设徽章+右侧操作按钮组)\n17. 下载右键菜单新增(取消下载/复制下载链接选项)"
+                                       }
+                     },
+                     {
+                         "version":  "0.1.7",
+                         "releaseDate":  "2026-05-10",
+                         "forceUpdate":  false,
+                         "minVersion":  "0.0.1",
+                         "hasExe":  true,
+                         "fileName":  "mkp-supporte-0.1.7.exe",
+                         "downloadUrl":  "https://gitee.com/MuCoreBenC/MKPSE_presets/raw/main/build/mkp-supporte-0.1.7.exe",
+                         "fileSize":  21820928,
+                         "sha256":  "c176578003f9aa274b681ff2a30dcd9ab95a01bc2c964958ca4c2144c4b5c5cc",
+                         "changelog":  {
+                                           "en":  "",
+                                           "zh-CN":  "## 预设下载路径优化 v0.1.7 (2026-05-10)\n\n### 核心功能\n1. 版本控制右键菜单增强(当前版本支持重新下载/本地重装/删除缓存)\n\n### 问题修复\n1. A1M.toml损坏文件修复(检测无效HTML内容并自动删除)\n2. 下载完成后校验机制(验证非HTML异常时自动清理报错)\n3. 安装程序图标显示修复(NSIS配置MUI_ICON/MUI_UNICON指令)\n4. 设置页面版本号硬编码修复(改为GetAppInfo动态获取真实版本)\n5. 当前版本说明为空回退修复(无云端changelog时读取本地CHANGELOG)\n6. 偏移值使用记录位置修复(移至校准记录抽屉消除面板挤压)\n7. logger.Warn未定义编译修复(新增包级别Debug/Info/Warn/Error函数)\n\n### 架构优化\n1. BBS/Orca预设路径重构(从子目录统一迁移至presets根目录)\n2. 无效TOML文件检测增强(同步/重建双路径日志记录)\n3. 下载模块拆分重构(downloader/service/mirrors三文件解耦)\n4. 前端绑定清理更新(移除publisher Service绑定减少冗余)"
+                                       }
                      },
                      {
                          "version":  "0.1.6",
