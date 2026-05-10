@@ -38,12 +38,7 @@ G1 X90 F30000;Wipe
 G1 X120 F30000;Wipe
 G1 X90 F30000;Wipe
 """
-minor_nozzle_flag = false # 小喷嘴标志 Minor nozzle flag
-MKP_retract = -10.0 # MKP回抽距离(mm) 范围:-20~0 MKP retract distance
-first_pen_revitalization_flag = false # 首笔活化标志 First pen revitalization flag
-l803_leak_prevent_flag = true # L803防漏标志 L803 leak prevent flag
-glue_z_offset = -0.15 # 涂胶Z偏移(mm) 范围:-2~2 Glue Z offset
-prime_length = 100.0 # 预涂长度(mm) 范围:0~300 Prime length
+#擦嘴配置
 [wiping]
 have_wiping_components = true#使用擦嘴塔而非擦嘴组件Enable wiping components
 wiper_x = 20.0
@@ -56,17 +51,3 @@ force_thick_bridge_flag = true # 强制厚桥开关 Force thick bridge flag
 support_extrusion_multiplier = 0.8 # 支撑体挤出倍率 Support extrusion multiplier
 interface_ironing_flag = false  # 接口熨烫 Interface ironing flag
 copy_top_layer_only = true  # 仅复制顶层支撑面(仅BambuStudio) Copy top layer support interface only
-tower_extrude_ratio = 1.0 # 塔挤出比例 范围:0.1~3 Tower extrude ratio
-use_disk_wipe_flag = true # 使用盘擦标志 Use disk wipe flag
-fan_speed = 255.0 # 风扇速度 范围:0~255 Fan speed
-part_drying_speed = 50.0 # 部件干燥速度(mm/s) 范围:0~200 Part drying speed
-switch_tower_type = 2 # 切换塔类型 范围:0~3 Switch tower type
-small_feature_factor = 1.0 # 小特征因子 范围:0~2 Small feature factor
-first_layer_wipe_tower_collision_check = true # 首层擦嘴塔碰撞检查 First layer wipe tower collision check
-sheath_mode = "off" # 鞘模式(off/auto/force) Sheath mode
-sheath_base_expand = 5.0 # 鞘底扩展(mm) 范围:0~20 Sheath base expand
-sheath_wall_width = 0.8 # 鞘壁宽(mm) 范围:0.2~3 Sheath wall width
-sheath_enable_height = 70.0 # 鞘启用高度(mm) 范围:0~300 Sheath enable height
-sheath_converge_layers = 50 # 鞘收敛层数 范围:1~200 Sheath converge layers
-ironing_e_sum_threshold = 7.9 # 熨烫E总和阈值 范围:0~50 Ironing E sum threshold
-prime_trigger_layers = 30 # 预涂触发层数 范围:1~100 Prime trigger layers
