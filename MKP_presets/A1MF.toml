@@ -1,5 +1,5 @@
 # uuid: 63614826-9ffc-44c2-8cd0-c1eadc78c4c8
-# release_time: 2026-05-12 02:19:01
+# release_time: 2026-05-12 07:33:50
 #胶笔配置
 [toolhead]
 speed_limit = 40  #涂胶速度限制 (mm/s)

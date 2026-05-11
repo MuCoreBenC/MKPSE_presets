@@ -1,5 +1,5 @@
 # uuid: fadca318-42c7-4dd1-9483-a8f03141da35
-# release_time: 2026-05-12 02:19:01
+# release_time: 2026-05-12 07:33:50
 #胶笔配置
 [toolhead]
 speed_limit = 69  #涂胶速度限制 (mm/s)
