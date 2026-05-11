@@ -87,4 +87,6 @@ sheath_wall_width = 0.8 # 鞘壁宽(mm) 范围:0.2~3 Sheath wall width
 sheath_enable_height = 70.0 # 鞘启用高度(mm) 范围:0~300 Sheath enable height
 sheath_converge_layers = 50 # 鞘收敛层数 范围:1~200 Sheath converge layers
 ironing_e_sum_threshold = 7.9 # 熨烫E总和阈值 范围:0~50 Ironing E sum threshold
+ironing_mode = "off"  # 熨烫模式: off=始终移除, on=始终保留, auto=自动判断 Ironing mode
+use_ironing_path = false  # 使用熨烫路径作为涂胶路径 Use ironing path as glue path
 prime_trigger_layers = 30 # 预涂触发层数 范围:1~100 Prime trigger layers

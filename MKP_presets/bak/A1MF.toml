@@ -44,4 +44,6 @@ user_dry_time = 0 # 额外干燥时间 User dry time (seconds)
 force_thick_bridge_flag = true # 强制厚桥开关 Force thick bridge flag
 support_extrusion_multiplier = 0.8 # 支撑体挤出倍率 Support extrusion multiplier
 interface_ironing_flag = false  # 接口熨烫 Interface ironing flag
+ironing_mode = "off"  # 熨烫模式: off=始终移除, on=始终保留, auto=自动判断 Ironing mode
+use_ironing_path = false  # 使用熨烫路径作为涂胶路径 Use ironing path as glue path
 copy_top_layer_only = true  # 仅复制顶层支撑面(仅BambuStudio) Copy top layer support interface only
