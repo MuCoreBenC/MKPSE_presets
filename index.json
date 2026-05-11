@@ -1,6 +1,6 @@
 {
   "version": "2026.05",
-  "updated": "2026-05-11T11:58:32Z",
+  "updated": "2026-05-11T16:06:15Z",
   "presets": [
     {
       "fileName": "A1.toml",
@@ -9,10 +9,10 @@
       "compatible": [
         "a1"
       ],
-      "version": "2026.04",
-      "size": 3172,
-      "releaseTime": "2026-04-22 23:20:00",
-      "sha256": "f87ca138058bd53ec1dac5848f801898d38d80963e1b085512a9a642d78764b5"
+      "version": "",
+      "size": 3482,
+      "releaseTime": "2026-05-12 00:03",
+      "sha256": "572cd314d97bc5ddcb5903836ef4a335bee341d477683f50da1010f88f211723"
     },
     {
       "fileName": "A1F.toml",
@@ -21,10 +21,10 @@
       "compatible": [
         "a1"
       ],
-      "version": "2026.05",
-      "size": 3157,
-      "releaseTime": "2026-05-09 23:20:00",
-      "sha256": "98c71b4cf672ec022e4418d4ad5cc4007593e019456f94efb3b0197074941ed3"
+      "version": "",
+      "size": 3405,
+      "releaseTime": "2026-05-12 00:05",
+      "sha256": "7083ef6d9ade30e8133bba46a24646a9507fd12280782accccc9328d8d51aba7"
     },
     {
       "fileName": "A1M.toml",
@@ -33,10 +33,10 @@
       "compatible": [
         "a1 mini"
       ],
-      "version": "2026.05",
-      "size": 3558,
-      "releaseTime": "2026-05-11 12:56:09",
-      "sha256": "49b4da7a9c154594bec763c19412f13db0334cfe7547fba5cb2b5fa12bfb72b2"
+      "version": "",
+      "size": 3806,
+      "releaseTime": "2026-05-12 00:05",
+      "sha256": "013ca6d6a5649bcb8198dd101cc4a6110dda86404cbd987f33cdaf54647849a6"
     },
     {
       "fileName": "A1MF.toml",
@@ -45,10 +45,10 @@
       "compatible": [
         "a1 mini"
       ],
-      "version": "2026.05",
-      "size": 3102,
-      "releaseTime": "2026-05-11 12:04:09",
-      "sha256": "20e45a5ecc5f083c3aa074b01810a140cd93e0ab33bee199e219ffe821592f39"
+      "version": "",
+      "size": 3350,
+      "releaseTime": "2026-05-12 00:05",
+      "sha256": "25b64ca39860c5b224587c2b2031d5b4fc8315248e9f54bcd0eeeeb4931efbea"
     },
     {
       "fileName": "P2.toml",
@@ -57,10 +57,10 @@
       "compatible": [
         "p2"
       ],
-      "version": "2025.02",
-      "size": 3340,
-      "releaseTime": "2025-02-21 12:15:01",
-      "sha256": "73690b84df1e1bd5e3f65e9214d476d836f238352fa7bc4ebba369dd42ea3704"
+      "version": "",
+      "size": 3586,
+      "releaseTime": "2026-05-12 00:05",
+      "sha256": "4b3bbec9abd0e181fdc6d44234fabe9fc2d4f008cd2929ade3ae25aaf59a11e2"
     },
     {
       "fileName": "X1.toml",
@@ -69,10 +69,10 @@
       "compatible": [
         "x1"
       ],
-      "version": "2025.03",
-      "size": 3336,
-      "releaseTime": "2025-03-11 12:15:01",
-      "sha256": "50894d8036026875807c84cb1ec51ae82e836dcbd2ad35f01d6abdc57eba619c"
+      "version": "",
+      "size": 3586,
+      "releaseTime": "2026-05-12 00:05",
+      "sha256": "8671094c535aa1ac2d70bbd0bdfaf3b66c7bad4a04254270d292883f19c36f67"
     },
     {
       "fileName": "MKPProcess A1 0.2 0.10.json",
