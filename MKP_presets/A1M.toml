@@ -93,4 +93,5 @@ use_ironing_path = false  # 使用熨烫路径作为涂胶路径 Use ironing pat
 prime_trigger_layers = 30 # 预涂触发层数 范围:1~100 Prime trigger layers
 disk_stagger_mode = "off" # 圆盘错开模式(off/on/auto) Disk stagger mode
 disk_stagger_angle = 5.0 # 圆盘错开角度(度) 范围:0~30 Disk stagger angle
-disk_stagger_max_angle = 45.0 # 圆盘最大偏移角度(度) 范围:10~90 Disk stagger max angle
+disk_stagger_max_angle = 45.0 # 圆盘最大偏移角度(度) 范围:10~90 Disk stagger max angle
+disk_stagger_swing_mode = "spiral" # 圆盘摆动模式(spiral/oscillate) 旋转楼梯/锯齿形摆动 Disk swing mode
