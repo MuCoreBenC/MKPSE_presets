@@ -1,5 +1,5 @@
 # uuid: 29fa8635-854f-488f-a6b6-a1d5fd7cf50c
-# release_time: 2026-05-12 13:35:33
+# release_time: 2026-05-13 00:16:13
 # variant: standard
 #胶笔配置
 [toolhead]
@@ -77,4 +77,7 @@ prime_trigger_layers = 30 # 预涂触发层数 范围:1~100 Prime trigger layers
 disk_stagger_mode = "off" # 圆盘错开模式(off/on/auto) Disk stagger mode
 disk_stagger_angle = 5.0 # 圆盘错开角度(度) 范围:0~30 Disk stagger angle
 disk_stagger_max_angle = 45.0 # 圆盘最大偏移角度(度) 范围:10~90 Disk stagger max angle
-disk_stagger_swing_mode = "spiral" # 圆盘摆动模式(spiral/oscillate) 旋转楼梯/锯齿形摆动 Disk swing mode
+disk_stagger_swing_mode = "spiral" # 圆盘摆动模式(spiral/oscillate) 旋转楼梯/锯齿形摆动 Disk swing mode
+glue_pass_count = 1 # 涂胶次数 范围:1~5 Glue pass count
+min_hop_distance = 5.0 # 最小抬升距离(mm) 范围:0~50 Min hop distance
+prime_min_area = 5.0 # 润笔最小面积(mm²) 范围:0~100 Prime min area
