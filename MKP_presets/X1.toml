@@ -1,5 +1,5 @@
 # uuid: 4f1f3c4e-b533-4d2a-9dff-2facc0f73b4d
-# release_time: 2026-05-13 00:16:13
+# release_time: 2026-05-13 21:31:48
 # variant: lite
 #胶笔配置
 [toolhead]
@@ -40,11 +40,10 @@ G1 X90 F30000;Wipe
 G1 X120 F30000;Wipe
 G1 X90 F30000;Wipe
 """
-minor_nozzle_flag = false # 小喷嘴标志 Minor nozzle flag
 MKP_retract = -10.0 # MKP回抽距离(mm) 范围:-20~0 MKP retract distance
 first_pen_revitalization_flag = false # 首笔活化标志 First pen revitalization flag
 l803_leak_prevent_flag = true # L803防漏标志 L803 leak prevent flag
-glue_z_offset = -0.15 # 涂胶Z偏移(mm) 范围:-2~2 Glue Z offset
+glue_z_offset = -0.05 # 涂胶Z偏移(mm) 范围:-2~2 Glue Z offset
 prime_length = 100.0 # 预涂长度(mm) 范围:0~300 Prime length
 [wiping]
 have_wiping_components = true#使用擦嘴塔而非擦嘴组件Enable wiping components
@@ -54,7 +53,6 @@ wipetower_speed = 200.0 # 擦嘴塔打印速度Wipe tower print speed
 nozzle_cooling_flag = false # 涂胶期间是否降温 Nozzle cooling during gluing
 iron_apply_flag = false # 最小化涂胶区域 Ironing apply flag
 user_dry_time = 0 # 额外干燥时间 User dry time (seconds)
-force_thick_bridge_flag = true # 强制厚桥开关 Force thick bridge flag
 support_extrusion_multiplier = 0.8 # 支撑体挤出倍率 Support extrusion multiplier
 interface_ironing_flag = false  # 接口熨烫 Interface ironing flag
 copy_top_layer_only = true  # 仅复制顶层支撑面(仅BambuStudio) Copy top layer support interface only
@@ -79,5 +77,10 @@ disk_stagger_angle = 5.0 # 圆盘错开角度(度) 范围:0~30 Disk stagger angl
 disk_stagger_max_angle = 45.0 # 圆盘最大偏移角度(度) 范围:10~90 Disk stagger max angle
 disk_stagger_swing_mode = "spiral" # 圆盘摆动模式(spiral/oscillate) 旋转楼梯/锯齿形摆动 Disk swing mode
 glue_pass_count = 1 # 涂胶次数 范围:1~5 Glue pass count
-min_hop_distance = 5.0 # 最小抬升距离(mm) 范围:0~50 Min hop distance
-prime_min_area = 5.0 # 润笔最小面积(mm²) 范围:0~100 Prime min area
+glue_z_lift_height = 5.0 # 涂胶Z抬升高度(mm) 范围:0~50 Glue Z lift height
+glue_inter_model_lift_height = 3.0 # 模型间Z抬升高度(mm) 范围:0~50 Inter-model Z lift height
+prime_min_path_length = 5.0 # 润笔最小路径长度(mm) 范围:0~100 Prime min path length
+prime_per_model = false
+prime_every_layer = false # 每层润笔 Prime every layer
+prime_position = "start"
+ironing_coverage_threshold = 10
