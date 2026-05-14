@@ -1,10 +1,32 @@
 {
-  "latestVersion": "0.2.6",
+  "latestVersion": "0.3.1",
   "changelog": {
     "en": "",
-    "zh-CN": "## 校准模型稳定性优化 v0.2.6 (2026-05-11)\n\n### 问题修复\n1. 模型下载死锁修复(释放锁后再调用downloadFn避免Mutex不可重入)\n2. 工作目录清理增强(每次打开前清空work目录再从cache复制新文件)\n3. 校准按钮状态统一(文字改为\"打开校准模型\"/\"缓存打开中\"消除歧义)\n4. 下载进度条归零修复(新增progress事件监听+DTO携带Key字段匹配)\n5. 版本控制状态卡死修复(activeDownloads Set判断逻辑+残留清理机制)\n6. formatSize类型崩溃修复(添加Number转换防止undefined/null异常)\n\n### 架构优化\n7. IronApplyFlag全链路移除(从Go/前端/TOML删除冗余标志简化Slicer判断)\n8. 云端版本动态检测(从index.json获取model version/sha256替代硬编码)\n9. 下载进度DTO扩展(types.go新增Key字段支持多版本并发)\n\n### 体验优化\n10. 按钮防重复点击(新增15秒冷却期禁用+toast倒计时提示)\n11. UI布局稳定化(删除下载进度条+按钮固定152px宽度)\n12. 进度条Material风格重写(伸缩线动画+修复只显示一半bug)"
+    "zh-CN": "## 涂胶路径修正增强 v0.3.1 (2026-05-14)\n\n### 核心功能\n1. 护套参数全链路贯通(SheathMode等6字段+DTO+TOML+UI)\n2. 熨烫模式决策树重构(IroningMode/UseIroningPath双参数控制)\n3. 涂胶微抬参数新增(IroningMicroLiftEnabled/Height)\n4. 首笔活化层触发参数(PrimeTriggerLayers+PrimeLength)\n5. 涂胶Z偏移参数贯通(GlueZOffset从Toolhead到Params)\n\n### 问题修复\n6. 修复ironing_mode=on时threshold=0短路致涂胶面路径不完整\n7. 修复suppressExpand=0抑制逻辑错误致矩形涂胶面不完整\n8. 引入ZJUMP_INTERNAL标记解决同模型组内路径错误分割\n\n### 架构优化\n9. 移除4个废弃标志(CrashFlag/ForceThickBridgeFlag等)\n10. Pass1新增辅助函数+layerFeatureMap特征层映射\n11. delete_wipe与wipe模块重构(321行变更)\n\n### 体验优化\n12. 帮助提示四方向视口边界检测+10px边距保护\n13. 校准模型图片资源替换(6张MKP测试模型图)\n14. UI标签统一(支撑面熨烫/涂胶面使用熨烫路径)"
   },
   "versions": [
+    {
+      "version": "0.3.1",
+      "releaseDate": "2026-05-14",
+      "forceUpdate": false,
+      "minVersion": "0.0.1",
+      "hasExe": false,
+      "changelog": {
+        "en": "",
+        "zh-CN": "## 涂胶路径修正增强 v0.3.1 (2026-05-14)\n\n### 核心功能\n1. 护套参数全链路贯通(SheathMode等6字段+DTO+TOML+UI)\n2. 熨烫模式决策树重构(IroningMode/UseIroningPath双参数控制)\n3. 涂胶微抬参数新增(IroningMicroLiftEnabled/Height)\n4. 首笔活化层触发参数(PrimeTriggerLayers+PrimeLength)\n5. 涂胶Z偏移参数贯通(GlueZOffset从Toolhead到Params)\n\n### 问题修复\n6. 修复ironing_mode=on时threshold=0短路致涂胶面路径不完整\n7. 修复suppressExpand=0抑制逻辑错误致矩形涂胶面不完整\n8. 引入ZJUMP_INTERNAL标记解决同模型组内路径错误分割\n\n### 架构优化\n9. 移除4个废弃标志(CrashFlag/ForceThickBridgeFlag等)\n10. Pass1新增辅助函数+layerFeatureMap特征层映射\n11. delete_wipe与wipe模块重构(321行变更)\n\n### 体验优化\n12. 帮助提示四方向视口边界检测+10px边距保护\n13. 校准模型图片资源替换(6张MKP测试模型图)\n14. UI标签统一(支撑面熨烫/涂胶面使用熨烫路径)"
+      }
+    },
+    {
+      "version": "0.2.7",
+      "releaseDate": "2026-05-12",
+      "forceUpdate": false,
+      "minVersion": "0.0.1",
+      "hasExe": false,
+      "changelog": {
+        "en": "",
+        "zh-CN": "## 后处理与下载系统重构 v0.2.7 (2026-05-12)\n\n### 核心功能\n1. 圆盘错开旋转功能实现(DiskStagger三字段+角度计算+螺旋/平行/外环/WIPE应用)\n2. 并发下载系统重写(CDN代理加速+4-8段并发+滑动窗口速度计算+自动重试)\n3. 切片软件选择重构(slicer_catalog.json种子文件+12款软件+注册表目录驱动)\n4. 预设对比合并扩展5参数(WipingComponents/SheathMode/IroningMode/DiskStaggerMode/UseDiskWipe)\n5. 预设变体固化与自动切换(Variant字段+应用预设时同步机型+右键确认切换)\n\n### 问题修复\n6. TOML换行符全链路统一(detectLineEnding+normalizeLineEndings+CRLF fallback重试)\n7. BBS关闭熨烫涂胶路径丢失(支撑面段E行更新+iface收集off-by-one+双模式回归测试)\n8. 多模型支撑面回退误判(OBJECT_ID分组检测+无标记全局检查)\n9. 下载取消失效修复(context.CancelFunc+全局变量+标记文件三重保障)\n10. 自动更新下载被误杀(智能时间窗口判断+有效下载保护)\n11. Dev模式幽灵下载清理(.downloading/.tmp残留扫描+.stop-all信号)\n12. 版本控制菜单重复与bug(重新下载直接安装/右键去重/v0.0.1垃圾文件过滤)\n\n### 架构优化\n13. 进度条动画体系统一(shimmer-slide扫光类+6文件替换旧写法+Material风格)\n14. 注册表扫描增强(CURRENT_USER查询+DisplayIcon解析+bin子目录备选)\n15. 配置加载容错增强(LoadConfig CRLF→LF重试+ParamsPage fallback默认值)\n16. 下载器架构升级(segment独立mutex+HTML检测拒绝+5MB阈值跳过小文件)\n17. WipingConfig DTO全链路贯通(Params结构体+ConfigToParams+applyPresetToLines)\n\n### 体验优化\n18. 设置页面卡片重排(切片软件上移+辅助交互并排+自动查找Bambu Studio)\n19. 下载按钮样式升级(已知进度内嵌条+未知进度扫光+主题色适配)\n20. 合并弹窗视图扩展(8参数项可滚动列表+紧凑布局+UUID填充)\n21. 错开模式UI改为三段式(SegmentedControl关闭/开启/自动与熨烫一致)\n22. 模态框边距加大(py-8 px-6避免贴标题栏+max-h动态计算)"
+      }
+    },
     {
       "version": "0.2.6",
       "releaseDate": "2026-05-11",
