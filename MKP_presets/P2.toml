@@ -1,5 +1,5 @@
 # uuid: 29fa8635-854f-488f-a6b6-a1d5fd7cf50c
-# release_time: 2026-05-13 21:31:48
+# release_time: 2026-05-14 18:14:16
 # variant: standard
 #胶笔配置
 [toolhead]
@@ -84,3 +84,7 @@ prime_per_model = false
 prime_every_layer = false # 每层润笔 Prime every layer
 prime_position = "start"
 ironing_coverage_threshold = 10
+ironing_suppress_expand = 0
+ironing_suppress_expand_mode = "bbox"
+ironing_micro_lift_enabled = false # 熨烫面微抬 Ironing micro lift enabled
+ironing_micro_lift_height = 0.3 # 熨烫面微抬高度(mm) 范围:0~5 Ironing micro lift height
