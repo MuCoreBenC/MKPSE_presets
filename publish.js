@@ -6,6 +6,7 @@ const crypto = require('crypto');
 const BASE_DIR = path.resolve(__dirname);
 const PRESETS_DIR = path.join(BASE_DIR, 'presets');
 const HISTORY_DIR = path.join(BASE_DIR, 'history');
+const MODELS_DIR = path.join(BASE_DIR, 'Models');
 const INDEX_FILE = path.join(BASE_DIR, 'index.json');
 
 function computeSha256(filePath) {
@@ -77,6 +78,25 @@ function scanHistory() {
   return historyMap;
 }
 
+function scanModels() {
+  if (!fs.existsSync(MODELS_DIR)) return [];
+  const results = [];
+  for (const entry of fs.readdirSync(MODELS_DIR)) {
+    if (!entry.toLowerCase().endsWith('.3mf')) continue;
+    const filePath = path.join(MODELS_DIR, entry);
+    const stat = fs.statSync(filePath);
+    results.push({
+      fileName: entry,
+      relativePath: 'Models/' + entry,
+      version: '1.0.0',
+      sha256: computeSha256(filePath),
+      size: stat.size,
+      releaseTime: stat.mtime.toISOString(),
+    });
+  }
+  return results;
+}
+
 function main() {
   console.log("=== MKP Preset Publisher ===\n");
 
@@ -91,12 +111,16 @@ function main() {
     preset.history = historyMap[preset.name] || [];
   }
 
-  let existingIndex = { version: "1.0", updated: new Date().toISOString(), presets: [] };
+  console.log(`扫描模型目录: ${MODELS_DIR}`);
+  const models = scanModels();
+  console.log(`发现 ${models.length} 个模型文件`);
+
+  let existingIndex = { version: "1.0", updated: new Date().toISOString(), presets: [], models: [] };
   if (fs.existsSync(INDEX_FILE)) {
     try {
       const raw = JSON.parse(fs.readFileSync(INDEX_FILE, 'utf-8'));
       if (Array.isArray(raw)) {
-        existingIndex = { version: "1.0", updated: new Date().toISOString(), presets: raw };
+        existingIndex = { version: "1.0", updated: new Date().toISOString(), presets: raw, models: [] };
       } else if (raw && Array.isArray(raw.presets)) {
         existingIndex = raw;
       }
@@ -107,18 +131,26 @@ function main() {
   for (const p of existingIndex.presets) mergedPresets.set(p.fileName, p);
   for (const p of presets) mergedPresets.set(p.fileName, { ...mergedPresets.get(p.fileName), ...p });
 
+  const mergedModels = new Map();
+  for (const m of existingIndex.models || []) mergedModels.set(m.fileName, m);
+  for (const m of models) mergedModels.set(m.fileName, { ...mergedModels.get(m.fileName), ...m });
+
   const output = {
     version: existingIndex.version,
     updated: new Date().toISOString(),
+    models: Array.from(mergedModels.values()),
     presets: Array.from(mergedPresets.values())
   };
 
   fs.writeFileSync(INDEX_FILE, JSON.stringify(output, null, 2));
   console.log(`\n索引已写入: ${INDEX_FILE}`);
-  console.log(`共 ${output.presets.length} 个预设`);
+  console.log(`共 ${output.presets.length} 个预设, ${output.models.length} 个模型`);
 
   for (const p of output.presets) {
     console.log(`  - ${p.name} v${p.version} (${p.size} bytes)`);
+  }
+  for (const m of output.models) {
+    console.log(`  - [模型] ${m.fileName} (${m.size} bytes)`);
   }
 }
 

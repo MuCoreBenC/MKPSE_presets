@@ -1,10 +1,25 @@
 {
-  "latestVersion": "0.3.1",
+  "latestVersion": "0.3.3",
   "changelog": {
     "en": "",
-    "zh-CN": "## 涂胶路径修正增强 v0.3.1 (2026-05-14)\n\n### 核心功能\n1. 护套参数全链路贯通(SheathMode等6字段+DTO+TOML+UI)\n2. 熨烫模式决策树重构(IroningMode/UseIroningPath双参数控制)\n3. 涂胶微抬参数新增(IroningMicroLiftEnabled/Height)\n4. 首笔活化层触发参数(PrimeTriggerLayers+PrimeLength)\n5. 涂胶Z偏移参数贯通(GlueZOffset从Toolhead到Params)\n\n### 问题修复\n6. 修复ironing_mode=on时threshold=0短路致涂胶面路径不完整\n7. 修复suppressExpand=0抑制逻辑错误致矩形涂胶面不完整\n8. 引入ZJUMP_INTERNAL标记解决同模型组内路径错误分割\n\n### 架构优化\n9. 移除4个废弃标志(CrashFlag/ForceThickBridgeFlag等)\n10. Pass1新增辅助函数+layerFeatureMap特征层映射\n11. delete_wipe与wipe模块重构(321行变更)\n\n### 体验优化\n12. 帮助提示四方向视口边界检测+10px边距保护\n13. 校准模型图片资源替换(6张MKP测试模型图)\n14. UI标签统一(支撑面熨烫/涂胶面使用熨烫路径)"
+    "zh-CN": ""
   },
   "versions": [
+    {
+      "version": "0.3.3",
+      "releaseDate": "2026-05-15",
+      "forceUpdate": false,
+      "minVersion": "0.0.1",
+      "hasExe": true,
+      "fileName": "mkp-supporte-0.3.3.exe",
+      "downloadUrl": "https://raw.githubusercontent.com/MuCoreBenC/MKPSE_presets/main/build/mkp-supporte-0.3.3.exe",
+      "fileSize": 6466048,
+      "sha256": "27551851f52a4a22047bdbb14b6a5cb0290dd7a657f302b4077431babb56cd8b",
+      "changelog": {
+        "en": "",
+        "zh-CN": ""
+      }
+    },
     {
       "version": "0.3.1",
       "releaseDate": "2026-05-14",
