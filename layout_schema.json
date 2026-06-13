@@ -1,69 +1,9 @@
 {
   "tabs": [
     {
-      "id": "ironing",
-      "label": "涂胶面",
-      "sections": [
-        {
-          "id": "高级运动调控",
-          "title": "高级运动调控",
-          "items": [
-            {
-              "paramKey": "wiping.support_extrusion_multiplier"
-            },
-            {
-              "paramKey": "wiping.glue_sparse_ratio"
-            }
-          ]
-        },
-        {
-          "id": "支撑面熨烫",
-          "title": "支撑面熨烫",
-          "items": [
-            {
-              "paramKey": "wiping.ironing_mode"
-            },
-            {
-              "paramKey": "wiping.ironing_e_sum_threshold"
-            },
-            {
-              "paramKey": "wiping.use_ironing_path"
-            },
-            {
-              "paramKey": "wiping.ironing_suppress_expand"
-            },
-            {
-              "paramKey": "wiping.ironing_suppress_expand_mode"
-            },
-            {
-              "paramKey": "wiping.ironing_micro_lift_enabled"
-            },
-            {
-              "paramKey": "wiping.ironing_micro_lift_height"
-            },
-            {
-              "paramKey": "wiping.min_support_interface_enabled"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "id": "toolhead",
+      "id": "工具头",
       "label": "工具头",
       "sections": [
-        {
-          "id": "运动与挤出",
-          "title": "运动与挤出",
-          "items": [
-            {
-              "paramKey": "toolhead.speed_limit"
-            },
-            {
-              "paramKey": "toolhead.MKP_retract"
-            }
-          ]
-        },
         {
           "id": "空间偏移",
           "title": "空间偏移",
@@ -78,34 +18,25 @@
               "paramKey": "toolhead.offset.z"
             }
           ]
+        },
+        {
+          "id": "运动与挤出",
+          "title": "运动与挤出",
+          "items": [
+            {
+              "paramKey": "toolhead.speed_limit"
+            },
+            {
+              "paramKey": "toolhead.MKP_retract"
+            }
+          ]
         }
       ]
     },
     {
-      "id": "advanced",
+      "id": "高级",
       "label": "高级",
       "sections": [
-        {
-          "id": "机型专属",
-          "title": "机型专属",
-          "items": [
-            {
-              "paramKey": "wiping.disable_front_cover_alarm"
-            },
-            {
-              "paramKey": "wiping.disable_3rd_layer_clog_detect"
-            }
-          ]
-        },
-        {
-          "id": "测试",
-          "title": "测试",
-          "items": [
-            {
-              "paramKey": "wiping.xy_calibration_mode"
-            }
-          ]
-        },
         {
           "id": "润笔",
           "title": "润笔",
@@ -156,11 +87,32 @@
               "paramKey": "wiping.glue_inter_model_lift_height"
             }
           ]
+        },
+        {
+          "id": "机型专属",
+          "title": "机型专属",
+          "items": [
+            {
+              "paramKey": "wiping.disable_front_cover_alarm"
+            },
+            {
+              "paramKey": "wiping.disable_3rd_layer_clog_detect"
+            }
+          ]
+        },
+        {
+          "id": "测试",
+          "title": "测试",
+          "items": [
+            {
+              "paramKey": "wiping.xy_calibration_mode"
+            }
+          ]
         }
       ]
     },
     {
-      "id": "gcode",
+      "id": "自定义G-code",
       "label": "自定义G-code",
       "sections": [
         {
@@ -178,9 +130,39 @@
       ]
     },
     {
-      "id": "wiping",
+      "id": "擦料策略",
       "label": "擦料策略",
       "sections": [
+        {
+          "id": "擦料方式",
+          "title": "擦料方式",
+          "items": [
+            {
+              "paramKey": "wiping.have_wiping_components"
+            },
+            {
+              "paramKey": "wiping.use_disk_wipe_flag"
+            }
+          ]
+        },
+        {
+          "id": "塔基础参数",
+          "title": "塔基础参数",
+          "items": [
+            {
+              "paramKey": "wiping.wiper_x"
+            },
+            {
+              "paramKey": "wiping.wiper_y"
+            },
+            {
+              "paramKey": "wiping.tower_extrude_ratio"
+            },
+            {
+              "paramKey": "wiping.tower_travel_speed"
+            }
+          ]
+        },
         {
           "id": "速度参数",
           "title": "速度参数",
@@ -285,42 +267,12 @@
               "paramKey": "wiping.disk_stagger_swing_mode"
             }
           ]
-        },
-        {
-          "id": "擦料方式",
-          "title": "擦料方式",
-          "items": [
-            {
-              "paramKey": "wiping.have_wiping_components"
-            },
-            {
-              "paramKey": "wiping.use_disk_wipe_flag"
-            }
-          ]
-        },
-        {
-          "id": "塔基础参数",
-          "title": "塔基础参数",
-          "items": [
-            {
-              "paramKey": "wiping.wiper_x"
-            },
-            {
-              "paramKey": "wiping.wiper_y"
-            },
-            {
-              "paramKey": "wiping.tower_extrude_ratio"
-            },
-            {
-              "paramKey": "wiping.tower_travel_speed"
-            }
-          ]
         }
       ]
     },
     {
-      "id": "fan",
-      "label": "fan",
+      "id": "温控与风扇",
+      "label": "温控与风扇",
       "sections": [
         {
           "id": "温控与风扇",
@@ -337,6 +289,54 @@
             },
             {
               "paramKey": "wiping.part_drying_speed"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "涂胶面",
+      "label": "涂胶面",
+      "sections": [
+        {
+          "id": "高级运动调控",
+          "title": "高级运动调控",
+          "items": [
+            {
+              "paramKey": "wiping.support_extrusion_multiplier"
+            },
+            {
+              "paramKey": "wiping.glue_sparse_ratio"
+            }
+          ]
+        },
+        {
+          "id": "支撑面熨烫",
+          "title": "支撑面熨烫",
+          "items": [
+            {
+              "paramKey": "wiping.ironing_mode"
+            },
+            {
+              "paramKey": "wiping.ironing_e_sum_threshold"
+            },
+            {
+              "paramKey": "wiping.use_ironing_path"
+            },
+            {
+              "paramKey": "wiping.ironing_suppress_expand"
+            },
+            {
+              "paramKey": "wiping.ironing_suppress_expand_mode"
+            },
+            {
+              "paramKey": "wiping.ironing_micro_lift_enabled"
+            },
+            {
+              "paramKey": "wiping.ironing_micro_lift_height"
+            },
+            {
+              "paramKey": "wiping.min_support_interface_enabled"
             }
           ]
         }

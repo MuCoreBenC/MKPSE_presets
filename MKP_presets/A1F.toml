@@ -1,5 +1,5 @@
-# uuid: 7fdf5608-e5f1-434e-b014-e4f76cf5c8dd
-# release_time: 2026-06-07 12:56:15
+# uuid: 4a2deea2-2bb4-4e13-bc7f-59d1c78954ca
+# release_time: 2026-06-14 06:24:44
 # machine: A1
 # variant: fast
 #胶笔配置
@@ -49,7 +49,7 @@ fan_speed = 255 # 风扇速度 范围:0~255
 user_dry_time = 0 # 额外干燥时间
 part_drying_speed = 50 # 部件干燥速度(mm/s) 范围:0~200
 support_extrusion_multiplier = 0.8 # 支撑体挤出倍率
-switch_tower_type = "" # 擦料塔类型
+switch_tower_type = "fast" # 擦料塔类型
 small_feature_factor = 1 # 小特征因子 范围:0~2
 first_layer_wipe_tower_collision_check = false # 首层碰撞检测
 interface_ironing_flag = false # 接口熨烫
