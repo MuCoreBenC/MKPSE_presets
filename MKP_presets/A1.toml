@@ -82,7 +82,7 @@ rib_extra_length = 0 # 斜肋额外长度(mm) 范围:0~300
 rib_width = 8 # 斜肋宽度(mm) 范围:0~300
 rib_fillet_wall = true # 外墙倒圆角
 disable_3rd_layer_clog_detect = false # 关闭第三层裹头检测(A1/A1 mini)
-xy_calibration_mode = 0 # XY校准模式(0=默认,1=新型)
+xy_calibration_mode = "default" # XY校准模式(default=默认,new=新型)
 min_support_interface_enabled = true # 最小支撑涂胶面过滤
 glue_sparse_ratio = 50 # 涂胶稀疏比(%)
 tower_first_layer_flow = 1.0 # 擦料塔首层流量 范围:0.5~2

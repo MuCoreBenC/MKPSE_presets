@@ -7,9 +7,8 @@
       "label": "X 轴偏移",
       "layout": {
         "order": 0,
-        "sectionId": "空间偏移",
-        "tab": "toolhead"
-      },
+        "group": "空间偏移",
+"tab": "工具头"      },
       "machineVariants": {
         "A1:fast": "-0.7",
         "A1:standard": "-1",
@@ -40,9 +39,8 @@
       "label": "Y 轴偏移",
       "layout": {
         "order": 1,
-        "sectionId": "空间偏移",
-        "tab": "toolhead"
-      },
+        "group": "空间偏移",
+"tab": "工具头"      },
       "machineVariants": {
         "A1:fast": "26.3",
         "A1:standard": "18.6",
@@ -73,9 +71,8 @@
       "label": "Z 轴偏移",
       "layout": {
         "order": 5,
-        "sectionId": "空间偏移",
-        "tab": "toolhead"
-      },
+        "group": "空间偏移",
+"tab": "工具头"      },
       "machineVariants": {
         "A1:fast": "3.6",
         "A1:standard": "3.8",
@@ -106,9 +103,8 @@
       "label": "涂胶速度限制",
       "layout": {
         "order": 2,
-        "sectionId": "运动与挤出",
-        "tab": "toolhead"
-      },
+        "group": "运动与挤出",
+"tab": "工具头"      },
       "machineVariants": {
         "A1": "69",
         "A1MINI": "70",
@@ -136,9 +132,8 @@
       "label": "回抽长度",
       "layout": {
         "order": 4,
-        "sectionId": "运动与挤出",
-        "tab": "toolhead"
-      },
+        "group": "运动与挤出",
+"tab": "工具头"      },
       "max": 50,
       "mergeable": true,
       "min": -50,
@@ -159,8 +154,8 @@
       "label": "首笔活化",
       "layout": {
         "order": 0,
-        "sectionId": "润笔",
-        "tab": "advanced"
+        "group": "润笔",
+        "tab": "高级"
       },
       "mergeable": true,
       "scope": "universal",
@@ -179,8 +174,8 @@
       "label": "装载胶箱 G-code",
       "layout": {
         "order": 0,
-        "sectionId": "自定义G-code",
-        "tab": "gcode"
+        "group": "自定义G-code",
+        "tab": "自定义G-code"
       },
       "machineVariants": {
         "A1:fast": "G92 E0\nG1 E-5 F1800\nG92 E0\nL801\nM204 S10000\nG1 X256 F42000\nG1 X261 F10000\nG1 X267 F10000\nG1 X256 F42000\nG1 F42000",
@@ -208,8 +203,8 @@
       "label": "卸载胶箱 G-code",
       "layout": {
         "order": 1,
-        "sectionId": "自定义G-code",
-        "tab": "gcode"
+        "group": "自定义G-code",
+        "tab": "自定义G-code"
       },
       "machineVariants": {
         "A1:fast": "M106 S[AUTO]\nG1 X256 F42000\nG1 X261 F10000\nG1 X271 F10000\nG1 X256 F5000\nG1 F42000\nL802\nG92 E0\nG1 E5.5 F1000\nG92 E0\nG1 F30000",
@@ -237,8 +232,8 @@
       "label": "涂胶Z偏移",
       "layout": {
         "order": 1,
-        "sectionId": "涂胶参数",
-        "tab": "advanced"
+        "group": "涂胶参数",
+        "tab": "高级"
       },
       "max": 5,
       "mergeable": true,
@@ -260,8 +255,8 @@
       "label": "润笔路径长度",
       "layout": {
         "order": 2,
-        "sectionId": "润笔",
-        "tab": "advanced"
+        "group": "润笔",
+        "tab": "高级"
       },
       "max": 500,
       "mergeable": true,
@@ -293,8 +288,8 @@
       "label": "擦料塔/圆盘擦拭",
       "layout": {
         "order": 10,
-        "sectionId": "擦料方式",
-        "tab": "wiping"
+        "group": "擦料方式",
+        "tab": "擦料策略"
       },
       "mergeable": true,
       "scope": "universal",
@@ -313,8 +308,8 @@
       "label": "擦料塔X坐标",
       "layout": {
         "order": 20,
-        "sectionId": "塔基础参数",
-        "tab": "wiping"
+        "group": "塔基础参数",
+        "tab": "擦料策略"
       },
       "max": 256,
       "mergeGroup": "wiper",
@@ -343,8 +338,8 @@
       "label": "擦料塔Y坐标",
       "layout": {
         "order": 21,
-        "sectionId": "塔基础参数",
-        "tab": "wiping"
+        "group": "塔基础参数",
+        "tab": "擦料策略"
       },
       "max": 256,
       "mergeGroup": "wiper",
@@ -373,8 +368,8 @@
       "label": "擦料塔打印速度",
       "layout": {
         "order": 41,
-        "sectionId": "速度参数",
-        "tab": "wiping"
+        "group": "速度参数",
+        "tab": "擦料策略"
       },
       "max": 500,
       "mergeable": true,
@@ -402,8 +397,8 @@
       "label": "擦料塔挤出倍率",
       "layout": {
         "order": 22,
-        "sectionId": "塔基础参数",
-        "tab": "wiping"
+        "group": "塔基础参数",
+        "tab": "擦料策略"
       },
       "max": 3,
       "mergeable": true,
@@ -432,8 +427,8 @@
       "label": "圆盘擦拭标志",
       "layout": {
         "order": 11,
-        "sectionId": "擦料方式",
-        "tab": "wiping"
+        "group": "擦料方式",
+        "tab": "擦料策略"
       },
       "mergeable": true,
       "parentKey": "wiping.have_wiping_components",
@@ -458,8 +453,8 @@
       "label": "涂胶期间降温",
       "layout": {
         "order": 0,
-        "sectionId": "温控与风扇",
-        "tab": "fan"
+        "group": "温控与风扇",
+        "tab": "温控与风扇"
       },
       "mergeable": true,
       "scope": "universal",
@@ -478,8 +473,8 @@
       "label": "风扇速度",
       "layout": {
         "order": 1,
-        "sectionId": "温控与风扇",
-        "tab": "fan"
+        "group": "温控与风扇",
+        "tab": "温控与风扇"
       },
       "max": 255,
       "mergeable": true,
@@ -501,8 +496,8 @@
       "label": "额外干燥时间",
       "layout": {
         "order": 2,
-        "sectionId": "温控与风扇",
-        "tab": "fan"
+        "group": "温控与风扇",
+        "tab": "温控与风扇"
       },
       "max": 300,
       "mergeable": true,
@@ -524,8 +519,8 @@
       "label": "零件干燥速度",
       "layout": {
         "order": 3,
-        "sectionId": "温控与风扇",
-        "tab": "fan"
+        "group": "温控与风扇",
+        "tab": "温控与风扇"
       },
       "max": 200,
       "mergeable": true,
@@ -547,8 +542,8 @@
       "label": "支撑挤出倍率",
       "layout": {
         "order": 0,
-        "sectionId": "高级运动调控",
-        "tab": "ironing"
+        "group": "高级运动调控",
+        "tab": "涂胶面"
       },
       "max": 3,
       "mergeable": true,
@@ -580,8 +575,8 @@
       "label": "擦料塔类型",
       "layout": {
         "order": 100,
-        "sectionId": "高级参数",
-        "tab": "wiping"
+        "group": "高级参数",
+        "tab": "擦料策略"
       },
       "mergeable": true,
       "scope": "universal",
@@ -600,8 +595,8 @@
       "label": "小特征因子",
       "layout": {
         "order": 0,
-        "sectionId": "涂胶参数",
-        "tab": "advanced"
+        "group": "涂胶参数",
+        "tab": "高级"
       },
       "max": 2,
       "mergeable": true,
@@ -623,8 +618,8 @@
       "label": "首层碰撞检测",
       "layout": {
         "order": 103,
-        "sectionId": "高级参数",
-        "tab": "wiping"
+        "group": "高级参数",
+        "tab": "擦料策略"
       },
       "mergeable": true,
       "scope": "universal",
@@ -643,8 +638,8 @@
       "label": "接口熨烫",
       "layout": {
         "order": 104,
-        "sectionId": "高级参数",
-        "tab": "wiping"
+        "group": "高级参数",
+        "tab": "擦料策略"
       },
       "mergeable": true,
       "scope": "universal",
@@ -677,8 +672,8 @@
       "label": "护套模式",
       "layout": {
         "order": 61,
-        "sectionId": "擦嘴策略",
-        "tab": "wiping"
+        "group": "擦嘴策略",
+        "tab": "擦料策略"
       },
       "mergeable": true,
       "parentKey": "wiping.have_wiping_components",
@@ -703,8 +698,8 @@
       "label": "护套底层膨胀量",
       "layout": {
         "order": 62,
-        "sectionId": "擦嘴策略",
-        "tab": "wiping"
+        "group": "擦嘴策略",
+        "tab": "擦料策略"
       },
       "max": 20,
       "mergeable": true,
@@ -732,8 +727,8 @@
       "label": "护套壁宽",
       "layout": {
         "order": 63,
-        "sectionId": "擦嘴策略",
-        "tab": "wiping"
+        "group": "擦嘴策略",
+        "tab": "擦料策略"
       },
       "max": 3,
       "mergeable": true,
@@ -761,8 +756,8 @@
       "label": "护套自动启用高度",
       "layout": {
         "order": 64,
-        "sectionId": "擦嘴策略",
-        "tab": "wiping"
+        "group": "擦嘴策略",
+        "tab": "擦料策略"
       },
       "max": 300,
       "mergeable": true,
@@ -790,8 +785,8 @@
       "label": "护套收敛层数",
       "layout": {
         "order": 65,
-        "sectionId": "擦嘴策略",
-        "tab": "wiping"
+        "group": "擦嘴策略",
+        "tab": "擦料策略"
       },
       "max": 200,
       "mergeable": true,
@@ -833,8 +828,8 @@
       "label": "支撑面熨烫",
       "layout": {
         "order": 0,
-        "sectionId": "支撑面熨烫",
-        "tab": "ironing"
+        "group": "支撑面熨烫",
+        "tab": "涂胶面"
       },
       "mergeable": true,
       "scope": "universal",
@@ -853,8 +848,8 @@
       "label": "熨烫挤出阈值",
       "layout": {
         "order": 1,
-        "sectionId": "支撑面熨烫",
-        "tab": "ironing"
+        "group": "支撑面熨烫",
+        "tab": "涂胶面"
       },
       "max": 100,
       "mergeable": true,
@@ -882,8 +877,8 @@
       "label": "涂胶面使用熨烫路径",
       "layout": {
         "order": 2,
-        "sectionId": "支撑面熨烫",
-        "tab": "ironing"
+        "group": "支撑面熨烫",
+        "tab": "涂胶面"
       },
       "mergeable": true,
       "scope": "universal",
@@ -916,8 +911,8 @@
       "label": "熨烫覆盖阈值",
       "layout": {
         "order": 105,
-        "sectionId": "高级参数",
-        "tab": "wiping"
+        "group": "高级参数",
+        "tab": "擦料策略"
       },
       "max": 100,
       "mergeable": true,
@@ -939,8 +934,8 @@
       "label": "熨烫抑制扩展范围",
       "layout": {
         "order": 4,
-        "sectionId": "支撑面熨烫",
-        "tab": "ironing"
+        "group": "支撑面熨烫",
+        "tab": "涂胶面"
       },
       "max": 20,
       "mergeable": true,
@@ -972,8 +967,8 @@
       "label": "熨烫抑制扩展模式",
       "layout": {
         "order": 5,
-        "sectionId": "支撑面熨烫",
-        "tab": "ironing"
+        "group": "支撑面熨烫",
+        "tab": "涂胶面"
       },
       "mergeable": true,
       "parentKey": "wiping.ironing_suppress_expand",
@@ -998,8 +993,8 @@
       "label": "涂胶面微抬",
       "layout": {
         "order": 6,
-        "sectionId": "支撑面熨烫",
-        "tab": "ironing"
+        "group": "支撑面熨烫",
+        "tab": "涂胶面"
       },
       "mergeable": true,
       "scope": "universal",
@@ -1018,8 +1013,8 @@
       "label": "涂胶面微抬高度",
       "layout": {
         "order": 7,
-        "sectionId": "支撑面熨烫",
-        "tab": "ironing"
+        "group": "支撑面熨烫",
+        "tab": "涂胶面"
       },
       "max": 5,
       "mergeable": true,
@@ -1046,8 +1041,8 @@
       "label": "润笔触发层数",
       "layout": {
         "order": 4,
-        "sectionId": "润笔",
-        "tab": "advanced"
+        "group": "润笔",
+        "tab": "高级"
       },
       "max": 999,
       "mergeable": true,
@@ -1083,8 +1078,8 @@
       "label": "错开模式",
       "layout": {
         "order": 80,
-        "sectionId": "圆盘动作控制",
-        "tab": "wiping"
+        "group": "圆盘动作控制",
+        "tab": "擦料策略"
       },
       "mergeable": true,
       "scope": "universal",
@@ -1103,8 +1098,8 @@
       "label": "错开角度",
       "layout": {
         "order": 81,
-        "sectionId": "圆盘动作控制",
-        "tab": "wiping"
+        "group": "圆盘动作控制",
+        "tab": "擦料策略"
       },
       "max": 30,
       "mergeable": true,
@@ -1132,8 +1127,8 @@
       "label": "最大偏移角度",
       "layout": {
         "order": 82,
-        "sectionId": "圆盘动作控制",
-        "tab": "wiping"
+        "group": "圆盘动作控制",
+        "tab": "擦料策略"
       },
       "max": 90,
       "mergeable": true,
@@ -1171,8 +1166,8 @@
       "label": "摆动模式",
       "layout": {
         "order": 83,
-        "sectionId": "圆盘动作控制",
-        "tab": "wiping"
+        "group": "圆盘动作控制",
+        "tab": "擦料策略"
       },
       "mergeable": true,
       "parentKey": "wiping.disk_stagger_mode",
@@ -1197,8 +1192,8 @@
       "label": "涂胶次数",
       "layout": {
         "order": 2,
-        "sectionId": "涂胶参数",
-        "tab": "advanced"
+        "group": "涂胶参数",
+        "tab": "高级"
       },
       "max": 10,
       "mergeable": true,
@@ -1220,8 +1215,8 @@
       "label": "涂胶Z轴抬升高度",
       "layout": {
         "order": 0,
-        "sectionId": "Z轴抬升",
-        "tab": "advanced"
+        "group": "Z轴抬升",
+        "tab": "高级"
       },
       "machineVariants": {
         "A1": "3",
@@ -1250,8 +1245,8 @@
       "label": "涂胶区域间Z轴抬升高度",
       "layout": {
         "order": 1,
-        "sectionId": "Z轴抬升",
-        "tab": "advanced"
+        "group": "Z轴抬升",
+        "tab": "高级"
       },
       "max": 50,
       "mergeable": true,
@@ -1273,8 +1268,8 @@
       "label": "润笔最小路径长度",
       "layout": {
         "order": 3,
-        "sectionId": "润笔",
-        "tab": "advanced"
+        "group": "润笔",
+        "tab": "高级"
       },
       "max": 100,
       "mergeable": true,
@@ -1296,8 +1291,8 @@
       "label": "每个模型都润笔",
       "layout": {
         "order": 5,
-        "sectionId": "润笔",
-        "tab": "advanced"
+        "group": "润笔",
+        "tab": "高级"
       },
       "mergeable": true,
       "scope": "universal",
@@ -1316,8 +1311,8 @@
       "label": "每层润笔",
       "layout": {
         "order": 6,
-        "sectionId": "润笔",
-        "tab": "advanced"
+        "group": "润笔",
+        "tab": "高级"
       },
       "mergeable": true,
       "scope": "universal",
@@ -1336,8 +1331,8 @@
       "label": "斜肋外墙",
       "layout": {
         "order": 67,
-        "sectionId": "擦嘴策略",
-        "tab": "wiping"
+        "group": "擦嘴策略",
+        "tab": "擦料策略"
       },
       "mergeable": true,
       "parentKey": "wiping.have_wiping_components",
@@ -1362,8 +1357,8 @@
       "label": "斜肋额外长度",
       "layout": {
         "order": 70,
-        "sectionId": "擦嘴策略",
-        "tab": "wiping"
+        "group": "擦嘴策略",
+        "tab": "擦料策略"
       },
       "max": 300,
       "mergeable": true,
@@ -1390,8 +1385,8 @@
       "label": "斜肋宽度",
       "layout": {
         "order": 71,
-        "sectionId": "擦嘴策略",
-        "tab": "wiping"
+        "group": "擦嘴策略",
+        "tab": "擦料策略"
       },
       "max": 300,
       "mergeable": true,
@@ -1418,8 +1413,8 @@
       "label": "外墙倒圆角",
       "layout": {
         "order": 72,
-        "sectionId": "擦嘴策略",
-        "tab": "wiping"
+        "group": "擦嘴策略",
+        "tab": "擦料策略"
       },
       "mergeable": true,
       "parentKey": "wiping.rib_outer_wall",
@@ -1443,8 +1438,8 @@
       "label": "强制关闭前盖脱落报警",
       "layout": {
         "order": 0,
-        "sectionId": "机型专属",
-        "tab": "advanced"
+        "group": "机型专属",
+        "tab": "高级"
       },
       "machineFilter": "P1,P2,X1",
       "mergeable": true,
@@ -1464,8 +1459,8 @@
       "label": "关闭第三层裹头检测",
       "layout": {
         "order": 1,
-        "sectionId": "机型专属",
-        "tab": "advanced"
+        "group": "机型专属",
+        "tab": "高级"
       },
       "machineFilter": "A1,A1MINI,A2L",
       "mergeable": true,
@@ -1482,34 +1477,39 @@
       "choices": [
         {
           "label": "默认",
-          "value": 0
+          "value": "default"
         },
         {
           "label": "新型",
-          "value": 1
+          "value": "new"
         }
       ],
-      "defaultValue": "0",
-      "desc": "XY校准模式：0=默认，1=新型",
+      "defaultValue": "default",
+      "desc": "XY校准模式：默认或新型",
       "key": "wiping.xy_calibration_mode",
       "label": "XY校准模式",
       "layout": {
         "order": 2,
-        "sectionId": "测试",
-        "tab": "advanced"
+        "group": "测试",
+        "tab": "高级"
       },
-      "max": 1,
       "mergeable": true,
-      "min": 0,
+      "optionLabels": {
+        "default": "默认",
+        "new": "新型"
+      },
+      "options": [
+        "default",
+        "new"
+      ],
       "scope": "universal",
       "section": "wiping",
       "selectable": true,
-      "step": 1,
-      "tomlComment": "XY校准模式(0=默认,1=新型)",
+      "tomlComment": "XY校准模式(default=默认,new=新型)",
       "tomlKey": "xy_calibration_mode",
-      "uiComponent": "select",
+      "uiComponent": "segmented",
       "unit": "",
-      "valueType": "int"
+      "valueType": "string"
     },
     {
       "defaultValue": "true",
@@ -1518,8 +1518,8 @@
       "label": "最小支撑涂胶面过滤",
       "layout": {
         "order": 8,
-        "sectionId": "支撑面熨烫",
-        "tab": "ironing"
+        "group": "支撑面熨烫",
+        "tab": "涂胶面"
       },
       "mergeable": true,
       "scope": "universal",
@@ -1552,8 +1552,8 @@
       "label": "涂胶稀疏比",
       "layout": {
         "order": 9,
-        "sectionId": "高级运动调控",
-        "tab": "ironing"
+        "group": "高级运动调控",
+        "tab": "涂胶面"
       },
       "max": 100,
       "mergeable": true,
@@ -1575,8 +1575,8 @@
       "label": "擦料塔首层流量",
       "layout": {
         "order": 43,
-        "sectionId": "速度参数",
-        "tab": "wiping"
+        "group": "速度参数",
+        "tab": "擦料策略"
       },
       "max": 2,
       "mergeable": true,
@@ -1618,8 +1618,8 @@
       "label": "擦料塔速度与质量",
       "layout": {
         "order": 40,
-        "sectionId": "速度参数",
-        "tab": "wiping"
+        "group": "速度参数",
+        "tab": "擦料策略"
       },
       "mergeable": true,
       "parentKey": "wiping.have_wiping_components",
@@ -1644,8 +1644,8 @@
       "label": "涂胶面层速度",
       "layout": {
         "order": 42,
-        "sectionId": "速度参数",
-        "tab": "wiping"
+        "group": "速度参数",
+        "tab": "擦料策略"
       },
       "max": 200,
       "mergeable": true,
@@ -1673,8 +1673,8 @@
       "label": "护套打印速度",
       "layout": {
         "order": 66,
-        "sectionId": "擦嘴策略",
-        "tab": "wiping"
+        "group": "擦嘴策略",
+        "tab": "擦料策略"
       },
       "max": 200,
       "mergeable": true,
@@ -1712,8 +1712,8 @@
       "label": "斜肋打印速度",
       "layout": {
         "order": 68,
-        "sectionId": "擦嘴策略",
-        "tab": "wiping"
+        "group": "擦嘴策略",
+        "tab": "擦料策略"
       },
       "mergeable": true,
       "parentKey": "wiping.rib_outer_wall",
@@ -1737,8 +1737,8 @@
       "label": "斜肋自定义速度",
       "layout": {
         "order": 69,
-        "sectionId": "擦嘴策略",
-        "tab": "wiping"
+        "group": "擦嘴策略",
+        "tab": "擦料策略"
       },
       "max": 200,
       "mergeable": true,
@@ -1780,8 +1780,8 @@
       "label": "塔层高策略",
       "layout": {
         "order": 101,
-        "sectionId": "高级参数",
-        "tab": "wiping"
+        "group": "高级参数",
+        "tab": "擦料策略"
       },
       "mergeable": true,
       "parentKey": "wiping.fast_tower_mode",
@@ -1820,8 +1820,8 @@
       "label": "擦嘴策略",
       "layout": {
         "order": 60,
-        "sectionId": "擦嘴策略",
-        "tab": "wiping"
+        "group": "擦嘴策略",
+        "tab": "擦料策略"
       },
       "mergeable": true,
       "parentKey": "wiping.fast_tower_mode",
@@ -1846,8 +1846,8 @@
       "label": "塔安全Z偏移",
       "layout": {
         "order": 102,
-        "sectionId": "高级参数",
-        "tab": "wiping"
+        "group": "高级参数",
+        "tab": "擦料策略"
       },
       "max": 5,
       "mergeable": true,
@@ -1875,8 +1875,8 @@
       "label": "塔刮擦速度",
       "layout": {
         "order": 23,
-        "sectionId": "塔基础参数",
-        "tab": "wiping"
+        "group": "塔基础参数",
+        "tab": "擦料策略"
       },
       "max": 500,
       "mergeable": true,
