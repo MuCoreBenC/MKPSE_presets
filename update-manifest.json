@@ -1,0 +1,414 @@
+{
+    "latestVersion":  "0.0.1",
+    "changelog":  {
+                      "zh-CN":  "## 跨平台兼容适配 v0.8.1 (2026-06-03)\r\n\r\n### 核心功能\r\n1. macOS全链路适配(启动/重启/更新/数据目录/鼠标追踪)\r\n2. Mac红绿灯风格标题栏(关闭/最小化/最大化+功能按钮)\r\n3. 页面懒加载(Suspense+lazy)降低首屏资源消耗\r\n\r\n### 问题修复\r\n4. Mac启动白屏修复(hydration超时3s强制显示窗口)\r\n5. 截图引擎fileURL跨平台路径转换(Windows三斜杠/Mac双斜杠)\r\n6. 脚本命令路径加引号修复Mac空格路径问题\r\n\r\n### 架构优化\r\n7. Go后端平台拆分(cli/slicer/screenshot/webview四模块_build_tag)\r\n8. ParamsPage重构拆分4个hook(1500行→模块化)\r\n\r\n### 体验优化\r\n9. Mac默认截图模式改为frontend(避免chromedp兼容问题)\r\n10. 移除TOML文件CRLF强制转换(尊重平台换行符)",
+                      "en":  ""
+                  },
+    "versions":  [
+                     {
+                         "version":  "0.8.1",
+                         "releaseDate":  "2026-06-03",
+                         "forceUpdate":  false,
+                         "minVersion":  "0.0.1",
+                         "hasExe":  false,
+                         "changelog":  {
+                                           "zh-CN":  "## 跨平台兼容适配 v0.8.1 (2026-06-03)\r\n\r\n### 核心功能\r\n1. macOS全链路适配(启动/重启/更新/数据目录/鼠标追踪)\r\n2. Mac红绿灯风格标题栏(关闭/最小化/最大化+功能按钮)\r\n3. 页面懒加载(Suspense+lazy)降低首屏资源消耗\r\n\r\n### 问题修复\r\n4. Mac启动白屏修复(hydration超时3s强制显示窗口)\r\n5. 截图引擎fileURL跨平台路径转换(Windows三斜杠/Mac双斜杠)\r\n6. 脚本命令路径加引号修复Mac空格路径问题\r\n\r\n### 架构优化\r\n7. Go后端平台拆分(cli/slicer/screenshot/webview四模块_build_tag)\r\n8. ParamsPage重构拆分4个hook(1500行→模块化)\r\n\r\n### 体验优化\r\n9. Mac默认截图模式改为frontend(避免chromedp兼容问题)\r\n10. 移除TOML文件CRLF强制转换(尊重平台换行符)",
+                                           "en":  ""
+                                       }
+                     },
+                     {
+                         "downloadUrl":  "https://gitee.com/MuCoreBenC/MKPSE_presets/raw/main/build/mkp-supporte-0.7.2.exe",
+                         "fileName":  "mkp-supporte-0.7.2.exe",
+                         "hasExe":  true,
+                         "forceUpdate":  false,
+                         "version":  "0.7.2",
+                         "releaseDate":  "2026-05-30",
+                         "sha256":  "0a1b4301bd4fc5333b89d75599cb01ca6b21401e900538d2f699e5628c8b39cf",
+                         "minVersion":  "0.0.1",
+                         "changelog":  {
+                                           "zh-CN":  "",
+                                           "en":  ""
+                                       },
+                         "fileSize":  22575616
+                     },
+                     {
+                         "version":  "0.7.0",
+                         "releaseDate":  "2026-05-28",
+                         "forceUpdate":  false,
+                         "minVersion":  "0.0.1",
+                         "hasExe":  false,
+                         "changelog":  {
+                                           "en":  "",
+                                           "zh-CN":  "## 数据导出导入引擎 v0.7.0 (2026-05-28)\r\n\r\n### 核心功能\r\n1. 数据导出导入系统(7z/zip/PNG多态图+导入前自动备份+冲突策略)\r\n2. 截图引擎三级回退(Chrome→Edge→WebView2)+设置页引擎选择\r\n3. MCP JSON-RPC 2.0协议层+Debug Bridge TCP服务器+前端调试工具\r\n4. CLI子命令(log list/read/status+JSON日志解析+级别过滤)\r\n5. BBS导入按喷嘴分组树形结构+源路径自动检测+部署统计\r\n6. 合并弹窗智能预选(buildKeepMapFromDiff+参数来源标识+颜色图例)\r\n7. 三级圆角体系(radius-sm/md/lg)+全局替换15种圆角值\r\n8. ModalActionButton统一组件(primary/ghost/danger+holdToConfirm长按)\r\n\r\n### 问题修复\r\n9. WebView2截图排除msedgewebview2.exe(仅搜索msedge完整Chromium)\r\n10. 缓存状态一致性修复(缓存清理发事件+内存缓存失效+UI同步)\r\n11. 归档系统5个bug修复(空文件进度/删除重试/路径规范化/状态事件)\r\n12. DiffEditor TextModel释放顺序修复(disposablesRef+卸载先dispose监听)\r\n13. CompactNumberInput setSelectionRange修复(聚焦type切text+inputMode)\r\n14. 机型选择页下载后仍显示有更新(SmartApplyPreset智能合并)\r\n\r\n### 架构优化\r\n15. Logger重构为write-then-close模式(消除Windows文件锁+批量缓冲刷新)\r\n16. E2E测试框架增强(崩溃检测+智能等待+错误收集+MCP Bridge)\r\n17. 擦料塔悬浮窗位置视口比例持久化+动态测量+边界约束\r\n18. FAQ图片统一Gitee URL解析管线+CDN回退+15s超时\r\n\r\n### 体验优化\r\n19. 刷新按钮状态优化(ghost+opacity-60+图标旋转替代variant跳变)\r\n20. 禁用按钮样式统一(ghost变体+倒计时进度条跟随主题色)\r\n21. 擦料塔首层流量参数(TowerFirstLayerFlow 0.5~2.0默认1.0)"
+                                       }
+                     },
+                     {
+                         "version":  "0.6.8",
+                         "releaseDate":  "2026-05-27",
+                         "forceUpdate":  false,
+                         "minVersion":  "0.0.1",
+                         "hasExe":  false,
+                         "changelog":  {
+                                           "en":  "",
+                                           "zh-CN":  "## 快速塔模式参数约束 v0.6.8 (2026-05-27)\r\n\r\n### 核心功能\r\n1. 快速擦料塔模式重构(bool→三段式fast/follow/custom+4新字段)\r\n2. TowerCustomLayerHeight改string枚举(min/max/auto)+迁移逻辑\r\n3. CalcSuggestedLH custom三模式(最小/最大/自定义层高)\r\n4. 参数注册表全量区间约束(34个参数添加min/max/step)\r\n\r\n### 问题修复\r\n5. 快速塔模式限速仅switchTowerType==1生效(非快速保持原逻辑)\r\n6. CompactNumberInput增减按钮改clampValue允许边界clamp\r\n\r\n### 架构优化\r\n7. GetParamMetadata合并注册表min/max/step+映射表\r\n8. sheath/rib移除内部限速改外部控制+rib速度改TowerWipeSpeed\r\n9. 6个预设TOML同步更新(fast_tower_mode→string+4新参数)\r\n\r\n### 体验优化\r\n10. 塔层高改SegmentedControl+速度参数位置调整\r\n11. 输入框描边改主题色+原值徽章移至输入框下方\r\n12. 滚轮改值用非被动监听器阻止页面滚动"
+                                       }
+                     },
+                     {
+                         "version":  "0.6.7",
+                         "releaseDate":  "2026-05-27",
+                         "forceUpdate":  false,
+                         "minVersion":  "0.0.1",
+                         "hasExe":  false,
+                         "changelog":  {
+                                           "en":  "",
+                                           "zh-CN":  "## 塔形重构动画精简 v0.6.7 (2026-05-27)\r\n\r\n### 核心功能\r\n1. AnimatedExpand原子组件(展开/折叠动画+自动滚动贴合)\r\n2. 擦料塔SVG塔形可视化(斜肋/护套/无三种形态替换方块)\r\n3. 悬浮擦料塔胶囊(可拖动+边缘缩放0.5x-3x+右键菜单)\r\n4. 擦料塔布局重构(画布+坐标输入+右键菜单体系)\r\n5. CLI结果展示同步GUI(修正耗胶公式+精简4分区)\r\n\r\n### 问题修复\r\n6. HelpTooltip被overflow裁剪修复(createPortal+fixed定位+视口坐标)\r\n7. tooltip飞入割裂感修复(先算坐标再渲染+移除占位)\r\n8. AnimatePresence首次入场动画修复(initial={false}跳过)\r\n\r\n### 架构优化\r\n9. 全局移除页面级入场动画(8页面+7个Setting共17处)\r\n10. Setting组件条件渲染改父子组件(children/showChildren)\r\n11. spring动画改tween消除滞后+motion.div改CSS transition\r\n\r\n### 体验优化\r\n12. 擦料塔点击远处直接跳转+塔方块调大\r\n13. 悬浮窗视口边界约束+拖动去transition卡顿\r\n14. ParamGroup标题样式优化匹配参考文件"
+                                       }
+                     },
+                     {
+                         "version":  "0.6.6",
+                         "releaseDate":  "2026-05-27",
+                         "forceUpdate":  false,
+                         "minVersion":  "0.0.1",
+                         "hasExe":  false,
+                         "changelog":  {
+                                           "en":  "",
+                                           "zh-CN":  "## 参数页面控件重构 v0.6.6 (2026-05-27)\r\n\r\n### 核心功能\r\n1. SegmentedPill统一组件(合并ModernSwitch和CompactSegmentedControl双变体)\r\n2. CompactNumberInput原子组件(弹性动画+步进+聚焦紫色边框+暗色模式)\r\n3. ModernSwitch双段切换组件(关闭/开启+framer-motion弹簧动画)\r\n4. ParamGroup卡片容器重构(标题+白色Card+行式排列布局)\r\n5. 涂胶面Tab拆分为\"支撑面熨烫\"和\"高级运动调控\"两卡片\r\n\r\n### 问题修复\r\n6. layoutId跨页面滑块乱飞修复(useId实例前缀隔离)\r\n7. 控件区布局修复(长文本max-width限制+Undo绝对定位不占行高)\r\n\r\n### 架构优化\r\n8. Setting行组件统一重构为列表行布局(标签左+控件右)\r\n9. CompactSegmentedControl重写为SegmentedPill薄包装\r\n10. HelpTooltip扩展ReactNode+SettingSegmentedToggle开关模式检测\r\n\r\n### 体验优化\r\n11. PageHeader sticky玻璃态效果\r\n12. 条件参数区域AnimatePresence动画(错开/微抬/熨烫阈值)\r\n13. 机型专属开关改行式布局+原值恢复按钮\r\n14. 擦料方式行添加desc描述文本和HelpTooltip"
+                                       }
+                     },
+                     {
+                         "version":  "0.6.5",
+                         "releaseDate":  "2026-05-23",
+                         "forceUpdate":  false,
+                         "minVersion":  "0.0.1",
+                         "hasExe":  true,
+                         "fileName":  "mkp-supporte-0.6.5.exe",
+                         "downloadUrl":  "https://gitee.com/MuCoreBenC/MKPSE_presets/raw/main/build/mkp-supporte-0.6.5.exe",
+                         "fileSize":  5734912,
+                         "sha256":  "a373a36965cb49af5687a0ca971345e27fcf5b2cc4a69c31ea78c0fd78b76830",
+                         "changelog":  {
+                                           "en":  "",
+                                           "zh-CN":  "## 预设自动部署斜肋直化 v0.6.5 (2026-05-23)\r\n\r\n### 核心功能\r\n1. BBS/Orca预设自动部署到所有切片器(AutoDeployToAllSlicers)\r\n2. rib路径输出改纯G1直线(移除G2/G3弧线输出)\r\n3. SecondPass新增finalTowerHeight参数(斜肋高度精确传递)\r\n4. OrcaSlicer用户目录自动扫描(getOrcaSlicerBasePaths)\r\n\r\n### 问题修复\r\n5. BBS/Orca预设应用报错修复(跳过ComparePreset直接部署)\r\n6. fitCircle补全Kasa三次和修正D/E/cx/cy计算\r\n\r\n### 架构优化\r\n7. fitCircle新增包围盒对角线10倍最大半径守卫"
+                                       }
+                     },
+                     {
+                         "version":  "0.6.4",
+                         "releaseDate":  "2026-05-25",
+                         "forceUpdate":  false,
+                         "minVersion":  "0.0.1",
+                         "hasExe":  false,
+                         "changelog":  {
+                                           "en":  "",
+                                           "zh-CN":  "## 斜肋参数全链路贯通 v0.6.4 (2026-05-25)\r\n\r\n### 核心功能\r\n1. 斜肋三新参数全链路贯通(额外长度/宽度/外墙倒圆角)\r\n2. 参数注册表新增三条目(rib_extra_length/rib_width/rib_fillet_wall)\r\n3. 预设应用支持三新参数替换(applyPresetToLines扩展)\r\n\r\n### 架构优化\r\n4. RibExtraLength clamp范围修正(-50~300→0~300)\r\n5. RibWidth clamp范围修正(0.5~20→0~300)"
+                                       }
+                     },
+                     {
+                         "version":  "0.6.3",
+                         "releaseDate":  "2026-05-23",
+                         "forceUpdate":  false,
+                         "minVersion":  "0.0.1",
+                         "hasExe":  false,
+                         "changelog":  {
+                                           "en":  "",
+                                           "zh-CN":  "## 清理引擎下载重构 v0.6.3 (2026-05-23)\r\n\r\n### 核心功能\r\n1. 统一文件清理引擎(按日期/大小扫描+匹配器+统计)\r\n2. 下载链路简化为仅Gitee(移除GitHub镜像/CDN代理)\r\n3. 下载缓存优先+云端更新检测(HEAD比对大小/修改时间)\r\n4. 归档状态全局化(useArchiveStatusSync+事件监听)\r\n\r\n### 问题修复\r\n5. 日志清理不生效修复(文件名日期解析+时区+语义对齐)\r\n6. 云端更新通知\"更新\"按钮失效修复(redownloadRequests)\r\n7. 导出按钮空记录阻止(ProcessResult前置校验)\r\n\r\n### 架构优化\r\n8. gcodesvc清理方法委托fileclean.Engine(8方法重构)\r\n9. 日志文件句柄释放机制(CloseFile/ReopenFile)\r\n10. 通知卡片移除展开折叠(固定148px+AutoScrollText)\r\n\r\n### 体验优化\r\n11. 诊断导出进度通知(进行中/完成/失败三种状态)\r\n12. CompressProgressModal边框样式优化(更柔和配色)"
+                                       }
+                     },
+                     {
+                         "version":  "0.6.1",
+                         "releaseDate":  "2026-05-23",
+                         "forceUpdate":  false,
+                         "minVersion":  "0.0.1",
+                         "hasExe":  false,
+                         "changelog":  {
+                                           "en":  "",
+                                           "zh-CN":  "## 通知重构与斜肋修正 v0.6.1 (2026-05-23)\r\n\r\n### 核心功能\r\n1. 通知卡片全面重构布局(进度条位置+百分比同行+收起高度优化)\r\n2. 斜肋E值改相对模式(移除totalE累积+提取extrusionPerMm)\r\n3. 归档核心方法统一重构(提取公共方法+统一委托)\r\n4. 缓存类型选择器新增组件(支持GCode/日志分类选择)\r\n\r\n### 问题修复\r\n5. 斜肋E值公式修正匹配BBS extrusion_flow\r\n6. RibBrimWidth 3.5→3.0对齐BBS标准参数\r\n7. CacheSlider滑块超出窗口边界修复(容器overflow-hidden)\r\n\r\n### 架构优化\r\n8. gcodesvc归档方法精简(删除冗余分支+统一调用路径)\r\n9. arcSegments从20降到8减少多边形点数提升性能\r\n\r\n### 体验优化\r\n10. PersistentNotification交互增强(悬停自动展开+动画防竞态)"
+                                       }
+                     },
+                     {
+                         "version":  "0.6.0",
+                         "releaseDate":  "2026-05-22",
+                         "forceUpdate":  false,
+                         "minVersion":  "0.0.1",
+                         "hasExe":  false,
+                         "changelog":  {
+                                           "en":  "",
+                                           "zh-CN":  "## 重构斜肋弧线算法 v0.6.0 (2026-05-22)\r\n\r\n### 核心功能\r\n1. 斜肋外墙算法重构(凸包+偏移+并集+弧线拟合)\r\n2. 斜肋外墙梯形收敛(深度查表+线性插值)\r\n3. 斜肋首圈偏移spacing/2避免塔体重叠\r\n4. polygonOffset法线修正(右法线+正偏移向外扩展)\r\n5. 斜肋首层螺旋尺寸钳制(20mm宽限制)\r\n6. BBS预设批量导入重构(248行增强)\r\n7. 校准模型缓存与确认弹窗增强\r\n\r\n### 问题修复\r\n8. polygonOffset法线方向根因修正(左→右法线)\r\n9. 斜肋参数精简(移除4项用户配置改内部计算)\r\n10. Webview数据路径隔离(独立AppData目录)\r\n\r\n### 架构优化\r\n11. arcfit弧线拟合优化(8点窗口+贪心首匹配)\r\n12. DTO类型体系重构(345行变更)\r\n13. 参数注册表精简(移除4项冗余种子数据)\r\n14. rib.go大幅精简(删减近半代码)\r\n\r\n### 体验优化\r\n15. CoverFlowGallery交互增强"
+                                       }
+                     },
+                     {
+                         "version":  "0.5.9",
+                         "releaseDate":  "2026-05-22",
+                         "forceUpdate":  false,
+                         "minVersion":  "0.0.1",
+                         "hasExe":  false,
+                         "changelog":  {
+                                           "en":  "",
+                                           "zh-CN":  "## 斜肋16点算法 v0.5.9 (2026-05-22)\r\n\r\n### 核心功能\r\n1. BBS ribSection 16点精确算法替换(去重+圆角+复刻BBS源码)\r\n2. brim/chamfer圈数模型对齐BBS(首层3.5公式+非首层min递减)\r\n\r\n### 问题修复\r\n3. LineWidthMultiplier 1.1→1.25修正(线宽补偿不足)\r\n\r\n### 架构优化\r\n4. rib.go大幅精简(-340行移除旧生成逻辑)"
+                                       }
+                     },
+                     {
+                         "version":  "0.5.6",
+                         "releaseDate":  "2026-05-21",
+                         "forceUpdate":  false,
+                         "minVersion":  "0.0.1",
+                         "hasExe":  false,
+                         "changelog":  {
+                                           "en":  "",
+                                           "zh-CN":  "## 参数注册表测试套件 v0.5.6 (2026-05-21)\r\n\r\n### 核心功能\r\n1. 参数注册表系统(ParamRegistry+种子JSON+注册表驱动比较)\r\n2. 全面E2E测试套件(9个spec+200+用例+IPC冒烟+跨页面流程)\r\n3. FAQ页面增强(展开持久化+序号+定位流光+图片预览)\r\n4. 连续支撑面擦料算法(MinSupportInterfaceEnabled+DeleteWipeContinuous)\r\n5. 预设合并重构(keepMap替代15个字段+源代码视图+diff行可点击)\r\n\r\n### 问题修复\r\n6. FAQ定位滚动失效修复(useLocateHighlight+DOM更新后scrollIntoView)\r\n7. 缓存\"今天=0天\"核心逻辑修复(cutoffDate公式+不跳过当天)\r\n8. 7z进度读取修复(Scanner改ReadString\\r分割)\r\n9. FAQ图片缓存LocalPath改DataUrl(解决Wails webview本地路径)\r\n10. 置顶状态同步(EventTopmostChanged+mount时GetWindowTopmost)\r\n\r\n### 架构优化\r\n11. 完全移除SoundFX音效系统(删除soundService+全部调用点)\r\n12. CacheSlider重写(自定义轨道+进度条+可点击刻度+纯props驱动)\r\n\r\n### 体验优化\r\n13. 通知自动折叠(折叠/微展开动画+设置开关)\r\n14. 合并弹窗源代码视图(多行值折叠/展开+亮色模式修复)"
+                                       }
+                     },
+                     {
+                         "version":  "0.5.5",
+                         "releaseDate":  "2026-05-21",
+                         "forceUpdate":  false,
+                         "minVersion":  "0.0.1",
+                         "hasExe":  false,
+                         "changelog":  {
+                                           "en":  "",
+                                           "zh-CN":  "## 归档管理时区统一 v0.5.5 (2026-05-21)\r\n\r\n### 核心功能\r\n1. 归档管理子视图(文件列表+单删+全部清理)\r\n2. timeutil时区统一包(CST/Now/Format/Parse/Compare)\r\n3. micro-lift统一标记处理器(插入MICRO_LIFT标记)\r\n\r\n### 问题修复\r\n4. 归档通知隐藏和关闭按钮无效修复\r\n5. App.tsx移除冗余setSidebarHidden调用\r\n\r\n### 架构优化\r\n6. CacheSlider重写(移除自定义CSS/纯props驱动)\r\n7. setActiveTab联动sidebarHidden(process-result隐藏)\r\n\r\n### 体验优化\r\n8. UI标签\"熨烫面微抬\"改为\"涂胶面微抬\""
+                                       }
+                     },
+                     {
+                         "version":  "0.5.4",
+                         "releaseDate":  "2026-05-21",
+                         "forceUpdate":  false,
+                         "minVersion":  "0.0.1",
+                         "hasExe":  false,
+                         "changelog":  {
+                                           "en":  "",
+                                           "zh-CN":  "## 图片缓存路径修复 v0.5.4 (2026-05-21)\r\n\r\n### 问题修复\r\n1. FAQ图片缓存移除相对路径处理(仅缓存http链接)"
+                                       }
+                     },
+                     {
+                         "version":  "0.5.3",
+                         "releaseDate":  "2026-05-20",
+                         "forceUpdate":  false,
+                         "minVersion":  "0.0.1",
+                         "hasExe":  false,
+                         "changelog":  {
+                                           "en":  "",
+                                           "zh-CN":  "## 护套算法缓存增强 v0.5.3 (2026-05-20)\r\n\r\n### 核心功能\r\n1. 护套算法对齐Python(首层螺旋重写+塔基护套互斥)\r\n2. FAQ图片云端缓存与本地替换(CacheFAQImage IPC)\r\n3. FAQ分类颜色数据驱动(categoryColor+双模式渲染)\r\n4. 日志缓存统计展示(GetLogCacheStats+设置页两行布局)\r\n5. 自动清理周期调度(30分钟间隔+动态剩余等待)\r\n\r\n### 问题修复\r\n6. CalcSuggestedLH最小层高系数和返回值修正\r\n7. AutoCleanGcodeBySize不删当天文件修复(按修改时间逐删)\r\n8. 通知查看结果按钮在报告页无法切换修复\r\n9. 通知堆叠顺序自动翻页到最新修复\r\n\r\n### 架构优化\r\n10. 护套首层统一用螺旋移除塔基模板分支\r\n11. CloudCache新增GetCacheDir方法\r\n\r\n### 体验优化\r\n12. FAQ内容区图片容器样式适配(max-width+圆角)"
+                                       }
+                     },
+                     {
+                         "version":  "0.5.2",
+                         "releaseDate":  "2026-05-20",
+                         "forceUpdate":  false,
+                         "minVersion":  "0.0.1",
+                         "hasExe":  false,
+                         "changelog":  {
+                                           "en":  "",
+                                           "zh-CN":  "## 自动清理右键菜单 v0.5.2 (2026-05-20)\r\n\r\n### 核心功能\r\n1. 自动清理记录系统(DTO+持久化+弹窗+50条上限)\r\n2. 空闲自动清理Hook(60s检测+状态监听)\r\n3. 右键菜单修复(ContextMenu焦点抢夺+交互重构)\r\n4. 自动更新缓存优先级修复(ForceCheck+确认新版)\r\n5. 通知查看结果关联历史记录(metaPath匹配)\r\n\r\n### 问题修复\r\n6. Stepper滚轮闭包修复(isHovered改useRef)\r\n7. SettingInput剪切粘贴改用setRangeText API\r\n8. MKPExtrude步进1→0.1修复小数精度\r\n\r\n### 架构优化\r\n9. Stepper重构(forwardRef+始终渲染input+VSCode选区)\r\n10. UpdateManifest新增Updated字段同步publisher\r\n\r\n### 体验优化\r\n11. 后处理失败通知差异化(绿色/红色)\r\n12. 缓存超限提醒改PersistentNotification"
+                                       }
+                     },
+                     {
+                         "version":  "0.5.1",
+                         "releaseDate":  "2026-05-20",
+                         "forceUpdate":  false,
+                         "minVersion":  "0.0.1",
+                         "hasExe":  false,
+                         "changelog":  {
+                                           "en":  "",
+                                           "zh-CN":  "## 擦料塔参数主题色 v0.5.1 (2026-05-20)\r\n\r\n### 核心功能\r\n1. 擦料塔三新参数全链路(安全Z偏移/移动速度/快速塔模式)\r\n2. CalcSuggestedLH快速塔模式(0.5喷嘴最小阈值)\r\n3. 移除SwitchTowerType参数链(全链路清理)\r\n4. 主题色深浅Stepper控件(ambientIntensity持久化)\r\n5. 通知弹窗确认覆盖层(长按X清理全部)\r\n\r\n### 问题修复\r\n6. 斜肋外墙与护套模式无法开启Bug(stale state)\r\n7. pass2 TravelSpeed还原为TowerTravelSpeed\r\n8. 通知X按钮空函数→调用remove修复\r\n\r\n### 架构优化\r\n9. Stepper重构(step/decimals props+长按自动重复)\r\n10. pass2换笔标志penChangeFlag+MKPExtrude输出\r\n\r\n### 体验优化\r\n11. 导出通知支持多条堆叠+显示导出时间\r\n12. 6个预设TOML追加3新参数+中英文注释"
+                                       }
+                     },
+                     {
+                         "version":  "0.5.0",
+                         "releaseDate":  "2026-05-20",
+                         "forceUpdate":  false,
+                         "minVersion":  "0.0.1",
+                         "hasExe":  false,
+                         "changelog":  {
+                                           "en":  "",
+                                           "zh-CN":  "## TypeScript迁移重构 v0.5.0 (2026-05-20)\r\n\r\n### 核心功能\r\n1. 全前端JSX→TypeScript渐进式迁移(~120文件+530类型错误)\r\n2. 后处理G-code对齐Python(组合移动+分层Z+MKPExtrude)\r\n3. MKPRetract/Extrude改为计算属性(从G-code解析派生)\r\n4. 动态主题色微光渐变(7色光谱+3h周期+跨会话续播)\r\n5. Modal通用组件(title/footer/closeOnOverlayClick)\r\n\r\n### 问题修复\r\n6. Modal关闭后页面卡死Bug修复\r\n7. 擦料塔层高系数0.65→0.7修正\r\n8. Z轴小数精度修复(htmlStep+getDecimals)\r\n9. 预设徽章机型兼容性改用isModelMatch\r\n\r\n### 架构优化\r\n10. 浮动层z-index统一至600+基准\r\n11. 代码复用重构(common.ts/settingHelpers.ts共享类型)\r\n12. useDragSelect/useWheelPreventScroll可复用Hook\r\n\r\n### 体验优化\r\n13. 全局弹窗样式统一(rounded-2xl+标题栏+X关闭)\r\n14. CustomCheckbox新增outline主题\r\n15. 176测试用例全通过"
+                                       }
+                     },
+                     {
+                         "version":  "0.4.8",
+                         "releaseDate":  "2026-05-19",
+                         "forceUpdate":  false,
+                         "minVersion":  "0.0.1",
+                         "hasExe":  false,
+                         "changelog":  {
+                                           "en":  "",
+                                           "zh-CN":  "## 参数剪贴板新增参数 v0.4.8 (2026-05-19)\r\n\r\n### 核心功能\r\n1. 参数剪贴板功能(查看/复制/粘贴4方法+TOML替换)\r\n2. 参数中文元数据映射表(50字段+机型分组)\r\n3. 查看/粘贴参数overlay(置顶排序+拖拽多选+全选)\r\n4. 新增4参数全链路(斜肋外墙/前盖报警/裹头检测/XY校准)\r\n5. FAQ更新检测(CheckFAQUpdate+蓝色提示条)\r\n\r\n### 问题修复\r\n6. 剪贴板分组key不一致修复(machineGroup映射)\r\n7. ParamsPage toml未定义运行时错误修复\r\n\r\n### 架构优化\r\n8. 护套模式参数移至擦料塔策略页\r\n9. 6个预设TOML追加3新参数\r\n\r\n### 体验优化\r\n10. 重命名输入框优化(自动宽度+Escape取消)\r\n11. CustomScrollbar/CustomCheckbox原子组件"
+                                       }
+                     },
+                     {
+                         "version":  "0.4.7",
+                         "releaseDate":  "2026-05-19",
+                         "forceUpdate":  false,
+                         "minVersion":  "0.0.1",
+                         "hasExe":  false,
+                         "changelog":  {
+                                           "en":  "",
+                                           "zh-CN":  "## 通知系统预设合并 v0.4.7 (2026-05-19)\r\n\r\n### 核心功能\r\n1. 持久通知堆叠卡片式重构(最小化/序号/悬停展开/滚轮翻页)\r\n2. 全局持久化通知状态(persistentNotifications store)\r\n3. 导出完成通知提升至App级别\r\n4. FAQ扩展至62条8类别(HTML+Unicode格式)\r\n5. 更新本地缓存检查(命中跳过下载+fromCache标记)\r\n\r\n### 问题修复\r\n6. detectMachineModel大小写错误修复\r\n7. 缓存命中时update:complete事件key修复\r\n8. 主卡片step2→step3切换条件修复\r\n9. 关于页面链接改用系统默认浏览器\r\n\r\n### 架构优化\r\n10. 预设合并弹窗按钮整合(暂时保留本地版本简化)\r\n11. 回收站恢复后自动刷新fetchTrashItems\r\n\r\n### 体验优化\r\n12. 已应用按钮添加hover样式+小红点\r\n13. 下载通知缓存命中差异化提示"
+                                       }
+                     },
+                     {
+                         "version":  "0.4.6",
+                         "releaseDate":  "2026-05-19",
+                         "forceUpdate":  false,
+                         "minVersion":  "0.0.1",
+                         "hasExe":  false,
+                         "changelog":  {
+                                           "en":  "",
+                                           "zh-CN":  "## 版本卡片校准增强 v0.4.6 (2026-05-19)\r\n\r\n### 核心功能\r\n1. 版本控制卡片样式重构(状态映射+对角圆角+状态色)\r\n2. 偏移值使用记录按机型区分(PresetName+清空+徽章)\r\n3. 处理结果页返回恢复进入前页面(previousTab)\r\n4. 导出时间戳统一北京时间(timezone.js)\r\n5. FAQ强制刷新方法(ForceFetchFAQ绕过缓存)\r\n6. 用户协议添加隐私与数据安全声明\r\n\r\n### 问题修复\r\n7. 版本控制状态刷新6处同步下载状态\r\n8. 已应用预设按钮跳转行为修复(forceApplied)\r\n9. 版本卡片hover白色露角(overflow-hidden)\r\n10. 偏移值使用记录机型匹配与清空修复\r\n\r\n### 架构优化\r\n11. 诊断日志G-code历史移除时间范围选择\r\n12. 主题切换按钮从侧边栏移至标题栏\r\n\r\n### 体验优化\r\n13. 侧边栏导航间距优化(h-11→h-10)\r\n14. 测试模型文案专业化重写(6条)\r\n15. 合并窗口禁止背景点击关闭"
+                                       }
+                     },
+                     {
+                         "version":  "0.4.5",
+                         "releaseDate":  "2026-05-18",
+                         "forceUpdate":  false,
+                         "minVersion":  "0.0.1",
+                         "hasExe":  false,
+                         "changelog":  {
+                                           "en":  "",
+                                           "zh-CN":  "## 导出预设更新增强 v0.4.5 (2026-05-18)\r\n\r\n### 核心功能\r\n1. 导出格式多选重构(html/image/gcode+zip打包)\r\n2. 预设云端更新检测(HasUpdate/Outdated字段+releaseTime对比)\r\n3. 预设应用按机型版本隔离持久化(presetHistory)\r\n4. 设置页归档文件夹选项(通用openDirectory)\r\n\r\n### 问题修复\r\n5. CheckPresetExists优先查presetHistory不被覆盖\r\n6. PresetManager variant缺失时从文件名推断\r\n7. 擦料塔suggestedLH计算统一(移除nextTJ分支)\r\n8. 新手引导文案统一改为自动跳转\r\n\r\n### 架构优化\r\n9. 归档目录改用通用openDirectory移除专用方法\r\n10. CheckPresetExists重构用presetSvc替代cloudCache\r\n\r\n### 体验优化\r\n11. 更新预设按钮amber→blue+已应用预设可点击\r\n12. 按钮高度统一py-3.5+编辑器面板直角化\r\n13. 3MF安全声明(ShieldCheck图标)\r\n14. AutoScrollText尾对齐prop(TOML文件名可见)"
+                                       }
+                     },
+                     {
+                         "version":  "0.4.4",
+                         "releaseDate":  "2026-05-18",
+                         "forceUpdate":  false,
+                         "minVersion":  "0.0.1",
+                         "hasExe":  false,
+                         "changelog":  {
+                                           "en":  "",
+                                           "zh-CN":  "## 涂胶算法交互优化 v0.4.4 (2026-05-18)\r\n\r\n### 核心功能\r\n1. 涂胶面构建三阶段算法(覆盖判定/冲突检测/结果构建)\r\n2. GCode标记特征匹配体系(4函数+18测试)\r\n3. 迷你窗口交互重设计(毛玻璃+折叠布局+俏皮话)\r\n4. 校准模型确认弹窗(缓存/云端/取消三选一)\r\n5. 复制按钮彩蛋机制(15句俏皮话+冷却期警告)\r\n\r\n### 问题修复\r\n6. 熨烫回退逻辑三处修复(重置/边界/空fallback)\r\n7. 已应用预设被覆盖修复(先查再决定自动应用)\r\n8. 机型切换下载状态干涉修复(同步清除+收紧过滤)\r\n9. 自动更新三bug修复(事件/跳过/失败通知)\r\n10. 耗胶预估算法修正(胶线直径0.15mm+密度1.05)\r\n11. 退化bbox重叠检测修复(点/线bbox无法检测)\r\n\r\n### 架构优化\r\n12. GCode标记常量集中化(ZJUMP/WIPE/FEATURE)\r\n13. pass2支撑体判断集中化(HasSlicerCommentPrefix)\r\n14. 实际润笔总长度统计(PrimeTotalLength新字段)\r\n15. 抑制扩展范围零值时禁用控件\r\n\r\n### 体验优化\r\n16. 14处模态框适配32px标题栏\r\n17. 进度条与通知改用主题色统一\r\n18. 联系作者改邮箱+Logo动画可打断"
+                                       }
+                     },
+                     {
+                         "version":  "0.4.3",
+                         "releaseDate":  "2026-05-18",
+                         "forceUpdate":  false,
+                         "minVersion":  "0.0.1",
+                         "hasExe":  false,
+                         "changelog":  {
+                                           "en":  "",
+                                           "zh-CN":  "## 错误展示结果完善 v0.4.3 (2026-05-18)\r\n\r\n### 核心功能\r\n1. MiniMode后处理结果界面(成功/失败+查看详细与确定按钮)\r\n2. 复制结果版本类型识别(标准版/快拆版/lite版中文化)\r\n3. 错误信息卡片展示(碰撞数/坐标范围/建议方向)\r\n4. GUI窗口复用结果自动刷新(navigate-to-result事件)\r\n\r\n### 问题修复\r\n5. 偏移边界方向建议反转修复(超左→向右等四方向)\r\n6. pass1六处startPosCmd插入条件限制移除\r\n7. CLI失败路径自动关闭中间窗口并启动主应用\r\n8. 错误消息全中文化(擦嘴塔→擦料塔/错误前缀)\r\n\r\n### 架构优化\r\n9. pass1新增支撑特征与擦除辅助函数\r\n10. writeErrorMeta失败时写入Meta.json含切片版本\r\n11. GcodeHistoryItem新增Error字段及前端错误类型解析\r\n\r\n### 体验优化\r\n12. fetchData新增forceRefresh跳过防抖机制\r\n13. PipelineStep错误步骤强制展开显示\r\n14. 历史侧边栏文件名改用G-code路径提取"
+                                       }
+                     },
+                     {
+                         "version":  "0.4.2",
+                         "releaseDate":  "2026-05-18",
+                         "forceUpdate":  false,
+                         "minVersion":  "0.0.1",
+                         "hasExe":  false,
+                         "changelog":  {
+                                           "en":  "",
+                                           "zh-CN":  "## 关于页面细节修复 v0.4.2 (2026-05-17)\r\n\r\n### 问题修复\r\n1. QR卡片定位偏移(左侧58%宽度+flex-col居中)\r\n2. About数据加载失败无fallback(异常时回退本地数据)\r\n3. about.json中文引号致解析失败(ASCII引号替换Unicode)\r\n\r\n### 体验优化\r\n4. About刷新改用强制拉取(ForceFetchAboutData绕过缓存)\r\n5. 数据加载最低延迟500ms(避免闪烁)"
+                                       }
+                     },
+                     {
+                         "version":  "0.4.1",
+                         "releaseDate":  "2026-05-17",
+                         "forceUpdate":  false,
+                         "minVersion":  "0.0.1",
+                         "hasExe":  false,
+                         "changelog":  {
+                                           "en":  "",
+                                           "zh-CN":  "## 导出增强关于完善 v0.4.1 (2026-05-17)\r\n\r\n### 核心功能\r\n1. 结果页图片导出(chromedp截图+网页/图片格式切换)\r\n2. About页EULA扩写(7→15条+现代弹窗替代卷轴)\r\n3. 测试版版本管控(isBeta字段+彩虹描边+自动下载跳过)\r\n4. 二维码链接直生成(qrcode.react SVG替代图片)\r\n5. About云端数据服务(72h缓存+本地优先加载)\r\n\r\n### 问题修复\r\n6. BreezeCard动画暂停失效(内联style优先级覆盖CSS)\r\n7. GCode标记空格不匹配(12个常量分号后空格移除)\r\n8. 熨烫检测字段错误(enable_support_ironing替代旧字段)\r\n9. 头像加载闪烁(本地优先+云端异步替换)\r\n\r\n### 架构优化\r\n10. 图标集中管理(icons.js统一96个lucide图标导入)\r\n11. 碰撞检测精简(仅保留擦料塔碰撞+移除误报检测)\r\n12. ProcessStats字段重构(新增可变层高/原始打印时间)\r\n13. GCode偏移边界检查(超限和涂胶越界返回error)\r\n\r\n### 体验优化\r\n14. iconfont品牌图标集成(6品牌色SVG渲染)\r\n15. 导出进度条反馈(虚拟快速走+完成自动关闭)"
+                                       }
+                     },
+                     {
+                         "version":  "0.4.0",
+                         "releaseDate":  "2026-05-17",
+                         "forceUpdate":  false,
+                         "minVersion":  "0.0.1",
+                         "hasExe":  false,
+                         "changelog":  {
+                                           "en":  "",
+                                           "zh-CN":  "## 界面重构与窗口复用 v0.4.0 (2026-05-17)\r\n\r\n### 核心功能\r\n1. About页面Breeze UI重写(BreezeCard/DropdownMenu/QrSpotlight组件+数据源常量化)\r\n2. CLI窗口复用机制(EnumWindows查找主窗口+通知文件+SetForegroundWindow激活)\r\n3. GUI模式结果导航(watchGUIActivate轮询+navigate-to-result事件自动跳转)\r\n\r\n### 问题修复\r\n4. GUI子系统键盘输入无效(os.Stdin.Read替换为ReadByte修复stdin不可用)\r\n5. esbuild解析错误修复(Tailwind透明度语法84处替换为步进值+多余闭合花括号)\r\n\r\n### 架构优化\r\n6. 深色模式层级变量校准(dark模式近黑→深灰#1C1C1C/black模式纯黑#000000)\r\n7. 外观预览图色彩统一(Slate蓝色系→深灰色系与实际dark变量一致)\r\n8. Sidebar移除isAbout分支(统一标准样式+CSS新增dropdown-menu/shimmer-wrap动画)\r\n\r\n### 体验优化\r\n9. 硬编码中文提取常量化(SECTION_TITLES/FOOTER集中管理便于国际化)"
+                                       }
+                     },
+                     {
+                         "version":  "0.3.9",
+                         "releaseDate":  "2026-05-15",
+                         "forceUpdate":  false,
+                         "minVersion":  "0.0.1",
+                         "hasExe":  false,
+                         "changelog":  {
+                                           "en":  "",
+                                           "zh-CN":  "## 后处理全链路增强 v0.3.9 (2026-05-15)\r\n\r\n### 核心功能\r\n1. 圆盘错开摆动模式新增(oscillate锯齿+spiral螺旋双向)\r\n2. 机型尺寸数据驱动(MachineDimsMap四机型+校准参考坐标)\r\n3. 擦除标记段落过渡跳跃插入(分段间缺失打印动作自动补全)\r\n4. GCode服务管道增强(机型检测+3MF文件名提取+后台异步备份)\r\n\r\n### 问题修复\r\n5. 圆盘错开碰撞修正(机型感知床尺寸+错开方向历史追踪)\r\n6. 擦除标记特征过渡空档修复(段落间打印跳跃缺失致Z异常)\r\n7. CoverFlowGallery滚动边界修正(大幅精简冗余逻辑246行)\r\n\r\n### 架构优化\r\n8. GCode标记符常量包抽取(markers.go集中16种标记字符串)\r\n9. 塔参数常量包抽取(constants.go消除散落的魔数定义)\r\n10. 磁盘生成器机型感知重构(ParseMachineType+尺寸映射解耦)\r\n11. Settings设置页模块化重构(四卡片区域+代码分区明晰)\r\n12. delete_wipe过渡插入算法独立(182行回归测试增强覆盖)\r\n\r\n### 体验优化\r\n13. 校准模型打开流程优化(XY+Z页面加载状态统一消除歧义)\r\n14. 版本控制页交互增强(更新检测反馈+重试机制优化)\r\n15. 预设管理页BBS导入引导(本地预设显式导入入口提示)"
+                                       }
+                     },
+                     {
+                         "version":  "0.3.8",
+                         "releaseDate":  "2026-05-15",
+                         "forceUpdate":  false,
+                         "minVersion":  "0.0.1",
+                         "hasExe":  false,
+                         "changelog":  {
+                                           "en":  "",
+                                           "zh-CN":  "## 参数页面策略重构 v0.3.8 (2026-05-15)\r\n\r\n### 核心功能\r\n1. 擦料塔策略区域重构(折叠式改平铺+模式内联切换)\r\n2. 圆盘错开旋转合并入主卡片(擦料塔/圆盘双模式统一展示)\r\n3. 拖拽标签八方向智能定位(四角+四边+中央边界检测)\r\n\r\n### 问题修复\r\n4. 拖拽标签遮挡擦料塔修复(边界阈值0.3→0.28+8种定位策略)\r\n5. 擦料塔标签文案修正(\"擦掉\"→\"擦料塔\"+\"拖动擦掉它\"→\"擦料塔\")\r\n\r\n### 体验优化\r\n6. 拖拽标签视觉增强(背景透明度+圆角+阴影+拖拽态高亮)\r\n7. 擦料策略区域间距统一(px-6 py-4+gap-3+whitespace-nowrap)"
+                                       }
+                     },
+                     {
+                         "version":  "0.3.5",
+                         "releaseDate":  "2026-05-15",
+                         "forceUpdate":  false,
+                         "minVersion":  "0.0.1",
+                         "hasExe":  false,
+                         "changelog":  {
+                                           "en":  "",
+                                           "zh-CN":  "## 诊断系统与预设增强 v0.3.5 (2026-05-15)\r\n\r\n### 核心功能\r\n1. 诊断日志导出增强(支持GCode历史记录打包与7z压缩)\r\n2. E2E压力测试框架(stress.spec.js覆盖下载/文件/内存场景)\r\n3. 预设管理器列自定义(宽度拖拽/显隐切换/持久化存储)\r\n4. BBS预设批量导入(本地索引扫描+一键导入+目录打开)\r\n5. FAQ诊断工具集成(日志导出入口+GCode历史可选包含)\r\n\r\n### 问题修复\r\n6. 并发下载段请求异常修复(边界条件+空指针防护)\r\n7. 预设UUID生成冲突优化(时间戳+随机数混合策略)\r\n8. 文件管理器路径解析容错(异常路径回退处理)\r\n\r\n### 架构优化\r\n9. 7z压缩模块独立封装(自动探测路径+进度回调+降级zip)\r\n10. DTO类型体系扩展(诊断/压缩/归档状态专用结构体)\r\n11. 预设缓存与注册表分离优化(减少重复扫描提升性能)\r\n12. explorer服务新增打开目录功能(跨平台统一封装)\r\n13. 设置页面模块化重构(缓存管理/归档/自动关闭独立卡片)\r\n\r\n### 体验优化\r\n14. CoverFlowGallery交互增强(平滑滚动+边界检测+性能优化)\r\n15. 设备选择页状态持久化(校准模型缓存策略优化)\r\n16. 校准页面加载状态统一(打开中/缓存中消除歧义)\r\n17. 诊断导出进度实时反馈(压缩进度模态框+状态轮询)"
+                                       }
+                     },
+                     {
+                         "version":  "0.3.3",
+                         "releaseDate":  "2026-05-15",
+                         "forceUpdate":  false,
+                         "minVersion":  "0.0.1",
+                         "hasExe":  false,
+                         "changelog":  {
+                                           "en":  "",
+                                           "zh-CN":  "## 后处理系统重构 v0.3.3 (2026-05-15)\r\n\r\n### 核心功能\r\n1. GUI/CLI双模式后处理架构(处理显示两阶段分离)\r\n2. 后处理全屏视图与流水线可视化(10步管线事件)\r\n3. Monaco离线编辑器+TOML语法高亮+Diff差异导航\r\n4. 编译体积优化(移除Noto字体+UPX压缩18→6MB)\r\n\r\n### 问题修复\r\n5. CLI一闪而过与编译错误修复(控制台IO+类型匹配)\r\n6. 碰撞检测范围误报(G1/G0指令严格XY解析)\r\n7. 复制按钮toast文案误写入剪贴板(双模式重构)\r\n\r\n### 架构优化\r\n8. 复制按钮统一组件(PostProcessCopyButton三变体)\r\n9. explorer模块Win32 API重写(SHOpenFolderAndSelectItems)\r\n10. Preferences新增自动关闭偏好(AutoCloseResult/Seconds)\r\n11. 胶水总长度与切刀更换次数跟踪(ProcessStats)\r\n\r\n### 体验优化\r\n12. DWM圆角窗口支持(frameless拖动直角修复)\r\n13. 后处理结果自动关闭倒计时(3/5/10/15秒可选)\r\n14. Diff编辑器还原单条/全部差异功能"
+                                       }
+                     },
+                     {
+                         "version":  "0.3.2",
+                         "releaseDate":  "2026-05-14",
+                         "forceUpdate":  false,
+                         "minVersion":  "0.0.1",
+                         "hasExe":  false,
+                         "changelog":  {
+                                           "en":  "",
+                                           "zh-CN":  "## 缓存管理交互增强 v0.3.2 (2026-05-14)\r\n\r\n### 核心功能\r\n1. GCode缓存统计与清理(按日统计/大小/文件数)\r\n2. 缓存7z归档功能(进度事件+归档后删除源目录)\r\n3. 后处理代码一键复制(剪贴板+机型版本信息)\r\n4. 窗口置顶切换(状态记忆+MiniMode联动)\r\n5. 缓存自动清理与告警(阈值+保留天数+启动检测)\r\n6. GCode示例目录打开(OpenGcodeExamplesDir)\r\n\r\n### 问题修复\r\n7. MiniMode置顶丢失与位置跳动(保持原位+isTopmost)\r\n8. 打开历史目录定位到父目录(SHOpenFolderAndSelectItems修复)\r\n\r\n### 架构优化\r\n9. 诊断导出改用7z压缩(compress模块统一)\r\n10. DTO扩展6类型(缓存/归档/复制结果)\r\n11. explorer平台拆分(Windows/other+openDirectoryOS)\r\n\r\n### 体验优化\r\n12. 设置页缓存管理卡片(统计/清理/归档/可折叠)\r\n13. 标题栏新增复制和置顶按钮\r\n14. 归档进度持久通知组件"
+                                       }
+                     },
+                     {
+                         "version":  "0.3.1",
+                         "releaseDate":  "2026-05-14",
+                         "forceUpdate":  false,
+                         "minVersion":  "0.0.1",
+                         "hasExe":  false,
+                         "changelog":  {
+                                           "en":  "",
+                                           "zh-CN":  "## 涂胶路径修正增强 v0.3.1 (2026-05-14)\n\n### 核心功能\n1. 护套参数全链路贯通(SheathMode等6字段+DTO+TOML+UI)\n2. 熨烫模式决策树重构(IroningMode/UseIroningPath双参数控制)\n3. 涂胶微抬参数新增(IroningMicroLiftEnabled/Height)\n4. 首笔活化层触发参数(PrimeTriggerLayers+PrimeLength)\n5. 涂胶Z偏移参数贯通(GlueZOffset从Toolhead到Params)\n\n### 问题修复\n6. 修复ironing_mode=on时threshold=0短路致涂胶面路径不完整\n7. 修复suppressExpand=0抑制逻辑错误致矩形涂胶面不完整\n8. 引入ZJUMP_INTERNAL标记解决同模型组内路径错误分割\n\n### 架构优化\n9. 移除4个废弃标志(CrashFlag/ForceThickBridgeFlag等)\n10. Pass1新增辅助函数+layerFeatureMap特征层映射\n11. delete_wipe与wipe模块重构(321行变更)\n\n### 体验优化\n12. 帮助提示四方向视口边界检测+10px边距保护\n13. 校准模型图片资源替换(6张MKP测试模型图)\n14. UI标签统一(支撑面熨烫/涂胶面使用熨烫路径)"
+                                       }
+                     },
+                     {
+                         "version":  "0.2.7",
+                         "releaseDate":  "2026-05-12",
+                         "forceUpdate":  false,
+                         "minVersion":  "0.0.1",
+                         "hasExe":  false,
+                         "changelog":  {
+                                           "en":  "",
+                                           "zh-CN":  "## 后处理与下载系统重构 v0.2.7 (2026-05-12)\n\n### 核心功能\n1. 圆盘错开旋转功能实现(DiskStagger三字段+角度计算+螺旋/平行/外环/WIPE应用)\n2. 并发下载系统重写(CDN代理加速+4-8段并发+滑动窗口速度计算+自动重试)\n3. 切片软件选择重构(slicer_catalog.json种子文件+12款软件+注册表目录驱动)\n4. 预设对比合并扩展5参数(WipingComponents/SheathMode/IroningMode/DiskStaggerMode/UseDiskWipe)\n5. 预设变体固化与自动切换(Variant字段+应用预设时同步机型+右键确认切换)\n\n### 问题修复\n6. TOML换行符全链路统一(detectLineEnding+normalizeLineEndings+CRLF fallback重试)\n7. BBS关闭熨烫涂胶路径丢失(支撑面段E行更新+iface收集off-by-one+双模式回归测试)\n8. 多模型支撑面回退误判(OBJECT_ID分组检测+无标记全局检查)\n9. 下载取消失效修复(context.CancelFunc+全局变量+标记文件三重保障)\n10. 自动更新下载被误杀(智能时间窗口判断+有效下载保护)\n11. Dev模式幽灵下载清理(.downloading/.tmp残留扫描+.stop-all信号)\n12. 版本控制菜单重复与bug(重新下载直接安装/右键去重/v0.0.1垃圾文件过滤)\n\n### 架构优化\n13. 进度条动画体系统一(shimmer-slide扫光类+6文件替换旧写法+Material风格)\n14. 注册表扫描增强(CURRENT_USER查询+DisplayIcon解析+bin子目录备选)\n15. 配置加载容错增强(LoadConfig CRLF→LF重试+ParamsPage fallback默认值)\n16. 下载器架构升级(segment独立mutex+HTML检测拒绝+5MB阈值跳过小文件)\n17. WipingConfig DTO全链路贯通(Params结构体+ConfigToParams+applyPresetToLines)\n\n### 体验优化\n18. 设置页面卡片重排(切片软件上移+辅助交互并排+自动查找Bambu Studio)\n19. 下载按钮样式升级(已知进度内嵌条+未知进度扫光+主题色适配)\n20. 合并弹窗视图扩展(8参数项可滚动列表+紧凑布局+UUID填充)\n21. 错开模式UI改为三段式(SegmentedControl关闭/开启/自动与熨烫一致)\n22. 模态框边距加大(py-8 px-6避免贴标题栏+max-h动态计算)"
+                                       }
+                     },
+                     {
+                         "version":  "0.2.6",
+                         "releaseDate":  "2026-05-11",
+                         "forceUpdate":  false,
+                         "isBeta":  true,
+                         "minVersion":  "0.0.1",
+                         "hasExe":  false,
+                         "changelog":  {
+                                           "en":  "",
+                                           "zh-CN":  "## 校准模型稳定性优化 v0.2.6 (2026-05-11)\n\n### 问题修复\n1. 模型下载死锁修复(释放锁后再调用downloadFn避免Mutex不可重入)\n2. 工作目录清理增强(每次打开前清空work目录再从cache复制新文件)\n3. 校准按钮状态统一(文字改为\"打开校准模型\"/\"缓存打开中\"消除歧义)\n4. 下载进度条归零修复(新增progress事件监听+DTO携带Key字段匹配)\n5. 版本控制状态卡死修复(activeDownloads Set判断逻辑+残留清理机制)\n6. formatSize类型崩溃修复(添加Number转换防止undefined/null异常)\n\n### 架构优化\n7. IronApplyFlag全链路移除(从Go/前端/TOML删除冗余标志简化Slicer判断)\n8. 云端版本动态检测(从index.json获取model version/sha256替代硬编码)\n9. 下载进度DTO扩展(types.go新增Key字段支持多版本并发)\n\n### 体验优化\n10. 按钮防重复点击(新增15秒冷却期禁用+toast倒计时提示)\n11. UI布局稳定化(删除下载进度条+按钮固定152px宽度)\n12. 进度条Material风格重写(伸缩线动画+修复只显示一半bug)"
+                                       }
+                     }
+                 ]
+}

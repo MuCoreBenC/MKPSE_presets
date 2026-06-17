@@ -1,0 +1,27 @@
+.DS_Store
+Thumbs.db
+*.tmp
+*.downloading
+*.bak
+*.swp
+*~
+node_modules/
+desktop.ini
+backups/
+fromJH/
+docs/
+
+# === 敏感信息 ===
+*.env
+*credentials*
+*.pem
+*.key
+id_*
+
+# === 发布文件 ===
+build/
+*.exe
+
+# === IDE ===
+.idea/
+.vscode/

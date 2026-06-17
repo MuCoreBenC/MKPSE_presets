@@ -1,0 +1,167 @@
+{
+  "appInfo": {
+    "changelogLabel": "更新日志",
+    "description": "致力于为单喷嘴 FDM 3D 打印提供支撑面与接触面质量改善方案。通过干预与重构切片参数，在物理层面改善模型支撑接触面的表面光洁度，让底面不再只是妥协。",
+    "iconLetter": "M",
+    "licenseLabel": "许可协议",
+    "name": "MKP SupportE",
+    "version": "v0.0.1"
+  },
+  "authors": {
+    "co": {
+      "description": "参与界面重构、模型优化和软件优化。",
+      "name": "孜羊",
+      "role": "CONTRIBUTOR"
+    },
+    "core": {
+      "contactHref": "#",
+      "contactLabel": "联系作者",
+      "description": "项目发起人，核心算法设计与实现，负责项目的技术方向与实现。",
+      "name": "Jhmodel喵~",
+      "role": "ORIGINAL CREATOR"
+    }
+  },
+  "designPhilosophy": {
+    "heading": "这不是完美魔法，这是一场硬核的折腾",
+    "paragraphs": [
+      "必须坦诚，这并不是一个“一键点击”就能坐享其成的魔法工具。为了追求支撑面如顶面般的极致光洁，我们毅然选择了最激进的“零距离接触”方案。但这同时也意味着，我们主动放弃了传统支撑的“易拆卸”属性。",
+      "打破物理边界的代价是昂贵的。零距离不仅意味着支撑难拆，更意味着对笔尖与喷嘴的微观公差、笔芯的书写阻力、以及特殊胶水配方的配比与流变特性，有着近乎严苛的要求。即便我们经历了无数次的算法重构与切片干预，试图在底层铺平道路，但在现实应用中，它依然需要你付出极大的耐心——去校准、去组装、去反复调试硬件与参数的契合度。",
+      "我们没有试图包装出任何博人眼球的“完美黑科技”，只是提供了一个探寻物理极限的途径。如果你也享受这种为了极致底面而反复折腾的过程，那么，欢迎入坑。"
+    ],
+    "title": "设计理念：关于“零距离”的代价"
+  },
+  "ecosystemLinks": [
+    {
+      "hoverBgClass": "hover:bg-slate-50",
+      "hoverTextClass": "hover:text-[#00a1d6]",
+      "iconBgClass": "bg-[#00a1d6]/10",
+      "iconKey": "bilibili",
+      "iconTextClass": "text-[#00a1d6]",
+      "splits": [
+        {
+          "href": "https://b23.tv/5zLmbGK",
+          "name": "@Jhmodel喵~",
+          "qrText": "Bilibili：Jhmodel喵~"
+        },
+        {
+          "href": "https://b23.tv/Gvk18jc",
+          "name": "@孜羊",
+          "qrText": "Bilibili：孜羊"
+        }
+      ],
+      "sub": "视频教程",
+      "title": "Bilibili"
+    },
+    {
+      "hoverBgClass": "hover:bg-slate-50",
+      "hoverTextClass": "hover:text-emerald-600",
+      "iconBgClass": "bg-emerald-500/10",
+      "iconKey": "makerworld",
+      "iconTextClass": "text-emerald-600",
+      "splits": [
+        {
+          "href": "https://makerworld.com.cn/@ragdoll",
+          "name": "Jhmodel喵~的主页",
+          "qrText": "MakerWorld：Jhmodel喵~"
+        },
+        {
+          "href": "https://makerworld.com.cn/models/2059552",
+          "name": "孜羊的模型",
+          "qrText": "MakerWorld：A1和mini快拆版"
+        }
+      ],
+      "sub": "模型库",
+      "title": "MakerWorld"
+    },
+    {
+      "hoverBgClass": "hover:bg-slate-50 dark:hover:bg-white/5",
+      "hoverTextClass": "hover:text-slate-900 dark:hover:text-white",
+      "iconBgClass": "bg-slate-800/10 dark:bg-white/10",
+      "iconKey": "github",
+      "iconTextClass": "text-slate-800 dark:text-white",
+      "splits": [
+        {
+          "href": "https://gitee.com/Jhmodel/MKPSupport",
+          "name": "Jhmodel喵~ · Gitee",
+          "qrText": "Gitee：Jhmodel喵~"
+        },
+        {
+          "href": "https://github.com/MuCoreBenC/MKPSE_presets",
+          "name": "孜羊 · GitHub",
+          "qrText": "GitHub：孜羊"
+        },
+        {
+          "href": "https://gitee.com/MuCoreBenC/MKPSE_presets",
+          "name": "孜羊 · Gitee",
+          "qrText": "Gitee：孜羊"
+        }
+      ],
+      "sub": "开源代码",
+      "title": "代码仓库"
+    },
+    {
+      "hoverBgClass": "hover:bg-slate-50",
+      "hoverTextClass": "hover:text-sky-500",
+      "iconBgClass": "bg-sky-500/10",
+      "iconKey": "qq",
+      "iconTextClass": "text-sky-500",
+      "splits": [
+        {
+          "href": "https://qm.qq.com/cgi-bin/qm/qr?k=E7uxnQYtC2bd9wc80AspywhZ7UuW5L1m\u0026jump_from=webapi\u0026authKey=CWLLJzLNargoCYg3cOo2LMm1TkyFEXjqsyOCyK27bBPzUueJe0AdCdBC4ulbwfqp",
+          "name": "交流群668350689",
+          "qrText": "交流群668350689"
+        },
+        {
+          "href": "https://qm.qq.com/cgi-bin/qm/qr?k=o2lKWy7O9VejGA-2mpOKBmlXrPFnLzjX\u0026jump_from=webapi\u0026authKey=um6URdqNDI3DtYCgAzwfQH7LGd4U/9UeNcJOqIP0h7IeXWi6UmYTtBAamKwKDyLd",
+          "name": "组装指导群1074343340",
+          "qrText": "组装指导群1074343340"
+        }
+      ],
+      "sub": "交流群",
+      "title": "QQ"
+    }
+  ],
+  "modelLinks": {
+    "testModelMakerWorld": "https://makerworld.com.cn/zh/models/2395687-yu-wei-ce-shi-shuang-tou-yi-liao-zhi-cheng-mkp-sup#profileId-2722483"
+  },
+  "footer": {
+    "animOffLabel": "微风：停息",
+    "animOnLabel": "微风：开启",
+    "copyright": "© 2026 MKP STUDIO. ALL RIGHTS RESERVED."
+  },
+  "sectionTitles": {
+    "authors": "项目参与者",
+    "ecosystem": "社区与生态",
+    "shops": "获取硬件支持",
+    "shopsDesc": "获取所需的打印机改装硬件与测试耗材，支持项目发展。",
+    "shopsTriggerSubtitle": "悬停选择店铺跳转",
+    "shopsTriggerTitle": "官方闲鱼店铺",
+    "supporters": "特别致谢",
+    "supportersDesc": "感谢所有在内测阶段提供宝贵建议与模型测试支持的群友们："
+  },
+  "shops": [
+    {
+      "href": "https://m.tb.cn/h.R1AvlyJ?tk=kgdy5spOuNX",
+      "name": "Jhmodel喵~的小店",
+      "qrText": "Jhmodel喵~的小店"
+    },
+    {
+      "href": "https://m.tb.cn/h.RX34omy?tk=DRRl5spNjzX",
+      "name": "A1和mini快拆版成品",
+      "qrText": "A1和mini快拆版成品"
+    },
+    {
+      "href": "https://m.tb.cn/h.R1ei1uF?tk=gakV5spNrOn",
+      "name": "喵喵的P1S新模型",
+      "qrText": "喵喵的P1S新模型"
+    }
+  ],
+  "supporters": [
+    "每一位在内测中提供反馈的群友",
+    "所有提交过建议与测试报告的用户",
+    "默默在群里解答新手问题的热心人",
+    "以及所有 MKPSupport 社区的参与者"
+  ],
+  "updated": "2026-05-17T23:56:40+08:00",
+  "version": "2026.05"
+}
