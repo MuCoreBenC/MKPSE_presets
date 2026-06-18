@@ -195,9 +195,6 @@
               "paramKey": "wiping.tower_safe_z_offset"
             },
             {
-              "paramKey": "wiping.first_layer_wipe_tower_collision_check"
-            },
-            {
               "paramKey": "wiping.interface_ironing_flag"
             },
             {

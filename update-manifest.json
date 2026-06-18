@@ -1,5 +1,5 @@
 {
-    "latestVersion":  "0.0.2",
+    "latestVersion":  "0.0.3",
     "changelog":  {
                       "zh-CN":  "## 跨平台兼容适配 v0.8.1 (2026-06-03)\r\n\r\n### 核心功能\r\n1. macOS全链路适配(启动/重启/更新/数据目录/鼠标追踪)\r\n2. Mac红绿灯风格标题栏(关闭/最小化/最大化+功能按钮)\r\n3. 页面懒加载(Suspense+lazy)降低首屏资源消耗\r\n\r\n### 问题修复\r\n4. Mac启动白屏修复(hydration超时3s强制显示窗口)\r\n5. 截图引擎fileURL跨平台路径转换(Windows三斜杠/Mac双斜杠)\r\n6. 脚本命令路径加引号修复Mac空格路径问题\r\n\r\n### 架构优化\r\n7. Go后端平台拆分(cli/slicer/screenshot/webview四模块_build_tag)\r\n8. ParamsPage重构拆分4个hook(1500行→模块化)\r\n\r\n### 体验优化\r\n9. Mac默认截图模式改为frontend(避免chromedp兼容问题)\r\n10. 移除TOML文件CRLF强制转换(尊重平台换行符)",
                       "en":  ""
