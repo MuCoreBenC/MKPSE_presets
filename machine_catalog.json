@@ -65,6 +65,29 @@
             ],
             "machineKey": "A1:fast",
             "presetFile": "A1F.toml"
+          },
+          {
+            "id": "fastv3.3",
+            "name": "官改快拆版260628",
+            "tag": "",
+            "description": "6月以后闲鱼买的新版",
+            "downloads": [
+              {
+                "type": "mkp_toml",
+                "fileName": "A1F0628.toml",
+                "url": "/presets/A1F0628.toml"
+              },
+              {
+                "type": "bbs_machine",
+                "fileName": "0.4mm/MKPSupport A1 0.4.json",
+                "url": "/presets/0.4mm/MKPSupport A1 0.4.json"
+              },
+              {
+                "type": "bbs_process",
+                "fileName": "0.4mm/MKPProcess A1 mini 0.4 0.20.json",
+                "url": "/presets/0.4mm/MKPProcess A1 mini 0.4 0.20.json"
+              }
+            ]
           }
         ],
         "machineKey": "A1"

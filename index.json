@@ -1,6 +1,6 @@
 {
   "version": "2026.06",
-  "updated": "2026-06-18 13:12:07",
+  "updated": "2026-06-18 23:53:43",
   "modelCopy": {
     "updated": "2026-05-28 11:05:33"
   },
@@ -28,6 +28,18 @@
       "size": 4032,
       "releaseTime": "2026-06-14 06:24:44",
       "sha256": "130f128a0493b7a27a1756a29390ad51d146f3c84253a835ef72eda6da712a04"
+    },
+    {
+      "fileName": "A1F0628.toml",
+      "name": "A1F0628",
+      "brand": "mkp",
+      "compatible": [
+        "A1"
+      ],
+      "version": "2026.06",
+      "size": 3768,
+      "releaseTime": "2026-06-18 22:32:20",
+      "sha256": "98fa5a63f70c0563d4617d6d5d9c53bc85747281bde0cd9cf5b95cfb9f1b75f5"
     },
     {
       "fileName": "A1M.toml",
@@ -314,7 +326,7 @@
       "category": "avatars",
       "relativePath": "Assets/avatars/jhmodel.webp",
       "size": 3456,
-      "releaseTime": "2026-05-17 10:54:53",
+      "releaseTime": "2026-06-17 17:22:38",
       "sha256": "96f115cd23db59cbf0a8bbbec3a4ccf238d02ef1a2c360fd88fcab60ff591203",
       "isRegistered": true,
       "isModified": false
@@ -324,7 +336,7 @@
       "category": "avatars",
       "relativePath": "Assets/avatars/mao.webp",
       "size": 3308,
-      "releaseTime": "2026-05-17 10:54:53",
+      "releaseTime": "2026-06-17 17:22:38",
       "sha256": "f3c0dc1ebb3cae162cc134c410037929228da2e0dfeea2b1dc2a46e30271965c",
       "isRegistered": true,
       "isModified": false
@@ -334,7 +346,7 @@
       "category": "avatars",
       "relativePath": "Assets/avatars/ziyang.webp",
       "size": 7690,
-      "releaseTime": "2026-05-17 10:54:53",
+      "releaseTime": "2026-06-17 17:22:38",
       "sha256": "1bc0eb1c44b6a1c20ad20aeca3aaf1f4e07f28fb4c1985e9321ccefa8a0e34b3",
       "isRegistered": true,
       "isModified": false
@@ -344,7 +356,7 @@
       "category": "machines",
       "relativePath": "Assets/machines/Anycubic Kobra X.webp",
       "size": 22398,
-      "releaseTime": "2026-05-17 10:51:56",
+      "releaseTime": "2026-06-17 17:22:38",
       "sha256": "a717f0e229de690ef3134a7d24323c15f94e2857f46874d7fa1c0ef17d81ad13",
       "isRegistered": true,
       "isModified": false
@@ -354,7 +366,7 @@
       "category": "machines",
       "relativePath": "Assets/machines/Creality SPARKX i7.webp",
       "size": 18572,
-      "releaseTime": "2026-05-17 10:51:56",
+      "releaseTime": "2026-06-17 17:22:38",
       "sha256": "9790d66c11fa284e8d3c1ebba2c949e232f9002bca95de2d33d63baf808221c7",
       "isRegistered": true,
       "isModified": false
@@ -364,7 +376,7 @@
       "category": "machines",
       "relativePath": "Assets/machines/a1.webp",
       "size": 21740,
-      "releaseTime": "2026-05-17 10:51:56",
+      "releaseTime": "2026-06-17 17:22:38",
       "sha256": "41ba8552907599c80e3e2a110e0898a7d6c39c5d3bca28ee83b20e22c2e6e3f4",
       "isRegistered": true,
       "isModified": false
@@ -374,7 +386,7 @@
       "category": "machines",
       "relativePath": "Assets/machines/a1mini.webp",
       "size": 19160,
-      "releaseTime": "2026-05-17 10:51:56",
+      "releaseTime": "2026-06-17 17:22:38",
       "sha256": "b30a6db46e303287753755bfab4a01c0fb197eed0f173f716dc48e6571b9e431",
       "isRegistered": true,
       "isModified": false
@@ -384,7 +396,7 @@
       "category": "machines",
       "relativePath": "Assets/machines/k1c.webp",
       "size": 16014,
-      "releaseTime": "2026-05-17 10:51:56",
+      "releaseTime": "2026-06-17 17:22:38",
       "sha256": "618067c10a03790cce94be1054046250c7de3c9da20a2a468ccbf933340ee491",
       "isRegistered": true,
       "isModified": false
@@ -394,7 +406,7 @@
       "category": "machines",
       "relativePath": "Assets/machines/k2c.webp",
       "size": 8722,
-      "releaseTime": "2026-05-17 10:51:56",
+      "releaseTime": "2026-06-17 17:22:38",
       "sha256": "638e41f45e58167df4f8c18ea22fb34bfa175057a76875b697c5f2e77c205063",
       "isRegistered": true,
       "isModified": false
@@ -404,7 +416,7 @@
       "category": "machines",
       "relativePath": "Assets/machines/p1s.webp",
       "size": 12732,
-      "releaseTime": "2026-05-17 10:51:56",
+      "releaseTime": "2026-06-17 17:22:38",
       "sha256": "0ceb9236e7c20999915a66c1d630cc18e9b648d1e2935039b244e00c0a5e7d84",
       "isRegistered": true,
       "isModified": false
@@ -414,7 +426,7 @@
       "category": "machines",
       "relativePath": "Assets/machines/p2s.webp",
       "size": 9180,
-      "releaseTime": "2026-05-17 10:51:56",
+      "releaseTime": "2026-06-17 17:22:38",
       "sha256": "9e6ebe2a9e4201958e3ba24a7618801035c85eda2a908afc1666025bcd739f3e",
       "isRegistered": true,
       "isModified": false
@@ -424,7 +436,7 @@
       "category": "machines",
       "relativePath": "Assets/machines/s1c.webp",
       "size": 40230,
-      "releaseTime": "2026-05-17 10:51:56",
+      "releaseTime": "2026-06-17 17:22:38",
       "sha256": "b592ce817e9c0827e43af0a3455551f84e709cd3f94febef6032e80874576aa5",
       "isRegistered": true,
       "isModified": false
@@ -434,7 +446,7 @@
       "category": "machines",
       "relativePath": "Assets/machines/voron24.webp",
       "size": 60720,
-      "releaseTime": "2026-05-17 10:51:56",
+      "releaseTime": "2026-06-17 17:22:38",
       "sha256": "23e98522a0c41540be532e92fd3be1c14ace3ac153bd248fad674090be866b2a",
       "isRegistered": true,
       "isModified": false
@@ -444,7 +456,7 @@
       "category": "machines",
       "relativePath": "Assets/machines/x1.webp",
       "size": 24016,
-      "releaseTime": "2026-05-17 10:51:56",
+      "releaseTime": "2026-06-17 17:22:38",
       "sha256": "78abb42998fe139e4cdb709951097b6779842478bf546d56701dec8c8518f96a",
       "isRegistered": true,
       "isModified": false
@@ -454,7 +466,7 @@
       "category": "models",
       "relativePath": "Assets/models/MKP_support_test_models_1.webp",
       "size": 3258,
-      "releaseTime": "2026-05-17 10:53:43",
+      "releaseTime": "2026-06-17 17:22:38",
       "sha256": "fb8e6240e404c237f94efb5ce0615e309482526df38b850e5740ec0e7ab48760",
       "isRegistered": true,
       "isModified": false
@@ -464,7 +476,7 @@
       "category": "models",
       "relativePath": "Assets/models/MKP_support_test_models_2.webp",
       "size": 2540,
-      "releaseTime": "2026-05-17 10:53:43",
+      "releaseTime": "2026-06-17 17:22:38",
       "sha256": "0b88145f1af013383756ad64b336dfe25d72477f86866f9ab7fe2aa024e02457",
       "isRegistered": true,
       "isModified": false
@@ -474,7 +486,7 @@
       "category": "models",
       "relativePath": "Assets/models/MKP_support_test_models_3.webp",
       "size": 2860,
-      "releaseTime": "2026-05-17 10:53:43",
+      "releaseTime": "2026-06-17 17:22:38",
       "sha256": "adfa9f2fa9642d66b6c3c3a7c216cf107460bb5956c861ac61ae7c0412319ae8",
       "isRegistered": true,
       "isModified": false
@@ -484,7 +496,7 @@
       "category": "models",
       "relativePath": "Assets/models/MKP_support_test_models_4.webp",
       "size": 3640,
-      "releaseTime": "2026-05-17 10:53:43",
+      "releaseTime": "2026-06-17 17:22:38",
       "sha256": "2d5f9e80b66ba36685f9deb5512e14ee23ba1af24ab3e796e550f01203c6f469",
       "isRegistered": true,
       "isModified": false
@@ -494,7 +506,7 @@
       "category": "models",
       "relativePath": "Assets/models/MKP_support_test_models_5.webp",
       "size": 3772,
-      "releaseTime": "2026-05-17 10:53:43",
+      "releaseTime": "2026-06-17 17:22:38",
       "sha256": "a22f9e4d9bdf76a4e5c460b1c5d866062400f20dc753119b2594e6b3a690c599",
       "isRegistered": true,
       "isModified": false
@@ -504,7 +516,7 @@
       "category": "models",
       "relativePath": "Assets/models/MKP_support_test_models_6.webp",
       "size": 4294,
-      "releaseTime": "2026-05-17 10:53:43",
+      "releaseTime": "2026-06-17 17:22:38",
       "sha256": "c43f82ab557c8993b92fb78127307b84991656feeae2105519e2583442b79859",
       "isRegistered": true,
       "isModified": false
@@ -514,7 +526,7 @@
       "category": "models",
       "relativePath": "Assets/models/MKP_support_test_models_7.webp",
       "size": 6296,
-      "releaseTime": "2026-05-22 18:08:04",
+      "releaseTime": "2026-06-17 17:22:38",
       "sha256": "1e0e0a09ace0bf5a8c821a8e2dc4872eadebdfb06749d573d60ef3e2c320cbfe",
       "isRegistered": true,
       "isModified": false
@@ -524,7 +536,7 @@
       "category": "models",
       "relativePath": "Assets/models/MKP_support_test_models_8.webp",
       "size": 4948,
-      "releaseTime": "2026-05-28 11:04:26",
+      "releaseTime": "2026-06-17 17:22:38",
       "sha256": "d16020f01fdfcbdd46c53900b44b08ba53bbfea88698a6f358e82d33c4efbf76",
       "isRegistered": true,
       "isModified": false
@@ -534,7 +546,7 @@
       "category": "faq",
       "relativePath": "Assets/faq/SETTING1.webp",
       "size": 7822,
-      "releaseTime": "2026-05-22 17:16:42",
+      "releaseTime": "2026-06-17 17:22:38",
       "sha256": "599752784b3a1d253eb2e7c29d0ad1add3643aed86e341cc39532f24ec148bba",
       "isRegistered": true,
       "isModified": false
@@ -544,7 +556,7 @@
       "category": "faq",
       "relativePath": "Assets/faq/SETTING2.webp",
       "size": 9268,
-      "releaseTime": "2026-05-22 17:16:42",
+      "releaseTime": "2026-06-17 17:22:38",
       "sha256": "68b7bbd3d579b6e9b54ad1de24b79d5b86ac907031df60ce1e47c77cb46871db",
       "isRegistered": true,
       "isModified": false
