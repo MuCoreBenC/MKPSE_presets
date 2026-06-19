@@ -1,11 +1,22 @@
 {
-  "latestVersion": "0.0.3",
-  "updated": "2026-06-18 22:07:56",
+  "latestVersion": "0.0.4",
+  "updated": "2026-06-19 23:00:00",
   "changelog": {
     "en": "",
-    "zh-CN": "## 参数页数据驱动重构 v0.0.3 (2026-06-17)\n\n### 核心功能\n1. 参数页数据驱动重构，新增 ParamRenderer 系列组件与 paramSchema\n2. 新增 TowerMapPanel 塔图面板与 RawCodePreviewCard 原码预览\n\n### 问题修复\n3. 预设 tooltip 悬停错位与白屏 502 修复\n4. 发布中心参数注册表清理\n\n### 架构优化\n5. 后端 param_registry 重构，删除冗余 template，tower/rib 优化\n6. mkp-publisher 新增 timeutil 包与预设管理调整\n\n### 体验优化\n7. 预设管理器交互优化，参数页 Tab 与保存逻辑统一"
+    "zh-CN": "## 水波纹与布局优化 v0.0.4 (2026-06-19)\n\n### 核心功能\n1. QrSpotlight 水波纹动效：5 种鱼身形状（金鱼/鲨鱼/神仙鱼/河豚/剑鱼）、上下游动、跃出卡片、气泡与水花\n2. mkp-publisher 组件重构与主题服务统一\n\n### 问题修复\n3. 关于页右列被压缩成竖条（lg:col-span-5 → md:col-span-5 断点修复）\n4. 侧边栏折叠态图标右偏 4px 修复（w-12→w-10 条件宽度）\n\n### 架构优化\n5. 参数页与预设管理交互优化\n6. 备份管理、TowerMapPanel 与样式调整\n\n### 体验优化\n7. 窗口最小宽度限制 770px，侧边栏紧凑断点 880→950px\n8. ResizeObserver debounce 优化拖拽卡顿，描述区域预留两行高度"
   },
   "versions": [
+    {
+      "version": "0.0.4",
+      "releaseDate": "2026-06-19",
+      "forceUpdate": false,
+      "minVersion": "0.0.1",
+      "hasExe": false,
+      "changelog": {
+        "en": "",
+        "zh-CN": "## 水波纹与布局优化 v0.0.4 (2026-06-19)\n\n### 核心功能\n1. QrSpotlight 水波纹动效：5 种鱼身形状（金鱼/鲨鱼/神仙鱼/河豚/剑鱼）、上下游动、跃出卡片、气泡与水花\n2. mkp-publisher 组件重构与主题服务统一\n\n### 问题修复\n3. 关于页右列被压缩成竖条（lg:col-span-5 → md:col-span-5 断点修复）\n4. 侧边栏折叠态图标右偏 4px 修复（w-12→w-10 条件宽度）\n\n### 架构优化\n5. 参数页与预设管理交互优化\n6. 备份管理、TowerMapPanel 与样式调整\n\n### 体验优化\n7. 窗口最小宽度限制 770px，侧边栏紧凑断点 880→950px\n8. ResizeObserver debounce 优化拖拽卡顿，描述区域预留两行高度"
+      }
+    },
     {
       "version": "0.0.3",
       "releaseDate": "2026-06-17",
