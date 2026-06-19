@@ -1,18 +1,39 @@
-# uuid: 8b2afae8-8cdd-4876-8ac7-6903a72e1a17
-# release_time: 2026-06-18 22:32:20
-# machine: A1
-# variant: fastv3.3
+# uuid: b5933142-9dae-444f-91ef-656e8700ed19
+# release_time: 2026-06-14 06:24:44
+# machine: A1_mini
+# variant: fast
 #胶笔配置
 [toolhead]
-offset = { x = 0, y = 0, z = 0 } # 笔尖偏移
+offset = { x = -0.5, y = 23.2, z = 3.6 } # 笔尖偏移
 speed_limit = 70 # 涂胶速度限制 (mm/s)
 MKP_retract = 0 # 回抽长度(mm)
 first_pen_revitalization_flag = false # 首笔活化标志
 # 自定义工具头获取 G-code
 custom_mount_gcode = """
+G92 E0
+G1 E-5 F1800
+G92 E0
+L801
+M204 S10000
+G1 X168 F30000
+G1 X175 F10000
+G1 X185 F10000
+G1 X168 F30000
+G1 F30000
 """
 # 自定义工具头收起 G-code
 custom_unmount_gcode = """
+M106 S[AUTO]
+G1 X168 F30000
+G1 X175 F10000
+G1 X189 F10000
+G1 X168 F6000
+G1 F30000
+L802
+G92 E0
+G1 E5.5 F1500
+G92 E0
+G1 F30000
 """
 glue_z_offset = -0.05 # 涂胶Z偏移(mm) 范围:-5~2
 prime_length = 100 # 预涂长度(mm) 范围:0~500

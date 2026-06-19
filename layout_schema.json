@@ -97,13 +97,7 @@
             },
             {
               "paramKey": "wiping.disable_3rd_layer_clog_detect"
-            }
-          ]
-        },
-        {
-          "id": "测试",
-          "title": "测试",
-          "items": [
+            },
             {
               "paramKey": "wiping.xy_calibration_mode"
             }
@@ -146,8 +140,8 @@
           ]
         },
         {
-          "id": "塔基础参数",
-          "title": "塔基础参数",
+          "id": "擦料塔位置与打印",
+          "title": "擦料塔位置与打印",
           "items": [
             {
               "paramKey": "wiping.wiper_x"
@@ -164,9 +158,12 @@
           ]
         },
         {
-          "id": "速度参数",
-          "title": "速度参数",
+          "id": "安全与高级参数",
+          "title": "安全与高级参数",
           "items": [
+            {
+              "paramKey": "wiping.tower_first_layer_flow"
+            },
             {
               "paramKey": "wiping.fast_tower_mode"
             },
@@ -177,55 +174,25 @@
               "paramKey": "wiping.tower_glue_layer_speed"
             },
             {
-              "paramKey": "wiping.tower_first_layer_flow"
-            }
-          ]
-        },
-        {
-          "id": "高级参数",
-          "title": "高级参数",
-          "items": [
-            {
-              "paramKey": "wiping.switch_tower_type"
-            },
-            {
               "paramKey": "wiping.tower_custom_layer_height"
             },
-            {
-              "paramKey": "wiping.tower_safe_z_offset"
-            },
-            {
-              "paramKey": "wiping.interface_ironing_flag"
-            },
-            {
-              "paramKey": "wiping.ironing_coverage_threshold"
-            }
-          ]
-        },
-        {
-          "id": "擦嘴策略",
-          "title": "擦嘴策略",
-          "items": [
             {
               "paramKey": "wiping.tower_wipe_mode"
             },
             {
+              "paramKey": "wiping.tower_safe_z_offset"
+            }
+          ]
+        },
+        {
+          "id": "塔结构加强",
+          "title": "塔结构加强",
+          "items": [
+            {
+              "paramKey": "wiping.outer_structure"
+            },
+            {
               "paramKey": "wiping.sheath_mode"
-            },
-            {
-              "paramKey": "wiping.sheath_base_expand"
-            },
-            {
-              "paramKey": "wiping.sheath_wall_width"
-            },
-            {
-              "paramKey": "wiping.sheath_enable_height"
-            },
-            {
-              "paramKey": "wiping.sheath_converge_layers"
-            },
-            {
-              "paramKey": "wiping.tower_sheath_speed"
             },
             {
               "paramKey": "wiping.rib_outer_wall"
@@ -244,6 +211,21 @@
             },
             {
               "paramKey": "wiping.rib_fillet_wall"
+            },
+            {
+              "paramKey": "wiping.tower_sheath_speed"
+            },
+            {
+              "paramKey": "wiping.sheath_enable_height"
+            },
+            {
+              "paramKey": "wiping.sheath_base_expand"
+            },
+            {
+              "paramKey": "wiping.sheath_wall_width"
+            },
+            {
+              "paramKey": "wiping.sheath_converge_layers"
             }
           ]
         },
@@ -301,9 +283,6 @@
           "items": [
             {
               "paramKey": "wiping.support_extrusion_multiplier"
-            },
-            {
-              "paramKey": "wiping.glue_sparse_ratio"
             }
           ]
         },
@@ -321,6 +300,9 @@
               "paramKey": "wiping.use_ironing_path"
             },
             {
+              "paramKey": "wiping.ironing_coverage_threshold"
+            },
+            {
               "paramKey": "wiping.ironing_suppress_expand"
             },
             {
@@ -334,6 +316,9 @@
             },
             {
               "paramKey": "wiping.min_support_interface_enabled"
+            },
+            {
+              "paramKey": "wiping.glue_sparse_ratio"
             }
           ]
         }
