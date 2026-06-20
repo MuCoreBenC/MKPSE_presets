@@ -84,6 +84,9 @@
               "paramKey": "wiping.glue_z_lift_height"
             },
             {
+              "paramKey": "wiping.glue_z_lift_height_first_layers"
+            },
+            {
               "paramKey": "wiping.glue_inter_model_lift_height"
             }
           ]
@@ -127,36 +130,6 @@
       "id": "擦料策略",
       "label": "擦料策略",
       "sections": [
-        {
-          "id": "擦料方式",
-          "title": "擦料方式",
-          "items": [
-            {
-              "paramKey": "wiping.have_wiping_components"
-            },
-            {
-              "paramKey": "wiping.use_disk_wipe_flag"
-            }
-          ]
-        },
-        {
-          "id": "擦料塔位置与打印",
-          "title": "擦料塔位置与打印",
-          "items": [
-            {
-              "paramKey": "wiping.wiper_x"
-            },
-            {
-              "paramKey": "wiping.wiper_y"
-            },
-            {
-              "paramKey": "wiping.tower_extrude_ratio"
-            },
-            {
-              "paramKey": "wiping.tower_travel_speed"
-            }
-          ]
-        },
         {
           "id": "安全与高级参数",
           "title": "安全与高级参数",
@@ -246,6 +219,36 @@
               "paramKey": "wiping.disk_stagger_swing_mode"
             }
           ]
+        },
+        {
+          "id": "擦料方式",
+          "title": "擦料方式",
+          "items": [
+            {
+              "paramKey": "wiping.have_wiping_components"
+            },
+            {
+              "paramKey": "wiping.use_disk_wipe_flag"
+            }
+          ]
+        },
+        {
+          "id": "擦料塔位置与打印",
+          "title": "擦料塔位置与打印",
+          "items": [
+            {
+              "paramKey": "wiping.wiper_x"
+            },
+            {
+              "paramKey": "wiping.wiper_y"
+            },
+            {
+              "paramKey": "wiping.tower_extrude_ratio"
+            },
+            {
+              "paramKey": "wiping.tower_travel_speed"
+            }
+          ]
         }
       ]
     },
@@ -309,16 +312,28 @@
               "paramKey": "wiping.ironing_suppress_expand_mode"
             },
             {
-              "paramKey": "wiping.ironing_micro_lift_enabled"
-            },
-            {
-              "paramKey": "wiping.ironing_micro_lift_height"
-            },
-            {
               "paramKey": "wiping.min_support_interface_enabled"
             },
             {
               "paramKey": "wiping.glue_sparse_ratio"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "custom",
+      "label": "custom",
+      "sections": [
+        {
+          "id": "default",
+          "title": "default",
+          "items": [
+            {
+              "paramKey": "custom.ironing_micro_lift_height"
+            },
+            {
+              "paramKey": "custom.ironing_micro_lift_enabled"
             }
           ]
         }

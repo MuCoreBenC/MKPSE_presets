@@ -121,13 +121,13 @@
       "title": "QQ"
     }
   ],
-  "modelLinks": {
-    "testModelMakerWorld": "https://makerworld.com.cn/zh/models/2395687-yu-wei-ce-shi-shuang-tou-yi-liao-zhi-cheng-mkp-sup#profileId-2722483"
-  },
   "footer": {
     "animOffLabel": "微风：停息",
     "animOnLabel": "微风：开启",
     "copyright": "© 2026 MKP STUDIO. ALL RIGHTS RESERVED."
+  },
+  "modelLinks": {
+    "testModelMakerWorld": "https://makerworld.com.cn/zh/models/2395687-yu-wei-ce-shi-shuang-tou-yi-liao-zhi-cheng-mkp-sup#profileId-2722483"
   },
   "sectionTitles": {
     "authors": "项目参与者",
@@ -151,8 +151,8 @@
       "qrText": "A1和mini快拆版成品"
     },
     {
-      "href": "https://m.tb.cn/h.R1ei1uF?tk=gakV5spNrOn",
-      "name": "喵喵的P1S新模型",
+      "href": "https://m.tb.cn/h.RLzUzCi?tk=x2ItgTATqoZ",
+      "name": "喵喵的首页P1S新模型",
       "qrText": "喵喵的P1S新模型"
     }
   ],
@@ -162,6 +162,6 @@
     "默默在群里解答新手问题的热心人",
     "以及所有 MKPSupport 社区的参与者"
   ],
-  "updated": "2026-05-17T23:56:40+08:00",
+  "updated": "2026-06-20 10:22:11",
   "version": "2026.05"
 }

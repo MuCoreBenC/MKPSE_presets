@@ -79,6 +79,7 @@ glue_inter_model_lift_height = 3 # 涂胶区域间Z抬升高度(mm) 范围:0~50
 prime_min_path_length = 5 # 润笔最小路径长度(mm) 范围:0~100
 prime_per_model = false # 每个模型都润笔
 prime_every_layer = false # 每层润笔
+outer_structure = "none" # 外围结构(none/rib/sheath)
 rib_outer_wall = false # 斜肋外墙
 rib_extra_length = 0 # 斜肋额外长度(mm) 范围:0~300
 rib_width = 8 # 斜肋宽度(mm) 范围:0~300
