@@ -70,12 +70,12 @@
             "id": "fastv3.3",
             "name": "官改快拆版260628",
             "tag": "最新",
-            "description": "6月以后闲鱼买的新版",
+            "description": "6月以后闲鱼购买的，以及6月28开源的快拆260628版本",
             "downloads": [
               {
                 "type": "mkp_toml",
-                "fileName": "A1F260628.toml",
-                "url": "/presets/A1F260628.toml"
+                "fileName": "A1F.toml",
+                "url": "/presets/A1F.toml"
               },
               {
                 "type": "bbs_machine",
@@ -84,11 +84,12 @@
               },
               {
                 "type": "bbs_process",
-                "fileName": "0.4mm/MKPProcess A1 mini 0.4 0.20.json",
-                "url": "/presets/0.4mm/MKPProcess A1 mini 0.4 0.20.json"
+                "fileName": "0.4mm/MKPProcess A1 0.4 0.20.json",
+                "url": "/presets/0.4mm/MKPProcess A1 0.4 0.20.json"
               }
             ],
-            "presetFile": "A1F0628.toml"
+            "machineKey": "A1:fast",
+            "presetFile": "A1F260628.toml"
           }
         ],
         "machineKey": "A1"
@@ -153,12 +154,12 @@
             "id": "fastv3.3",
             "name": "官改快拆版260628",
             "tag": "最新",
-            "description": "6月以后闲鱼买的新版",
+            "description": "6月以后闲鱼购买的，以及6月28开源的快拆260628版本",
             "downloads": [
               {
                 "type": "mkp_toml",
-                "fileName": "A1MF260628.toml",
-                "url": "/presets/A1MF260628.toml"
+                "fileName": "A1MF.toml",
+                "url": "/presets/A1MF.toml"
               },
               {
                 "type": "bbs_machine",
@@ -172,7 +173,7 @@
               }
             ],
             "machineKey": "A1MINI:fast",
-            "presetFile": "A1MF0628.toml"
+            "presetFile": "A1MF260628.toml"
           }
         ],
         "machineKey": "A1MINI"
