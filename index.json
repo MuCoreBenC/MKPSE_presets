@@ -1,6 +1,6 @@
 {
   "version": "2026.06",
-  "updated": "2026-06-21 02:28:04",
+  "updated": "2026-06-21 15:24:22",
   "modelCopy": {
     "updated": "2026-05-28 11:05:33"
   },
@@ -14,32 +14,20 @@
       ],
       "version": "2026.06",
       "size": 3571,
-      "releaseTime": "2026-06-21 02:28:04",
-      "sha256": "52599d1aa04d8aa5838e07bdbf733f355e291c43eb008464c8a5eba45fe200f2"
+      "releaseTime": "2026-06-21 12:26:26",
+      "sha256": "4a4afc20b56096e02462940a35c7c7745572df34f63930ff296e84bbd5a0e4f8"
     },
     {
-      "fileName": "A1F.toml",
-      "name": "A1F",
+      "fileName": "A1F_260628.toml",
+      "name": "A1F_260628",
       "brand": "mkp",
       "compatible": [
         "A1"
       ],
       "version": "2026.06",
       "size": 3569,
-      "releaseTime": "2026-06-21 02:28:04",
-      "sha256": "238fa89dc693969ee3795f9b63c873b76f63e7335ee0dfdc69845997c321970c"
-    },
-    {
-      "fileName": "A1F260628.toml",
-      "name": "A1F260628",
-      "brand": "mkp",
-      "compatible": [
-        "A1"
-      ],
-      "version": "2026.06",
-      "size": 3308,
-      "releaseTime": "2026-06-21 02:28:04",
-      "sha256": "8b8fa29339039efedbd10d807582a13c3246d3c4bd90eaa4b1f5d6ff4c18cd3e"
+      "releaseTime": "2026-06-21 12:26:26",
+      "sha256": "e0cf4655e5e6c818afc6d6ebc74ac72cfedfce02a4b9335f6f4b17fcb175c39f"
     },
     {
       "fileName": "A1M.toml",
@@ -50,8 +38,8 @@
       ],
       "version": "2026.06",
       "size": 3579,
-      "releaseTime": "2026-06-21 02:28:04",
-      "sha256": "c61bb5d65487faecf30feedba3cdd3dc42f1e671d0ef7a66131a42cabe16f712"
+      "releaseTime": "2026-06-21 12:26:26",
+      "sha256": "3da4e1d9509b20229ae9583abb6bccb5d86bc924febe3e750e865ef4a6572a12"
     },
     {
       "fileName": "A1MF.toml",
@@ -66,16 +54,16 @@
       "sha256": "bbdf9420c4d56083354b1f3ce9208745d2a27659b5d920aa79af87636a1737da"
     },
     {
-      "fileName": "A1MF260628.toml",
-      "name": "A1MF260628",
+      "fileName": "A1MF_260628.toml",
+      "name": "A1MF_260628",
       "brand": "mkp",
       "compatible": [
         "A1MINI"
       ],
       "version": "2026.06",
-      "size": 3313,
-      "releaseTime": "2026-06-21 02:28:04",
-      "sha256": "be8ddfde0f0e6afb8c784c6a7842311b2e2b9c1293c7fc2d697393265b2e281a"
+      "size": 3572,
+      "releaseTime": "2026-06-21 12:26:26",
+      "sha256": "2116d068b8286a433918db816fb263ac761e31c246bcfff14c5f176063dc6bae"
     },
     {
       "fileName": "P1.toml",
@@ -86,8 +74,8 @@
       ],
       "version": "2026.06",
       "size": 3775,
-      "releaseTime": "2026-06-21 02:28:04",
-      "sha256": "630a3188bf3f4addf2c79e89f67ccc94716346756aff5a80292472c701ac2001"
+      "releaseTime": "2026-06-21 12:26:26",
+      "sha256": "917b3a13b978d52f679874b03146744ae22714e6d42c8920c2299a679b808299"
     },
     {
       "fileName": "P2.toml",
@@ -98,8 +86,8 @@
       ],
       "version": "2026.06",
       "size": 3779,
-      "releaseTime": "2026-06-21 02:28:04",
-      "sha256": "e150ad6614a58a8cb0232e0894f4e6591cb33670ed62442b525dc931656a053a"
+      "releaseTime": "2026-06-21 12:26:26",
+      "sha256": "d4cbb94129d2f9d5644cdb263463fb8e7742350fda00793b6929ad7584d32303"
     },
     {
       "fileName": "X1.toml",
@@ -110,8 +98,8 @@
       ],
       "version": "2026.06",
       "size": 3775,
-      "releaseTime": "2026-06-21 02:28:04",
-      "sha256": "db0005a954ba466740127260cf75d91d9fabe712e34945e9a18c38d554849e2e"
+      "releaseTime": "2026-06-21 12:26:26",
+      "sha256": "d8ed467e019b640dea821a5fbbfa1f3d6c2a7495022cb947324f4f87667f02a7"
     },
     {
       "fileName": "MKPProcess A1 0.2 0.10.json",

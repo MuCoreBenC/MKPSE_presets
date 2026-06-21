@@ -1,6 +1,6 @@
 {
   "version": "1.0",
-  "updatedAt": "2026-05-07",
+  "updatedAt": "2026-06-21 18:49:21",
   "brands": [
     {
       "id": "Bambu Lab",
@@ -38,7 +38,7 @@
                 "url": "/BBS_Presets/Process/0.4mm/MKPProcess%20A1%200.4%200.20.json"
               }
             ],
-            "machineKey": "A1",
+            "machineKey": "A1:standard",
             "presetFile": "A1.toml"
           },
           {
@@ -65,31 +65,6 @@
             ],
             "machineKey": "A1:fast",
             "presetFile": "A1F.toml"
-          },
-          {
-            "id": "fastv3.3",
-            "name": "官改快拆版260628",
-            "tag": "最新",
-            "description": "6月以后闲鱼购买的，以及6月28开源的快拆260628版本",
-            "downloads": [
-              {
-                "type": "mkp_toml",
-                "fileName": "A1F260628.toml",
-                "url": "/presets/A1F260628.toml"
-              },
-              {
-                "type": "bbs_machine",
-                "fileName": "0.4mm/MKPSupport A1 0.4.json",
-                "url": "/presets/0.4mm/MKPSupport A1 0.4.json"
-              },
-              {
-                "type": "bbs_process",
-                "fileName": "0.4mm/MKPProcess A1 0.4 0.20.json",
-                "url": "/presets/0.4mm/MKPProcess A1 0.4 0.20.json"
-              }
-            ],
-            "machineKey": "A1:fast",
-            "presetFile": "A1F260628.toml"
           }
         ],
         "machineKey": "A1"
@@ -122,7 +97,7 @@
                 "url": "/BBS_Presets/Process/0.4mm/MKPProcess%20A1%20mini%200.4%200.20.json"
               }
             ],
-            "machineKey": "A1MINI",
+            "machineKey": "A1MINI:standard",
             "presetFile": "A1M.toml"
           },
           {
@@ -158,8 +133,8 @@
             "downloads": [
               {
                 "type": "mkp_toml",
-                "fileName": "A1MF260628.toml",
-                "url": "/presets/A1MF260628.toml"
+                "fileName": "A1MF_260628.toml",
+                "url": "/presets/A1MF_260628.toml"
               },
               {
                 "type": "bbs_machine",
@@ -172,8 +147,8 @@
                 "url": "/BBS_Presets/Process/0.4mm/MKPProcess%20A1%20mini%200.4%200.20.json"
               }
             ],
-            "machineKey": "A1MINI:fast",
-            "presetFile": "A1MF260628.toml"
+            "machineKey": "A1MINI:fastv3.3",
+            "presetFile": "A1MF_260628.toml"
           }
         ],
         "machineKey": "A1MINI"
@@ -206,8 +181,33 @@
                 "url": "/BBS_Presets/Process/0.4mm/MKPProcess%20P1S%200.4%200.24.json"
               }
             ],
-            "machineKey": "P1",
+            "machineKey": "P1:lite",
             "presetFile": "P1.toml"
+          },
+          {
+            "id": "lite_v3",
+            "name": "lite版v3",
+            "tag": "精简",
+            "description": "精简配置，适合轻量使用",
+            "downloads": [
+              {
+                "type": "mkp_toml",
+                "fileName": "P1v3.toml",
+                "url": "/presets/P1v3.toml"
+              },
+              {
+                "type": "bbs_machine",
+                "fileName": "0.4mm/MKPSupport P1S 0.4.json",
+                "url": "/BBS_Presets/Support/0.4mm/MKPSupport%20P1S%200.4.json"
+              },
+              {
+                "type": "bbs_process",
+                "fileName": "0.4mm/MKPProcess P1S 0.4 0.24.json",
+                "url": "/BBS_Presets/Process/0.4mm/MKPProcess%20P1S%200.4%200.24.json"
+              }
+            ],
+            "machineKey": "P1:lite_v3",
+            "presetFile": "P1v3.toml"
           }
         ],
         "machineKey": "P1"
@@ -240,7 +240,7 @@
                 "url": "/BBS_Presets/Process/0.4mm/MKPProcess%20P2S%200.4%200.24.json"
               }
             ],
-            "machineKey": "P2",
+            "machineKey": "P2:standard",
             "presetFile": "P2.toml"
           }
         ],
@@ -274,7 +274,32 @@
                 "url": "/BBS_Presets/Process/0.4mm/MKPProcess%20X1%200.4%200.24.json"
               }
             ],
-            "machineKey": "X1",
+            "machineKey": "X1:lite",
+            "presetFile": "X1.toml"
+          },
+          {
+            "id": "lite_copy",
+            "name": "lite版 (副本)",
+            "tag": "精简",
+            "description": "精简配置，适合轻量使用",
+            "downloads": [
+              {
+                "type": "mkp_toml",
+                "fileName": "X1.toml",
+                "url": "/presets/X1.toml"
+              },
+              {
+                "type": "bbs_machine",
+                "fileName": "0.4mm/MKPSupport X1 0.4.json",
+                "url": "/BBS_Presets/Support/0.4mm/MKPSupport%20X1%200.4.json"
+              },
+              {
+                "type": "bbs_process",
+                "fileName": "0.4mm/MKPProcess X1 0.4 0.24.json",
+                "url": "/BBS_Presets/Process/0.4mm/MKPProcess%20X1%200.4%200.24.json"
+              }
+            ],
+            "machineKey": "X1:lite_copy",
             "presetFile": "X1.toml"
           }
         ],
@@ -291,7 +316,8 @@
             "name": "标准版",
             "tag": "",
             "description": "",
-            "downloads": []
+            "downloads": [],
+            "machineKey": "A2L:standard"
           }
         ]
       }
