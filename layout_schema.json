@@ -38,6 +38,21 @@
       "label": "高级",
       "sections": [
         {
+          "id": "涂胶参数",
+          "title": "涂胶参数",
+          "items": [
+            {
+              "paramKey": "wiping.small_feature_factor"
+            },
+            {
+              "paramKey": "toolhead.glue_z_offset"
+            },
+            {
+              "paramKey": "wiping.glue_pass_count"
+            }
+          ]
+        },
+        {
           "id": "Z轴抬升",
           "title": "Z轴抬升",
           "items": [
@@ -90,21 +105,6 @@
               "paramKey": "wiping.prime_every_layer"
             }
           ]
-        },
-        {
-          "id": "涂胶参数",
-          "title": "涂胶参数",
-          "items": [
-            {
-              "paramKey": "wiping.small_feature_factor"
-            },
-            {
-              "paramKey": "toolhead.glue_z_offset"
-            },
-            {
-              "paramKey": "wiping.glue_pass_count"
-            }
-          ]
         }
       ]
     },
@@ -130,6 +130,36 @@
       "id": "擦料策略",
       "label": "擦料策略",
       "sections": [
+        {
+          "id": "擦料方式",
+          "title": "擦料方式",
+          "items": [
+            {
+              "paramKey": "wiping.have_wiping_components"
+            },
+            {
+              "paramKey": "wiping.use_disk_wipe_flag"
+            }
+          ]
+        },
+        {
+          "id": "擦料塔位置与打印",
+          "title": "擦料塔位置与打印",
+          "items": [
+            {
+              "paramKey": "wiping.wiper_x"
+            },
+            {
+              "paramKey": "wiping.wiper_y"
+            },
+            {
+              "paramKey": "wiping.tower_extrude_ratio"
+            },
+            {
+              "paramKey": "wiping.tower_travel_speed"
+            }
+          ]
+        },
         {
           "id": "安全与高级参数",
           "title": "安全与高级参数",
@@ -219,36 +249,6 @@
               "paramKey": "wiping.disk_stagger_swing_mode"
             }
           ]
-        },
-        {
-          "id": "擦料方式",
-          "title": "擦料方式",
-          "items": [
-            {
-              "paramKey": "wiping.have_wiping_components"
-            },
-            {
-              "paramKey": "wiping.use_disk_wipe_flag"
-            }
-          ]
-        },
-        {
-          "id": "擦料塔位置与打印",
-          "title": "擦料塔位置与打印",
-          "items": [
-            {
-              "paramKey": "wiping.wiper_x"
-            },
-            {
-              "paramKey": "wiping.wiper_y"
-            },
-            {
-              "paramKey": "wiping.tower_extrude_ratio"
-            },
-            {
-              "paramKey": "wiping.tower_travel_speed"
-            }
-          ]
         }
       ]
     },
@@ -281,6 +281,15 @@
       "label": "涂胶面",
       "sections": [
         {
+          "id": "高级运动调控",
+          "title": "高级运动调控",
+          "items": [
+            {
+              "paramKey": "wiping.support_extrusion_multiplier"
+            }
+          ]
+        },
+        {
           "id": "支撑面熨烫",
           "title": "支撑面熨烫",
           "items": [
@@ -307,15 +316,6 @@
             },
             {
               "paramKey": "wiping.glue_sparse_ratio"
-            }
-          ]
-        },
-        {
-          "id": "高级运动调控",
-          "title": "高级运动调控",
-          "items": [
-            {
-              "paramKey": "wiping.support_extrusion_multiplier"
             }
           ]
         }

@@ -2,7 +2,10 @@
   "meta": {
     "generatedAt": "2026-06-21T19:05:56+08:00",
     "registryVersion": "2026.06.21",
-    "schemaVersion": 1
+    "schemaVersion": "2.0.0",
+    "status": "stable",
+    "updatedAt": "2026-06-22T08:42:11+08:00",
+    "updatedBy": "MKP Publish Center"
   },
   "params": [
     {
@@ -46,6 +49,7 @@
       "mergeGroup": "offset",
       "mergeable": true,
       "min": -50,
+      "pinned": true,
       "scope": "per_machine",
       "section": "toolhead",
       "selectable": true,
@@ -97,6 +101,7 @@
       "mergeGroup": "offset",
       "mergeable": true,
       "min": -50,
+      "pinned": true,
       "scope": "per_machine",
       "section": "toolhead",
       "selectable": true,
@@ -148,6 +153,7 @@
       "mergeGroup": "offset",
       "mergeable": true,
       "min": 0,
+      "pinned": true,
       "scope": "per_machine",
       "section": "toolhead",
       "selectable": true,
@@ -169,19 +175,11 @@
         "tab": "工具头"
       },
       "machineFilter": "",
-      "machineVariants": {
-        "A1:standard": 69,
-        "A1MINI:standard": 70,
-        "P1:lite": 70,
-        "P1:lite_v3": 70,
-        "P2:standard": 70,
-        "X1:lite": 70,
-        "X1:lite_copy": 70
-      },
       "max": 500,
       "mergeGroup": "",
       "mergeable": true,
       "min": 10,
+      "pinned": true,
       "scope": "universal",
       "section": "toolhead",
       "selectable": true,
@@ -424,7 +422,7 @@
       },
       "machineFilter": "",
       "machineMaxVariants": {
-        "A1:fast": 226,
+        "A1:standard": 226,
         "A1MINI:fast": 150,
         "A1MINI:fastv3.3": 150,
         "P1:lite": 226,
@@ -434,7 +432,7 @@
         "X1:lite_copy": 226
       },
       "machineMinVariants": {
-        "A1:fast": 10,
+        "A1:standard": 10,
         "A1MINI:fast": 10,
         "A1MINI:fastv3.3": 10,
         "P1:lite": 10,
@@ -442,16 +440,6 @@
         "P2:standard": 10,
         "X1:lite": 10,
         "X1:lite_copy": 10
-      },
-      "machineVariants": {
-        "A1:fast": 20,
-        "A1MINI:fast": 20,
-        "A1MINI:fastv3.3": 20,
-        "P1:lite": 20,
-        "P1:lite_v3": 20,
-        "P2:standard": 20,
-        "X1:lite": 20,
-        "X1:lite_copy": 20
       },
       "max": 226,
       "mergeGroup": "wiper",
@@ -462,7 +450,7 @@
       "section": "wiping",
       "selectable": true,
       "showWhen": {
-        "field": "",
+        "key": "wiping.have_wiping_components",
         "op": "eq",
         "value": "tower"
       },
@@ -504,16 +492,6 @@
         "X1:lite": 10,
         "X1:lite_copy": 10
       },
-      "machineVariants": {
-        "A1:fast": 20,
-        "A1MINI:fast": 20,
-        "A1MINI:fastv3.3": 20,
-        "P1:lite": 20,
-        "P1:lite_v3": 20,
-        "P2:standard": 20,
-        "X1:lite": 20,
-        "X1:lite_copy": 20
-      },
       "max": 226,
       "mergeGroup": "wiper",
       "mergeable": true,
@@ -523,7 +501,7 @@
       "section": "wiping",
       "selectable": true,
       "showWhen": {
-        "field": "",
+        "key": "wiping.have_wiping_components",
         "op": "eq",
         "value": "tower"
       },
@@ -555,7 +533,7 @@
       "section": "wiping",
       "selectable": true,
       "showWhen": {
-        "field": "",
+        "key": "wiping.fast_tower_mode",
         "op": "eq",
         "value": "custom"
       },
@@ -587,7 +565,7 @@
       "section": "wiping",
       "selectable": true,
       "showWhen": {
-        "field": "",
+        "key": "wiping.have_wiping_components",
         "op": "eq",
         "value": "tower"
       },
@@ -775,7 +753,7 @@
       "section": "wiping",
       "selectable": true,
       "showWhen": {
-        "field": "",
+        "key": "wiping.outer_structure",
         "op": "eq",
         "value": "sheath"
       },
@@ -808,7 +786,7 @@
       "section": "wiping",
       "selectable": true,
       "showWhen": {
-        "field": "",
+        "key": "wiping.outer_structure",
         "op": "eq",
         "value": "sheath"
       },
@@ -841,7 +819,7 @@
       "section": "wiping",
       "selectable": true,
       "showWhen": {
-        "field": "",
+        "key": "wiping.outer_structure",
         "op": "eq",
         "value": "sheath"
       },
@@ -874,7 +852,7 @@
       "section": "wiping",
       "selectable": true,
       "showWhen": {
-        "field": "",
+        "key": "wiping.outer_structure",
         "op": "eq",
         "value": "sheath"
       },
@@ -945,7 +923,7 @@
       "section": "wiping",
       "selectable": true,
       "showWhen": {
-        "field": "",
+        "key": "wiping.ironing_mode",
         "op": "eq",
         "value": "auto"
       },
@@ -1088,7 +1066,7 @@
       "section": "wiping",
       "selectable": true,
       "showWhen": {
-        "field": "",
+        "key": "wiping.ironing_suppress_expand",
         "op": "gt",
         "value": "0"
       },
@@ -1159,7 +1137,7 @@
       "section": "wiping",
       "selectable": true,
       "showWhen": {
-        "field": "",
+        "key": "wiping.have_wiping_components",
         "op": "eq",
         "value": "disk"
       },
@@ -1190,7 +1168,7 @@
       "section": "wiping",
       "selectable": true,
       "showWhen": {
-        "field": "",
+        "key": "wiping.disk_stagger_mode",
         "op": "neq",
         "value": "off"
       },
@@ -1222,7 +1200,7 @@
       "section": "wiping",
       "selectable": true,
       "showWhen": {
-        "field": "",
+        "key": "wiping.disk_stagger_mode",
         "op": "neq",
         "value": "off"
       },
@@ -1264,7 +1242,7 @@
       "section": "wiping",
       "selectable": true,
       "showWhen": {
-        "field": "",
+        "key": "wiping.disk_stagger_mode",
         "op": "neq",
         "value": "off"
       },
@@ -1311,15 +1289,6 @@
         "tab": "高级"
       },
       "machineFilter": "",
-      "machineVariants": {
-        "A1:standard": 5,
-        "A1MINI:standard": 5,
-        "P1:lite": 5,
-        "P1:lite_v3": 5,
-        "P2:standard": 5,
-        "X1:lite": 5,
-        "X1:lite_copy": 5
-      },
       "max": 10,
       "mergeGroup": "",
       "mergeable": true,
@@ -1355,7 +1324,7 @@
       "section": "wiping",
       "selectable": true,
       "showWhen": {
-        "field": "",
+        "key": "wiping.glue_z_lift_height",
         "op": "gt",
         "value": "0"
       },
@@ -1509,7 +1478,7 @@
       "section": "wiping",
       "selectable": true,
       "showWhen": {
-        "field": "",
+        "key": "wiping.outer_structure",
         "op": "eq",
         "value": "rib"
       },
@@ -1541,7 +1510,7 @@
       "section": "wiping",
       "selectable": true,
       "showWhen": {
-        "field": "",
+        "key": "wiping.outer_structure",
         "op": "eq",
         "value": "rib"
       },
@@ -1573,7 +1542,7 @@
       "section": "wiping",
       "selectable": true,
       "showWhen": {
-        "field": "",
+        "key": "wiping.outer_structure",
         "op": "eq",
         "value": "rib"
       },
@@ -1750,7 +1719,7 @@
       "section": "wiping",
       "selectable": true,
       "showWhen": {
-        "field": "",
+        "key": "wiping.have_wiping_components",
         "op": "eq",
         "value": "tower"
       },
@@ -1796,7 +1765,7 @@
       "section": "wiping",
       "selectable": true,
       "showWhen": {
-        "field": "",
+        "key": "wiping.have_wiping_components",
         "op": "eq",
         "value": "tower"
       },
@@ -1827,7 +1796,7 @@
       "section": "wiping",
       "selectable": true,
       "showWhen": {
-        "field": "",
+        "key": "wiping.fast_tower_mode",
         "op": "eq",
         "value": "custom"
       },
@@ -1860,7 +1829,7 @@
       "section": "wiping",
       "selectable": true,
       "showWhen": {
-        "field": "",
+        "key": "wiping.outer_structure",
         "op": "eq",
         "value": "sheath"
       },
@@ -1902,7 +1871,7 @@
       "section": "wiping",
       "selectable": true,
       "showWhen": {
-        "field": "",
+        "key": "wiping.outer_structure",
         "op": "eq",
         "value": "rib"
       },
@@ -1933,7 +1902,7 @@
       "section": "wiping",
       "selectable": true,
       "showWhen": {
-        "field": "",
+        "key": "wiping.tower_rib_speed",
         "op": "eq",
         "value": "custom"
       },
@@ -1979,7 +1948,7 @@
       "section": "wiping",
       "selectable": true,
       "showWhen": {
-        "field": "",
+        "key": "wiping.fast_tower_mode",
         "op": "eq",
         "value": "custom"
       },
@@ -2024,7 +1993,7 @@
       "section": "wiping",
       "selectable": true,
       "showWhen": {
-        "field": "",
+        "key": "wiping.fast_tower_mode",
         "op": "eq",
         "value": "custom"
       },
@@ -2055,7 +2024,7 @@
       "section": "wiping",
       "selectable": true,
       "showWhen": {
-        "field": "",
+        "key": "wiping.have_wiping_components",
         "op": "eq",
         "value": "tower"
       },
@@ -2087,7 +2056,7 @@
       "section": "wiping",
       "selectable": true,
       "showWhen": {
-        "field": "",
+        "key": "wiping.have_wiping_components",
         "op": "eq",
         "value": "tower"
       },
@@ -2134,7 +2103,7 @@
       "section": "wiping",
       "selectable": true,
       "showWhen": {
-        "field": "",
+        "key": "wiping.have_wiping_components",
         "op": "eq",
         "value": "tower"
       },
@@ -2180,7 +2149,7 @@
       "section": "wiping",
       "selectable": true,
       "showWhen": {
-        "field": "",
+        "key": "wiping.outer_structure",
         "op": "eq",
         "value": "sheath"
       },
@@ -2223,7 +2192,7 @@
       "section": "wiping",
       "selectable": true,
       "showWhen": {
-        "field": "",
+        "key": "wiping.have_wiping_components",
         "op": "eq",
         "value": "tower"
       },
@@ -2256,7 +2225,7 @@
       "section": "wiping",
       "selectable": true,
       "showWhen": {
-        "field": "",
+        "key": "wiping.outer_structure",
         "op": "eq",
         "value": "rib"
       },
@@ -2267,5 +2236,5 @@
       "valueType": "bool"
     }
   ],
-  "updated": "2026-06-21 18:49:21"
+  "updated": "2026-06-22 08:42:11"
 }
