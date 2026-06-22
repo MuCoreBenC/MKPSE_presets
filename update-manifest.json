@@ -1,20 +1,20 @@
 {
   "latestVersion": "0.0.4",
-  "updated": "2026-06-19 23:00:00",
+  "updated": "2026-06-21 12:00:00",
   "changelog": {
     "en": "",
-    "zh-CN": "## 水波纹与布局优化 v0.0.4 (2026-06-19)\n\n### 核心功能\n1. QrSpotlight 水波纹动效：5 种鱼身形状（金鱼/鲨鱼/神仙鱼/河豚/剑鱼）、上下游动、跃出卡片、气泡与水花\n2. mkp-publisher 组件重构与主题服务统一\n\n### 问题修复\n3. 关于页右列被压缩成竖条（lg:col-span-5 → md:col-span-5 断点修复）\n4. 侧边栏折叠态图标右偏 4px 修复（w-12→w-10 条件宽度）\n\n### 架构优化\n5. 参数页与预设管理交互优化\n6. 备份管理、TowerMapPanel 与样式调整\n\n### 体验优化\n7. 窗口最小宽度限制 770px，侧边栏紧凑断点 880→950px\n8. ResizeObserver debounce 优化拖拽卡顿，描述区域预留两行高度"
+    "zh-CN": "## 参数统一与IR重构 v0.0.4 (2026-06-21)\n\n### 核心功能\n1. QrSpotlight 水波纹动效：5 种鱼身形状、上下游动、跃出卡片、气泡与水花\n2. 参数弃用机制，use_disk_wipe_flag 重构为 have_wiping_components\n3. IR 层迁移，参数系统统一重构\n\n### 问题修复\n4. 关于页右列被压缩成竖条、侧边栏折叠态图标右偏修复\n5. 深色/暗黑模式切换器与历史记录按钮样式修复\n6. 参数页面切换器样式与数字步进器修复\n\n### 架构优化\n7. mkp-publisher 组件重构与主题服务统一\n8. config 模块拆分（converter→dto_converter + config_builder/config_mapper）\n9. 发布中心校验增强与注册表诊断中心\n\n### 体验优化\n10. 窗口最小宽度限制 770px，侧边栏紧凑断点调整\n11. ResizeObserver debounce 优化拖拽卡顿，预设文件重命名整理"
   },
   "versions": [
     {
       "version": "0.0.4",
-      "releaseDate": "2026-06-19",
+      "releaseDate": "2026-06-21",
       "forceUpdate": false,
       "minVersion": "0.0.1",
       "hasExe": false,
       "changelog": {
         "en": "",
-        "zh-CN": "## 水波纹与布局优化 v0.0.4 (2026-06-19)\n\n### 核心功能\n1. QrSpotlight 水波纹动效：5 种鱼身形状（金鱼/鲨鱼/神仙鱼/河豚/剑鱼）、上下游动、跃出卡片、气泡与水花\n2. mkp-publisher 组件重构与主题服务统一\n\n### 问题修复\n3. 关于页右列被压缩成竖条（lg:col-span-5 → md:col-span-5 断点修复）\n4. 侧边栏折叠态图标右偏 4px 修复（w-12→w-10 条件宽度）\n\n### 架构优化\n5. 参数页与预设管理交互优化\n6. 备份管理、TowerMapPanel 与样式调整\n\n### 体验优化\n7. 窗口最小宽度限制 770px，侧边栏紧凑断点 880→950px\n8. ResizeObserver debounce 优化拖拽卡顿，描述区域预留两行高度"
+        "zh-CN": "## 参数统一与IR重构 v0.0.4 (2026-06-21)\n\n### 核心功能\n1. QrSpotlight 水波纹动效：5 种鱼身形状、上下游动、跃出卡片、气泡与水花\n2. 参数弃用机制，use_disk_wipe_flag 重构为 have_wiping_components\n3. IR 层迁移，参数系统统一重构\n\n### 问题修复\n4. 关于页右列被压缩成竖条、侧边栏折叠态图标右偏修复\n5. 深色/暗黑模式切换器与历史记录按钮样式修复\n6. 参数页面切换器样式与数字步进器修复\n\n### 架构优化\n7. mkp-publisher 组件重构与主题服务统一\n8. config 模块拆分（converter→dto_converter + config_builder/config_mapper）\n9. 发布中心校验增强与注册表诊断中心\n\n### 体验优化\n10. 窗口最小宽度限制 770px，侧边栏紧凑断点调整\n11. ResizeObserver debounce 优化拖拽卡顿，预设文件重命名整理"
       }
     },
     {
