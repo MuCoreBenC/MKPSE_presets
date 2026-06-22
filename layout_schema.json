@@ -34,129 +34,48 @@
       ]
     },
     {
-      "id": "高级",
-      "label": "高级",
-      "sections": [
-        {
-          "id": "涂胶参数",
-          "title": "涂胶参数",
-          "items": [
-            {
-              "paramKey": "wiping.small_feature_factor"
-            },
-            {
-              "paramKey": "toolhead.glue_z_offset"
-            },
-            {
-              "paramKey": "wiping.glue_pass_count"
-            }
-          ]
-        },
-        {
-          "id": "Z轴抬升",
-          "title": "Z轴抬升",
-          "items": [
-            {
-              "paramKey": "wiping.glue_z_lift_height"
-            },
-            {
-              "paramKey": "wiping.glue_z_lift_height_first_layers"
-            },
-            {
-              "paramKey": "wiping.glue_inter_model_lift_height"
-            }
-          ]
-        },
-        {
-          "id": "机型专属",
-          "title": "机型专属",
-          "items": [
-            {
-              "paramKey": "wiping.disable_front_cover_alarm"
-            },
-            {
-              "paramKey": "wiping.disable_3rd_layer_clog_detect"
-            },
-            {
-              "paramKey": "wiping.xy_calibration_mode"
-            }
-          ]
-        },
-        {
-          "id": "润笔",
-          "title": "润笔",
-          "items": [
-            {
-              "paramKey": "toolhead.first_pen_revitalization_flag"
-            },
-            {
-              "paramKey": "toolhead.prime_length"
-            },
-            {
-              "paramKey": "wiping.prime_min_path_length"
-            },
-            {
-              "paramKey": "wiping.prime_trigger_layers"
-            },
-            {
-              "paramKey": "wiping.prime_per_model"
-            },
-            {
-              "paramKey": "wiping.prime_every_layer"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "id": "自定义G-code",
-      "label": "自定义G-code",
-      "sections": [
-        {
-          "id": "自定义G-code",
-          "title": "自定义G-code",
-          "items": [
-            {
-              "paramKey": "toolhead.custom_mount_gcode"
-            },
-            {
-              "paramKey": "toolhead.custom_unmount_gcode"
-            }
-          ]
-        }
-      ]
-    },
-    {
       "id": "擦料策略",
       "label": "擦料策略",
       "sections": [
         {
-          "id": "擦料方式",
-          "title": "擦料方式",
+          "id": "圆盘动作控制",
+          "title": "圆盘动作控制",
           "items": [
             {
-              "paramKey": "wiping.have_wiping_components"
+              "paramKey": "wiping.disk_stagger_mode"
             },
             {
-              "paramKey": "wiping.use_disk_wipe_flag"
+              "paramKey": "wiping.disk_stagger_angle"
+            },
+            {
+              "paramKey": "wiping.disk_stagger_max_angle"
+            },
+            {
+              "paramKey": "wiping.disk_stagger_swing_mode"
             }
           ]
         },
         {
-          "id": "擦料塔位置与打印",
-          "title": "擦料塔位置与打印",
+          "id": "塔结构加强",
+          "title": "塔结构加强",
           "items": [
             {
-              "paramKey": "wiping.wiper_x"
+              "paramKey": "wiping.outer_structure"
             },
             {
-              "paramKey": "wiping.wiper_y"
+              "paramKey": "wiping.tower_rib_speed"
             },
             {
-              "paramKey": "wiping.tower_extrude_ratio"
+              "paramKey": "wiping.tower_rib_speed_value"
             },
             {
-              "paramKey": "wiping.tower_travel_speed"
+              "paramKey": "wiping.rib_extra_length"
+            },
+            {
+              "paramKey": "wiping.rib_width"
+            },
+            {
+              "paramKey": "wiping.rib_fillet_wall"
             }
           ]
         },
@@ -188,65 +107,74 @@
           ]
         },
         {
-          "id": "塔结构加强",
-          "title": "塔结构加强",
+          "id": "擦料塔位置与打印",
+          "title": "擦料塔位置与打印",
           "items": [
             {
-              "paramKey": "wiping.outer_structure"
+              "paramKey": "wiping.wiper_x"
             },
             {
-              "paramKey": "wiping.tower_rib_speed"
+              "paramKey": "wiping.wiper_y"
             },
             {
-              "paramKey": "wiping.sheath_mode"
+              "paramKey": "wiping.tower_extrude_ratio"
             },
             {
-              "paramKey": "wiping.rib_outer_wall"
-            },
-            {
-              "paramKey": "wiping.tower_rib_speed_value"
-            },
-            {
-              "paramKey": "wiping.rib_extra_length"
-            },
-            {
-              "paramKey": "wiping.rib_width"
-            },
-            {
-              "paramKey": "wiping.rib_fillet_wall"
-            },
-            {
-              "paramKey": "wiping.tower_sheath_speed"
-            },
-            {
-              "paramKey": "wiping.sheath_enable_height"
-            },
-            {
-              "paramKey": "wiping.sheath_base_expand"
-            },
-            {
-              "paramKey": "wiping.sheath_wall_width"
-            },
-            {
-              "paramKey": "wiping.sheath_converge_layers"
+              "paramKey": "wiping.tower_travel_speed"
             }
           ]
         },
         {
-          "id": "圆盘动作控制",
-          "title": "圆盘动作控制",
+          "id": "擦料方式",
+          "title": "擦料方式",
           "items": [
             {
-              "paramKey": "wiping.disk_stagger_mode"
+              "paramKey": "wiping.have_wiping_components"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "涂胶面",
+      "label": "涂胶面",
+      "sections": [
+        {
+          "id": "支撑面熨烫",
+          "title": "支撑面熨烫",
+          "items": [
+            {
+              "paramKey": "wiping.ironing_mode"
             },
             {
-              "paramKey": "wiping.disk_stagger_angle"
+              "paramKey": "wiping.ironing_e_sum_threshold"
             },
             {
-              "paramKey": "wiping.disk_stagger_max_angle"
+              "paramKey": "wiping.use_ironing_path"
             },
             {
-              "paramKey": "wiping.disk_stagger_swing_mode"
+              "paramKey": "wiping.ironing_coverage_threshold"
+            },
+            {
+              "paramKey": "wiping.ironing_suppress_expand"
+            },
+            {
+              "paramKey": "wiping.ironing_suppress_expand_mode"
+            },
+            {
+              "paramKey": "wiping.min_support_interface_enabled"
+            },
+            {
+              "paramKey": "wiping.glue_sparse_ratio"
+            }
+          ]
+        },
+        {
+          "id": "高级运动调控",
+          "title": "高级运动调控",
+          "items": [
+            {
+              "paramKey": "wiping.support_extrusion_multiplier"
             }
           ]
         }
@@ -277,45 +205,93 @@
       ]
     },
     {
-      "id": "涂胶面",
-      "label": "涂胶面",
+      "id": "自定义G-code",
+      "label": "自定义G-code",
       "sections": [
         {
-          "id": "高级运动调控",
-          "title": "高级运动调控",
+          "id": "自定义G-code",
+          "title": "自定义G-code",
           "items": [
             {
-              "paramKey": "wiping.support_extrusion_multiplier"
+              "paramKey": "toolhead.custom_mount_gcode"
+            },
+            {
+              "paramKey": "toolhead.custom_unmount_gcode"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "高级",
+      "label": "高级",
+      "sections": [
+        {
+          "id": "Z轴抬升",
+          "title": "Z轴抬升",
+          "items": [
+            {
+              "paramKey": "wiping.glue_z_lift_height"
+            },
+            {
+              "paramKey": "wiping.glue_z_lift_height_first_layers"
+            },
+            {
+              "paramKey": "wiping.glue_inter_model_lift_height"
             }
           ]
         },
         {
-          "id": "支撑面熨烫",
-          "title": "支撑面熨烫",
+          "id": "机型专属",
+          "title": "机型专属",
           "items": [
             {
-              "paramKey": "wiping.ironing_mode"
+              "paramKey": "wiping.disable_front_cover_alarm"
             },
             {
-              "paramKey": "wiping.ironing_e_sum_threshold"
+              "paramKey": "wiping.disable_3rd_layer_clog_detect"
             },
             {
-              "paramKey": "wiping.use_ironing_path"
+              "paramKey": "wiping.xy_calibration_mode"
+            }
+          ]
+        },
+        {
+          "id": "涂胶参数",
+          "title": "涂胶参数",
+          "items": [
+            {
+              "paramKey": "wiping.small_feature_factor"
             },
             {
-              "paramKey": "wiping.ironing_coverage_threshold"
+              "paramKey": "toolhead.glue_z_offset"
             },
             {
-              "paramKey": "wiping.ironing_suppress_expand"
+              "paramKey": "wiping.glue_pass_count"
+            }
+          ]
+        },
+        {
+          "id": "润笔",
+          "title": "润笔",
+          "items": [
+            {
+              "paramKey": "toolhead.first_pen_revitalization_flag"
             },
             {
-              "paramKey": "wiping.ironing_suppress_expand_mode"
+              "paramKey": "toolhead.prime_length"
             },
             {
-              "paramKey": "wiping.min_support_interface_enabled"
+              "paramKey": "wiping.prime_min_path_length"
             },
             {
-              "paramKey": "wiping.glue_sparse_ratio"
+              "paramKey": "wiping.prime_trigger_layers"
+            },
+            {
+              "paramKey": "wiping.prime_per_model"
+            },
+            {
+              "paramKey": "wiping.prime_every_layer"
             }
           ]
         }

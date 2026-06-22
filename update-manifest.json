@@ -1,11 +1,22 @@
 {
-  "latestVersion": "0.0.4",
-  "updated": "2026-06-21 12:00:00",
+  "latestVersion": "0.0.5",
+  "updated": "2026-06-21 18:00:00",
   "changelog": {
     "en": "",
-    "zh-CN": "## 参数统一与IR重构 v0.0.4 (2026-06-21)\n\n### 核心功能\n1. QrSpotlight 水波纹动效：5 种鱼身形状、上下游动、跃出卡片、气泡与水花\n2. 参数弃用机制，use_disk_wipe_flag 重构为 have_wiping_components\n3. IR 层迁移，参数系统统一重构\n\n### 问题修复\n4. 关于页右列被压缩成竖条、侧边栏折叠态图标右偏修复\n5. 深色/暗黑模式切换器与历史记录按钮样式修复\n6. 参数页面切换器样式与数字步进器修复\n\n### 架构优化\n7. mkp-publisher 组件重构与主题服务统一\n8. config 模块拆分（converter→dto_converter + config_builder/config_mapper）\n9. 发布中心校验增强与注册表诊断中心\n\n### 体验优化\n10. 窗口最小宽度限制 770px，侧边栏紧凑断点调整\n11. ResizeObserver debounce 优化拖拽卡顿，预设文件重命名整理"
+    "zh-CN": "## AI平台与条件显式 v0.0.5 (2026-06-21)\n\n### 核心功能\n1. AI 自动化平台集成（aiplatform 模块 + MCP 工具扩展）\n2. showWhen 条件显式逻辑统一（前后端共享 showWhenUtils）\n\n### 问题修复\n3. 塔图面板重构与 TowerCoreSVG 渲染优化\n4. 参数页交互与 CompactNumberInput 修复\n\n### 架构优化\n5. DebugBridge MCP 扩展（handlers 拆分 + aiplatform 工具）\n6. 发布中心校验与注册表更新\n\n### 体验优化\n7. 版本控制页与预设管理器交互优化\n8. MiniMode 与 PipPreview 样式调整"
   },
   "versions": [
+    {
+      "version": "0.0.5",
+      "releaseDate": "2026-06-21",
+      "forceUpdate": false,
+      "minVersion": "0.0.1",
+      "hasExe": false,
+      "changelog": {
+        "en": "",
+        "zh-CN": "## AI平台与条件显式 v0.0.5 (2026-06-21)\n\n### 核心功能\n1. AI 自动化平台集成（aiplatform 模块 + MCP 工具扩展）\n2. showWhen 条件显式逻辑统一（前后端共享 showWhenUtils）\n\n### 问题修复\n3. 塔图面板重构与 TowerCoreSVG 渲染优化\n4. 参数页交互与 CompactNumberInput 修复\n\n### 架构优化\n5. DebugBridge MCP 扩展（handlers 拆分 + aiplatform 工具）\n6. 发布中心校验与注册表更新\n\n### 体验优化\n7. 版本控制页与预设管理器交互优化\n8. MiniMode 与 PipPreview 样式调整"
+      }
+    },
     {
       "version": "0.0.4",
       "releaseDate": "2026-06-21",
