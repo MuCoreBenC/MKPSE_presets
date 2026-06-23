@@ -1,20 +1,22 @@
 {
   "latestVersion": "0.0.5",
-  "updated": "2026-06-21 18:00:00",
+  "updated": "2026-06-23T08:07:54+08:00",
   "changelog": {
     "en": "",
-    "zh-CN": "## AI平台与条件显式 v0.0.5 (2026-06-21)\n\n### 核心功能\n1. AI 自动化平台集成（aiplatform 模块 + MCP 工具扩展）\n2. showWhen 条件显式逻辑统一（前后端共享 showWhenUtils）\n\n### 问题修复\n3. 塔图面板重构与 TowerCoreSVG 渲染优化\n4. 参数页交互与 CompactNumberInput 修复\n\n### 架构优化\n5. DebugBridge MCP 扩展（handlers 拆分 + aiplatform 工具）\n6. 发布中心校验与注册表更新\n\n### 体验优化\n7. 版本控制页与预设管理器交互优化\n8. MiniMode 与 PipPreview 样式调整"
+    "zh-CN": "## AI平台与条件显式 v0.0.5 (2026-06-23)\n\n### 新增\n1. AI 自动化平台集成（aiplatform 模块 + MCP 工具扩展）\n2. showWhen 条件显式逻辑统一（前后端共享 showWhenUtils）\n\n### 修复\n3. 塔图面板重构与 TowerCoreSVG 渲染优化\n4. 参数页交互与 CompactNumberInput 修复\n\n### 优化\n5. DebugBridge MCP 扩展（handlers 拆分 + aiplatform 工具）\n6. 发布中心校验与注册表更新\n7. 版本控制页与预设管理器交互优化\n8. MiniMode 与 PipPreview 样式调整\n"
   },
   "versions": [
     {
       "version": "0.0.5",
-      "releaseDate": "2026-06-21",
+      "status": "published",
+      "channel": "stable",
+      "releaseDate": "2026-06-23T04:08:03+08:00",
       "forceUpdate": false,
       "minVersion": "0.0.1",
       "hasExe": false,
       "changelog": {
         "en": "",
-        "zh-CN": "## AI平台与条件显式 v0.0.5 (2026-06-21)\n\n### 核心功能\n1. AI 自动化平台集成（aiplatform 模块 + MCP 工具扩展）\n2. showWhen 条件显式逻辑统一（前后端共享 showWhenUtils）\n\n### 问题修复\n3. 塔图面板重构与 TowerCoreSVG 渲染优化\n4. 参数页交互与 CompactNumberInput 修复\n\n### 架构优化\n5. DebugBridge MCP 扩展（handlers 拆分 + aiplatform 工具）\n6. 发布中心校验与注册表更新\n\n### 体验优化\n7. 版本控制页与预设管理器交互优化\n8. MiniMode 与 PipPreview 样式调整"
+        "zh-CN": "## AI平台与条件显式 v0.0.5 (2026-06-23)\n\n### 新增\n1. AI 自动化平台集成（aiplatform 模块 + MCP 工具扩展）\n2. showWhen 条件显式逻辑统一（前后端共享 showWhenUtils）\n\n### 修复\n3. 塔图面板重构与 TowerCoreSVG 渲染优化\n4. 参数页交互与 CompactNumberInput 修复\n\n### 优化\n5. DebugBridge MCP 扩展（handlers 拆分 + aiplatform 工具）\n6. 发布中心校验与注册表更新\n7. 版本控制页与预设管理器交互优化\n8. MiniMode 与 PipPreview 样式调整\n"
       }
     },
     {

@@ -6,7 +6,6 @@
       "sections": [
         {
           "id": "空间偏移",
-          "title": "空间偏移",
           "items": [
             {
               "paramKey": "toolhead.offset.x"
@@ -17,11 +16,11 @@
             {
               "paramKey": "toolhead.offset.z"
             }
-          ]
+          ],
+          "title": "空间偏移"
         },
         {
           "id": "运动与挤出",
-          "title": "运动与挤出",
           "items": [
             {
               "paramKey": "toolhead.speed_limit"
@@ -29,7 +28,8 @@
             {
               "paramKey": "toolhead.MKP_retract"
             }
-          ]
+          ],
+          "title": "运动与挤出"
         }
       ]
     },
@@ -39,7 +39,6 @@
       "sections": [
         {
           "id": "圆盘动作控制",
-          "title": "圆盘动作控制",
           "items": [
             {
               "paramKey": "wiping.disk_stagger_mode"
@@ -53,11 +52,11 @@
             {
               "paramKey": "wiping.disk_stagger_swing_mode"
             }
-          ]
+          ],
+          "title": "圆盘动作控制"
         },
         {
           "id": "塔结构加强",
-          "title": "塔结构加强",
           "items": [
             {
               "paramKey": "wiping.outer_structure"
@@ -77,11 +76,11 @@
             {
               "paramKey": "wiping.rib_fillet_wall"
             }
-          ]
+          ],
+          "title": "塔结构加强"
         },
         {
           "id": "安全与高级参数",
-          "title": "安全与高级参数",
           "items": [
             {
               "paramKey": "wiping.tower_first_layer_flow"
@@ -104,11 +103,11 @@
             {
               "paramKey": "wiping.tower_safe_z_offset"
             }
-          ]
+          ],
+          "title": "安全与高级参数"
         },
         {
           "id": "擦料塔位置与打印",
-          "title": "擦料塔位置与打印",
           "items": [
             {
               "paramKey": "wiping.wiper_x"
@@ -122,16 +121,17 @@
             {
               "paramKey": "wiping.tower_travel_speed"
             }
-          ]
+          ],
+          "title": "擦料塔位置与打印"
         },
         {
           "id": "擦料方式",
-          "title": "擦料方式",
           "items": [
             {
               "paramKey": "wiping.have_wiping_components"
             }
-          ]
+          ],
+          "title": "擦料方式"
         }
       ]
     },
@@ -141,7 +141,6 @@
       "sections": [
         {
           "id": "支撑面熨烫",
-          "title": "支撑面熨烫",
           "items": [
             {
               "paramKey": "wiping.ironing_mode"
@@ -167,16 +166,17 @@
             {
               "paramKey": "wiping.glue_sparse_ratio"
             }
-          ]
+          ],
+          "title": "支撑面熨烫"
         },
         {
           "id": "高级运动调控",
-          "title": "高级运动调控",
           "items": [
             {
               "paramKey": "wiping.support_extrusion_multiplier"
             }
-          ]
+          ],
+          "title": "高级运动调控"
         }
       ]
     },
@@ -186,7 +186,6 @@
       "sections": [
         {
           "id": "温控与风扇",
-          "title": "温控与风扇",
           "items": [
             {
               "paramKey": "wiping.nozzle_cooling_flag"
@@ -200,7 +199,8 @@
             {
               "paramKey": "wiping.part_drying_speed"
             }
-          ]
+          ],
+          "title": "温控与风扇"
         }
       ]
     },
@@ -210,7 +210,6 @@
       "sections": [
         {
           "id": "自定义G-code",
-          "title": "自定义G-code",
           "items": [
             {
               "paramKey": "toolhead.custom_mount_gcode"
@@ -218,7 +217,8 @@
             {
               "paramKey": "toolhead.custom_unmount_gcode"
             }
-          ]
+          ],
+          "title": "自定义G-code"
         }
       ]
     },
@@ -228,7 +228,6 @@
       "sections": [
         {
           "id": "Z轴抬升",
-          "title": "Z轴抬升",
           "items": [
             {
               "paramKey": "wiping.glue_z_lift_height"
@@ -239,11 +238,11 @@
             {
               "paramKey": "wiping.glue_inter_model_lift_height"
             }
-          ]
+          ],
+          "title": "Z轴抬升"
         },
         {
           "id": "机型专属",
-          "title": "机型专属",
           "items": [
             {
               "paramKey": "wiping.disable_front_cover_alarm"
@@ -254,11 +253,11 @@
             {
               "paramKey": "wiping.xy_calibration_mode"
             }
-          ]
+          ],
+          "title": "机型专属"
         },
         {
           "id": "涂胶参数",
-          "title": "涂胶参数",
           "items": [
             {
               "paramKey": "wiping.small_feature_factor"
@@ -269,11 +268,11 @@
             {
               "paramKey": "wiping.glue_pass_count"
             }
-          ]
+          ],
+          "title": "涂胶参数"
         },
         {
           "id": "润笔",
-          "title": "润笔",
           "items": [
             {
               "paramKey": "toolhead.first_pen_revitalization_flag"
@@ -293,9 +292,11 @@
             {
               "paramKey": "wiping.prime_every_layer"
             }
-          ]
+          ],
+          "title": "润笔"
         }
       ]
     }
-  ]
+  ],
+  "version": "0.0.6"
 }

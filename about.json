@@ -5,7 +5,7 @@
     "iconLetter": "M",
     "licenseLabel": "许可协议",
     "name": "MKP SupportE",
-    "version": "v0.0.5"
+    "version": "0.0.6"
   },
   "authors": {
     "co": {
@@ -127,9 +127,9 @@
     "copyright": "© 2026 MKP STUDIO. ALL RIGHTS RESERVED."
   },
   "license": {
-    "title": "最终用户许可协议",
+    "content": "请仔细阅读本协议。通过下载、安装或使用本软件，您即表示已阅读、理解并同意受本协议条款的约束。如果您不同意本协议的任何条款，请勿使用本软件。\n\n本工具由 AI 辅助完成开发 · 个人制作 · 未签名发布",
     "subtitle": "End User License Agreement",
-    "content": "请仔细阅读本协议。通过下载、安装或使用本软件，您即表示已阅读、理解并同意受本协议条款的约束。如果您不同意本协议的任何条款，请勿使用本软件。\n\n本工具由 AI 辅助完成开发 · 个人制作 · 未签名发布"
+    "title": "最终用户许可协议"
   },
   "modelLinks": {
     "testModelMakerWorld": "https://makerworld.com.cn/zh/models/2395687-yu-wei-ce-shi-shuang-tou-yi-liao-zhi-cheng-mkp-sup#profileId-2722483"
@@ -167,6 +167,6 @@
     "默默在群里解答新手问题的热心人",
     "以及所有 MKPSupport 社区的参与者"
   ],
-  "updated": "2026-06-20 10:22:11",
+  "updated": "2026-06-23 11:07:40",
   "version": "2026.05"
 }
