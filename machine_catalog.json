@@ -1,6 +1,6 @@
 {
   "version": "1.0",
-  "updatedAt": "2026-06-24 15:39:24",
+  "updatedAt": "2026-06-24 22:22:43",
   "brands": [
     {
       "id": "Bambu Lab",
@@ -18,7 +18,7 @@
         "versions": [
           {
             "id": "standard",
-            "name": "官方标准版",
+            "name": "标准版",
             "tag": "推荐",
             "description": "官方标准配置，适合大多数用户",
             "downloads": [
@@ -43,7 +43,7 @@
           },
           {
             "id": "fast",
-            "name": "官改快拆版",
+            "name": "快拆版6月以前",
             "tag": "热门",
             "description": "支持快拆配件的改装配置",
             "downloads": [
@@ -102,7 +102,7 @@
         "versions": [
           {
             "id": "standard",
-            "name": "官方标准版",
+            "name": "标准版",
             "tag": "推荐",
             "description": "官方标准配置",
             "downloads": [
@@ -127,7 +127,7 @@
           },
           {
             "id": "fast",
-            "name": "官改快拆版",
+            "name": "快拆版6月以前",
             "tag": "热门",
             "description": "支持快拆配件的改装配置",
             "downloads": [
@@ -152,7 +152,7 @@
           },
           {
             "id": "fastv3.3",
-            "name": "官改快拆版260628",
+            "name": "快拆版260628",
             "tag": "最新",
             "description": "6月以后闲鱼购买的，以及6月28开源的快拆260628版本",
             "downloads": [

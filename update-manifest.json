@@ -1,11 +1,24 @@
 {
-  "latestVersion": "0.0.5",
-  "updated": "2026-06-23T08:07:54+08:00",
+  "latestVersion": "0.0.6",
+  "updated": "2026-06-24T22:23:02+08:00",
   "changelog": {
     "en": "",
-    "zh-CN": "## AI平台与条件显式 v0.0.5 (2026-06-23)\n\n### 新增\n1. AI 自动化平台集成（aiplatform 模块 + MCP 工具扩展）\n2. showWhen 条件显式逻辑统一（前后端共享 showWhenUtils）\n\n### 修复\n3. 塔图面板重构与 TowerCoreSVG 渲染优化\n4. 参数页交互与 CompactNumberInput 修复\n\n### 优化\n5. DebugBridge MCP 扩展（handlers 拆分 + aiplatform 工具）\n6. 发布中心校验与注册表更新\n7. 版本控制页与预设管理器交互优化\n8. MiniMode 与 PipPreview 样式调整\n"
+    "zh-CN": "## 开发中 v0.0.6 (2026-06-24)\n"
   },
   "versions": [
+    {
+      "version": "0.0.6",
+      "status": "draft",
+      "channel": "stable",
+      "releaseDate": "2026-06-24T16:01:59+08:00",
+      "forceUpdate": false,
+      "minVersion": "0.0.1",
+      "hasExe": false,
+      "changelog": {
+        "en": "",
+        "zh-CN": "## 开发中 v0.0.6 (2026-06-24)\n"
+      }
+    },
     {
       "version": "0.0.5",
       "status": "published",
@@ -21,6 +34,7 @@
     },
     {
       "version": "0.0.4",
+      "status": "",
       "releaseDate": "2026-06-21",
       "forceUpdate": false,
       "minVersion": "0.0.1",
@@ -32,6 +46,7 @@
     },
     {
       "version": "0.0.3",
+      "status": "",
       "releaseDate": "2026-06-17",
       "forceUpdate": false,
       "minVersion": "0.0.1",
@@ -43,6 +58,7 @@
     },
     {
       "version": "0.0.2",
+      "status": "",
       "releaseDate": "2026-06-17",
       "forceUpdate": false,
       "minVersion": "0.0.1",
@@ -54,6 +70,7 @@
     },
     {
       "version": "0.0.1",
+      "status": "",
       "releaseDate": "2026-06-18",
       "forceUpdate": false,
       "minVersion": "0.0.1",
