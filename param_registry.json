@@ -4,2367 +4,2220 @@
     "registryVersion": "0.0.6",
     "schemaVersion": "2.0.0",
     "status": "stable",
-    "updatedAt": "2026-06-22T08:42:11+08:00",
+    "updatedAt": "2026-06-24T15:38:18+08:00",
     "updatedBy": "MKP Publish Center"
   },
   "params": [
     {
-      "configKey": "XOffset",
-      "defaultValue": 0,
-      "desc": "涂胶笔尖相对喷嘴的 X 方向偏移量 (mm)，负值向左正值向右",
-      "jsonKey": "x",
       "key": "toolhead.offset.x",
+      "tomlKey": "offset",
+      "section": "toolhead",
       "label": "X 轴偏移",
-      "layout": {
-        "group": "空间偏移",
-        "order": 0,
-        "tab": "工具头"
-      },
+      "desc": "涂胶笔尖相对喷嘴的 X 方向偏移量 (mm)，负值向左正值向右",
+      "unit": "mm",
+      "defaultValue": 0,
+      "valueType": "float",
+      "scope": "per_machine",
       "machineFilter": "",
-      "machineMaxVariants": {
-        "P1:lite": 50,
-        "P1:lite_v3": 50,
-        "P2:standard": 50,
-        "X1:lite": 50,
-        "X1:lite_copy": 50
-      },
-      "machineMinVariants": {
-        "P1:lite": -50,
-        "P1:lite_v3": -50,
-        "P2:standard": -50,
-        "X1:lite": -50,
-        "X1:lite_copy": -50
-      },
+      "tomlComment": "笔尖偏移",
       "machineVariants": {
         "A1:fast": -0.7,
+        "A1:fastv3.3": -0.7,
         "A1:standard": -1,
         "A1MINI:fast": -0.5,
         "A1MINI:fastv3.3": -0.5,
         "A1MINI:standard": -0.3,
         "P1:lite": -25.9,
-        "P1:lite_v3": -25.9,
         "P2:standard": -25.9,
-        "X1:lite": -25.9,
-        "X1:lite_copy": -25.9
-      },
-      "max": 50,
-      "mergeGroup": "offset",
-      "mergeable": true,
-      "min": -50,
-      "pinned": true,
-      "scope": "per_machine",
-      "section": "toolhead",
-      "selectable": true,
-      "step": 0.05,
-      "tomlComment": "笔尖偏移",
-      "tomlKey": "offset",
-      "uiComponent": "number",
-      "unit": "mm",
-      "valueType": "float"
-    },
-    {
-      "configKey": "YOffset",
-      "defaultValue": 0,
-      "desc": "涂胶笔尖相对喷嘴的 Y 方向偏移量 (mm)，根据实际机械结构校准",
-      "jsonKey": "y",
-      "key": "toolhead.offset.y",
-      "label": "Y 轴偏移",
-      "layout": {
-        "group": "空间偏移",
-        "order": 1,
-        "tab": "工具头"
-      },
-      "machineFilter": "",
-      "machineMaxVariants": {
-        "P1:lite": 50,
-        "P1:lite_v3": 50,
-        "P2:standard": 50,
-        "X1:lite": 50,
-        "X1:lite_copy": 50
+        "X1:lite": -25.9
       },
       "machineMinVariants": {
         "P1:lite": -50,
-        "P1:lite_v3": -50,
         "P2:standard": -50,
-        "X1:lite": -50,
-        "X1:lite_copy": -50
+        "X1:lite": -50
       },
+      "machineMaxVariants": {
+        "P1:lite": 50,
+        "P2:standard": 50,
+        "X1:lite": 50
+      },
+      "min": -50,
+      "max": 50,
+      "mergeGroup": "offset",
+      "layout": {
+        "tab": "工具头",
+        "group": "空间偏移",
+        "order": 0
+      },
+      "step": 0.05,
+      "selectable": true,
+      "mergeable": true,
+      "pinned": true,
+      "uiComponent": "number"
+    },
+    {
+      "key": "toolhead.offset.y",
+      "tomlKey": "offset",
+      "section": "toolhead",
+      "label": "Y 轴偏移",
+      "desc": "涂胶笔尖相对喷嘴的 Y 方向偏移量 (mm)，根据实际机械结构校准",
+      "unit": "mm",
+      "defaultValue": 0,
+      "valueType": "float",
+      "scope": "per_machine",
+      "machineFilter": "",
+      "tomlComment": "笔尖偏移",
       "machineVariants": {
         "A1:fast": 26.3,
+        "A1:fastv3.3": 25,
         "A1:standard": 18.6,
         "A1MINI:fast": 24,
         "A1MINI:fastv3.3": 24,
         "A1MINI:standard": 18.1,
         "P1:lite": 14,
-        "P1:lite_v3": 14,
         "P2:standard": 14,
-        "X1:lite": 14,
-        "X1:lite_copy": 14
-      },
-      "max": 50,
-      "mergeGroup": "offset",
-      "mergeable": true,
-      "min": -50,
-      "pinned": true,
-      "scope": "per_machine",
-      "section": "toolhead",
-      "selectable": true,
-      "step": 0.05,
-      "tomlComment": "笔尖偏移",
-      "tomlKey": "offset",
-      "uiComponent": "number",
-      "unit": "mm",
-      "valueType": "float"
-    },
-    {
-      "configKey": "ZOffset",
-      "defaultValue": 0,
-      "desc": "涂胶笔尖相对喷嘴的高度偏移 (mm)，影响笔尖与模型的距离",
-      "jsonKey": "z",
-      "key": "toolhead.offset.z",
-      "label": "Z 轴偏移",
-      "layout": {
-        "group": "空间偏移",
-        "order": 5,
-        "tab": "工具头"
-      },
-      "machineFilter": "",
-      "machineMaxVariants": {
-        "P1:lite": 20,
-        "P1:lite_v3": 20,
-        "P2:standard": 20,
-        "X1:lite": 20,
-        "X1:lite_copy": 20
+        "X1:lite": 14
       },
       "machineMinVariants": {
-        "P1:lite": 0,
-        "P1:lite_v3": 0,
-        "P2:standard": 0,
-        "X1:lite": 0,
-        "X1:lite_copy": 0
+        "P1:lite": -50,
+        "P2:standard": -50,
+        "X1:lite": -50
       },
+      "machineMaxVariants": {
+        "P1:lite": 50,
+        "P2:standard": 50,
+        "X1:lite": 50
+      },
+      "min": -50,
+      "max": 50,
+      "mergeGroup": "offset",
+      "layout": {
+        "tab": "工具头",
+        "group": "空间偏移",
+        "order": 1
+      },
+      "step": 0.05,
+      "selectable": true,
+      "mergeable": true,
+      "pinned": true,
+      "uiComponent": "number"
+    },
+    {
+      "key": "toolhead.offset.z",
+      "tomlKey": "offset",
+      "section": "toolhead",
+      "label": "Z 轴偏移",
+      "desc": "涂胶笔尖相对喷嘴的高度偏移 (mm)，影响笔尖与模型的距离",
+      "unit": "mm",
+      "defaultValue": 0,
+      "valueType": "float",
+      "scope": "per_machine",
+      "machineFilter": "",
+      "tomlComment": "笔尖偏移",
       "machineVariants": {
         "A1:fast": 3.6,
+        "A1:fastv3.3": 3.6,
         "A1:standard": 3.8,
         "A1MINI:fast": 3.6,
         "A1MINI:fastv3.3": 3.6,
         "A1MINI:standard": 3.65,
         "P1:lite": 1.1,
-        "P1:lite_v3": 1.1,
         "P2:standard": 1.1,
-        "X1:lite": 1.1,
-        "X1:lite_copy": 1.1
+        "X1:lite": 1.1
       },
+      "machineMinVariants": {
+        "P1:lite": 0,
+        "P2:standard": 0,
+        "X1:lite": 0
+      },
+      "machineMaxVariants": {
+        "P1:lite": 20,
+        "P2:standard": 20,
+        "X1:lite": 20
+      },
+      "min": 0,
       "max": 20,
       "mergeGroup": "offset",
-      "mergeable": true,
-      "min": 0,
-      "pinned": true,
-      "scope": "per_machine",
-      "section": "toolhead",
-      "selectable": true,
+      "layout": {
+        "tab": "工具头",
+        "group": "空间偏移",
+        "order": 5
+      },
       "step": 0.05,
-      "tomlComment": "笔尖偏移",
-      "tomlKey": "offset",
-      "uiComponent": "number",
-      "unit": "mm",
-      "valueType": "float"
+      "selectable": true,
+      "mergeable": true,
+      "pinned": true,
+      "uiComponent": "number"
     },
     {
-      "configKey": "MaxSpeed",
-      "defaultValue": 70,
-      "desc": "涂胶笔的最大移动速度 (mm/s)，过高可能导致涂胶不均匀或丢步",
-      "jsonKey": "speed_limit",
       "key": "toolhead.speed_limit",
+      "tomlKey": "speed_limit",
+      "section": "toolhead",
       "label": "涂胶速度限制",
-      "layout": {
-        "group": "运动与挤出",
-        "order": 2,
-        "tab": "工具头"
-      },
+      "desc": "涂胶笔的最大移动速度 (mm/s)，过高可能导致涂胶不均匀或丢步",
+      "unit": "mm/s",
+      "defaultValue": 70,
+      "valueType": "float",
+      "scope": "universal",
       "machineFilter": "",
+      "tomlComment": "涂胶速度限制 (mm/s)",
+      "machineVariants": null,
+      "min": 10,
       "max": 500,
       "mergeGroup": "",
-      "mergeable": true,
-      "min": 10,
-      "pinned": true,
-      "scope": "universal",
-      "section": "toolhead",
-      "selectable": true,
+      "layout": {
+        "tab": "工具头",
+        "group": "运动与挤出",
+        "order": 2
+      },
       "step": 10,
-      "tomlComment": "涂胶速度限制 (mm/s)",
-      "tomlKey": "speed_limit",
-      "uiComponent": "number",
-      "unit": "mm/s",
-      "valueType": "float"
+      "selectable": true,
+      "mergeable": true,
+      "pinned": true,
+      "uiComponent": "number"
     },
     {
-      "configKey": "MKPRetract",
-      "defaultValue": 0,
-      "desc": "涂胶笔回抽长度(mm)，负值=回抽。优先使用此值，为0时从装载G-code自动解析",
-      "jsonKey": "MKP_retract",
       "key": "toolhead.MKP_retract",
+      "tomlKey": "MKP_retract",
+      "section": "toolhead",
       "label": "回抽长度",
-      "layout": {
-        "group": "运动与挤出",
-        "order": 4,
-        "tab": "工具头"
-      },
+      "desc": "涂胶笔回抽长度(mm)，负值=回抽。优先使用此值，为0时从装载G-code自动解析",
+      "unit": "mm",
+      "defaultValue": 0,
+      "valueType": "float",
+      "scope": "universal",
       "machineFilter": "",
+      "tomlComment": "回抽长度(mm)",
       "machineVariants": null,
+      "min": -50,
       "max": 50,
       "mergeGroup": "",
-      "mergeable": true,
-      "min": -50,
-      "scope": "universal",
-      "section": "toolhead",
-      "selectable": true,
+      "layout": {
+        "tab": "工具头",
+        "group": "运动与挤出",
+        "order": 4
+      },
       "step": 0.1,
-      "tomlComment": "回抽长度(mm)",
-      "tomlKey": "MKP_retract",
-      "uiComponent": "number",
-      "unit": "mm",
-      "valueType": "float"
+      "selectable": true,
+      "mergeable": true,
+      "uiComponent": "number"
     },
     {
-      "choices": [
-        {
-          "label": "关闭",
-          "value": "off"
-        },
-        {
-          "label": "开启",
-          "value": "on"
-        }
-      ],
-      "configKey": "FirstPenRevitalizationFlag",
-      "defaultValue": false,
-      "desc": "首次涂胶前执行单独的活化动作(如额外挤出一滴)，确保胶水流畅开始",
-      "jsonKey": "first_pen_revitalization_flag",
       "key": "toolhead.first_pen_revitalization_flag",
+      "tomlKey": "first_pen_revitalization_flag",
+      "section": "toolhead",
       "label": "首笔活化",
-      "layout": {
-        "group": "润笔",
-        "order": 0,
-        "tab": "高级"
-      },
+      "desc": "首次涂胶前执行单独的活化动作(如额外挤出一滴)，确保胶水流畅开始",
+      "unit": "",
+      "defaultValue": false,
+      "valueType": "bool",
+      "scope": "universal",
       "machineFilter": "",
+      "tomlComment": "首笔活化标志",
       "machineVariants": null,
+      "min": null,
       "max": null,
       "mergeGroup": "",
-      "mergeable": true,
-      "min": null,
-      "scope": "universal",
-      "section": "toolhead",
+      "layout": {
+        "tab": "高级",
+        "group": "润笔",
+        "order": 0
+      },
+      "choices": [
+        {
+          "value": "off",
+          "label": "关闭"
+        },
+        {
+          "value": "on",
+          "label": "开启"
+        }
+      ],
       "selectable": true,
-      "tomlComment": "首笔活化标志",
-      "tomlKey": "first_pen_revitalization_flag",
-      "uiComponent": "switch",
-      "unit": "",
-      "valueType": "bool"
+      "mergeable": true,
+      "uiComponent": "switch"
     },
     {
-      "configKey": "CustomMountGcode",
-      "defaultValue": "",
-      "desc": "用于挂载涂胶笔的自定义指令，支持 [AUTO] 变量",
-      "jsonKey": "custom_mount_gcode",
       "key": "toolhead.custom_mount_gcode",
+      "tomlKey": "custom_mount_gcode",
+      "section": "toolhead",
       "label": "装载胶箱 G-code",
-      "layout": {
-        "group": "自定义G-code",
-        "order": 0,
-        "tab": "自定义G-code"
-      },
+      "desc": "用于挂载涂胶笔的自定义指令，支持 [AUTO] 变量",
+      "unit": "",
+      "defaultValue": "",
+      "valueType": "string",
+      "scope": "per_machine",
       "machineFilter": "",
+      "tomlComment": "自定义工具头获取 G-code",
       "machineVariants": {
         "A1:fast": "G92 E0\nG1 E-5 F1800\nG92 E0\nL801\nM204 S10000\nG1 X256 F42000\nG1 X261 F10000\nG1 X267 F10000\nG1 X256 F42000\nG1 F42000",
+        "A1:fastv3.3": "G92 E0\nG1 E-5 F1800\nG92 E0\nL801\nM204 S10000\nG1 X256 F42000\nG1 X261 F10000\nG1 X267 F10000\nG1 X256 F42000\nG1 F42000",
         "A1:standard": "G92 E0\nG1 E-5 F1800\nG92 E0\nL801\nM204 S10000\nG1 X256 F42000\nG1 X261 F10000\nG1 X267 F10000\nG1 X256 F42000\nG1 F42000",
         "A1MINI:fast": "G92 E0\nG1 E-5 F1800\nG92 E0\nL801\nM204 S10000\nG1 X168 F30000\nG1 X175 F10000\nG1 X185 F10000\nG1 X168 F30000\nG1 F30000",
         "A1MINI:fastv3.3": "G92 E0\nG1 E-5 F1800\nG92 E0\nL801\nM204 S10000\nG1 X168 F30000\nG1 X175 F10000\nG1 X185 F10000\nG1 X168 F30000\nG1 F30000",
         "A1MINI:standard": "G92 E0\nG1 E-5 F1800\nG92 E0\nL801\nM204 S10000\nG1 X168 F30000\nG1 X175 F10000\nG1 X185 F10000\nG1 X168 F30000\nG1 F30000",
         "P1:lite": "L803;此处使喷嘴降温\nG92 E0;挤出机归零\nG1 E-10;长回抽\nG92 E0\nL801\nM204 S10000\nG1 X20 Y7 F30000;到驻点\nG1 X1 F300;推到X0，笔尖下落\nG1 X20 Y7 F30000;向左离开\nG1 F30000",
-        "P1:lite_v3": "L803;此处使喷嘴降温\nG92 E0;挤出机归零\nG1 E-10;长回抽\nG92 E0\nL801\nM204 S10000\nG1 X20 Y7 F30000;到驻点\nG1 X1 F300;推到X0，笔尖下落\nG1 X20 Y7 F30000;向左离开\nG1 F30000",
         "P2:standard": "L803;此处使喷嘴降温\nG92 E0;挤出机归零\nG1 E-10;长回抽\nG92 E0\nL801\nM204 S10000\nG1 X20 Y7 F30000;到驻点\nG1 X1 F300;推到X0，笔尖下落\nG1 X20 Y7 F30000;向左离开\nG1 F30000",
-        "X1:lite": "L803;此处使喷嘴降温\nG92 E0;挤出机归零\nG1 E-10;长回抽\nG92 E0\nL801\nM204 S10000\nG1 X20 Y7 F30000;到驻点\nG1 X1 F300;推到X0，笔尖下落\nG1 X20 Y7 F30000;向左离开\nG1 F30000",
-        "X1:lite_copy": "L803;此处使喷嘴降温\nG92 E0;挤出机归零\nG1 E-10;长回抽\nG92 E0\nL801\nM204 S10000\nG1 X20 Y7 F30000;到驻点\nG1 X1 F300;推到X0，笔尖下落\nG1 X20 Y7 F30000;向左离开\nG1 F30000"
+        "X1:lite": "L803;此处使喷嘴降温\nG92 E0;挤出机归零\nG1 E-10;长回抽\nG92 E0\nL801\nM204 S10000\nG1 X20 Y7 F30000;到驻点\nG1 X1 F300;推到X0，笔尖下落\nG1 X20 Y7 F30000;向左离开\nG1 F30000"
       },
+      "min": null,
       "max": null,
       "mergeGroup": "",
-      "mergeable": true,
-      "min": null,
-      "scope": "per_machine",
-      "section": "toolhead",
+      "layout": {
+        "tab": "自定义G-code",
+        "group": "自定义G-code",
+        "order": 0
+      },
       "selectable": true,
-      "tomlComment": "自定义工具头获取 G-code",
-      "tomlKey": "custom_mount_gcode",
-      "uiComponent": "gcode",
-      "unit": "",
-      "valueType": "string"
+      "mergeable": true,
+      "uiComponent": "gcode"
     },
     {
-      "configKey": "CustomUnmountGcode",
-      "defaultValue": "",
-      "desc": "用于卸载涂胶笔的自定义指令，支持 [AUTO] 变量",
-      "jsonKey": "custom_unmount_gcode",
       "key": "toolhead.custom_unmount_gcode",
+      "tomlKey": "custom_unmount_gcode",
+      "section": "toolhead",
       "label": "卸载胶箱 G-code",
-      "layout": {
-        "group": "自定义G-code",
-        "order": 1,
-        "tab": "自定义G-code"
-      },
+      "desc": "用于卸载涂胶笔的自定义指令，支持 [AUTO] 变量",
+      "unit": "",
+      "defaultValue": "",
+      "valueType": "string",
+      "scope": "per_machine",
       "machineFilter": "",
+      "tomlComment": "自定义工具头收起 G-code",
       "machineVariants": {
         "A1:fast": "M106 S[AUTO]\nG1 X256 F42000\nG1 X261 F10000\nG1 X271 F10000\nG1 X256 F5000\nG1 F42000\nL802\nG92 E0\nG1 E5.5 F1000\nG92 E0\nG1 F30000",
+        "A1:fastv3.3": "M106 S[AUTO]\nG1 X256 F42000\nG1 X261 F10000\nG1 X271 F10000\nG1 X256 F5000\nG1 F42000\nL802\nG92 E0\nG1 E5.5 F1000\nG92 E0\nG1 F30000",
         "A1:standard": "M106 S[AUTO]\nG1 X256 F42000\nG1 X261 F10000\nG1 X271 F10000\nG1 X256 F5000\nG1 F42000\nL802\nG92 E0\nG1 E5.5 F1000\nG92 E0\nG1 F30000",
         "A1MINI:fast": "M106 S[AUTO]\nG1 X168 F30000\nG1 X175 F10000\nG1 X189 F10000\nG1 X168 F6000\nG1 F30000\nL802\nG92 E0\nG1 E5.5 F1500\nG92 E0\nG1 F30000",
         "A1MINI:fastv3.3": "M106 S[AUTO]\nG1 X168 F30000\nG1 X175 F10000\nG1 X189 F10000\nG1 X168 F6000\nG1 F30000\nL802\nG92 E0\nG1 E5.5 F1500\nG92 E0\nG1 F30000",
         "A1MINI:standard": "M106 S[AUTO]\nG1 X168 F30000\nG1 X175 F10000\nG1 X189 F10000\nG1 X168 F6000\nG1 F30000\nL802\nG92 E0\nG1 E5.5 F1500\nG92 E0\nG1 F30000",
         "P1:lite": "G92 E0\nG1 F30000\nG1 X246 Y0 ;到驻点\nG1 X256 F6000 ; 收笔\nG1 F30000\nL802\nG1 F1500\nG1 E10.7;填充回抽\nG1 F30000\nM106 P1 S[AUTO] ; 风扇\n;M106 P2 S100\nG1 X70 Y265 F30000;Wipe\nG1 E6;Wipe\nG1 X90 F30000;Wipe\nG1 X120 F30000;Wipe\nG1 X90 F30000;Wipe",
-        "P1:lite_v3": "G92 E0\nG1 F30000\nG1 X246 Y0 ;到驻点\nG1 X256 F6000 ; 收笔\nG1 F30000\nL802\nG1 F1500\nG1 E10.7;填充回抽\nG1 F30000\nM106 P1 S[AUTO] ; 风扇\n;M106 P2 S100\nG1 X70 Y265 F30000;Wipe\nG1 E6;Wipe\nG1 X90 F30000;Wipe\nG1 X120 F30000;Wipe\nG1 X90 F30000;Wipe",
         "P2:standard": "G92 E0\nG1 F30000\nG1 X246 Y0 ;到驻点\nG1 X256 F6000 ; 收笔\nG1 F30000\nL802\nG1 F1500\nG1 E10.7;填充回抽\nG1 F30000\nM106 P1 S[AUTO] ; 风扇\n;M106 P2 S100\nG1 X70 Y265 F30000;Wipe\nG1 E6;Wipe\nG1 X90 F30000;Wipe\nG1 X120 F30000;Wipe\nG1 X90 F30000;Wipe",
-        "X1:lite": "G92 E0\nG1 F30000\nG1 X246 Y0 ;到驻点\nG1 X256 F6000 ; 收笔\nG1 F30000\nL802\nG1 F1500\nG1 E10.7;填充回抽\nG1 F30000\nM106 P1 S[AUTO] ; 风扇\n;M106 P2 S100\nG1 X70 Y265 F30000;Wipe\nG1 E6;Wipe\nG1 X90 F30000;Wipe\nG1 X120 F30000;Wipe\nG1 X90 F30000;Wipe",
-        "X1:lite_copy": "G92 E0\nG1 F30000\nG1 X246 Y0 ;到驻点\nG1 X256 F6000 ; 收笔\nG1 F30000\nL802\nG1 F1500\nG1 E10.7;填充回抽\nG1 F30000\nM106 P1 S[AUTO] ; 风扇\n;M106 P2 S100\nG1 X70 Y265 F30000;Wipe\nG1 E6;Wipe\nG1 X90 F30000;Wipe\nG1 X120 F30000;Wipe\nG1 X90 F30000;Wipe"
+        "X1:lite": "G92 E0\nG1 F30000\nG1 X246 Y0 ;到驻点\nG1 X256 F6000 ; 收笔\nG1 F30000\nL802\nG1 F1500\nG1 E10.7;填充回抽\nG1 F30000\nM106 P1 S[AUTO] ; 风扇\n;M106 P2 S100\nG1 X70 Y265 F30000;Wipe\nG1 E6;Wipe\nG1 X90 F30000;Wipe\nG1 X120 F30000;Wipe\nG1 X90 F30000;Wipe"
       },
+      "min": null,
       "max": null,
       "mergeGroup": "",
-      "mergeable": true,
-      "min": null,
-      "scope": "per_machine",
-      "section": "toolhead",
+      "layout": {
+        "tab": "自定义G-code",
+        "group": "自定义G-code",
+        "order": 1
+      },
       "selectable": true,
-      "tomlComment": "自定义工具头收起 G-code",
-      "tomlKey": "custom_unmount_gcode",
-      "uiComponent": "gcode",
-      "unit": "",
-      "valueType": "string"
+      "mergeable": true,
+      "uiComponent": "gcode"
     },
     {
-      "configKey": "GlueZOffset",
-      "defaultValue": -0.05,
-      "desc": "涂胶时Z轴额外偏移，负值使笔尖更靠近模型表面",
-      "jsonKey": "glue_z_offset",
       "key": "toolhead.glue_z_offset",
+      "tomlKey": "glue_z_offset",
+      "section": "toolhead",
       "label": "涂胶Z偏移",
-      "layout": {
-        "group": "涂胶参数",
-        "order": 1,
-        "tab": "高级"
-      },
+      "desc": "涂胶时Z轴额外偏移，负值使笔尖更靠近模型表面",
+      "unit": "mm",
+      "defaultValue": -0.05,
+      "valueType": "float",
+      "scope": "universal",
       "machineFilter": "",
+      "tomlComment": "涂胶Z偏移(mm) 范围:-5~2",
       "machineVariants": null,
+      "min": -5,
       "max": 5,
       "mergeGroup": "",
-      "mergeable": true,
-      "min": -5,
-      "scope": "universal",
-      "section": "toolhead",
-      "selectable": true,
+      "layout": {
+        "tab": "高级",
+        "group": "涂胶参数",
+        "order": 1
+      },
       "step": 0.01,
-      "tomlComment": "涂胶Z偏移(mm) 范围:-5~2",
-      "tomlKey": "glue_z_offset",
-      "uiComponent": "number",
-      "unit": "mm",
-      "valueType": "float"
+      "selectable": true,
+      "mergeable": true,
+      "uiComponent": "number"
     },
     {
-      "configKey": "PrimeLength",
-      "defaultValue": 100,
-      "desc": "长时间未涂胶后重新润笔的路径长度，确保胶水充分流出",
-      "jsonKey": "prime_length",
       "key": "toolhead.prime_length",
+      "tomlKey": "prime_length",
+      "section": "toolhead",
       "label": "润笔路径长度",
-      "layout": {
-        "group": "润笔",
-        "order": 2,
-        "tab": "高级"
-      },
+      "desc": "长时间未涂胶后重新润笔的路径长度，确保胶水充分流出",
+      "unit": "mm",
+      "defaultValue": 100,
+      "valueType": "float",
+      "scope": "universal",
       "machineFilter": "",
+      "tomlComment": "预涂长度(mm) 范围:0~500",
       "machineVariants": null,
+      "min": 0,
       "max": 500,
       "mergeGroup": "",
-      "mergeable": true,
-      "min": 0,
-      "scope": "universal",
-      "section": "toolhead",
-      "selectable": true,
+      "layout": {
+        "tab": "高级",
+        "group": "润笔",
+        "order": 2
+      },
       "step": 10,
-      "tomlComment": "预涂长度(mm) 范围:0~500",
-      "tomlKey": "prime_length",
-      "uiComponent": "number",
-      "unit": "mm",
-      "valueType": "float"
+      "selectable": true,
+      "mergeable": true,
+      "uiComponent": "number"
     },
     {
-      "choices": [
-        {
-          "label": "擦料塔",
-          "value": "tower"
-        },
-        {
-          "label": "圆盘擦拭",
-          "value": "disk"
-        }
-      ],
-      "configKey": "UseWipingTowers",
-      "defaultValue": "tower",
-      "desc": "选择擦料方式：擦料塔在指定位置生成塔体进行擦拭；圆盘擦拭使用打印机自带圆盘",
-      "jsonKey": "have_wiping_components",
       "key": "wiping.have_wiping_components",
+      "tomlKey": "have_wiping_components",
+      "section": "wiping",
       "label": "擦料方式",
-      "layout": {
-        "group": "擦料方式",
-        "order": 10,
-        "tab": "擦料策略"
-      },
+      "desc": "选择擦料方式：擦料塔在指定位置生成塔体进行擦拭；圆盘擦拭使用打印机自带圆盘",
+      "unit": "",
+      "defaultValue": "tower",
+      "valueType": "string",
+      "scope": "universal",
       "machineFilter": "",
+      "tomlComment": "使用擦嘴塔而非擦嘴组件",
       "machineVariants": null,
+      "min": null,
       "max": null,
       "mergeGroup": "",
-      "mergeable": true,
-      "min": null,
-      "scope": "universal",
-      "section": "wiping",
+      "layout": {
+        "tab": "擦料策略",
+        "group": "擦料方式",
+        "order": 10
+      },
+      "choices": [
+        {
+          "value": "tower",
+          "label": "擦料塔"
+        },
+        {
+          "value": "disk",
+          "label": "圆盘擦拭"
+        }
+      ],
       "selectable": true,
-      "tomlComment": "使用擦嘴塔而非擦嘴组件",
-      "tomlKey": "have_wiping_components",
-      "uiComponent": "segmented",
-      "unit": "",
-      "valueType": "string"
+      "mergeable": true,
+      "uiComponent": "segmented"
     },
     {
-      "configKey": "WiperX",
-      "defaultValue": 20,
-      "desc": "擦料塔在热床上的X坐标位置 (mm)",
-      "jsonKey": "wiper_x",
       "key": "wiping.wiper_x",
+      "tomlKey": "wiper_x",
+      "section": "wiping",
       "label": "擦料塔X坐标",
-      "layout": {
-        "group": "擦料塔位置与打印",
-        "order": 20,
-        "tab": "擦料策略"
-      },
+      "desc": "擦料塔在热床上的X坐标位置 (mm)",
+      "unit": "mm",
+      "defaultValue": 20,
+      "valueType": "float",
+      "scope": "per_machine",
       "machineFilter": "",
-      "machineMaxVariants": {
-        "A1:standard": 226,
-        "A1MINI:fast": 150,
-        "A1MINI:fastv3.3": 150,
-        "P1:lite": 226,
-        "P1:lite_v3": 226,
-        "P2:standard": 226,
-        "X1:lite": 226,
-        "X1:lite_copy": 226
-      },
+      "tomlComment": "擦嘴塔X坐标(mm)",
+      "machineVariants": null,
       "machineMinVariants": {
         "A1:standard": 10,
         "A1MINI:fast": 10,
         "A1MINI:fastv3.3": 10,
+        "A1MINI:standard": 10,
         "P1:lite": 10,
-        "P1:lite_v3": 10,
         "P2:standard": 10,
-        "X1:lite": 10,
-        "X1:lite_copy": 10
+        "X1:lite": 10
       },
+      "machineMaxVariants": {
+        "A1:standard": 226,
+        "A1MINI:fast": 150,
+        "A1MINI:fastv3.3": 150,
+        "A1MINI:standard": 150,
+        "P1:lite": 226,
+        "P2:standard": 226,
+        "X1:lite": 226
+      },
+      "min": 10,
       "max": 226,
       "mergeGroup": "wiper",
-      "mergeable": true,
-      "min": 10,
-      "parentKey": "wiping.have_wiping_components",
-      "scope": "per_machine",
-      "section": "wiping",
+      "layout": {
+        "tab": "擦料策略",
+        "group": "擦料塔位置与打印",
+        "order": 20
+      },
+      "step": 1,
       "selectable": true,
+      "mergeable": true,
+      "uiComponent": "number",
+      "parentKey": "wiping.have_wiping_components",
       "showWhen": {
         "key": "wiping.have_wiping_components",
         "op": "eq",
         "value": "tower"
-      },
-      "step": 1,
-      "tomlComment": "擦嘴塔X坐标(mm)",
-      "tomlKey": "wiper_x",
-      "uiComponent": "number",
-      "unit": "mm",
-      "valueType": "float"
+      }
     },
     {
-      "configKey": "WiperY",
-      "defaultValue": 20,
-      "desc": "擦料塔在热床上的Y坐标位置 (mm)",
-      "jsonKey": "wiper_y",
       "key": "wiping.wiper_y",
+      "tomlKey": "wiper_y",
+      "section": "wiping",
       "label": "擦料塔Y坐标",
-      "layout": {
-        "group": "擦料塔位置与打印",
-        "order": 21,
-        "tab": "擦料策略"
-      },
+      "desc": "擦料塔在热床上的Y坐标位置 (mm)",
+      "unit": "mm",
+      "defaultValue": 20,
+      "valueType": "float",
+      "scope": "per_machine",
       "machineFilter": "",
-      "machineMaxVariants": {
-        "A1:fast": 226,
-        "A1MINI:fast": 150,
-        "A1MINI:fastv3.3": 150,
-        "P1:lite": 226,
-        "P1:lite_v3": 226,
-        "P2:standard": 226,
-        "X1:lite": 226,
-        "X1:lite_copy": 226
-      },
+      "tomlComment": "擦嘴塔Y坐标(mm)",
+      "machineVariants": null,
       "machineMinVariants": {
         "A1:fast": 10,
         "A1MINI:fast": 10,
         "A1MINI:fastv3.3": 10,
+        "A1MINI:standard": 10,
         "P1:lite": 10,
-        "P1:lite_v3": 10,
         "P2:standard": 10,
-        "X1:lite": 10,
-        "X1:lite_copy": 10
+        "X1:lite": 10
       },
+      "machineMaxVariants": {
+        "A1:fast": 226,
+        "A1MINI:fast": 150,
+        "A1MINI:fastv3.3": 150,
+        "A1MINI:standard": 150,
+        "P1:lite": 226,
+        "P2:standard": 226,
+        "X1:lite": 226
+      },
+      "min": 10,
       "max": 226,
       "mergeGroup": "wiper",
-      "mergeable": true,
-      "min": 10,
-      "parentKey": "wiping.have_wiping_components",
-      "scope": "per_machine",
-      "section": "wiping",
+      "layout": {
+        "tab": "擦料策略",
+        "group": "擦料塔位置与打印",
+        "order": 21
+      },
+      "step": 1,
       "selectable": true,
+      "mergeable": true,
+      "uiComponent": "number",
+      "parentKey": "wiping.have_wiping_components",
       "showWhen": {
         "key": "wiping.have_wiping_components",
         "op": "eq",
         "value": "tower"
-      },
-      "step": 1,
-      "tomlComment": "擦嘴塔Y坐标(mm)",
-      "tomlKey": "wiper_y",
-      "uiComponent": "number",
-      "unit": "mm",
-      "valueType": "float"
+      }
     },
     {
-      "configKey": "WipeTowerPrintSpeed",
-      "defaultValue": 200,
-      "desc": "非涂胶面层的塔体打印速度",
-      "jsonKey": "wipetower_speed",
       "key": "wiping.wipetower_speed",
+      "tomlKey": "wipetower_speed",
+      "section": "wiping",
       "label": "塔体打印速度",
-      "layout": {
-        "group": "安全与高级参数",
-        "order": 32,
-        "tab": "擦料策略"
-      },
+      "desc": "非涂胶面层的塔体打印速度",
+      "unit": "mm/s",
+      "defaultValue": 200,
+      "valueType": "float",
+      "scope": "universal",
       "machineFilter": "",
+      "tomlComment": "擦嘴塔打印速度",
       "machineVariants": null,
+      "min": 10,
       "max": 500,
       "mergeGroup": "",
-      "mergeable": true,
-      "min": 10,
-      "parentKey": "wiping.fast_tower_mode",
-      "scope": "universal",
-      "section": "wiping",
+      "layout": {
+        "tab": "擦料策略",
+        "group": "安全与高级参数",
+        "order": 32
+      },
+      "step": 10,
       "selectable": true,
+      "mergeable": true,
+      "uiComponent": "number",
+      "parentKey": "wiping.fast_tower_mode",
       "showWhen": {
         "key": "wiping.fast_tower_mode",
         "op": "eq",
         "value": "custom"
-      },
-      "step": 10,
-      "tomlComment": "擦嘴塔打印速度",
-      "tomlKey": "wipetower_speed",
-      "uiComponent": "number",
-      "unit": "mm/s",
-      "valueType": "float"
+      }
     },
     {
-      "configKey": "TowerExtrudeRatio",
-      "defaultValue": 1,
-      "desc": "擦料塔出胶量比例，值越大出胶越多。会被处理器动态计算覆盖",
-      "jsonKey": "tower_extrude_ratio",
       "key": "wiping.tower_extrude_ratio",
+      "tomlKey": "tower_extrude_ratio",
+      "section": "wiping",
       "label": "擦料塔挤出倍率",
-      "layout": {
-        "group": "擦料塔位置与打印",
-        "order": 22,
-        "tab": "擦料策略"
-      },
+      "desc": "擦料塔出胶量比例，值越大出胶越多。会被处理器动态计算覆盖",
+      "unit": "",
+      "defaultValue": 1,
+      "valueType": "float",
+      "scope": "universal",
       "machineFilter": "",
+      "tomlComment": "支撑体挤出倍率",
       "machineVariants": null,
+      "min": 0.1,
       "max": 3,
       "mergeGroup": "",
-      "mergeable": true,
-      "min": 0.1,
-      "parentKey": "wiping.have_wiping_components",
-      "scope": "universal",
-      "section": "wiping",
+      "layout": {
+        "tab": "擦料策略",
+        "group": "擦料塔位置与打印",
+        "order": 22
+      },
+      "step": 0.05,
       "selectable": true,
+      "mergeable": true,
+      "uiComponent": "number",
+      "parentKey": "wiping.have_wiping_components",
       "showWhen": {
         "key": "wiping.have_wiping_components",
         "op": "eq",
         "value": "tower"
-      },
-      "step": 0.05,
-      "tomlComment": "支撑体挤出倍率",
-      "tomlKey": "tower_extrude_ratio",
-      "uiComponent": "number",
-      "unit": "",
-      "valueType": "float"
+      }
     },
     {
-      "configKey": "NozzleCoolingFlag",
-      "defaultValue": false,
-      "desc": "涂胶期间降低喷嘴温度以防止胶水因过热而滴漏",
-      "jsonKey": "nozzle_cooling_flag",
       "key": "wiping.nozzle_cooling_flag",
+      "tomlKey": "nozzle_cooling_flag",
+      "section": "wiping",
       "label": "涂胶期间降温",
-      "layout": {
-        "group": "温控与风扇",
-        "order": 0,
-        "tab": "温控与风扇"
-      },
+      "desc": "涂胶期间降低喷嘴温度以防止胶水因过热而滴漏",
+      "unit": "",
+      "defaultValue": false,
+      "valueType": "bool",
+      "scope": "universal",
       "machineFilter": "",
+      "tomlComment": "涂胶期间是否降温",
       "machineVariants": null,
+      "min": null,
       "max": null,
       "mergeGroup": "",
-      "mergeable": true,
-      "min": null,
-      "scope": "universal",
-      "section": "wiping",
+      "layout": {
+        "tab": "温控与风扇",
+        "group": "温控与风扇",
+        "order": 0
+      },
       "selectable": true,
-      "tomlComment": "涂胶期间是否降温",
-      "tomlKey": "nozzle_cooling_flag",
-      "uiComponent": "switch",
-      "unit": "",
-      "valueType": "bool"
+      "mergeable": true,
+      "uiComponent": "switch"
     },
     {
-      "configKey": "FanSpeed",
-      "defaultValue": 255,
-      "desc": "风扇 PWM 速度 (0-255)，控制冷却风量",
-      "jsonKey": "fan_speed",
       "key": "wiping.fan_speed",
+      "tomlKey": "fan_speed",
+      "section": "wiping",
       "label": "风扇速度",
-      "layout": {
-        "group": "温控与风扇",
-        "order": 1,
-        "tab": "温控与风扇"
-      },
+      "desc": "风扇 PWM 速度 (0-255)，控制冷却风量",
+      "unit": "0-255",
+      "defaultValue": 255,
+      "valueType": "float",
+      "scope": "universal",
       "machineFilter": "",
+      "tomlComment": "风扇速度 范围:0~255",
       "machineVariants": null,
+      "min": 0,
       "max": 255,
       "mergeGroup": "",
-      "mergeable": true,
-      "min": 0,
-      "scope": "universal",
-      "section": "wiping",
-      "selectable": true,
+      "layout": {
+        "tab": "温控与风扇",
+        "group": "温控与风扇",
+        "order": 1
+      },
       "step": 1,
-      "tomlComment": "风扇速度 范围:0~255",
-      "tomlKey": "fan_speed",
-      "uiComponent": "number",
-      "unit": "0-255",
-      "valueType": "float"
+      "selectable": true,
+      "mergeable": true,
+      "uiComponent": "number"
     },
     {
-      "configKey": "UserDryTime",
-      "defaultValue": 0,
-      "desc": "涂胶后额外等待干燥的时间 (秒)，让胶水充分固化",
-      "jsonKey": "user_dry_time",
       "key": "wiping.user_dry_time",
+      "tomlKey": "user_dry_time",
+      "section": "wiping",
       "label": "额外干燥时间",
-      "layout": {
-        "group": "温控与风扇",
-        "order": 2,
-        "tab": "温控与风扇"
-      },
+      "desc": "涂胶后额外等待干燥的时间 (秒)，让胶水充分固化",
+      "unit": "秒",
+      "defaultValue": 0,
+      "valueType": "int",
+      "scope": "universal",
       "machineFilter": "",
+      "tomlComment": "额外干燥时间",
       "machineVariants": null,
+      "min": 0,
       "max": 300,
       "mergeGroup": "",
-      "mergeable": true,
-      "min": 0,
-      "scope": "universal",
-      "section": "wiping",
-      "selectable": true,
+      "layout": {
+        "tab": "温控与风扇",
+        "group": "温控与风扇",
+        "order": 2
+      },
       "step": 1,
-      "tomlComment": "额外干燥时间",
-      "tomlKey": "user_dry_time",
-      "uiComponent": "number",
-      "unit": "秒",
-      "valueType": "int"
+      "selectable": true,
+      "mergeable": true,
+      "uiComponent": "number"
     },
     {
-      "configKey": "PartDryingSpeed",
-      "defaultValue": 50,
-      "desc": "涂胶后干燥移动的速度 (mm/s)，慢速可增加干燥效果但延长总时间",
-      "jsonKey": "part_drying_speed",
       "key": "wiping.part_drying_speed",
+      "tomlKey": "part_drying_speed",
+      "section": "wiping",
       "label": "零件干燥速度",
-      "layout": {
-        "group": "温控与风扇",
-        "order": 3,
-        "tab": "温控与风扇"
-      },
+      "desc": "涂胶后干燥移动的速度 (mm/s)，慢速可增加干燥效果但延长总时间",
+      "unit": "mm/s",
+      "defaultValue": 50,
+      "valueType": "float",
+      "scope": "universal",
       "machineFilter": "",
+      "tomlComment": "部件干燥速度(mm/s) 范围:0~200",
       "machineVariants": null,
+      "min": 10,
       "max": 200,
       "mergeGroup": "",
-      "mergeable": true,
-      "min": 10,
-      "scope": "universal",
-      "section": "wiping",
-      "selectable": true,
+      "layout": {
+        "tab": "温控与风扇",
+        "group": "温控与风扇",
+        "order": 3
+      },
       "step": 5,
-      "tomlComment": "部件干燥速度(mm/s) 范围:0~200",
-      "tomlKey": "part_drying_speed",
-      "uiComponent": "number",
-      "unit": "mm/s",
-      "valueType": "float"
+      "selectable": true,
+      "mergeable": true,
+      "uiComponent": "number"
     },
     {
-      "configKey": "SupportExtrusionMultiplier",
-      "defaultValue": 0.8,
-      "desc": "支撑材料的挤出倍率，影响支撑密度和拆除难度",
-      "jsonKey": "support_extrusion_multiplier",
       "key": "wiping.support_extrusion_multiplier",
+      "tomlKey": "support_extrusion_multiplier",
+      "section": "wiping",
       "label": "支撑挤出倍率",
-      "layout": {
-        "group": "高级运动调控",
-        "order": 0,
-        "tab": "涂胶面"
-      },
+      "desc": "支撑材料的挤出倍率，影响支撑密度和拆除难度",
+      "unit": "",
+      "defaultValue": 0.8,
+      "valueType": "float",
+      "scope": "universal",
       "machineFilter": "",
+      "tomlComment": "支撑体挤出倍率",
       "machineVariants": null,
+      "min": 0.1,
       "max": 3,
       "mergeGroup": "",
-      "mergeable": true,
-      "min": 0.1,
-      "scope": "universal",
-      "section": "wiping",
-      "selectable": true,
+      "layout": {
+        "tab": "涂胶面",
+        "group": "高级运动调控",
+        "order": 0
+      },
       "step": 0.05,
-      "tomlComment": "支撑体挤出倍率",
-      "tomlKey": "support_extrusion_multiplier",
-      "uiComponent": "number",
-      "unit": "",
-      "valueType": "float"
+      "selectable": true,
+      "mergeable": true,
+      "uiComponent": "number"
     },
     {
-      "configKey": "SmallFeatureFactor",
-      "defaultValue": 1,
-      "desc": "小特征速度系数 = MaxSpeed × 此值。值越小(如0.5)小特征越精细但更慢",
-      "jsonKey": "small_feature_factor",
       "key": "wiping.small_feature_factor",
+      "tomlKey": "small_feature_factor",
+      "section": "wiping",
       "label": "小特征因子",
-      "layout": {
-        "group": "涂胶参数",
-        "order": 0,
-        "tab": "高级"
-      },
+      "desc": "小特征速度系数 = MaxSpeed × 此值。值越小(如0.5)小特征越精细但更慢",
+      "unit": "",
+      "defaultValue": 1,
+      "valueType": "float",
+      "scope": "universal",
       "machineFilter": "",
+      "tomlComment": "小特征因子 范围:0~2",
       "machineVariants": null,
+      "min": 0.1,
       "max": 2,
       "mergeGroup": "",
-      "mergeable": true,
-      "min": 0.1,
-      "scope": "universal",
-      "section": "wiping",
-      "selectable": true,
+      "layout": {
+        "tab": "高级",
+        "group": "涂胶参数",
+        "order": 0
+      },
       "step": 0.05,
-      "tomlComment": "小特征因子 范围:0~2",
-      "tomlKey": "small_feature_factor",
-      "uiComponent": "number",
-      "unit": "",
-      "valueType": "float"
+      "selectable": true,
+      "mergeable": true,
+      "uiComponent": "number"
     },
     {
-      "configKey": "SheathBaseExpand",
-      "defaultValue": 5,
-      "deprecated": true,
-      "desc": "护套底层相对塔体的单边膨胀量",
-      "jsonKey": "sheath_base_expand",
       "key": "wiping.sheath_base_expand",
+      "tomlKey": "sheath_base_expand",
+      "section": "wiping",
       "label": "护套底层膨胀量",
-      "layout": {
-        "group": "塔结构加强",
-        "order": 58,
-        "tab": "擦料策略"
-      },
+      "desc": "护套底层相对塔体的单边膨胀量",
+      "unit": "mm",
+      "defaultValue": 5,
+      "valueType": "float",
+      "scope": "universal",
       "machineFilter": "",
+      "tomlComment": "鞘底扩展(mm) 范围:0~20",
       "machineVariants": null,
+      "min": 0,
       "max": 20,
       "mergeGroup": "",
-      "mergeable": true,
-      "min": 0,
-      "parentKey": "wiping.outer_structure",
-      "scope": "universal",
-      "section": "wiping",
-      "selectable": true,
-      "showWhen": {
-        "key": "wiping.outer_structure",
-        "op": "eq",
-        "value": "sheath"
+      "layout": {
+        "tab": "擦料策略",
+        "group": "塔结构加强",
+        "order": 58
       },
       "step": 0.5,
-      "tomlComment": "鞘底扩展(mm) 范围:0~20",
-      "tomlKey": "sheath_base_expand",
+      "selectable": true,
+      "mergeable": true,
       "uiComponent": "number",
-      "unit": "mm",
-      "valueType": "float"
+      "parentKey": "wiping.outer_structure",
+      "showWhen": {
+        "key": "wiping.outer_structure",
+        "op": "eq",
+        "value": "sheath"
+      },
+      "deprecated": true
     },
     {
-      "configKey": "SheathWallWidth",
-      "defaultValue": 0.8,
-      "deprecated": true,
-      "desc": "护套壁的宽度",
-      "jsonKey": "sheath_wall_width",
       "key": "wiping.sheath_wall_width",
+      "tomlKey": "sheath_wall_width",
+      "section": "wiping",
       "label": "护套壁宽",
-      "layout": {
-        "group": "塔结构加强",
-        "order": 59,
-        "tab": "擦料策略"
-      },
+      "desc": "护套壁的宽度",
+      "unit": "mm",
+      "defaultValue": 0.8,
+      "valueType": "float",
+      "scope": "universal",
       "machineFilter": "",
+      "tomlComment": "鞘壁宽(mm) 范围:0.2~3",
       "machineVariants": null,
+      "min": 0.2,
       "max": 3,
       "mergeGroup": "",
-      "mergeable": true,
-      "min": 0.2,
-      "parentKey": "wiping.outer_structure",
-      "scope": "universal",
-      "section": "wiping",
-      "selectable": true,
-      "showWhen": {
-        "key": "wiping.outer_structure",
-        "op": "eq",
-        "value": "sheath"
+      "layout": {
+        "tab": "擦料策略",
+        "group": "塔结构加强",
+        "order": 59
       },
       "step": 0.1,
-      "tomlComment": "鞘壁宽(mm) 范围:0.2~3",
-      "tomlKey": "sheath_wall_width",
+      "selectable": true,
+      "mergeable": true,
       "uiComponent": "number",
-      "unit": "mm",
-      "valueType": "float"
+      "parentKey": "wiping.outer_structure",
+      "showWhen": {
+        "key": "wiping.outer_structure",
+        "op": "eq",
+        "value": "sheath"
+      },
+      "deprecated": true
     },
     {
-      "configKey": "SheathEnableHeight",
-      "defaultValue": 70,
-      "deprecated": true,
-      "desc": "自动模式下，模型高度超过此值时启用护套",
-      "jsonKey": "sheath_enable_height",
       "key": "wiping.sheath_enable_height",
+      "tomlKey": "sheath_enable_height",
+      "section": "wiping",
       "label": "护套自动启用高度",
-      "layout": {
-        "group": "塔结构加强",
-        "order": 57,
-        "tab": "擦料策略"
-      },
+      "desc": "自动模式下，模型高度超过此值时启用护套",
+      "unit": "mm",
+      "defaultValue": 70,
+      "valueType": "float",
+      "scope": "universal",
       "machineFilter": "",
+      "tomlComment": "鞘启用高度(mm) 范围:0~300",
       "machineVariants": null,
+      "min": 0,
       "max": 300,
       "mergeGroup": "",
-      "mergeable": true,
-      "min": 0,
-      "parentKey": "wiping.outer_structure",
-      "scope": "universal",
-      "section": "wiping",
-      "selectable": true,
-      "showWhen": {
-        "key": "wiping.outer_structure",
-        "op": "eq",
-        "value": "sheath"
+      "layout": {
+        "tab": "擦料策略",
+        "group": "塔结构加强",
+        "order": 57
       },
       "step": 5,
-      "tomlComment": "鞘启用高度(mm) 范围:0~300",
-      "tomlKey": "sheath_enable_height",
-      "uiComponent": "number",
-      "unit": "mm",
-      "valueType": "float"
-    },
-    {
-      "configKey": "SheathConvergeLayers",
-      "defaultValue": 50,
-      "deprecated": true,
-      "desc": "护套从底层膨胀逐渐收敛到塔体外轮廓的层数",
-      "jsonKey": "sheath_converge_layers",
-      "key": "wiping.sheath_converge_layers",
-      "label": "护套收敛层数",
-      "layout": {
-        "group": "塔结构加强",
-        "order": 60,
-        "tab": "擦料策略"
-      },
-      "machineFilter": "",
-      "machineVariants": null,
-      "max": 200,
-      "mergeGroup": "",
-      "mergeable": true,
-      "min": 1,
-      "parentKey": "wiping.outer_structure",
-      "scope": "universal",
-      "section": "wiping",
       "selectable": true,
+      "mergeable": true,
+      "uiComponent": "number",
+      "parentKey": "wiping.outer_structure",
       "showWhen": {
         "key": "wiping.outer_structure",
         "op": "eq",
         "value": "sheath"
       },
-      "step": 1,
-      "tomlComment": "鞘收敛层数 范围:1~200",
-      "tomlKey": "sheath_converge_layers",
-      "uiComponent": "number",
-      "unit": "层",
-      "valueType": "int"
+      "deprecated": true
     },
     {
-      "choices": [
-        {
-          "label": "关闭",
-          "value": "off"
-        },
-        {
-          "label": "开启",
-          "value": "on"
-        },
-        {
-          "label": "自动",
-          "value": "auto"
-        }
-      ],
-      "configKey": "IroningMode",
-      "defaultValue": "off",
-      "desc": "控制支撑面上层熨烫的保留/移除：关闭=始终移除熨烫挤出；开启=始终保留；自动=根据挤出量阈值判断",
-      "jsonKey": "ironing_mode",
-      "key": "wiping.ironing_mode",
-      "label": "支撑面熨烫",
-      "layout": {
-        "group": "支撑面熨烫",
-        "order": 0,
-        "tab": "涂胶面"
-      },
+      "key": "wiping.sheath_converge_layers",
+      "tomlKey": "sheath_converge_layers",
+      "section": "wiping",
+      "label": "护套收敛层数",
+      "desc": "护套从底层膨胀逐渐收敛到塔体外轮廓的层数",
+      "unit": "层",
+      "defaultValue": 50,
+      "valueType": "int",
+      "scope": "universal",
       "machineFilter": "",
+      "tomlComment": "鞘收敛层数 范围:1~200",
       "machineVariants": null,
+      "min": 1,
+      "max": 200,
+      "mergeGroup": "",
+      "layout": {
+        "tab": "擦料策略",
+        "group": "塔结构加强",
+        "order": 60
+      },
+      "step": 1,
+      "selectable": true,
+      "mergeable": true,
+      "uiComponent": "number",
+      "parentKey": "wiping.outer_structure",
+      "showWhen": {
+        "key": "wiping.outer_structure",
+        "op": "eq",
+        "value": "sheath"
+      },
+      "deprecated": true
+    },
+    {
+      "key": "wiping.ironing_mode",
+      "tomlKey": "ironing_mode",
+      "section": "wiping",
+      "label": "支撑面熨烫",
+      "desc": "控制支撑面上层熨烫的保留/移除：关闭=始终移除熨烫挤出；开启=始终保留；自动=根据挤出量阈值判断",
+      "unit": "",
+      "defaultValue": "off",
+      "valueType": "string",
+      "scope": "universal",
+      "machineFilter": "",
+      "tomlComment": "熨烫模式: off=始终移除, on=始终保留, auto=自动判断",
+      "machineVariants": null,
+      "min": null,
       "max": null,
       "mergeGroup": "",
-      "mergeable": true,
-      "min": null,
-      "scope": "universal",
-      "section": "wiping",
+      "layout": {
+        "tab": "涂胶面",
+        "group": "支撑面熨烫",
+        "order": 0
+      },
+      "choices": [
+        {
+          "value": "off",
+          "label": "关闭"
+        },
+        {
+          "value": "on",
+          "label": "开启"
+        },
+        {
+          "value": "auto",
+          "label": "自动"
+        }
+      ],
       "selectable": true,
-      "tomlComment": "熨烫模式: off=始终移除, on=始终保留, auto=自动判断",
-      "tomlKey": "ironing_mode",
-      "uiComponent": "segmented",
-      "unit": "",
-      "valueType": "string"
+      "mergeable": true,
+      "uiComponent": "segmented"
     },
     {
-      "configKey": "IroningESumThreshold",
-      "defaultValue": 7.9,
-      "desc": "当熨烫段挤出总量超过此阈值时自动移除熨烫（仅在自动模式下生效）",
-      "jsonKey": "ironing_e_sum_threshold",
       "key": "wiping.ironing_e_sum_threshold",
+      "tomlKey": "ironing_e_sum_threshold",
+      "section": "wiping",
       "label": "熨烫挤出阈值",
-      "layout": {
-        "group": "支撑面熨烫",
-        "order": 1,
-        "tab": "涂胶面"
-      },
+      "desc": "当熨烫段挤出总量超过此阈值时自动移除熨烫（仅在自动模式下生效）",
+      "unit": "mm",
+      "defaultValue": 7.9,
+      "valueType": "float",
+      "scope": "universal",
       "machineFilter": "",
+      "tomlComment": "熨烫E总和阈值 范围:0~100",
       "machineVariants": null,
+      "min": 0,
       "max": 100,
       "mergeGroup": "",
-      "mergeable": true,
-      "min": 0,
-      "parentKey": "wiping.ironing_mode",
-      "scope": "universal",
-      "section": "wiping",
+      "layout": {
+        "tab": "涂胶面",
+        "group": "支撑面熨烫",
+        "order": 1
+      },
+      "step": 0.1,
       "selectable": true,
+      "mergeable": true,
+      "uiComponent": "number",
+      "parentKey": "wiping.ironing_mode",
       "showWhen": {
         "key": "wiping.ironing_mode",
         "op": "eq",
         "value": "auto"
-      },
-      "step": 0.1,
-      "tomlComment": "熨烫E总和阈值 范围:0~100",
-      "tomlKey": "ironing_e_sum_threshold",
-      "uiComponent": "number",
-      "unit": "mm",
-      "valueType": "float"
+      }
     },
     {
-      "choices": [
-        {
-          "label": "关闭",
-          "value": "off"
-        },
-        {
-          "label": "开启",
-          "value": "on"
-        }
-      ],
-      "configKey": "UseIroningPath",
-      "defaultValue": false,
-      "desc": "开启后，涂胶面优先使用熨烫段的 XY 路径；熨烫覆盖不足的区域自动回退到支撑面路径",
-      "jsonKey": "use_ironing_path",
       "key": "wiping.use_ironing_path",
+      "tomlKey": "use_ironing_path",
+      "section": "wiping",
       "label": "涂胶面使用熨烫路径",
-      "layout": {
-        "group": "支撑面熨烫",
-        "order": 2,
-        "tab": "涂胶面"
-      },
+      "desc": "开启后，涂胶面优先使用熨烫段的 XY 路径；熨烫覆盖不足的区域自动回退到支撑面路径",
+      "unit": "",
+      "defaultValue": false,
+      "valueType": "bool",
+      "scope": "universal",
       "machineFilter": "",
+      "tomlComment": "使用熨烫路径作为涂胶路径",
       "machineVariants": null,
+      "min": null,
       "max": null,
       "mergeGroup": "",
-      "mergeable": true,
-      "min": null,
-      "scope": "universal",
-      "section": "wiping",
-      "selectable": true,
-      "tomlComment": "使用熨烫路径作为涂胶路径",
-      "tomlKey": "use_ironing_path",
-      "uiComponent": "switch",
-      "unit": "",
-      "valueType": "bool"
-    },
-    {
+      "layout": {
+        "tab": "涂胶面",
+        "group": "支撑面熨烫",
+        "order": 2
+      },
       "choices": [
         {
-          "label": "关闭",
-          "value": 0
+          "value": "off",
+          "label": "关闭"
         },
         {
-          "label": "稀疏一半",
-          "value": 50
-        },
-        {
-          "label": "稀疏90%",
-          "value": 90
+          "value": "on",
+          "label": "开启"
         }
       ],
-      "configKey": "IroningCoverageThreshold",
-      "defaultValue": 10,
-      "desc": "熨烫面占支撑面的最低路径长度比例，低于此值时回退到支撑面",
-      "jsonKey": "ironing_coverage_threshold",
+      "selectable": true,
+      "mergeable": true,
+      "uiComponent": "switch"
+    },
+    {
       "key": "wiping.ironing_coverage_threshold",
+      "tomlKey": "ironing_coverage_threshold",
+      "section": "wiping",
       "label": "熨烫覆盖阈值",
-      "layout": {
-        "group": "支撑面熨烫",
-        "order": 3,
-        "tab": "涂胶面"
-      },
+      "desc": "熨烫面占支撑面的最低路径长度比例，低于此值时回退到支撑面",
+      "unit": "%",
+      "defaultValue": 10,
+      "valueType": "float",
+      "scope": "universal",
       "machineFilter": "",
+      "tomlComment": "熨烫覆盖率阈值(%) 范围:0~100",
       "machineVariants": null,
+      "min": 0,
       "max": 100,
       "mergeGroup": "",
-      "mergeable": true,
-      "min": 0,
-      "scope": "universal",
-      "section": "wiping",
-      "selectable": true,
-      "step": 1,
-      "tomlComment": "熨烫覆盖率阈值(%) 范围:0~100",
-      "tomlKey": "ironing_coverage_threshold",
-      "uiComponent": "number",
-      "unit": "%",
-      "valueType": "float"
-    },
-    {
-      "configKey": "IroningSuppressExpand",
-      "defaultValue": 0,
-      "desc": "已激活熨烫段包围盒向外扩展的距离，0为关闭扩展",
-      "jsonKey": "ironing_suppress_expand",
-      "key": "wiping.ironing_suppress_expand",
-      "label": "熨烫抑制扩展范围",
       "layout": {
+        "tab": "涂胶面",
         "group": "支撑面熨烫",
-        "order": 4,
-        "tab": "涂胶面"
+        "order": 3
       },
-      "machineFilter": "",
-      "machineVariants": null,
-      "max": 20,
-      "mergeGroup": "",
-      "mergeable": true,
-      "min": 0,
-      "scope": "universal",
-      "section": "wiping",
-      "selectable": true,
-      "step": 0.5,
-      "tomlComment": "熨烫抑制扩展(mm) 范围:0~20",
-      "tomlKey": "ironing_suppress_expand",
-      "uiComponent": "number",
-      "unit": "mm",
-      "valueType": "float"
-    },
-    {
       "choices": [
         {
-          "label": "包围盒外扩",
-          "value": "bbox"
+          "value": 0,
+          "label": "关闭"
         },
         {
-          "label": "质心半径外扩",
-          "value": "centroid"
+          "value": 50,
+          "label": "稀疏一半"
+        },
+        {
+          "value": 90,
+          "label": "稀疏90%"
         }
       ],
-      "configKey": "IroningSuppressExpandMode",
-      "defaultValue": "bbox",
-      "desc": "熨烫抑制区域的扩展方式：包围盒外扩=沿XY轴均匀外扩；质心半径外扩=从质心向外径向扩展",
-      "jsonKey": "ironing_suppress_expand_mode",
-      "key": "wiping.ironing_suppress_expand_mode",
-      "label": "熨烫抑制扩展模式",
-      "layout": {
-        "group": "支撑面熨烫",
-        "order": 5,
-        "tab": "涂胶面"
-      },
+      "step": 1,
+      "selectable": true,
+      "mergeable": true,
+      "uiComponent": "number"
+    },
+    {
+      "key": "wiping.ironing_suppress_expand",
+      "tomlKey": "ironing_suppress_expand",
+      "section": "wiping",
+      "label": "熨烫抑制扩展范围",
+      "desc": "已激活熨烫段包围盒向外扩展的距离，0为关闭扩展",
+      "unit": "mm",
+      "defaultValue": 0,
+      "valueType": "float",
+      "scope": "universal",
       "machineFilter": "",
+      "tomlComment": "熨烫抑制扩展(mm) 范围:0~20",
       "machineVariants": null,
+      "min": 0,
+      "max": 20,
+      "mergeGroup": "",
+      "layout": {
+        "tab": "涂胶面",
+        "group": "支撑面熨烫",
+        "order": 4
+      },
+      "step": 0.5,
+      "selectable": true,
+      "mergeable": true,
+      "uiComponent": "number"
+    },
+    {
+      "key": "wiping.ironing_suppress_expand_mode",
+      "tomlKey": "ironing_suppress_expand_mode",
+      "section": "wiping",
+      "label": "熨烫抑制扩展模式",
+      "desc": "熨烫抑制区域的扩展方式：包围盒外扩=沿XY轴均匀外扩；质心半径外扩=从质心向外径向扩展",
+      "unit": "",
+      "defaultValue": "bbox",
+      "valueType": "string",
+      "scope": "universal",
+      "machineFilter": "",
+      "tomlComment": "熨烫抑制扩展模式(bbox/centroid)",
+      "machineVariants": null,
+      "min": null,
       "max": null,
       "mergeGroup": "",
-      "mergeable": true,
-      "min": null,
-      "parentKey": "wiping.ironing_suppress_expand",
-      "scope": "universal",
-      "section": "wiping",
+      "layout": {
+        "tab": "涂胶面",
+        "group": "支撑面熨烫",
+        "order": 5
+      },
+      "choices": [
+        {
+          "value": "bbox",
+          "label": "包围盒外扩"
+        },
+        {
+          "value": "centroid",
+          "label": "质心半径外扩"
+        }
+      ],
       "selectable": true,
+      "mergeable": true,
+      "uiComponent": "select",
+      "parentKey": "wiping.ironing_suppress_expand",
       "showWhen": {
         "key": "wiping.ironing_suppress_expand",
         "op": "gt",
         "value": "0"
-      },
-      "tomlComment": "熨烫抑制扩展模式(bbox/centroid)",
-      "tomlKey": "ironing_suppress_expand_mode",
-      "uiComponent": "select",
-      "unit": "",
-      "valueType": "string"
+      }
     },
     {
-      "configKey": "PrimeTriggerLayers",
-      "defaultValue": 30,
-      "desc": "超过此层数未涂胶时自动触发润笔，0表示禁用润笔触发",
-      "jsonKey": "prime_trigger_layers",
       "key": "wiping.prime_trigger_layers",
+      "tomlKey": "prime_trigger_layers",
+      "section": "wiping",
       "label": "润笔触发层数",
-      "layout": {
-        "group": "润笔",
-        "order": 4,
-        "tab": "高级"
-      },
+      "desc": "超过此层数未涂胶时自动触发润笔，0表示禁用润笔触发",
+      "unit": "层",
+      "defaultValue": 30,
+      "valueType": "int",
+      "scope": "universal",
       "machineFilter": "",
+      "tomlComment": "预涂触发层数 范围:0~999",
       "machineVariants": null,
+      "min": 0,
       "max": 999,
       "mergeGroup": "",
-      "mergeable": true,
-      "min": 0,
-      "scope": "universal",
-      "section": "wiping",
-      "selectable": true,
+      "layout": {
+        "tab": "高级",
+        "group": "润笔",
+        "order": 4
+      },
       "step": 1,
-      "tomlComment": "预涂触发层数 范围:0~999",
-      "tomlKey": "prime_trigger_layers",
-      "uiComponent": "number",
-      "unit": "层",
-      "valueType": "int"
+      "selectable": true,
+      "mergeable": true,
+      "uiComponent": "number"
     },
     {
-      "choices": [
-        {
-          "label": "关闭",
-          "value": "off"
-        },
-        {
-          "label": "开启",
-          "value": "on"
-        },
-        {
-          "label": "自动",
-          "value": "auto"
-        }
-      ],
-      "configKey": "DiskStaggerMode",
-      "defaultValue": "off",
-      "desc": "关闭：不旋转 | 开启：始终错开 | 自动：小层高时自动错开",
-      "jsonKey": "disk_stagger_mode",
       "key": "wiping.disk_stagger_mode",
+      "tomlKey": "disk_stagger_mode",
+      "section": "wiping",
       "label": "错开模式",
-      "layout": {
-        "group": "圆盘动作控制",
-        "order": 40,
-        "tab": "擦料策略"
-      },
+      "desc": "关闭：不旋转 | 开启：始终错开 | 自动：小层高时自动错开",
+      "unit": "",
+      "defaultValue": "off",
+      "valueType": "string",
+      "scope": "universal",
       "machineFilter": "",
+      "tomlComment": "圆盘错开模式(off/on/auto)",
       "machineVariants": null,
+      "min": null,
       "max": null,
       "mergeGroup": "",
-      "mergeable": true,
-      "min": null,
-      "parentKey": "wiping.have_wiping_components",
-      "scope": "universal",
-      "section": "wiping",
+      "layout": {
+        "tab": "擦料策略",
+        "group": "圆盘动作控制",
+        "order": 40
+      },
+      "choices": [
+        {
+          "value": "off",
+          "label": "关闭"
+        },
+        {
+          "value": "on",
+          "label": "开启"
+        },
+        {
+          "value": "auto",
+          "label": "自动"
+        }
+      ],
       "selectable": true,
+      "mergeable": true,
+      "uiComponent": "segmented",
+      "parentKey": "wiping.have_wiping_components",
       "showWhen": {
         "key": "wiping.have_wiping_components",
         "op": "eq",
         "value": "disk"
-      },
-      "tomlComment": "圆盘错开模式(off/on/auto)",
-      "tomlKey": "disk_stagger_mode",
-      "uiComponent": "segmented",
-      "unit": "",
-      "valueType": "string"
+      }
     },
     {
-      "configKey": "DiskStaggerAngle",
-      "defaultValue": 5,
-      "desc": "每层圆盘旋转偏移的角度（0-30°）",
-      "jsonKey": "disk_stagger_angle",
       "key": "wiping.disk_stagger_angle",
+      "tomlKey": "disk_stagger_angle",
+      "section": "wiping",
       "label": "错开角度",
-      "layout": {
-        "group": "圆盘动作控制",
-        "order": 41,
-        "tab": "擦料策略"
-      },
+      "desc": "每层圆盘旋转偏移的角度（0-30°）",
+      "unit": "°",
+      "defaultValue": 5,
+      "valueType": "float",
+      "scope": "universal",
       "machineFilter": "",
+      "tomlComment": "圆盘错开角度(度) 范围:0~30",
       "machineVariants": null,
+      "min": 0,
       "max": 30,
       "mergeGroup": "",
-      "mergeable": true,
-      "min": 0,
-      "parentKey": "wiping.disk_stagger_mode",
-      "scope": "universal",
-      "section": "wiping",
+      "layout": {
+        "tab": "擦料策略",
+        "group": "圆盘动作控制",
+        "order": 41
+      },
+      "step": 1,
       "selectable": true,
+      "mergeable": true,
+      "uiComponent": "number",
+      "parentKey": "wiping.disk_stagger_mode",
       "showWhen": {
         "key": "wiping.disk_stagger_mode",
         "op": "neq",
         "value": "off"
-      },
-      "step": 1,
-      "tomlComment": "圆盘错开角度(度) 范围:0~30",
-      "tomlKey": "disk_stagger_angle",
-      "uiComponent": "number",
-      "unit": "°",
-      "valueType": "float"
+      }
     },
     {
-      "configKey": "DiskStaggerMaxAngle",
-      "defaultValue": 45,
-      "desc": "摆动的最大偏移角度（10-90°）",
-      "jsonKey": "disk_stagger_max_angle",
       "key": "wiping.disk_stagger_max_angle",
+      "tomlKey": "disk_stagger_max_angle",
+      "section": "wiping",
       "label": "最大偏移角度",
-      "layout": {
-        "group": "圆盘动作控制",
-        "order": 42,
-        "tab": "擦料策略"
-      },
+      "desc": "摆动的最大偏移角度（10-90°）",
+      "unit": "°",
+      "defaultValue": 45,
+      "valueType": "float",
+      "scope": "universal",
       "machineFilter": "",
+      "tomlComment": "圆盘最大偏移角度(度) 范围:10~90",
       "machineVariants": null,
+      "min": 10,
       "max": 90,
       "mergeGroup": "",
-      "mergeable": true,
-      "min": 10,
-      "parentKey": "wiping.disk_stagger_mode",
-      "scope": "universal",
-      "section": "wiping",
+      "layout": {
+        "tab": "擦料策略",
+        "group": "圆盘动作控制",
+        "order": 42
+      },
+      "step": 1,
       "selectable": true,
+      "mergeable": true,
+      "uiComponent": "number",
+      "parentKey": "wiping.disk_stagger_mode",
       "showWhen": {
         "key": "wiping.disk_stagger_mode",
         "op": "neq",
         "value": "off"
-      },
-      "step": 1,
-      "tomlComment": "圆盘最大偏移角度(度) 范围:10~90",
-      "tomlKey": "disk_stagger_max_angle",
-      "uiComponent": "number",
-      "unit": "°",
-      "valueType": "float"
+      }
     },
     {
-      "choices": [
-        {
-          "label": "旋转楼梯",
-          "value": "spiral"
-        },
-        {
-          "label": "锯齿摆动",
-          "value": "oscillate"
-        }
-      ],
-      "configKey": "DiskStaggerSwingMode",
-      "defaultValue": "spiral",
-      "desc": "旋转楼梯：单向累加到达最大值后回卷 | 锯齿摆动：到最大值后反向折返",
-      "jsonKey": "disk_stagger_swing_mode",
       "key": "wiping.disk_stagger_swing_mode",
+      "tomlKey": "disk_stagger_swing_mode",
+      "section": "wiping",
       "label": "摆动模式",
-      "layout": {
-        "group": "圆盘动作控制",
-        "order": 43,
-        "tab": "擦料策略"
-      },
+      "desc": "旋转楼梯：单向累加到达最大值后回卷 | 锯齿摆动：到最大值后反向折返",
+      "unit": "",
+      "defaultValue": "spiral",
+      "valueType": "string",
+      "scope": "universal",
       "machineFilter": "",
+      "tomlComment": "圆盘摆动模式(spiral/oscillate)",
       "machineVariants": null,
+      "min": null,
       "max": null,
       "mergeGroup": "",
-      "mergeable": true,
-      "min": null,
-      "parentKey": "wiping.disk_stagger_mode",
-      "scope": "universal",
-      "section": "wiping",
+      "layout": {
+        "tab": "擦料策略",
+        "group": "圆盘动作控制",
+        "order": 43
+      },
+      "choices": [
+        {
+          "value": "spiral",
+          "label": "旋转楼梯"
+        },
+        {
+          "value": "oscillate",
+          "label": "锯齿摆动"
+        }
+      ],
       "selectable": true,
+      "mergeable": true,
+      "uiComponent": "select",
+      "parentKey": "wiping.disk_stagger_mode",
       "showWhen": {
         "key": "wiping.disk_stagger_mode",
         "op": "neq",
         "value": "off"
-      },
-      "tomlComment": "圆盘摆动模式(spiral/oscillate)",
-      "tomlKey": "disk_stagger_swing_mode",
-      "uiComponent": "select",
-      "unit": "",
-      "valueType": "string"
+      }
     },
     {
-      "configKey": "GluePassCount",
-      "defaultValue": 1,
-      "desc": "同一区域的涂胶遍数，多次涂胶可增加粘合力但延长打印时间",
-      "jsonKey": "glue_pass_count",
       "key": "wiping.glue_pass_count",
-      "label": "涂胶次数",
-      "layout": {
-        "group": "涂胶参数",
-        "order": 2,
-        "tab": "高级"
-      },
-      "machineFilter": "",
-      "machineVariants": null,
-      "max": 10,
-      "mergeGroup": "",
-      "mergeable": true,
-      "min": 1,
-      "scope": "universal",
-      "section": "wiping",
-      "selectable": true,
-      "step": 1,
-      "tomlComment": "涂胶次数 范围:1~10",
       "tomlKey": "glue_pass_count",
-      "uiComponent": "number",
+      "section": "wiping",
+      "label": "涂胶次数",
+      "desc": "同一区域的涂胶遍数，多次涂胶可增加粘合力但延长打印时间",
       "unit": "次",
-      "valueType": "int"
-    },
-    {
-      "configKey": "GlueZLiftHeight",
-      "defaultValue": 5,
-      "desc": "涂胶前/后抬笔高度。换笔芯后涂胶前抬笔 + 涂胶结束抬笔使用此高度。前3层使用子参数'前3层抬升高度'",
-      "jsonKey": "glue_z_lift_height",
-      "key": "wiping.glue_z_lift_height",
-      "label": "涂胶Z轴抬升高度",
-      "layout": {
-        "group": "Z轴抬升",
-        "order": 0,
-        "tab": "高级"
-      },
-      "machineFilter": "",
-      "max": 10,
-      "mergeGroup": "",
-      "mergeable": true,
-      "min": 5,
+      "defaultValue": 1,
+      "valueType": "int",
       "scope": "universal",
-      "section": "wiping",
-      "selectable": true,
-      "step": 0.5,
-      "tomlComment": "涂胶Z抬升高度(mm) 范围:5~10",
-      "tomlKey": "glue_z_lift_height",
-      "uiComponent": "number",
-      "unit": "mm",
-      "valueType": "float"
-    },
-    {
-      "configKey": "GlueZLiftHeightFirstLayers",
-      "defaultValue": 6,
-      "desc": "前3层涂胶前/后抬笔的额外高度，用于首层附着稳定。与涂胶Z轴抬升高度叠加使用",
-      "jsonKey": "glue_z_lift_height_first_layers",
-      "key": "wiping.glue_z_lift_height_first_layers",
-      "label": "前3层抬升高度",
-      "layout": {
-        "group": "Z轴抬升",
-        "order": 1,
-        "tab": "高级"
-      },
       "machineFilter": "",
+      "tomlComment": "涂胶次数 范围:1~10",
       "machineVariants": null,
+      "min": 1,
       "max": 10,
       "mergeGroup": "",
-      "mergeable": true,
-      "min": 6,
-      "parentKey": "wiping.glue_z_lift_height",
-      "scope": "universal",
-      "section": "wiping",
+      "layout": {
+        "tab": "高级",
+        "group": "涂胶参数",
+        "order": 2
+      },
+      "step": 1,
       "selectable": true,
+      "mergeable": true,
+      "uiComponent": "number"
+    },
+    {
+      "key": "wiping.glue_z_lift_height",
+      "tomlKey": "glue_z_lift_height",
+      "section": "wiping",
+      "label": "涂胶Z轴抬升高度",
+      "desc": "涂胶前/后抬笔高度。换笔芯后涂胶前抬笔 + 涂胶结束抬笔使用此高度。前3层使用子参数'前3层抬升高度'",
+      "unit": "mm",
+      "defaultValue": 5,
+      "valueType": "float",
+      "scope": "universal",
+      "machineFilter": "",
+      "tomlComment": "涂胶Z抬升高度(mm) 范围:5~10",
+      "machineVariants": null,
+      "min": 5,
+      "max": 10,
+      "mergeGroup": "",
+      "layout": {
+        "tab": "高级",
+        "group": "Z轴抬升",
+        "order": 0
+      },
+      "step": 0.5,
+      "selectable": true,
+      "mergeable": true,
+      "uiComponent": "number"
+    },
+    {
+      "key": "wiping.glue_z_lift_height_first_layers",
+      "tomlKey": "glue_z_lift_height_first_layers",
+      "section": "wiping",
+      "label": "前3层抬升高度",
+      "desc": "前3层涂胶前/后抬笔的额外高度，用于首层附着稳定。与涂胶Z轴抬升高度叠加使用",
+      "unit": "mm",
+      "defaultValue": 6,
+      "valueType": "float",
+      "scope": "universal",
+      "machineFilter": "",
+      "tomlComment": "前3层抬升高度(mm) 范围:6~10",
+      "machineVariants": null,
+      "min": 6,
+      "max": 10,
+      "mergeGroup": "",
+      "layout": {
+        "tab": "高级",
+        "group": "Z轴抬升",
+        "order": 1
+      },
+      "step": 0.5,
+      "selectable": true,
+      "mergeable": true,
+      "uiComponent": "number",
+      "parentKey": "wiping.glue_z_lift_height",
       "showWhen": {
         "key": "wiping.glue_z_lift_height",
         "op": "gt",
         "value": "0"
-      },
-      "step": 0.5,
-      "tomlComment": "前3层抬升高度(mm) 范围:6~10",
-      "tomlKey": "glue_z_lift_height_first_layers",
-      "uiComponent": "number",
-      "unit": "mm",
-      "valueType": "float"
+      }
     },
     {
-      "configKey": "GlueInterModelLiftHeight",
-      "defaultValue": 2,
-      "desc": "模型间跳转 + 段间跳转微抬合并控制。涂胶区域间移动和段间跳转均使用此高度",
-      "jsonKey": "glue_inter_model_lift_height",
       "key": "wiping.glue_inter_model_lift_height",
+      "tomlKey": "glue_inter_model_lift_height",
+      "section": "wiping",
       "label": "涂胶区域间Z轴抬升高度",
-      "layout": {
-        "group": "Z轴抬升",
-        "order": 2,
-        "tab": "高级"
-      },
+      "desc": "模型间跳转 + 段间跳转微抬合并控制。涂胶区域间移动和段间跳转均使用此高度",
+      "unit": "mm",
+      "defaultValue": 2,
+      "valueType": "float",
+      "scope": "universal",
       "machineFilter": "",
+      "tomlComment": "模型间/段间跳转Z抬升高度(mm) 范围:2~5",
       "machineVariants": null,
+      "min": 2,
       "max": 5,
       "mergeGroup": "",
-      "mergeable": true,
-      "min": 2,
-      "scope": "universal",
-      "section": "wiping",
-      "selectable": true,
+      "layout": {
+        "tab": "高级",
+        "group": "Z轴抬升",
+        "order": 2
+      },
       "step": 0.5,
-      "tomlComment": "模型间/段间跳转Z抬升高度(mm) 范围:2~5",
-      "tomlKey": "glue_inter_model_lift_height",
-      "uiComponent": "number",
-      "unit": "mm",
-      "valueType": "float"
+      "selectable": true,
+      "mergeable": true,
+      "uiComponent": "number"
     },
     {
-      "configKey": "PrimeMinPathLength",
-      "defaultValue": 5,
-      "desc": "触发润笔的最小路径长度阈值，路径长度小于此值时不触发润笔",
-      "jsonKey": "prime_min_path_length",
       "key": "wiping.prime_min_path_length",
-      "label": "润笔最小路径长度",
-      "layout": {
-        "group": "润笔",
-        "order": 3,
-        "tab": "高级"
-      },
-      "machineFilter": "",
-      "machineVariants": null,
-      "max": 100,
-      "mergeGroup": "",
-      "mergeable": true,
-      "min": 0,
-      "scope": "universal",
-      "section": "wiping",
-      "selectable": true,
-      "step": 1,
-      "tomlComment": "润笔最小路径长度(mm) 范围:0~100",
       "tomlKey": "prime_min_path_length",
-      "uiComponent": "number",
+      "section": "wiping",
+      "label": "润笔最小路径长度",
+      "desc": "触发润笔的最小路径长度阈值，路径长度小于此值时不触发润笔",
       "unit": "mm",
-      "valueType": "float"
-    },
-    {
-      "choices": [
-        {
-          "label": "关闭",
-          "value": "off"
-        },
-        {
-          "label": "开启",
-          "value": "on"
-        }
-      ],
-      "configKey": "PrimePerModel",
-      "defaultValue": false,
-      "desc": "开启后每个模型的涂胶前都执行润笔，关闭则每层只润笔一次",
-      "jsonKey": "prime_per_model",
-      "key": "wiping.prime_per_model",
-      "label": "每个模型都润笔",
-      "layout": {
-        "group": "润笔",
-        "order": 5,
-        "tab": "高级"
-      },
-      "machineFilter": "",
-      "machineVariants": null,
-      "max": null,
-      "mergeGroup": "",
-      "mergeable": true,
-      "min": null,
+      "defaultValue": 5,
+      "valueType": "float",
       "scope": "universal",
-      "section": "wiping",
-      "selectable": true,
-      "tomlComment": "每个模型都润笔",
-      "tomlKey": "prime_per_model",
-      "uiComponent": "switch",
-      "unit": "",
-      "valueType": "bool"
-    },
-    {
-      "choices": [
-        {
-          "label": "关闭",
-          "value": "off"
-        },
-        {
-          "label": "开启",
-          "value": "on"
-        }
-      ],
-      "configKey": "PrimeEveryLayer",
-      "defaultValue": false,
-      "desc": "开启后每层涂胶前都触发润笔，与润笔触发层数互斥",
-      "jsonKey": "prime_every_layer",
-      "key": "wiping.prime_every_layer",
-      "label": "每层润笔",
-      "layout": {
-        "group": "润笔",
-        "order": 6,
-        "tab": "高级"
-      },
       "machineFilter": "",
+      "tomlComment": "润笔最小路径长度(mm) 范围:0~100",
       "machineVariants": null,
-      "max": null,
-      "mergeGroup": "",
-      "mergeable": true,
-      "min": null,
-      "scope": "universal",
-      "section": "wiping",
-      "selectable": true,
-      "tomlComment": "每层润笔",
-      "tomlKey": "prime_every_layer",
-      "uiComponent": "switch",
-      "unit": "",
-      "valueType": "bool"
-    },
-    {
-      "configKey": "RibExtraLength",
-      "defaultValue": 0,
-      "desc": "斜肋外墙的额外延伸长度，0为不延伸",
-      "jsonKey": "rib_extra_length",
-      "key": "wiping.rib_extra_length",
-      "label": "斜肋额外长度",
-      "layout": {
-        "group": "塔结构加强",
-        "order": 53,
-        "tab": "擦料策略"
-      },
-      "machineFilter": "",
-      "machineVariants": null,
-      "max": 300,
-      "mergeGroup": "",
-      "mergeable": true,
       "min": 0,
-      "parentKey": "wiping.outer_structure",
-      "scope": "universal",
-      "section": "wiping",
-      "selectable": true,
-      "showWhen": {
-        "key": "wiping.outer_structure",
-        "op": "eq",
-        "value": "rib"
-      },
-      "step": 1,
-      "tomlComment": "斜肋额外长度(mm) 范围:0~300",
-      "tomlKey": "rib_extra_length",
-      "uiComponent": "number",
-      "unit": "mm",
-      "valueType": "float"
-    },
-    {
-      "configKey": "RibWidth",
-      "defaultValue": 8,
-      "desc": "斜肋外墙的宽度",
-      "jsonKey": "rib_width",
-      "key": "wiping.rib_width",
-      "label": "斜肋宽度",
-      "layout": {
-        "group": "塔结构加强",
-        "order": 54,
-        "tab": "擦料策略"
-      },
-      "machineFilter": "",
-      "machineVariants": null,
-      "max": 300,
-      "mergeGroup": "",
-      "mergeable": true,
-      "min": 0,
-      "parentKey": "wiping.outer_structure",
-      "scope": "universal",
-      "section": "wiping",
-      "selectable": true,
-      "showWhen": {
-        "key": "wiping.outer_structure",
-        "op": "eq",
-        "value": "rib"
-      },
-      "step": 1,
-      "tomlComment": "斜肋宽度(mm) 范围:0~300",
-      "tomlKey": "rib_width",
-      "uiComponent": "number",
-      "unit": "mm",
-      "valueType": "float"
-    },
-    {
-      "configKey": "RibFilletWall",
-      "defaultValue": true,
-      "desc": "斜肋外墙是否倒圆角",
-      "jsonKey": "rib_fillet_wall",
-      "key": "wiping.rib_fillet_wall",
-      "label": "外墙倒圆角",
-      "layout": {
-        "group": "塔结构加强",
-        "order": 55,
-        "tab": "擦料策略"
-      },
-      "machineFilter": "",
-      "machineVariants": null,
-      "max": null,
-      "mergeGroup": "",
-      "mergeable": true,
-      "min": null,
-      "parentKey": "wiping.outer_structure",
-      "scope": "universal",
-      "section": "wiping",
-      "selectable": true,
-      "showWhen": {
-        "key": "wiping.outer_structure",
-        "op": "eq",
-        "value": "rib"
-      },
-      "tomlComment": "外墙倒圆角",
-      "tomlKey": "rib_fillet_wall",
-      "uiComponent": "switch",
-      "unit": "",
-      "valueType": "bool"
-    },
-    {
-      "configKey": "DisableFrontCoverAlarm",
-      "defaultValue": false,
-      "desc": "开启后将强制关闭前盖脱落报警。仅对P1系列机型有效",
-      "jsonKey": "disable_front_cover_alarm",
-      "key": "wiping.disable_front_cover_alarm",
-      "label": "强制关闭前盖脱落报警",
-      "layout": {
-        "group": "机型专属",
-        "order": 0,
-        "tab": "高级"
-      },
-      "machineFilter": "P1,P2,X1",
-      "machineVariants": null,
-      "max": null,
-      "mergeGroup": "",
-      "mergeable": true,
-      "min": null,
-      "scope": "machine_specific",
-      "section": "wiping",
-      "selectable": true,
-      "tomlComment": "关闭第三层裹头检测(A1/A1 mini)",
-      "tomlKey": "disable_front_cover_alarm",
-      "uiComponent": "switch",
-      "unit": "",
-      "valueType": "bool"
-    },
-    {
-      "configKey": "Disable3rdLayerClogDetect",
-      "defaultValue": false,
-      "desc": "开启后移除第三层裹头检测段。仅对A1/A1 mini机型有效",
-      "jsonKey": "disable_3rd_layer_clog_detect",
-      "key": "wiping.disable_3rd_layer_clog_detect",
-      "label": "关闭第三层裹头检测",
-      "layout": {
-        "group": "机型专属",
-        "order": 1,
-        "tab": "高级"
-      },
-      "machineFilter": "A1,A1MINI,A2L",
-      "machineVariants": null,
-      "max": null,
-      "mergeGroup": "",
-      "mergeable": true,
-      "min": null,
-      "scope": "machine_specific",
-      "section": "wiping",
-      "selectable": true,
-      "tomlComment": "关闭第三层裹头检测(A1/A1 mini)",
-      "tomlKey": "disable_3rd_layer_clog_detect",
-      "uiComponent": "switch",
-      "unit": "",
-      "valueType": "bool"
-    },
-    {
-      "choices": [
-        {
-          "label": "默认",
-          "value": "default"
-        },
-        {
-          "label": "新型",
-          "value": "new"
-        }
-      ],
-      "configKey": "XYCalibrationMode",
-      "defaultValue": "default",
-      "desc": "XY校准模式：默认或新型",
-      "jsonKey": "xy_calibration_mode",
-      "key": "wiping.xy_calibration_mode",
-      "label": "XY校准模式",
-      "layout": {
-        "group": "机型专属",
-        "order": 2,
-        "tab": "高级"
-      },
-      "machineFilter": "",
-      "machineVariants": null,
-      "max": null,
-      "mergeGroup": "",
-      "mergeable": true,
-      "min": null,
-      "scope": "universal",
-      "section": "wiping",
-      "selectable": true,
-      "tomlComment": "XY校准模式(default=默认,new=新型)",
-      "tomlKey": "xy_calibration_mode",
-      "uiComponent": "segmented",
-      "unit": "",
-      "valueType": "string"
-    },
-    {
-      "choices": [
-        {
-          "label": "关闭",
-          "value": "off"
-        },
-        {
-          "label": "开启",
-          "value": "on"
-        }
-      ],
-      "configKey": "MinSupportInterfaceEnabled",
-      "defaultValue": true,
-      "desc": "启用后过滤掉过小的支撑涂胶面，避免无效涂胶",
-      "jsonKey": "min_support_interface_enabled",
-      "key": "wiping.min_support_interface_enabled",
-      "label": "最小支撑涂胶面过滤",
-      "layout": {
-        "group": "支撑面熨烫",
-        "order": 8,
-        "tab": "涂胶面"
-      },
-      "machineFilter": "",
-      "machineVariants": null,
-      "max": null,
-      "mergeGroup": "",
-      "mergeable": true,
-      "min": null,
-      "scope": "universal",
-      "section": "wiping",
-      "selectable": true,
-      "tomlComment": "最小支撑涂胶面过滤",
-      "tomlKey": "min_support_interface_enabled",
-      "uiComponent": "switch",
-      "unit": "",
-      "valueType": "bool"
-    },
-    {
-      "configKey": "GlueSparseRatio",
-      "defaultValue": 50,
-      "desc": "小喷嘴(≤0.3mm)涂胶路径稀疏比例，0=不稀疏，50=隔行删除(默认)，100=仅保留首尾",
-      "jsonKey": "glue_sparse_ratio",
-      "key": "wiping.glue_sparse_ratio",
-      "label": "涂胶稀疏比",
-      "layout": {
-        "group": "支撑面熨烫",
-        "order": 9,
-        "tab": "涂胶面"
-      },
-      "machineFilter": "",
-      "machineVariants": null,
       "max": 100,
       "mergeGroup": "",
-      "mergeable": true,
-      "min": 0,
-      "scope": "universal",
-      "section": "wiping",
-      "selectable": true,
+      "layout": {
+        "tab": "高级",
+        "group": "润笔",
+        "order": 3
+      },
       "step": 1,
-      "tomlComment": "涂胶稀疏比(%)",
-      "tomlKey": "glue_sparse_ratio",
-      "uiComponent": "number",
-      "unit": "",
-      "valueType": "float"
+      "selectable": true,
+      "mergeable": true,
+      "uiComponent": "number"
     },
     {
-      "configKey": "TowerFirstLayerFlow",
-      "defaultValue": 1,
-      "desc": "擦料塔首层护套和斜肋的挤出流量比例，1.0为标准流量",
-      "jsonKey": "tower_first_layer_flow",
-      "key": "wiping.tower_first_layer_flow",
-      "label": "擦料塔首层流量",
-      "layout": {
-        "group": "安全与高级参数",
-        "order": 30,
-        "tab": "擦料策略"
-      },
+      "key": "wiping.prime_per_model",
+      "tomlKey": "prime_per_model",
+      "section": "wiping",
+      "label": "每个模型都润笔",
+      "desc": "开启后每个模型的涂胶前都执行润笔，关闭则每层只润笔一次",
+      "unit": "",
+      "defaultValue": false,
+      "valueType": "bool",
+      "scope": "universal",
       "machineFilter": "",
+      "tomlComment": "每个模型都润笔",
       "machineVariants": null,
+      "min": null,
+      "max": null,
+      "mergeGroup": "",
+      "layout": {
+        "tab": "高级",
+        "group": "润笔",
+        "order": 5
+      },
+      "choices": [
+        {
+          "value": "off",
+          "label": "关闭"
+        },
+        {
+          "value": "on",
+          "label": "开启"
+        }
+      ],
+      "selectable": true,
+      "mergeable": true,
+      "uiComponent": "switch"
+    },
+    {
+      "key": "wiping.prime_every_layer",
+      "tomlKey": "prime_every_layer",
+      "section": "wiping",
+      "label": "每层润笔",
+      "desc": "开启后每层涂胶前都触发润笔，与润笔触发层数互斥",
+      "unit": "",
+      "defaultValue": false,
+      "valueType": "bool",
+      "scope": "universal",
+      "machineFilter": "",
+      "tomlComment": "每层润笔",
+      "machineVariants": null,
+      "min": null,
+      "max": null,
+      "mergeGroup": "",
+      "layout": {
+        "tab": "高级",
+        "group": "润笔",
+        "order": 6
+      },
+      "choices": [
+        {
+          "value": "off",
+          "label": "关闭"
+        },
+        {
+          "value": "on",
+          "label": "开启"
+        }
+      ],
+      "selectable": true,
+      "mergeable": true,
+      "uiComponent": "switch"
+    },
+    {
+      "key": "wiping.rib_extra_length",
+      "tomlKey": "rib_extra_length",
+      "section": "wiping",
+      "label": "斜肋额外长度",
+      "desc": "斜肋外墙的额外延伸长度，0为不延伸",
+      "unit": "mm",
+      "defaultValue": 0,
+      "valueType": "float",
+      "scope": "universal",
+      "machineFilter": "",
+      "tomlComment": "斜肋额外长度(mm) 范围:0~300",
+      "machineVariants": null,
+      "min": 0,
+      "max": 300,
+      "mergeGroup": "",
+      "layout": {
+        "tab": "擦料策略",
+        "group": "塔结构加强",
+        "order": 53
+      },
+      "step": 1,
+      "selectable": true,
+      "mergeable": true,
+      "uiComponent": "number",
+      "parentKey": "wiping.outer_structure",
+      "showWhen": {
+        "key": "wiping.outer_structure",
+        "op": "eq",
+        "value": "rib"
+      }
+    },
+    {
+      "key": "wiping.rib_width",
+      "tomlKey": "rib_width",
+      "section": "wiping",
+      "label": "斜肋宽度",
+      "desc": "斜肋外墙的宽度",
+      "unit": "mm",
+      "defaultValue": 8,
+      "valueType": "float",
+      "scope": "universal",
+      "machineFilter": "",
+      "tomlComment": "斜肋宽度(mm) 范围:0~300",
+      "machineVariants": null,
+      "min": 0,
+      "max": 300,
+      "mergeGroup": "",
+      "layout": {
+        "tab": "擦料策略",
+        "group": "塔结构加强",
+        "order": 54
+      },
+      "step": 1,
+      "selectable": true,
+      "mergeable": true,
+      "uiComponent": "number",
+      "parentKey": "wiping.outer_structure",
+      "showWhen": {
+        "key": "wiping.outer_structure",
+        "op": "eq",
+        "value": "rib"
+      }
+    },
+    {
+      "key": "wiping.rib_fillet_wall",
+      "tomlKey": "rib_fillet_wall",
+      "section": "wiping",
+      "label": "外墙倒圆角",
+      "desc": "斜肋外墙是否倒圆角",
+      "unit": "",
+      "defaultValue": true,
+      "valueType": "bool",
+      "scope": "universal",
+      "machineFilter": "",
+      "tomlComment": "外墙倒圆角",
+      "machineVariants": null,
+      "min": null,
+      "max": null,
+      "mergeGroup": "",
+      "layout": {
+        "tab": "擦料策略",
+        "group": "塔结构加强",
+        "order": 55
+      },
+      "selectable": true,
+      "mergeable": true,
+      "uiComponent": "switch",
+      "parentKey": "wiping.outer_structure",
+      "showWhen": {
+        "key": "wiping.outer_structure",
+        "op": "eq",
+        "value": "rib"
+      }
+    },
+    {
+      "key": "wiping.disable_front_cover_alarm",
+      "tomlKey": "disable_front_cover_alarm",
+      "section": "wiping",
+      "label": "强制关闭前盖脱落报警",
+      "desc": "开启后将强制关闭前盖脱落报警。仅对P1系列机型有效",
+      "unit": "",
+      "defaultValue": false,
+      "valueType": "bool",
+      "scope": "machine_specific",
+      "machineFilter": "P1,P2,X1",
+      "tomlComment": "关闭第三层裹头检测(A1/A1 mini)",
+      "machineVariants": null,
+      "min": null,
+      "max": null,
+      "mergeGroup": "",
+      "layout": {
+        "tab": "高级",
+        "group": "机型专属",
+        "order": 0
+      },
+      "selectable": true,
+      "mergeable": true,
+      "uiComponent": "switch"
+    },
+    {
+      "key": "wiping.disable_3rd_layer_clog_detect",
+      "tomlKey": "disable_3rd_layer_clog_detect",
+      "section": "wiping",
+      "label": "关闭第三层裹头检测",
+      "desc": "开启后移除第三层裹头检测段。仅对A1/A1 mini机型有效",
+      "unit": "",
+      "defaultValue": false,
+      "valueType": "bool",
+      "scope": "machine_specific",
+      "machineFilter": "A1,A1MINI,A2L",
+      "tomlComment": "关闭第三层裹头检测(A1/A1 mini)",
+      "machineVariants": null,
+      "min": null,
+      "max": null,
+      "mergeGroup": "",
+      "layout": {
+        "tab": "高级",
+        "group": "机型专属",
+        "order": 1
+      },
+      "selectable": true,
+      "mergeable": true,
+      "uiComponent": "switch"
+    },
+    {
+      "key": "wiping.xy_calibration_mode",
+      "tomlKey": "xy_calibration_mode",
+      "section": "wiping",
+      "label": "XY校准模式",
+      "desc": "XY校准模式：默认或新型",
+      "unit": "",
+      "defaultValue": "default",
+      "valueType": "string",
+      "scope": "universal",
+      "machineFilter": "",
+      "tomlComment": "XY校准模式(default=默认,new=新型)",
+      "machineVariants": null,
+      "min": null,
+      "max": null,
+      "mergeGroup": "",
+      "layout": {
+        "tab": "高级",
+        "group": "机型专属",
+        "order": 2
+      },
+      "choices": [
+        {
+          "value": "default",
+          "label": "默认"
+        },
+        {
+          "value": "new",
+          "label": "新型"
+        }
+      ],
+      "selectable": true,
+      "mergeable": true,
+      "uiComponent": "segmented"
+    },
+    {
+      "key": "wiping.min_support_interface_enabled",
+      "tomlKey": "min_support_interface_enabled",
+      "section": "wiping",
+      "label": "最小支撑涂胶面过滤",
+      "desc": "启用后过滤掉过小的支撑涂胶面，避免无效涂胶",
+      "unit": "",
+      "defaultValue": true,
+      "valueType": "bool",
+      "scope": "universal",
+      "machineFilter": "",
+      "tomlComment": "最小支撑涂胶面过滤",
+      "machineVariants": null,
+      "min": null,
+      "max": null,
+      "mergeGroup": "",
+      "layout": {
+        "tab": "涂胶面",
+        "group": "支撑面熨烫",
+        "order": 8
+      },
+      "choices": [
+        {
+          "value": "off",
+          "label": "关闭"
+        },
+        {
+          "value": "on",
+          "label": "开启"
+        }
+      ],
+      "selectable": true,
+      "mergeable": true,
+      "uiComponent": "switch"
+    },
+    {
+      "key": "wiping.glue_sparse_ratio",
+      "tomlKey": "glue_sparse_ratio",
+      "section": "wiping",
+      "label": "涂胶稀疏比",
+      "desc": "小喷嘴(≤0.3mm)涂胶路径稀疏比例，0=不稀疏，50=隔行删除(默认)，100=仅保留首尾",
+      "unit": "",
+      "defaultValue": 50,
+      "valueType": "float",
+      "scope": "universal",
+      "machineFilter": "",
+      "tomlComment": "涂胶稀疏比(%)",
+      "machineVariants": null,
+      "min": 0,
+      "max": 100,
+      "mergeGroup": "",
+      "layout": {
+        "tab": "涂胶面",
+        "group": "支撑面熨烫",
+        "order": 9
+      },
+      "step": 1,
+      "selectable": true,
+      "mergeable": true,
+      "uiComponent": "number"
+    },
+    {
+      "key": "wiping.tower_first_layer_flow",
+      "tomlKey": "tower_first_layer_flow",
+      "section": "wiping",
+      "label": "擦料塔首层流量",
+      "desc": "擦料塔首层护套和斜肋的挤出流量比例，1.0为标准流量",
+      "unit": "",
+      "defaultValue": 1,
+      "valueType": "float",
+      "scope": "universal",
+      "machineFilter": "",
+      "tomlComment": "擦料塔首层流量 范围:0.5~2",
+      "machineVariants": null,
+      "min": 0.5,
       "max": 2,
       "mergeGroup": "",
-      "mergeable": true,
-      "min": 0.5,
-      "parentKey": "wiping.have_wiping_components",
-      "scope": "universal",
-      "section": "wiping",
-      "selectable": true,
-      "showWhen": {
-        "key": "wiping.have_wiping_components",
-        "op": "eq",
-        "value": "tower"
+      "layout": {
+        "tab": "擦料策略",
+        "group": "安全与高级参数",
+        "order": 30
       },
       "step": 0.1,
-      "tomlComment": "擦料塔首层流量 范围:0.5~2",
-      "tomlKey": "tower_first_layer_flow",
-      "uiComponent": "number",
-      "unit": "",
-      "valueType": "float"
-    },
-    {
-      "choices": [
-        {
-          "label": "快速",
-          "value": "fast"
-        },
-        {
-          "label": "跟随模型",
-          "value": "follow"
-        },
-        {
-          "label": "自定义",
-          "value": "custom"
-        }
-      ],
-      "configKey": "FastTowerMode",
-      "defaultValue": "fast",
-      "desc": "快速：最大层高打印，仅涂胶面层慢速擦嘴 | 跟随模型：层高与模型一致 | 自定义：自定义层高和擦嘴策略",
-      "jsonKey": "fast_tower_mode",
-      "key": "wiping.fast_tower_mode",
-      "label": "擦料塔速度与质量",
-      "layout": {
-        "group": "安全与高级参数",
-        "order": 31,
-        "tab": "擦料策略"
-      },
-      "machineFilter": "",
-      "machineVariants": null,
-      "max": null,
-      "mergeGroup": "",
-      "mergeable": true,
-      "min": null,
-      "parentKey": "wiping.have_wiping_components",
-      "scope": "universal",
-      "section": "wiping",
       "selectable": true,
+      "mergeable": true,
+      "uiComponent": "number",
+      "parentKey": "wiping.have_wiping_components",
       "showWhen": {
         "key": "wiping.have_wiping_components",
         "op": "eq",
         "value": "tower"
-      },
-      "tomlComment": "擦料塔模式",
-      "tomlKey": "fast_tower_mode",
-      "uiComponent": "segmented",
-      "unit": "",
-      "valueType": "string"
+      }
     },
     {
-      "configKey": "TowerGlueLayerSpeed",
-      "defaultValue": 35,
-      "desc": "涂胶面层的塔体打印速度",
-      "jsonKey": "tower_glue_layer_speed",
-      "key": "wiping.tower_glue_layer_speed",
-      "label": "涂胶面层速度",
-      "layout": {
-        "group": "安全与高级参数",
-        "order": 33,
-        "tab": "擦料策略"
-      },
+      "key": "wiping.fast_tower_mode",
+      "tomlKey": "fast_tower_mode",
+      "section": "wiping",
+      "label": "擦料塔速度与质量",
+      "desc": "快速：最大层高打印，仅涂胶面层慢速擦嘴 | 跟随模型：层高与模型一致 | 自定义：自定义层高和擦嘴策略",
+      "unit": "",
+      "defaultValue": "fast",
+      "valueType": "string",
+      "scope": "universal",
       "machineFilter": "",
+      "tomlComment": "擦料塔模式",
       "machineVariants": null,
+      "min": null,
+      "max": null,
+      "mergeGroup": "",
+      "layout": {
+        "tab": "擦料策略",
+        "group": "安全与高级参数",
+        "order": 31
+      },
+      "choices": [
+        {
+          "value": "fast",
+          "label": "快速"
+        },
+        {
+          "value": "follow",
+          "label": "跟随模型"
+        },
+        {
+          "value": "custom",
+          "label": "自定义"
+        }
+      ],
+      "selectable": true,
+      "mergeable": true,
+      "uiComponent": "segmented",
+      "parentKey": "wiping.have_wiping_components",
+      "showWhen": {
+        "key": "wiping.have_wiping_components",
+        "op": "eq",
+        "value": "tower"
+      }
+    },
+    {
+      "key": "wiping.tower_glue_layer_speed",
+      "tomlKey": "tower_glue_layer_speed",
+      "section": "wiping",
+      "label": "涂胶面层速度",
+      "desc": "涂胶面层的塔体打印速度",
+      "unit": "mm/s",
+      "defaultValue": 35,
+      "valueType": "float",
+      "scope": "universal",
+      "machineFilter": "",
+      "tomlComment": "涂胶面层速度",
+      "machineVariants": null,
+      "min": 5,
       "max": 200,
       "mergeGroup": "",
-      "mergeable": true,
-      "min": 5,
-      "parentKey": "wiping.fast_tower_mode",
-      "scope": "universal",
-      "section": "wiping",
+      "layout": {
+        "tab": "擦料策略",
+        "group": "安全与高级参数",
+        "order": 33
+      },
+      "step": 5,
       "selectable": true,
+      "mergeable": true,
+      "uiComponent": "number",
+      "parentKey": "wiping.fast_tower_mode",
       "showWhen": {
         "key": "wiping.fast_tower_mode",
         "op": "eq",
         "value": "custom"
-      },
-      "step": 5,
-      "tomlComment": "涂胶面层速度",
-      "tomlKey": "tower_glue_layer_speed",
-      "uiComponent": "number",
-      "unit": "mm/s",
-      "valueType": "float"
+      }
     },
     {
-      "configKey": "TowerSheathSpeed",
-      "defaultValue": 40,
-      "deprecated": true,
-      "desc": "护套的打印速度",
-      "jsonKey": "tower_sheath_speed",
       "key": "wiping.tower_sheath_speed",
+      "tomlKey": "tower_sheath_speed",
+      "section": "wiping",
       "label": "护套打印速度",
-      "layout": {
-        "group": "塔结构加强",
-        "order": 56,
-        "tab": "擦料策略"
-      },
+      "desc": "护套的打印速度",
+      "unit": "mm/s",
+      "defaultValue": 40,
+      "valueType": "float",
+      "scope": "universal",
       "machineFilter": "",
+      "tomlComment": "护套打印速度",
       "machineVariants": null,
+      "min": 5,
       "max": 200,
       "mergeGroup": "",
-      "mergeable": true,
-      "min": 5,
-      "parentKey": "wiping.outer_structure",
-      "scope": "universal",
-      "section": "wiping",
+      "layout": {
+        "tab": "擦料策略",
+        "group": "塔结构加强",
+        "order": 56
+      },
+      "step": 5,
       "selectable": true,
+      "mergeable": true,
+      "uiComponent": "number",
+      "parentKey": "wiping.outer_structure",
       "showWhen": {
         "key": "wiping.outer_structure",
         "op": "eq",
         "value": "sheath"
       },
-      "step": 5,
-      "tomlComment": "护套打印速度",
-      "tomlKey": "tower_sheath_speed",
-      "uiComponent": "number",
-      "unit": "mm/s",
-      "valueType": "float"
+      "deprecated": true
     },
     {
-      "choices": [
-        {
-          "label": "跟随塔",
-          "value": "follow"
-        },
-        {
-          "label": "自定义",
-          "value": "custom"
-        }
-      ],
-      "configKey": "TowerRibSpeed",
-      "defaultValue": "follow",
-      "desc": "跟随塔：使用塔体打印速度 | 自定义：指定斜肋打印速度",
-      "jsonKey": "tower_rib_speed",
       "key": "wiping.tower_rib_speed",
+      "tomlKey": "tower_rib_speed",
+      "section": "wiping",
       "label": "斜肋打印速度",
-      "layout": {
-        "group": "塔结构加强",
-        "order": 51,
-        "tab": "擦料策略"
-      },
+      "desc": "跟随塔：使用塔体打印速度 | 自定义：指定斜肋打印速度",
+      "unit": "",
+      "defaultValue": "follow",
+      "valueType": "string",
+      "scope": "universal",
       "machineFilter": "",
+      "tomlComment": "斜肋打印速度模式",
       "machineVariants": null,
+      "min": null,
       "max": null,
       "mergeGroup": "",
-      "mergeable": true,
-      "min": null,
-      "parentKey": "wiping.outer_structure",
-      "scope": "universal",
-      "section": "wiping",
+      "layout": {
+        "tab": "擦料策略",
+        "group": "塔结构加强",
+        "order": 51
+      },
+      "choices": [
+        {
+          "value": "follow",
+          "label": "跟随塔"
+        },
+        {
+          "value": "custom",
+          "label": "自定义"
+        }
+      ],
       "selectable": true,
+      "mergeable": true,
+      "uiComponent": "segmented",
+      "parentKey": "wiping.outer_structure",
       "showWhen": {
         "key": "wiping.outer_structure",
         "op": "eq",
         "value": "rib"
-      },
-      "tomlComment": "斜肋打印速度模式",
-      "tomlKey": "tower_rib_speed",
-      "uiComponent": "segmented",
-      "unit": "",
-      "valueType": "string"
+      }
     },
     {
-      "configKey": "TowerRibSpeedValue",
-      "defaultValue": 40,
-      "desc": "斜肋外墙的自定义打印速度",
-      "jsonKey": "tower_rib_speed_value",
       "key": "wiping.tower_rib_speed_value",
+      "tomlKey": "tower_rib_speed_value",
+      "section": "wiping",
       "label": "自定义速度",
-      "layout": {
-        "group": "塔结构加强",
-        "order": 52,
-        "tab": "擦料策略"
-      },
+      "desc": "斜肋外墙的自定义打印速度",
+      "unit": "mm/s",
+      "defaultValue": 40,
+      "valueType": "float",
+      "scope": "universal",
       "machineFilter": "",
+      "tomlComment": "斜肋自定义打印速度",
       "machineVariants": null,
+      "min": 5,
       "max": 200,
       "mergeGroup": "",
-      "mergeable": true,
-      "min": 5,
-      "parentKey": "wiping.tower_rib_speed",
-      "scope": "universal",
-      "section": "wiping",
+      "layout": {
+        "tab": "擦料策略",
+        "group": "塔结构加强",
+        "order": 52
+      },
+      "step": 5,
       "selectable": true,
+      "mergeable": true,
+      "uiComponent": "number",
+      "parentKey": "wiping.tower_rib_speed",
       "showWhen": {
         "key": "wiping.tower_rib_speed",
         "op": "eq",
         "value": "custom"
-      },
-      "step": 5,
-      "tomlComment": "斜肋自定义打印速度",
-      "tomlKey": "tower_rib_speed_value",
-      "uiComponent": "number",
-      "unit": "mm/s",
-      "valueType": "float"
+      }
     },
     {
-      "choices": [
-        {
-          "label": "最小层高",
-          "value": "min"
-        },
-        {
-          "label": "最大层高",
-          "value": "max"
-        },
-        {
-          "label": "自适应",
-          "value": "auto"
-        }
-      ],
-      "configKey": "TowerCustomLayerHeight",
-      "defaultValue": "auto",
-      "desc": "自定义模式下的擦料塔层高策略",
-      "jsonKey": "tower_custom_layer_height",
       "key": "wiping.tower_custom_layer_height",
+      "tomlKey": "tower_custom_layer_height",
+      "section": "wiping",
       "label": "塔层高策略",
-      "layout": {
-        "group": "安全与高级参数",
-        "order": 34,
-        "tab": "擦料策略"
-      },
+      "desc": "自定义模式下的擦料塔层高策略",
+      "unit": "",
+      "defaultValue": "auto",
+      "valueType": "string",
+      "scope": "universal",
       "machineFilter": "",
+      "tomlComment": "塔层高策略",
       "machineVariants": null,
+      "min": null,
       "max": null,
       "mergeGroup": "",
-      "mergeable": true,
-      "min": null,
-      "parentKey": "wiping.fast_tower_mode",
-      "scope": "universal",
-      "section": "wiping",
-      "selectable": true,
-      "showWhen": {
-        "key": "wiping.fast_tower_mode",
-        "op": "eq",
-        "value": "custom"
+      "layout": {
+        "tab": "擦料策略",
+        "group": "安全与高级参数",
+        "order": 34
       },
-      "tomlComment": "塔层高策略",
-      "tomlKey": "tower_custom_layer_height",
-      "uiComponent": "segmented",
-      "unit": "",
-      "valueType": "string"
-    },
-    {
       "choices": [
         {
-          "label": "开启",
-          "value": "on"
+          "value": "min",
+          "label": "最小层高"
         },
         {
-          "label": "关闭",
-          "value": "off"
+          "value": "max",
+          "label": "最大层高"
         },
         {
-          "label": "自动",
-          "value": "auto"
+          "value": "auto",
+          "label": "自适应"
         }
       ],
-      "configKey": "TowerWipeMode",
-      "defaultValue": "auto",
-      "desc": "开启：每层都擦嘴 | 关闭：包括涂胶面都不擦 | 自动：仅涂胶面层擦嘴",
-      "jsonKey": "tower_wipe_mode",
-      "key": "wiping.tower_wipe_mode",
-      "label": "擦嘴策略",
-      "layout": {
-        "group": "安全与高级参数",
-        "order": 35,
-        "tab": "擦料策略"
-      },
-      "machineFilter": "",
-      "machineVariants": null,
-      "max": null,
-      "mergeGroup": "",
-      "mergeable": true,
-      "min": null,
-      "parentKey": "wiping.fast_tower_mode",
-      "scope": "universal",
-      "section": "wiping",
       "selectable": true,
+      "mergeable": true,
+      "uiComponent": "segmented",
+      "parentKey": "wiping.fast_tower_mode",
       "showWhen": {
         "key": "wiping.fast_tower_mode",
         "op": "eq",
         "value": "custom"
-      },
-      "tomlComment": "擦嘴策略",
-      "tomlKey": "tower_wipe_mode",
-      "uiComponent": "segmented",
-      "unit": "",
-      "valueType": "string"
+      }
     },
     {
-      "configKey": "TowerSafeZOffset",
-      "defaultValue": 0.7,
-      "desc": "擦料塔安全Z偏移距离，范围0.3~5.0mm",
-      "jsonKey": "tower_safe_z_offset",
-      "key": "wiping.tower_safe_z_offset",
-      "label": "塔安全Z偏移",
-      "layout": {
-        "group": "安全与高级参数",
-        "order": 36,
-        "tab": "擦料策略"
-      },
+      "key": "wiping.tower_wipe_mode",
+      "tomlKey": "tower_wipe_mode",
+      "section": "wiping",
+      "label": "擦嘴策略",
+      "desc": "开启：每层都擦嘴 | 关闭：包括涂胶面都不擦 | 自动：仅涂胶面层擦嘴",
+      "unit": "",
+      "defaultValue": "auto",
+      "valueType": "string",
+      "scope": "universal",
       "machineFilter": "",
+      "tomlComment": "擦嘴策略",
       "machineVariants": null,
+      "min": null,
+      "max": null,
+      "mergeGroup": "",
+      "layout": {
+        "tab": "擦料策略",
+        "group": "安全与高级参数",
+        "order": 35
+      },
+      "choices": [
+        {
+          "value": "on",
+          "label": "开启"
+        },
+        {
+          "value": "off",
+          "label": "关闭"
+        },
+        {
+          "value": "auto",
+          "label": "自动"
+        }
+      ],
+      "selectable": true,
+      "mergeable": true,
+      "uiComponent": "segmented",
+      "parentKey": "wiping.fast_tower_mode",
+      "showWhen": {
+        "key": "wiping.fast_tower_mode",
+        "op": "eq",
+        "value": "custom"
+      }
+    },
+    {
+      "key": "wiping.tower_safe_z_offset",
+      "tomlKey": "tower_safe_z_offset",
+      "section": "wiping",
+      "label": "塔安全Z偏移",
+      "desc": "擦料塔安全Z偏移距离，范围0.3~5.0mm",
+      "unit": "mm",
+      "defaultValue": 0.7,
+      "valueType": "float",
+      "scope": "universal",
+      "machineFilter": "",
+      "tomlComment": "塔安全Z偏移(0.3~5.0mm)",
+      "machineVariants": null,
+      "min": 0.3,
       "max": 5,
       "mergeGroup": "",
-      "mergeable": true,
-      "min": 0.3,
-      "parentKey": "wiping.have_wiping_components",
-      "scope": "universal",
-      "section": "wiping",
-      "selectable": true,
-      "showWhen": {
-        "key": "wiping.have_wiping_components",
-        "op": "eq",
-        "value": "tower"
+      "layout": {
+        "tab": "擦料策略",
+        "group": "安全与高级参数",
+        "order": 36
       },
       "step": 0.1,
-      "tomlComment": "塔安全Z偏移(0.3~5.0mm)",
-      "tomlKey": "tower_safe_z_offset",
+      "selectable": true,
+      "mergeable": true,
       "uiComponent": "number",
-      "unit": "mm",
-      "valueType": "float"
+      "parentKey": "wiping.have_wiping_components",
+      "showWhen": {
+        "key": "wiping.have_wiping_components",
+        "op": "eq",
+        "value": "tower"
+      }
     },
     {
-      "configKey": "TowerTravelSpeed",
-      "defaultValue": 200,
-      "desc": "擦料塔刮擦移动速度，范围50~500mm/s",
-      "jsonKey": "tower_travel_speed",
       "key": "wiping.tower_travel_speed",
+      "tomlKey": "tower_travel_speed",
+      "section": "wiping",
       "label": "塔刮擦速度",
-      "layout": {
-        "group": "擦料塔位置与打印",
-        "order": 23,
-        "tab": "擦料策略"
-      },
+      "desc": "擦料塔刮擦移动速度，范围50~500mm/s",
+      "unit": "mm/s",
+      "defaultValue": 200,
+      "valueType": "float",
+      "scope": "universal",
       "machineFilter": "",
+      "tomlComment": "塔刮擦速度(50~500mm/s)",
       "machineVariants": null,
+      "min": 50,
       "max": 500,
       "mergeGroup": "",
-      "mergeable": true,
-      "min": 50,
-      "parentKey": "wiping.have_wiping_components",
-      "scope": "universal",
-      "section": "wiping",
-      "selectable": true,
-      "showWhen": {
-        "key": "wiping.have_wiping_components",
-        "op": "eq",
-        "value": "tower"
+      "layout": {
+        "tab": "擦料策略",
+        "group": "擦料塔位置与打印",
+        "order": 23
       },
       "step": 10,
-      "tomlComment": "塔刮擦速度(50~500mm/s)",
-      "tomlKey": "tower_travel_speed",
-      "uiComponent": "number",
-      "unit": "mm/s",
-      "valueType": "float"
-    },
-    {
-      "choices": [
-        {
-          "label": "无",
-          "value": "none"
-        },
-        {
-          "label": "斜肋外墙",
-          "value": "rib"
-        },
-        {
-          "deprecated": true,
-          "label": "护套",
-          "value": "sheath"
-        }
-      ],
-      "configKey": "OuterStructure",
-      "defaultValue": "rib",
-      "desc": "选择擦料塔外围结构类型：无=不生成外围；斜肋外墙=在塔外侧生成斜肋支撑；护套=包裹塔体外围防止倒塌",
-      "jsonKey": "outer_structure",
-      "key": "wiping.outer_structure",
-      "label": "外围结构",
-      "layout": {
-        "group": "塔结构加强",
-        "order": 50,
-        "tab": "擦料策略"
-      },
-      "machineFilter": "",
-      "machineVariants": null,
-      "max": null,
-      "mergeGroup": "",
-      "mergeable": true,
-      "min": null,
-      "parentKey": "wiping.have_wiping_components",
-      "scope": "universal",
-      "section": "wiping",
       "selectable": true,
+      "mergeable": true,
+      "uiComponent": "number",
+      "parentKey": "wiping.have_wiping_components",
       "showWhen": {
         "key": "wiping.have_wiping_components",
         "op": "eq",
         "value": "tower"
-      },
-      "tomlComment": "外围结构(none/rib)",
-      "tomlKey": "outer_structure",
-      "uiComponent": "segmented",
-      "unit": "",
-      "valueType": "string"
+      }
     },
     {
-      "choices": [
-        {
-          "label": "关闭",
-          "value": "off"
-        },
-        {
-          "label": "自动",
-          "value": "auto"
-        },
-        {
-          "label": "强制",
-          "value": "force"
-        }
-      ],
-      "configKey": "SheathMode",
-      "defaultValue": "off",
-      "deprecated": true,
-      "desc": "护套模式：关闭=不使用护套；自动=根据高度自动判断；强制=始终使用护套",
-      "jsonKey": "sheath_mode",
-      "key": "wiping.sheath_mode",
-      "label": "鞘模式",
-      "layout": {
-        "group": "塔结构加强",
-        "order": 51,
-        "tab": "擦料策略"
-      },
+      "key": "wiping.outer_structure",
+      "tomlKey": "outer_structure",
+      "section": "wiping",
+      "label": "外围结构",
+      "desc": "选择擦料塔外围结构类型：无=不生成外围；斜肋外墙=在塔外侧生成斜肋支撑；护套=包裹塔体外围防止倒塌",
+      "unit": "",
+      "defaultValue": "rib",
+      "valueType": "string",
+      "scope": "universal",
       "machineFilter": "",
+      "tomlComment": "外围结构(none/rib)",
       "machineVariants": null,
+      "min": null,
       "max": null,
       "mergeGroup": "",
-      "mergeable": true,
-      "min": null,
-      "parentKey": "wiping.outer_structure",
-      "scope": "universal",
-      "section": "wiping",
+      "layout": {
+        "tab": "擦料策略",
+        "group": "塔结构加强",
+        "order": 50
+      },
+      "choices": [
+        {
+          "value": "none",
+          "label": "无"
+        },
+        {
+          "value": "rib",
+          "label": "斜肋外墙"
+        },
+        {
+          "value": "sheath",
+          "label": "护套",
+          "deprecated": true
+        }
+      ],
       "selectable": true,
+      "mergeable": true,
+      "uiComponent": "segmented",
+      "parentKey": "wiping.have_wiping_components",
+      "showWhen": {
+        "key": "wiping.have_wiping_components",
+        "op": "eq",
+        "value": "tower"
+      }
+    },
+    {
+      "key": "wiping.sheath_mode",
+      "tomlKey": "sheath_mode",
+      "section": "wiping",
+      "label": "鞘模式",
+      "desc": "护套模式：关闭=不使用护套；自动=根据高度自动判断；强制=始终使用护套",
+      "unit": "",
+      "defaultValue": "off",
+      "valueType": "string",
+      "scope": "universal",
+      "machineFilter": "",
+      "tomlComment": "鞘模式(off/auto/force)",
+      "machineVariants": null,
+      "min": null,
+      "max": null,
+      "mergeGroup": "",
+      "layout": {
+        "tab": "擦料策略",
+        "group": "塔结构加强",
+        "order": 51
+      },
+      "choices": [
+        {
+          "value": "off",
+          "label": "关闭"
+        },
+        {
+          "value": "auto",
+          "label": "自动"
+        },
+        {
+          "value": "force",
+          "label": "强制"
+        }
+      ],
+      "selectable": true,
+      "mergeable": true,
+      "uiComponent": "segmented",
+      "parentKey": "wiping.outer_structure",
       "showWhen": {
         "key": "wiping.outer_structure",
         "op": "eq",
         "value": "sheath"
       },
-      "tomlComment": "鞘模式(off/auto/force)",
-      "tomlKey": "sheath_mode",
-      "uiComponent": "segmented",
-      "unit": "",
-      "valueType": "string"
+      "deprecated": true
     },
     {
-      "choices": [
-        {
-          "label": "擦料塔",
-          "value": "tower"
-        },
-        {
-          "label": "圆盘擦拭",
-          "value": "disk"
-        }
-      ],
-      "configKey": "UseDiskWipeFlag",
-      "defaultValue": "",
-      "deprecated": true,
-      "desc": "使用擦料塔而非圆盘擦拭",
-      "hidden": true,
-      "jsonKey": "use_disk_wipe_flag",
       "key": "wiping.use_disk_wipe_flag",
+      "tomlKey": "use_disk_wipe_flag",
+      "section": "wiping",
       "label": "使用擦料塔",
-      "layout": {
-        "group": "擦料方式",
-        "order": 11,
-        "tab": "擦料策略"
-      },
+      "desc": "使用擦料塔而非圆盘擦拭",
+      "unit": "",
+      "defaultValue": "",
+      "valueType": "string",
+      "scope": "universal",
       "machineFilter": "",
+      "tomlComment": "使用擦嘴塔而非擦嘴组件",
       "machineVariants": null,
+      "min": null,
       "max": null,
       "mergeGroup": "",
-      "mergeable": true,
-      "min": null,
-      "parentKey": "wiping.have_wiping_components",
-      "scope": "universal",
-      "section": "wiping",
+      "layout": {
+        "tab": "擦料策略",
+        "group": "擦料方式",
+        "order": 11
+      },
+      "choices": [
+        {
+          "value": "tower",
+          "label": "擦料塔"
+        },
+        {
+          "value": "disk",
+          "label": "圆盘擦拭"
+        }
+      ],
       "selectable": true,
+      "mergeable": true,
+      "uiComponent": "segmented",
+      "parentKey": "wiping.have_wiping_components",
       "showWhen": {
         "key": "wiping.have_wiping_components",
         "op": "eq",
         "value": "tower"
       },
-      "tomlComment": "使用擦嘴塔而非擦嘴组件",
-      "tomlKey": "use_disk_wipe_flag",
-      "uiComponent": "segmented",
-      "unit": "",
-      "valueType": "string"
+      "hidden": true,
+      "deprecated": true
     },
     {
-      "configKey": "RibOuterWall",
-      "defaultValue": false,
-      "deprecated": true,
-      "desc": "是否生成斜肋外墙结构",
-      "hidden": true,
-      "jsonKey": "rib_outer_wall",
       "key": "wiping.rib_outer_wall",
+      "tomlKey": "rib_outer_wall",
+      "section": "wiping",
       "label": "斜肋外墙",
-      "layout": {
-        "group": "塔结构加强",
-        "order": 52,
-        "tab": "擦料策略"
-      },
+      "desc": "是否生成斜肋外墙结构",
+      "unit": "",
+      "defaultValue": false,
+      "valueType": "bool",
+      "scope": "universal",
       "machineFilter": "",
+      "tomlComment": "斜肋外墙",
       "machineVariants": null,
+      "min": null,
       "max": null,
       "mergeGroup": "",
-      "mergeable": true,
-      "min": null,
-      "parentKey": "wiping.outer_structure",
-      "scope": "universal",
-      "section": "wiping",
+      "layout": {
+        "tab": "擦料策略",
+        "group": "塔结构加强",
+        "order": 52
+      },
       "selectable": true,
+      "mergeable": true,
+      "uiComponent": "switch",
+      "parentKey": "wiping.outer_structure",
       "showWhen": {
         "key": "wiping.outer_structure",
         "op": "eq",
         "value": "rib"
       },
-      "tomlComment": "斜肋外墙",
-      "tomlKey": "rib_outer_wall",
-      "uiComponent": "switch",
-      "unit": "",
-      "valueType": "bool"
+      "hidden": true,
+      "deprecated": true
     }
   ],
-  "updated": "2026-06-22 08:42:11"
+  "updated": "2026-06-24 15:39:24"
 }

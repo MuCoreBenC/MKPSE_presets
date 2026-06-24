@@ -1,10 +1,10 @@
-# uuid: 72f352bd-99c9-4752-86cf-8485e7617f5a
+# uuid: 620349c8-cd49-43d7-8679-573faae7d914
 # release_time: 2026-06-24 15:39:15
-# machine: A1_mini
-# variant: fast
+# machine: A1
+# variant: fastv3.3
 #胶笔配置
 [toolhead]
-offset = { x = -0.5, y = 24, z = 3.6 } # 笔尖偏移
+offset = { x = -0.7, y = 25, z = 3.6 } # 笔尖偏移
 speed_limit = 70 # 涂胶速度限制 (mm/s)
 MKP_retract = 0 # 回抽长度(mm)
 first_pen_revitalization_flag = false # 首笔活化标志
@@ -15,23 +15,23 @@ G1 E-5 F1800
 G92 E0
 L801
 M204 S10000
-G1 X168 F30000
-G1 X175 F10000
-G1 X185 F10000
-G1 X168 F30000
-G1 F30000
+G1 X256 F42000
+G1 X261 F10000
+G1 X267 F10000
+G1 X256 F42000
+G1 F42000
 """
 # 自定义工具头收起 G-code
 custom_unmount_gcode = """
 M106 S[AUTO]
-G1 X168 F30000
-G1 X175 F10000
-G1 X189 F10000
-G1 X168 F6000
-G1 F30000
+G1 X256 F42000
+G1 X261 F10000
+G1 X271 F10000
+G1 X256 F5000
+G1 F42000
 L802
 G92 E0
-G1 E5.5 F1500
+G1 E5.5 F1000
 G92 E0
 G1 F30000
 """

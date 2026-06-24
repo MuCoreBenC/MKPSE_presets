@@ -1,44 +1,39 @@
-# uuid: 5e3a5f8c-a893-41d9-ae29-c3fc4a4715e8
-# release_time: 2026-06-21 12:26:26
-# machine: P1S
-# variant: lite
+# uuid: 58bfdce7-984b-45be-82b3-c8c80243e0b8
+# release_time: 2026-06-24 15:39:15
+# machine: A1
+# variant: fast
 #胶笔配置
 [toolhead]
-offset = { x = -25.9, y = 14, z = 1.1 } # 笔尖偏移
+offset = { x = -0.7, y = 26.3, z = 3.6 } # 笔尖偏移
 speed_limit = 70 # 涂胶速度限制 (mm/s)
 MKP_retract = 0 # 回抽长度(mm)
 first_pen_revitalization_flag = false # 首笔活化标志
 # 自定义工具头获取 G-code
 custom_mount_gcode = """
-L803;此处使喷嘴降温
-G92 E0;挤出机归零
-G1 E-10;长回抽
+G92 E0
+G1 E-5 F1800
 G92 E0
 L801
 M204 S10000
-G1 X20 Y7 F30000;到驻点
-G1 X1 F300;推到X0，笔尖下落
-G1 X20 Y7 F30000;向左离开
-G1 F30000
+G1 X256 F42000
+G1 X261 F10000
+G1 X267 F10000
+G1 X256 F42000
+G1 F42000
 """
 # 自定义工具头收起 G-code
 custom_unmount_gcode = """
+M106 S[AUTO]
+G1 X256 F42000
+G1 X261 F10000
+G1 X271 F10000
+G1 X256 F5000
+G1 F42000
+L802
+G92 E0
+G1 E5.5 F1000
 G92 E0
 G1 F30000
-G1 X246 Y0 ;到驻点
-G1 X256 F6000 ; 收笔
-G1 F30000
-L802
-G1 F1500
-G1 E10.7;填充回抽
-G1 F30000
-M106 P1 S[AUTO] ; 风扇
-;M106 P2 S100
-G1 X70 Y265 F30000;Wipe
-G1 E6;Wipe
-G1 X90 F30000;Wipe
-G1 X120 F30000;Wipe
-G1 X90 F30000;Wipe
 """
 glue_z_offset = -0.05 # 涂胶Z偏移(mm) 范围:-5~2
 prime_length = 100 # 预涂长度(mm) 范围:0~500
@@ -75,7 +70,7 @@ prime_every_layer = false # 每层润笔
 rib_extra_length = 0 # 斜肋额外长度(mm) 范围:0~300
 rib_width = 8 # 斜肋宽度(mm) 范围:0~300
 rib_fillet_wall = true # 外墙倒圆角
-disable_front_cover_alarm = false # 关闭第三层裹头检测(A1/A1 mini)
+disable_3rd_layer_clog_detect = false # 关闭第三层裹头检测(A1/A1 mini)
 xy_calibration_mode = "default" # XY校准模式(default=默认,new=新型)
 min_support_interface_enabled = true # 最小支撑涂胶面过滤
 glue_sparse_ratio = 50 # 涂胶稀疏比(%)

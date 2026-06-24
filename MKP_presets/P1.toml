@@ -1,39 +1,44 @@
-# uuid: 72f352bd-99c9-4752-86cf-8485e7617f5a
+# uuid: b2b93b7a-67f8-4356-8a3f-1f0098428c22
 # release_time: 2026-06-24 15:39:15
-# machine: A1_mini
-# variant: fast
+# machine: P1S
+# variant: lite
 #胶笔配置
 [toolhead]
-offset = { x = -0.5, y = 24, z = 3.6 } # 笔尖偏移
+offset = { x = -25.9, y = 14, z = 1.1 } # 笔尖偏移
 speed_limit = 70 # 涂胶速度限制 (mm/s)
 MKP_retract = 0 # 回抽长度(mm)
 first_pen_revitalization_flag = false # 首笔活化标志
 # 自定义工具头获取 G-code
 custom_mount_gcode = """
-G92 E0
-G1 E-5 F1800
+L803;此处使喷嘴降温
+G92 E0;挤出机归零
+G1 E-10;长回抽
 G92 E0
 L801
 M204 S10000
-G1 X168 F30000
-G1 X175 F10000
-G1 X185 F10000
-G1 X168 F30000
+G1 X20 Y7 F30000;到驻点
+G1 X1 F300;推到X0，笔尖下落
+G1 X20 Y7 F30000;向左离开
 G1 F30000
 """
 # 自定义工具头收起 G-code
 custom_unmount_gcode = """
-M106 S[AUTO]
-G1 X168 F30000
-G1 X175 F10000
-G1 X189 F10000
-G1 X168 F6000
+G92 E0
+G1 F30000
+G1 X246 Y0 ;到驻点
+G1 X256 F6000 ; 收笔
 G1 F30000
 L802
-G92 E0
-G1 E5.5 F1500
-G92 E0
+G1 F1500
+G1 E10.7;填充回抽
 G1 F30000
+M106 P1 S[AUTO] ; 风扇
+;M106 P2 S100
+G1 X70 Y265 F30000;Wipe
+G1 E6;Wipe
+G1 X90 F30000;Wipe
+G1 X120 F30000;Wipe
+G1 X90 F30000;Wipe
 """
 glue_z_offset = -0.05 # 涂胶Z偏移(mm) 范围:-5~2
 prime_length = 100 # 预涂长度(mm) 范围:0~500
@@ -70,7 +75,7 @@ prime_every_layer = false # 每层润笔
 rib_extra_length = 0 # 斜肋额外长度(mm) 范围:0~300
 rib_width = 8 # 斜肋宽度(mm) 范围:0~300
 rib_fillet_wall = true # 外墙倒圆角
-disable_3rd_layer_clog_detect = false # 关闭第三层裹头检测(A1/A1 mini)
+disable_front_cover_alarm = false # 关闭第三层裹头检测(A1/A1 mini)
 xy_calibration_mode = "default" # XY校准模式(default=默认,new=新型)
 min_support_interface_enabled = true # 最小支撑涂胶面过滤
 glue_sparse_ratio = 50 # 涂胶稀疏比(%)
