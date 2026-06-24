@@ -1,7 +1,7 @@
-# uuid: 620349c8-cd49-43d7-8679-573faae7d914
-# release_time: 2026-06-24 15:39:15
+# uuid: 6a1f8c28-b782-48aa-b05e-0c9b81b128a5
+# release_time: 2026-06-24 22:38:58
 # machine: A1
-# variant: fast
+# variant: fastv3.3
 #胶笔配置
 [toolhead]
 offset = { x = -0.7, y = 25, z = 3.6 } # 笔尖偏移
