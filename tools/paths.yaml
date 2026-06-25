@@ -1,0 +1,29 @@
+schema: 1
+version: 1
+updatedAt: "2026-06-25T12:00:00+08:00"
+hash: "7eef44de1f392f656115b40912cc2b97779b72064de978e051f579a7eb716396"
+
+# Preset 根目录（相对于 MKPSE_presets 仓库根）
+preset_roots:
+  mkp: "presets/mkp"
+  bbs: "presets/bbs"
+  orca: "presets/orca"
+
+# 各 type 的保存子路径（相对于 preset_roots）
+save_paths:
+  bbs:
+    machine: "Support"
+    process: "Process"
+  orca:
+    machine: "Support"
+    process: "Process"
+
+# Content 文件相对路径（相对于 MKPSE_presets 仓库根）
+content_files:
+  machine_catalog: "content/machine_catalog.json"
+  param_registry: "content/param_registry.json"
+  faq: "content/faq.json"
+  about: "content/about.json"
+  layout_schema: "content/layout_schema.json"
+  changelog: "content/changelog.json"
+  model_copy: "content/model_copy.json"

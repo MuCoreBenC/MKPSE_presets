@@ -1,0 +1,328 @@
+{
+  "schema": 1,
+  "version": 3,
+  "updatedAt": "2026-06-25T09:45:26+08:00",
+  "hash": "a0b583c5ee10cbc5eb7845f408856bb30afb7815f3591fb5edd882d7d4b98e57",
+  "brands": [
+    {
+      "id": "Bambu Lab",
+      "logo": "bambu-logo.png",
+      "name": "拓竹 (Bambu Lab)"
+    }
+  ],
+  "models": {
+    "Bambu Lab": [
+      {
+        "compatible": "A1",
+        "id": "A1",
+        "image": "a1.webp",
+        "machineKey": "A1",
+        "name": "A1",
+        "versions": [
+          {
+            "description": "官方标准配置，适合大多数用户",
+            "downloads": [
+              {
+                "fileName": "A1.toml",
+                "type": "mkp_toml",
+                "url": "/presets/mkp/A1.toml"
+              },
+              {
+                "fileName": "0.4mm/MKPSupport A1 0.4.json",
+                "type": "bbs_machine",
+                "url": "/presets/bbs/Support/0.4mm/MKPSupport%20A1%200.4.json"
+              },
+              {
+                "fileName": "0.4mm/MKPProcess A1 0.4 0.20.json",
+                "type": "bbs_process",
+                "url": "/presets/bbs/Process/0.4mm/MKPProcess%20A1%200.4%200.20.json"
+              }
+            ],
+            "id": "standard",
+            "machineKey": "A1:standard",
+            "name": "标准版",
+            "presetFile": "A1.toml",
+            "tag": "推荐"
+          },
+          {
+            "description": "支持快拆配件的改装配置",
+            "downloads": [
+              {
+                "fileName": "A1F.toml",
+                "type": "mkp_toml",
+                "url": "/presets/mkp/A1F.toml"
+              },
+              {
+                "fileName": "0.4mm/MKPSupport A1 0.4.json",
+                "type": "bbs_machine",
+                "url": "/presets/bbs/Support/0.4mm/MKPSupport%20A1%200.4.json"
+              },
+              {
+                "fileName": "0.4mm/MKPProcess A1 0.4 0.20.json",
+                "type": "bbs_process",
+                "url": "/presets/bbs/Process/0.4mm/MKPProcess%20A1%200.4%200.20.json"
+              }
+            ],
+            "id": "fast",
+            "machineKey": "A1:fast",
+            "name": "快拆版6月以前",
+            "presetFile": "A1F.toml",
+            "tag": "热门"
+          },
+          {
+            "description": "6月以后闲鱼购买的，以及6月28开源的快拆260628版本",
+            "downloads": [
+              {
+                "fileName": "A1F_260628.toml",
+                "type": "mkp_toml",
+                "url": "/presets/mkp/A1F_260628.toml"
+              },
+              {
+                "fileName": "0.4mm/MKPSupport A1 0.4.json",
+                "type": "bbs_machine",
+                "url": "/presets/bbs/Support/0.4mm/MKPSupport%20A1%200.4.json"
+              },
+              {
+                "fileName": "0.4mm/MKPProcess A1 0.4 0.20.json",
+                "type": "bbs_process",
+                "url": "/presets/bbs/Process/0.4mm/MKPProcess%20A1%200.4%200.20.json"
+              }
+            ],
+            "id": "fastv3.3",
+            "machineKey": "A1:fastv3.3",
+            "name": "官改快拆版260628",
+            "presetFile": "A1F_260628.toml",
+            "tag": "最新"
+          }
+        ]
+      },
+      {
+        "compatible": "A1MINI",
+        "id": "A1_mini",
+        "image": "a1mini.webp",
+        "machineKey": "A1MINI",
+        "name": "A1 mini",
+        "versions": [
+          {
+            "description": "官方标准配置",
+            "downloads": [
+              {
+                "fileName": "A1M.toml",
+                "type": "mkp_toml",
+                "url": "/presets/mkp/A1M.toml"
+              },
+              {
+                "fileName": "0.4mm/MKPSupport A1 mini 0.4.json",
+                "type": "bbs_machine",
+                "url": "/presets/bbs/Support/0.4mm/MKPSupport%20A1%20mini%200.4.json"
+              },
+              {
+                "fileName": "0.4mm/MKPProcess A1 mini 0.4 0.20.json",
+                "type": "bbs_process",
+                "url": "/presets/bbs/Process/0.4mm/MKPProcess%20A1%20mini%200.4%200.20.json"
+              }
+            ],
+            "id": "standard",
+            "machineKey": "A1MINI:standard",
+            "name": "标准版",
+            "presetFile": "A1M.toml",
+            "tag": "推荐"
+          },
+          {
+            "description": "支持快拆配件的改装配置",
+            "downloads": [
+              {
+                "fileName": "A1MF.toml",
+                "type": "mkp_toml",
+                "url": "/presets/mkp/A1MF.toml"
+              },
+              {
+                "fileName": "0.4mm/MKPSupport A1 mini 0.4.json",
+                "type": "bbs_machine",
+                "url": "/presets/bbs/Support/0.4mm/MKPSupport%20A1%20mini%200.4.json"
+              },
+              {
+                "fileName": "0.4mm/MKPProcess A1 mini 0.4 0.20.json",
+                "type": "bbs_process",
+                "url": "/presets/bbs/Process/0.4mm/MKPProcess%20A1%20mini%200.4%200.20.json"
+              }
+            ],
+            "id": "fast",
+            "machineKey": "A1MINI:fast",
+            "name": "快拆版6月以前",
+            "presetFile": "A1MF.toml",
+            "tag": "热门"
+          },
+          {
+            "description": "6月以后闲鱼购买的，以及6月28开源的快拆260628版本",
+            "downloads": [
+              {
+                "fileName": "A1MF_260628.toml",
+                "type": "mkp_toml",
+                "url": "/presets/mkp/A1MF_260628.toml"
+              },
+              {
+                "fileName": "0.4mm/MKPSupport A1 mini 0.4.json",
+                "type": "bbs_machine",
+                "url": "/presets/bbs/Support/0.4mm/MKPSupport%20A1%20mini%200.4.json"
+              },
+              {
+                "fileName": "0.4mm/MKPProcess A1 mini 0.4 0.20.json",
+                "type": "bbs_process",
+                "url": "/presets/bbs/Process/0.4mm/MKPProcess%20A1%20mini%200.4%200.20.json"
+              }
+            ],
+            "id": "fastv3.3",
+            "machineKey": "A1MINI:fastv3.3",
+            "name": "快拆版260628",
+            "presetFile": "A1MF_260628.toml",
+            "tag": "最新"
+          }
+        ]
+      },
+      {
+        "compatible": "P1",
+        "id": "P1S",
+        "image": "p1s.webp",
+        "machineKey": "P1",
+        "name": "P1S",
+        "versions": [
+          {
+            "description": "精简配置，适合轻量使用",
+            "downloads": [
+              {
+                "fileName": "P1.toml",
+                "type": "mkp_toml",
+                "url": "/presets/mkp/P1.toml"
+              },
+              {
+                "fileName": "0.4mm/MKPSupport P1S 0.4.json",
+                "type": "bbs_machine",
+                "url": "/presets/bbs/Support/0.4mm/MKPSupport%20P1S%200.4.json"
+              },
+              {
+                "fileName": "0.4mm/MKPProcess P1S 0.4 0.24.json",
+                "type": "bbs_process",
+                "url": "/presets/bbs/Process/0.4mm/MKPProcess%20P1S%200.4%200.24.json"
+              }
+            ],
+            "id": "lite",
+            "machineKey": "P1:lite",
+            "name": "lite版",
+            "presetFile": "P1.toml",
+            "tag": "精简"
+          }
+        ]
+      },
+      {
+        "compatible": "P2",
+        "id": "P2S",
+        "image": "p2s.webp",
+        "machineKey": "P2",
+        "name": "P2S",
+        "versions": [
+          {
+            "description": "标准配置",
+            "downloads": [
+              {
+                "fileName": "P2.toml",
+                "type": "mkp_toml",
+                "url": "/presets/mkp/P2.toml"
+              },
+              {
+                "fileName": "0.4mm/MKPSupport P2S 0.4.json",
+                "type": "bbs_machine",
+                "url": "/presets/bbs/Support/0.4mm/MKPSupport%20P2S%200.4.json"
+              },
+              {
+                "fileName": "0.4mm/MKPProcess P2S 0.4 0.24.json",
+                "type": "bbs_process",
+                "url": "/presets/bbs/Process/0.4mm/MKPProcess%20P2S%200.4%200.24.json"
+              }
+            ],
+            "id": "standard",
+            "machineKey": "P2:standard",
+            "name": "标准版",
+            "presetFile": "P2.toml",
+            "tag": "推荐"
+          }
+        ]
+      },
+      {
+        "compatible": "X1",
+        "id": "X1C",
+        "image": "x1.webp",
+        "machineKey": "X1",
+        "name": "X1C",
+        "versions": [
+          {
+            "description": "精简配置，适合轻量使用",
+            "downloads": [
+              {
+                "fileName": "X1.toml",
+                "type": "mkp_toml",
+                "url": "/presets/mkp/X1.toml"
+              },
+              {
+                "fileName": "0.4mm/MKPSupport X1 0.4.json",
+                "type": "bbs_machine",
+                "url": "/presets/bbs/Support/0.4mm/MKPSupport%20X1%200.4.json"
+              },
+              {
+                "fileName": "0.4mm/MKPProcess X1 0.4 0.24.json",
+                "type": "bbs_process",
+                "url": "/presets/bbs/Process/0.4mm/MKPProcess%20X1%200.4%200.24.json"
+              }
+            ],
+            "id": "lite",
+            "machineKey": "X1:lite",
+            "name": "lite版",
+            "presetFile": "X1.toml",
+            "tag": "精简"
+          },
+          {
+            "description": "精简配置，适合轻量使用",
+            "downloads": [
+              {
+                "fileName": "X1.toml",
+                "type": "mkp_toml",
+                "url": "/presets/mkp/X1.toml"
+              },
+              {
+                "fileName": "0.4mm/MKPSupport X1 0.4.json",
+                "type": "bbs_machine",
+                "url": "/presets/bbs/Support/0.4mm/MKPSupport%20X1%200.4.json"
+              },
+              {
+                "fileName": "0.4mm/MKPProcess X1 0.4 0.24.json",
+                "type": "bbs_process",
+                "url": "/presets/bbs/Process/0.4mm/MKPProcess%20X1%200.4%200.24.json"
+              }
+            ],
+            "id": "lite_copy",
+            "machineKey": "X1:lite_copy",
+            "name": "lite版 (副本)",
+            "presetFile": "X1.toml",
+            "tag": "精简"
+          }
+        ]
+      },
+      {
+        "compatible": "",
+        "id": "A2L",
+        "image": "",
+        "name": "A2L",
+        "versions": [
+          {
+            "description": "",
+            "downloads": [],
+            "id": "standard",
+            "machineKey": "A2L:standard",
+            "name": "标准版",
+            "tag": ""
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -6,30 +6,46 @@ MKP SupportE 预设数据与资源仓库，同时推送到 [GitHub](https://gith
 
 ```
 MKPSE_presets/
-├── BBS_Presets/            # Bambu Studio 预设
-│   ├── Process/            # 工艺预设（0.2mm / 0.4mm）
-│   └── Support/            # 支撑预设
-├── Orca_Presets/           # Orca Slicer 预设
-│   ├── Process/
-│   └── Support/
-├── MKP_presets/            # MKP 原生预设（TOML）
-├── MKP_presets_backup/     # 预设备份
-├── Calibration_Templates/  # 校准 G-code 模板
-├── Models/                 # 校准 3D 模型
-├── Assets/                 # 资源文件
-│   ├── machines/           # 机型图片
-│   ├── models/             # 模型展示图
-│   ├── avatars/            # 头像
-│   ├── FAQ/                # FAQ 截图
-│   └── qr/                 # 二维码
-├── about.json              # 关于页面数据
-├── faq.json                # FAQ 数据
-├── changelog.json          # 更新日志
-├── index.json              # 索引文件
-├── machine_catalog.json    # 机型目录
-├── param_registry.json     # 参数注册表
-└── update-manifest.json    # 更新清单
+├── content/                # 热更新内容
+│   ├── machine_catalog.json
+│   ├── param_registry.json
+│   ├── model_copy.json
+│   ├── faq.json
+│   ├── about.json
+│   ├── changelog.json
+│   └── layout_schema.json
+├── manifests/              # 索引和更新入口
+│   ├── index.json
+│   └── update-manifest.json
+├── presets/                # 预设文件
+│   ├── mkp/                # MKP 原生预设（TOML）
+│   ├── bbs/                # Bambu Studio 预设
+│   │   ├── Process/
+│   │   └── Support/
+│   └── orca/               # Orca Slicer 预设
+│       ├── Process/
+│       └── Support/
+├── assets/                 # 静态资源
+│   ├── machines/
+│   ├── models/
+│   ├── avatars/
+│   ├── FAQ/
+│   └── qr/
+├── models/                 # 校准 3D 模型
+├── templates/              # 校准 G-code 模板
+├── build/                  # 安装包下载源
+│   ├── 0.0.5/
+│   └── 0.0.6/
+├── README.md
+├── publish.js
+└── .gitignore
 ```
+
+## 版本体系
+
+- **App Version**（`0.0.6`）：安装包版本，由 `release/version.json` 驱动
+- **Content Version**（`0.0.6.0`）：内容热更新版本，写入 `index.json`
+- **Schema Version**（`2.0.0`）：JSON 结构兼容性版本
 
 ## 支持机型
 

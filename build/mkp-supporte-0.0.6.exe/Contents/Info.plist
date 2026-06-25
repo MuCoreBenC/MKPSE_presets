@@ -1,0 +1,38 @@
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+    <dict>
+        <key>CFBundlePackageType</key>
+        <string>APPL</string>
+        <key>CFBundleName</key>
+        <string>MKP SupportE</string>
+        <key>CFBundleExecutable</key>
+        <string>MKPSupporte</string>
+        <key>CFBundleIdentifier</key>
+        <string>com.wails.mkp-supporte</string>
+        <key>CFBundleVersion</key>
+        <string>0.0.5</string>
+        <key>CFBundleGetInfoString</key>
+        <string>3D Printer Support Tool</string>
+        <key>CFBundleShortVersionString</key>
+        <string>0.0.5</string>
+        <key>CFBundleIconFile</key>
+        <string>iconfile</string>
+        <key>LSMinimumSystemVersion</key>
+        <string>10.13.0</string>
+        <key>NSHighResolutionCapable</key>
+        <string>true</string>
+        <key>NSHumanReadableCopyright</key>
+        <string>Copyright © 2026 MuCoreBenC</string>
+        <key>CFBundleDevelopmentRegion</key>
+        <string>zh_CN</string>
+        <key>CFBundleLocalizations</key>
+        <array>
+            <string>zh_CN</string>
+            <string>en</string>
+        </array>
+        <key>CFBundleAllowMixedLocalizations</key>
+        <true/>
+        
+        
+    </dict>
+</plist>

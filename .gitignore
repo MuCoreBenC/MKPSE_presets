@@ -18,10 +18,13 @@ docs/
 *.key
 id_*
 
-# === 发布文件 ===
-build/
-*.exe
-
 # === IDE ===
 .idea/
 .vscode/
+
+# === Validation/Garbage ===
+validation-report-*.json
+
+# === Trash/Recycle ===
+backups/trash/
+*.trash
