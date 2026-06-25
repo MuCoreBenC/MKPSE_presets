@@ -1,634 +1,301 @@
 {
-  "version": "2026.06",
-  "channel": "stable",
-  "updated": "2026-06-25 10:35:22",
-  "faq": {
-    "updated": "2026-06-25 10:35:22"
-  },
-  "modelCopy": {
-    "updated": "2026-05-28 11:05:33"
-  },
-  "presets": [
-    {
-      "fileName": "A1.toml",
-      "name": "A1",
-      "brand": "mkp",
-      "compatible": [
-        "A1"
-      ],
-      "version": "2026.06",
-      "size": 3571,
-      "releaseTime": "2026-06-24 22:38:57",
-      "sha256": "297b20ce9c9f8b6c8077af9d2f64105530d2f889953c463b6287adb310d42646"
-    },
-    {
-      "fileName": "A1F.toml",
-      "name": "A1F",
-      "brand": "mkp",
-      "compatible": [
-        "A1"
-      ],
-      "version": "2026.06",
-      "size": 3569,
-      "releaseTime": "2026-06-24 22:38:57",
-      "sha256": "733b01747d2cbc6d31af1a581c164830cb8dca0c36cac9e11e4bab24abf99e04"
-    },
-    {
-      "fileName": "A1F_260628.toml",
-      "name": "A1F_260628",
-      "brand": "mkp",
-      "compatible": [
-        "A1"
-      ],
-      "version": "2026.06",
-      "size": 3571,
-      "releaseTime": "2026-06-24 22:38:58",
-      "sha256": "b633fb03ecc2f891fb55fcd072c113eaa76a165d06e21c1ee04b2b2535e252e5"
-    },
-    {
-      "fileName": "A1M.toml",
-      "name": "A1M",
-      "brand": "mkp",
-      "compatible": [
-        "A1MINI"
-      ],
-      "version": "2026.06",
-      "size": 3579,
-      "releaseTime": "2026-06-24 22:38:58",
-      "sha256": "8a512a1dd538ab1df4e3d7244c0527db32b49fbb921f39254a9261259468bf06"
-    },
-    {
-      "fileName": "A1MF.toml",
-      "name": "A1MF",
-      "brand": "mkp",
-      "compatible": [
-        "A1MINI"
-      ],
-      "version": "2026.06",
-      "size": 3572,
-      "releaseTime": "2026-06-24 22:38:58",
-      "sha256": "c3957a7669cd531046dbd4af2c7265a2484b3976e3bbc8dc7a735e35c889988f"
-    },
-    {
-      "fileName": "A1MF_260628.toml",
-      "name": "A1MF_260628",
-      "brand": "mkp",
-      "compatible": [
-        "A1MINI"
-      ],
-      "version": "2026.06",
-      "size": 3576,
-      "releaseTime": "2026-06-24 22:38:58",
-      "sha256": "e45a33965fcde050a861ce495e26f4c97d1d7a79a08ff8b9ced8a62cf838b1ae"
-    },
-    {
-      "fileName": "P1.toml",
-      "name": "P1",
-      "brand": "mkp",
-      "compatible": [
-        "P1"
-      ],
-      "version": "2026.06",
-      "size": 3775,
-      "releaseTime": "2026-06-24 22:38:58",
-      "sha256": "e5ff5e560ebcd3aba46641c184c45209ad6816942598978d94006d0a71cbc654"
-    },
-    {
-      "fileName": "P2.toml",
-      "name": "P2",
-      "brand": "mkp",
-      "compatible": [
-        "P2"
-      ],
-      "version": "2026.06",
-      "size": 3779,
-      "releaseTime": "2026-06-24 22:38:58",
-      "sha256": "836845b2e97e2d8f43807e88683fb7912f3a9747b1447d201095ce575275c9ad"
-    },
-    {
-      "fileName": "X1.toml",
-      "name": "X1",
-      "brand": "mkp",
-      "compatible": [
-        "X1"
-      ],
-      "version": "2026.06",
-      "size": 3775,
-      "releaseTime": "2026-06-24 22:38:58",
-      "sha256": "0e342b4f80f78c46830734658032106f9c20b182c87ed591cde112c7cf4e1a4f"
-    },
-    {
-      "fileName": "MKPProcess A1 0.2 0.10.json",
-      "name": "MKPProcess A1 0.2",
-      "brand": "bbs",
-      "version": "2.0.0.83",
-      "size": 1308,
-      "releaseTime": "2026-05-25T03:30:54.258Z",
-      "sha256": "2ba10a2d873744f97e75a1697fa9a054b58aacb772993d6d05e973f04fda5004",
-      "type": "process",
-      "model": "a1",
-      "nozzle": "0.2",
-      "layerHeight": "0.10",
-      "relativePath": "presets/bbs/Process/0.2mm/MKPProcess A1 0.2 0.10.json"
-    },
-    {
-      "fileName": "MKPProcess A1 mini 0.2 0.10.json",
-      "name": "MKPProcess A1 mini 0.2",
-      "brand": "bbs",
-      "version": "2.1.0.18",
-      "size": 1318,
-      "releaseTime": "2026-05-25T03:30:54.259Z",
-      "sha256": "e6e66f5c8eb73d3b07efd8bc956df3fb25561431e40fecebc9fbe6ce6ff492db",
-      "type": "process",
-      "model": "a1 mini",
-      "nozzle": "0.2",
-      "layerHeight": "0.10",
-      "relativePath": "presets/bbs/Process/0.2mm/MKPProcess A1 mini 0.2 0.10.json"
-    },
-    {
-      "fileName": "MKPProcess P1S 0.2 0.10.json",
-      "name": "MKPProcess P1S 0.2",
-      "brand": "bbs",
-      "version": "1.9.0.26",
-      "size": 1906,
-      "releaseTime": "2026-05-25T03:30:54.259Z",
-      "sha256": "810d4441deef000106366220010d7ca48ae586ac52936af53c84dcb1b3dca8e1",
-      "type": "process",
-      "model": "p1s",
-      "nozzle": "0.2",
-      "layerHeight": "0.10",
-      "relativePath": "presets/bbs/Process/0.2mm/MKPProcess P1S 0.2 0.10.json"
-    },
-    {
-      "fileName": "MKPProcess X1 0.2 0.10.json",
-      "name": "MKPProcess X1 0.2",
-      "brand": "bbs",
-      "version": "1.9.0.26",
-      "size": 1904,
-      "releaseTime": "2026-05-25T03:30:54.260Z",
-      "sha256": "9d9737d18f8cea34d284031dd544b444a00e56c112a4d0ab74b0813f56e2e9ca",
-      "type": "process",
-      "model": "x1",
-      "nozzle": "0.2",
-      "layerHeight": "0.10",
-      "relativePath": "presets/bbs/Process/0.2mm/MKPProcess X1 0.2 0.10.json"
-    },
-    {
-      "fileName": "MKPProcess A1 0.4 0.20.json",
-      "name": "MKPProcess A1",
-      "brand": "bbs",
-      "version": "2.0.0.83",
-      "size": 1332,
-      "releaseTime": "2026-05-25T03:30:54.260Z",
-      "sha256": "e4696732236194d4035635adce6abc01fe3efb01847249745f4a36c4f6d5977f",
-      "type": "process",
-      "model": "a1",
-      "nozzle": "0.4",
-      "layerHeight": "0.20",
-      "relativePath": "presets/bbs/Process/0.4mm/MKPProcess A1 0.4 0.20.json"
-    },
-    {
-      "fileName": "MKPProcess A1 mini 0.4 0.20.json",
-      "name": "MKPProcess A1 mini",
-      "brand": "bbs",
-      "version": "2.1.0.18",
-      "size": 1301,
-      "releaseTime": "2026-05-25T03:30:54.260Z",
-      "sha256": "1ae5318f97eeb95a3e804619d5102d1d851d06860e53a9a4899dad0db4d717ca",
-      "type": "process",
-      "model": "a1 mini",
-      "nozzle": "0.4",
-      "layerHeight": "0.20",
-      "relativePath": "presets/bbs/Process/0.4mm/MKPProcess A1 mini 0.4 0.20.json"
-    },
-    {
-      "fileName": "MKPProcess P1S 0.4 0.24.json",
-      "name": "MKPProcess P1S",
-      "brand": "bbs",
-      "version": "1.9.0.26",
-      "size": 1872,
-      "releaseTime": "2026-05-25T03:30:54.261Z",
-      "sha256": "264addc551633c553828492580eef74fc51f2690a127919ed8da051634d8bc2d",
-      "type": "process",
-      "model": "p1s",
-      "nozzle": "0.4",
-      "layerHeight": "0.24",
-      "relativePath": "presets/bbs/Process/0.4mm/MKPProcess P1S 0.4 0.24.json"
-    },
-    {
-      "fileName": "MKPProcess P2S 0.4 0.24.json",
-      "name": "MKPProcess P2S",
-      "brand": "bbs",
-      "version": "2.5.0.14",
-      "size": 1264,
-      "releaseTime": "2026-05-25T03:30:54.261Z",
-      "sha256": "124f8290aa007567af78d6058f95095e4787c02a30371acb56f489029168499e",
-      "type": "process",
-      "model": "p2s",
-      "nozzle": "0.4",
-      "layerHeight": "0.24",
-      "relativePath": "presets/bbs/Process/0.4mm/MKPProcess P2S 0.4 0.24.json"
-    },
-    {
-      "fileName": "MKPProcess X1 0.4 0.24.json",
-      "name": "MKPProcess X1",
-      "brand": "bbs",
-      "version": "1.9.0.26",
-      "size": 1925,
-      "releaseTime": "2026-05-25T03:30:54.262Z",
-      "sha256": "1fe7377c92d0f67bb8ed1cda16edb12c32a56e3cb4d864983eaccb6ced0a8fa4",
-      "type": "process",
-      "model": "x1",
-      "nozzle": "0.4",
-      "layerHeight": "0.24",
-      "relativePath": "presets/bbs/Process/0.4mm/MKPProcess X1 0.4 0.24.json"
-    },
-    {
-      "fileName": "MKPSupport A1 0.4.json",
-      "name": "MKPSupport A1",
-      "brand": "bbs",
-      "version": "2.1.0.18",
-      "size": 22049,
-      "releaseTime": "2026-05-25T03:30:54.264Z",
-      "sha256": "7c13e8c03eb75ddb7580e622ddb6b94848998b17c57dfc99ac5d66e00f24a0f3",
-      "type": "support",
-      "model": "a1",
-      "nozzle": "0.4",
-      "relativePath": "presets/bbs/Support/0.4mm/MKPSupport A1 0.4.json"
-    },
-    {
-      "fileName": "MKPSupport A1 mini 0.4.json",
-      "name": "MKPSupport A1 mini",
-      "brand": "bbs",
-      "version": "2.1.0.18",
-      "size": 25557,
-      "releaseTime": "2026-05-25T03:30:54.265Z",
-      "sha256": "3bd3b1a846aa94774bb1326c1cab26693e27fdb31fbfb4e662ad1935b736baf8",
-      "type": "support",
-      "model": "a1 mini",
-      "nozzle": "0.4",
-      "relativePath": "presets/bbs/Support/0.4mm/MKPSupport A1 mini 0.4.json"
-    },
-    {
-      "fileName": "MKPSupport P1S 0.4.json",
-      "name": "MKPSupport P1S",
-      "brand": "bbs",
-      "version": "2.1.0.18",
-      "size": 19692,
-      "releaseTime": "2026-05-25T03:30:54.265Z",
-      "sha256": "566601a856641f93d82c353a95a0c314f5a25deddbce1a535d989d8b82754dca",
-      "type": "support",
-      "model": "p1s",
-      "nozzle": "0.4",
-      "relativePath": "presets/bbs/Support/0.4mm/MKPSupport P1S 0.4.json"
-    },
-    {
-      "fileName": "MKPSupport P2S 0.4.json",
-      "name": "MKPSupport P2S",
-      "brand": "bbs",
-      "version": "2.5.0.14",
-      "size": 337,
-      "releaseTime": "2026-05-25T03:30:54.266Z",
-      "sha256": "7b3ea5ee3fa21e4dac287645b2a291622e2165af0cdfb2af03c65c980d4505b3",
-      "type": "support",
-      "model": "p2s",
-      "nozzle": "0.4",
-      "relativePath": "presets/bbs/Support/0.4mm/MKPSupport P2S 0.4.json"
-    },
-    {
-      "fileName": "MKPSupport X1 0.4.json",
-      "name": "MKPSupport X1",
-      "brand": "bbs",
-      "version": "2.0.0.77",
-      "size": 21974,
-      "releaseTime": "2026-05-25T03:30:54.267Z",
-      "sha256": "09496f931cf5b9c244d2a224fb5d5616a461bf600a303eb77c72cd589fc535fc",
-      "type": "support",
-      "model": "x1",
-      "nozzle": "0.4",
-      "relativePath": "presets/bbs/Support/0.4mm/MKPSupport X1 0.4.json"
-    },
-    {
-      "fileName": "MKPSupport Anycubic Kobra S1.json",
-      "name": "MKPSupport Anycubic Kobra S1",
-      "brand": "orca",
-      "version": "2.3.1.10",
-      "size": 322,
-      "releaseTime": "2026-04-15T10:47:40.000Z",
-      "sha256": "96f37b4a758b614e1c49cfd316568f3c1380967c7d6966ba9615c78d84b59c0d",
-      "type": "support",
-      "model": "kobra s1",
-      "nozzle": "0.4",
-      "relativePath": "presets/orca/Support/0.4mm/MKPSupport Anycubic Kobra S1.json"
-    },
-    {
-      "fileName": "MKPSupport S1C.json",
-      "name": "MKPProcess S1C",
-      "brand": "orca",
-      "version": "1.3.2412.28",
-      "size": 2395,
-      "releaseTime": "2026-04-15T10:47:40.000Z",
-      "sha256": "c88828d5b4d8b5f32450591ddbf51e82eeac59219ea4ef241c7cda67952f18e6",
-      "type": "support",
-      "model": "s1c",
-      "nozzle": "0.4",
-      "layerHeight": "0.20",
-      "relativePath": "presets/orca/Support/0.4mm/MKPSupport S1C.json"
-    }
-  ],
   "assets": [
     {
-      "fileName": "jhmodel.webp",
       "category": "avatars",
+      "fileName": "jhmodel.webp",
+      "isModified": false,
+      "isRegistered": true,
       "relativePath": "Assets/avatars/jhmodel.webp",
-      "size": 3456,
       "releaseTime": "2026-06-17 17:22:38",
       "sha256": "96f115cd23db59cbf0a8bbbec3a4ccf238d02ef1a2c360fd88fcab60ff591203",
-      "isRegistered": true,
-      "isModified": false
+      "size": 3456
     },
     {
-      "fileName": "mao.webp",
       "category": "avatars",
+      "fileName": "mao.webp",
+      "isModified": false,
+      "isRegistered": true,
       "relativePath": "Assets/avatars/mao.webp",
-      "size": 3308,
       "releaseTime": "2026-06-17 17:22:38",
       "sha256": "f3c0dc1ebb3cae162cc134c410037929228da2e0dfeea2b1dc2a46e30271965c",
-      "isRegistered": true,
-      "isModified": false
+      "size": 3308
     },
     {
-      "fileName": "ziyang.webp",
       "category": "avatars",
+      "fileName": "ziyang.webp",
+      "isModified": false,
+      "isRegistered": true,
       "relativePath": "Assets/avatars/ziyang.webp",
-      "size": 7690,
       "releaseTime": "2026-06-17 17:22:38",
       "sha256": "1bc0eb1c44b6a1c20ad20aeca3aaf1f4e07f28fb4c1985e9321ccefa8a0e34b3",
-      "isRegistered": true,
-      "isModified": false
+      "size": 7690
     },
     {
-      "fileName": "Anycubic Kobra X.webp",
       "category": "machines",
+      "fileName": "Anycubic Kobra X.webp",
+      "isModified": false,
+      "isRegistered": true,
       "relativePath": "Assets/machines/Anycubic Kobra X.webp",
-      "size": 22398,
       "releaseTime": "2026-06-17 17:22:38",
       "sha256": "a717f0e229de690ef3134a7d24323c15f94e2857f46874d7fa1c0ef17d81ad13",
-      "isRegistered": true,
-      "isModified": false
+      "size": 22398
     },
     {
-      "fileName": "Creality SPARKX i7.webp",
       "category": "machines",
+      "fileName": "Creality SPARKX i7.webp",
+      "isModified": false,
+      "isRegistered": true,
       "relativePath": "Assets/machines/Creality SPARKX i7.webp",
-      "size": 18572,
       "releaseTime": "2026-06-17 17:22:38",
       "sha256": "9790d66c11fa284e8d3c1ebba2c949e232f9002bca95de2d33d63baf808221c7",
-      "isRegistered": true,
-      "isModified": false
+      "size": 18572
     },
     {
-      "fileName": "a1.webp",
       "category": "machines",
+      "fileName": "a1.webp",
+      "isModified": false,
+      "isRegistered": true,
       "relativePath": "Assets/machines/a1.webp",
-      "size": 21740,
       "releaseTime": "2026-06-17 17:22:38",
       "sha256": "41ba8552907599c80e3e2a110e0898a7d6c39c5d3bca28ee83b20e22c2e6e3f4",
-      "isRegistered": true,
-      "isModified": false
+      "size": 21740
     },
     {
-      "fileName": "a1mini.webp",
       "category": "machines",
+      "fileName": "a1mini.webp",
+      "isModified": false,
+      "isRegistered": true,
       "relativePath": "Assets/machines/a1mini.webp",
-      "size": 19160,
       "releaseTime": "2026-06-17 17:22:38",
       "sha256": "b30a6db46e303287753755bfab4a01c0fb197eed0f173f716dc48e6571b9e431",
-      "isRegistered": true,
-      "isModified": false
+      "size": 19160
     },
     {
-      "fileName": "k1c.webp",
       "category": "machines",
+      "fileName": "k1c.webp",
+      "isModified": false,
+      "isRegistered": true,
       "relativePath": "Assets/machines/k1c.webp",
-      "size": 16014,
       "releaseTime": "2026-06-17 17:22:38",
       "sha256": "618067c10a03790cce94be1054046250c7de3c9da20a2a468ccbf933340ee491",
-      "isRegistered": true,
-      "isModified": false
+      "size": 16014
     },
     {
-      "fileName": "k2c.webp",
       "category": "machines",
+      "fileName": "k2c.webp",
+      "isModified": false,
+      "isRegistered": true,
       "relativePath": "Assets/machines/k2c.webp",
-      "size": 8722,
       "releaseTime": "2026-06-17 17:22:38",
       "sha256": "638e41f45e58167df4f8c18ea22fb34bfa175057a76875b697c5f2e77c205063",
-      "isRegistered": true,
-      "isModified": false
+      "size": 8722
     },
     {
-      "fileName": "p1s.webp",
       "category": "machines",
+      "fileName": "p1s.webp",
+      "isModified": false,
+      "isRegistered": true,
       "relativePath": "Assets/machines/p1s.webp",
-      "size": 12732,
       "releaseTime": "2026-06-17 17:22:38",
       "sha256": "0ceb9236e7c20999915a66c1d630cc18e9b648d1e2935039b244e00c0a5e7d84",
-      "isRegistered": true,
-      "isModified": false
+      "size": 12732
     },
     {
-      "fileName": "p2s.webp",
       "category": "machines",
+      "fileName": "p2s.webp",
+      "isModified": false,
+      "isRegistered": true,
       "relativePath": "Assets/machines/p2s.webp",
-      "size": 9180,
       "releaseTime": "2026-06-17 17:22:38",
       "sha256": "9e6ebe2a9e4201958e3ba24a7618801035c85eda2a908afc1666025bcd739f3e",
-      "isRegistered": true,
-      "isModified": false
+      "size": 9180
     },
     {
-      "fileName": "s1c.webp",
       "category": "machines",
+      "fileName": "s1c.webp",
+      "isModified": false,
+      "isRegistered": true,
       "relativePath": "Assets/machines/s1c.webp",
-      "size": 40230,
       "releaseTime": "2026-06-17 17:22:38",
       "sha256": "b592ce817e9c0827e43af0a3455551f84e709cd3f94febef6032e80874576aa5",
-      "isRegistered": true,
-      "isModified": false
+      "size": 40230
     },
     {
-      "fileName": "voron24.webp",
       "category": "machines",
+      "fileName": "voron24.webp",
+      "isModified": false,
+      "isRegistered": true,
       "relativePath": "Assets/machines/voron24.webp",
-      "size": 60720,
       "releaseTime": "2026-06-17 17:22:38",
       "sha256": "23e98522a0c41540be532e92fd3be1c14ace3ac153bd248fad674090be866b2a",
-      "isRegistered": true,
-      "isModified": false
+      "size": 60720
     },
     {
-      "fileName": "x1.webp",
       "category": "machines",
+      "fileName": "x1.webp",
+      "isModified": false,
+      "isRegistered": true,
       "relativePath": "Assets/machines/x1.webp",
-      "size": 24016,
       "releaseTime": "2026-06-17 17:22:38",
       "sha256": "78abb42998fe139e4cdb709951097b6779842478bf546d56701dec8c8518f96a",
-      "isRegistered": true,
-      "isModified": false
+      "size": 24016
     },
     {
-      "fileName": "MKP_support_test_models_1.webp",
       "category": "models",
+      "fileName": "MKP_support_test_models_1.webp",
+      "isModified": false,
+      "isRegistered": true,
       "relativePath": "Assets/models/MKP_support_test_models_1.webp",
-      "size": 3258,
       "releaseTime": "2026-06-17 17:22:38",
       "sha256": "fb8e6240e404c237f94efb5ce0615e309482526df38b850e5740ec0e7ab48760",
-      "isRegistered": true,
-      "isModified": false
+      "size": 3258
     },
     {
-      "fileName": "MKP_support_test_models_2.webp",
       "category": "models",
+      "fileName": "MKP_support_test_models_2.webp",
+      "isModified": false,
+      "isRegistered": true,
       "relativePath": "Assets/models/MKP_support_test_models_2.webp",
-      "size": 2540,
       "releaseTime": "2026-06-17 17:22:38",
       "sha256": "0b88145f1af013383756ad64b336dfe25d72477f86866f9ab7fe2aa024e02457",
-      "isRegistered": true,
-      "isModified": false
+      "size": 2540
     },
     {
-      "fileName": "MKP_support_test_models_3.webp",
       "category": "models",
+      "fileName": "MKP_support_test_models_3.webp",
+      "isModified": false,
+      "isRegistered": true,
       "relativePath": "Assets/models/MKP_support_test_models_3.webp",
-      "size": 2860,
       "releaseTime": "2026-06-17 17:22:38",
       "sha256": "adfa9f2fa9642d66b6c3c3a7c216cf107460bb5956c861ac61ae7c0412319ae8",
-      "isRegistered": true,
-      "isModified": false
+      "size": 2860
     },
     {
-      "fileName": "MKP_support_test_models_4.webp",
       "category": "models",
+      "fileName": "MKP_support_test_models_4.webp",
+      "isModified": false,
+      "isRegistered": true,
       "relativePath": "Assets/models/MKP_support_test_models_4.webp",
-      "size": 3640,
       "releaseTime": "2026-06-17 17:22:38",
       "sha256": "2d5f9e80b66ba36685f9deb5512e14ee23ba1af24ab3e796e550f01203c6f469",
-      "isRegistered": true,
-      "isModified": false
+      "size": 3640
     },
     {
-      "fileName": "MKP_support_test_models_5.webp",
       "category": "models",
+      "fileName": "MKP_support_test_models_5.webp",
+      "isModified": false,
+      "isRegistered": true,
       "relativePath": "Assets/models/MKP_support_test_models_5.webp",
-      "size": 3772,
       "releaseTime": "2026-06-17 17:22:38",
       "sha256": "a22f9e4d9bdf76a4e5c460b1c5d866062400f20dc753119b2594e6b3a690c599",
-      "isRegistered": true,
-      "isModified": false
+      "size": 3772
     },
     {
-      "fileName": "MKP_support_test_models_6.webp",
       "category": "models",
+      "fileName": "MKP_support_test_models_6.webp",
+      "isModified": false,
+      "isRegistered": true,
       "relativePath": "Assets/models/MKP_support_test_models_6.webp",
-      "size": 4294,
       "releaseTime": "2026-06-17 17:22:38",
       "sha256": "c43f82ab557c8993b92fb78127307b84991656feeae2105519e2583442b79859",
-      "isRegistered": true,
-      "isModified": false
+      "size": 4294
     },
     {
-      "fileName": "MKP_support_test_models_7.webp",
       "category": "models",
+      "fileName": "MKP_support_test_models_7.webp",
+      "isModified": false,
+      "isRegistered": true,
       "relativePath": "Assets/models/MKP_support_test_models_7.webp",
-      "size": 6296,
       "releaseTime": "2026-06-17 17:22:38",
       "sha256": "1e0e0a09ace0bf5a8c821a8e2dc4872eadebdfb06749d573d60ef3e2c320cbfe",
-      "isRegistered": true,
-      "isModified": false
+      "size": 6296
     },
     {
-      "fileName": "MKP_support_test_models_8.webp",
       "category": "models",
+      "fileName": "MKP_support_test_models_8.webp",
+      "isModified": false,
+      "isRegistered": true,
       "relativePath": "Assets/models/MKP_support_test_models_8.webp",
-      "size": 4948,
       "releaseTime": "2026-06-17 17:22:38",
       "sha256": "d16020f01fdfcbdd46c53900b44b08ba53bbfea88698a6f358e82d33c4efbf76",
-      "isRegistered": true,
-      "isModified": false
+      "size": 4948
     },
     {
-      "fileName": "SETTING1.webp",
       "category": "faq",
+      "fileName": "SETTING1.webp",
+      "isModified": false,
+      "isRegistered": true,
       "relativePath": "Assets/faq/SETTING1.webp",
-      "size": 7822,
       "releaseTime": "2026-06-17 17:22:38",
       "sha256": "599752784b3a1d253eb2e7c29d0ad1add3643aed86e341cc39532f24ec148bba",
-      "isRegistered": true,
-      "isModified": false
+      "size": 7822
     },
     {
-      "fileName": "SETTING2.webp",
       "category": "faq",
+      "fileName": "SETTING2.webp",
+      "isModified": false,
+      "isRegistered": true,
       "relativePath": "Assets/faq/SETTING2.webp",
-      "size": 9268,
       "releaseTime": "2026-06-17 17:22:38",
       "sha256": "68b7bbd3d579b6e9b54ad1de24b79d5b86ac907031df60ce1e47c77cb46871db",
-      "isRegistered": true,
-      "isModified": false
+      "size": 9268
     }
   ],
+  "channel": "stable",
   "contentFiles": [
     {
       "fileName": "about.json",
-      "version": "1",
-      "sha256": "bf830bca86d7da08b67a189dd00b60e96fa6091aca5550abd36db0f6a96cb652",
       "relativePath": "content/about.json",
-      "size": 7018
+      "sha256": "bf830bca86d7da08b67a189dd00b60e96fa6091aca5550abd36db0f6a96cb652",
+      "size": 7018,
+      "version": "1"
     },
     {
       "fileName": "changelog.json",
-      "version": "0",
-      "sha256": "831ea2634c76da041fee9df012a0552e5ea9c395c5fc64928bafaff1bc1afbb7",
       "relativePath": "content/changelog.json",
-      "size": 20868
+      "sha256": "0f506427fbd558fdb485a5b955f9caffd15d83e9d180eba6bdd7509c84057780",
+      "size": 21021,
+      "version": "1"
     },
     {
       "fileName": "faq.json",
-      "version": "1",
-      "sha256": "18fadb9153a5601ce29f8cf00ae7df4baf6443d107a6071bcce3a6e3d8da3239",
       "relativePath": "content/faq.json",
-      "size": 32363
+      "sha256": "d25237e30b6f027158a8b306fac271e6919807af2ccab9c5772335502b4efb30",
+      "size": 32075,
+      "version": "2"
     },
     {
       "fileName": "layout_schema.json",
-      "version": "0",
-      "sha256": "c6189b6cdd796d30ba6895411876ec64f50fcdf2025cf23f1da56ad307d1913d",
       "relativePath": "content/layout_schema.json",
-      "size": 7841
+      "sha256": "e94f300ae2ddaa2b1998dc6dd027a1e97573f2bc91af7b8b0ab90d964c7fa791",
+      "size": 7995,
+      "version": "1"
     },
     {
       "fileName": "machine_catalog.json",
-      "version": "2",
-      "sha256": "e3ee48d6d9399344e44294785da5161089bac14f9b61752fdac7f9aba4561995",
       "relativePath": "content/machine_catalog.json",
-      "size": 10609
+      "sha256": "7c71613e59be27df0b10e21f9a969b2a8c7dd9bd044ee18b04cda8cf876ac681",
+      "size": 10650,
+      "version": "3"
     },
     {
       "fileName": "model_copy.json",
-      "version": "0",
-      "sha256": "0bf74fa1ecd51a31864031e3f97cd2f68613ea0c29d0160f2d297bde4b0d2b1e",
       "relativePath": "content/model_copy.json",
-      "size": 3636
+      "sha256": "ba19e852f67c6451df4ffb54994e92077dff27f653fc8a876a457d7f6ca1ab83",
+      "size": 3790,
+      "version": "1"
     },
     {
       "fileName": "param_registry.json",
-      "version": "1",
-      "sha256": "b74afa87c29060a2f72feafebd5a5f8e79285c30e77c7402e3247142426aaeb9",
       "relativePath": "content/param_registry.json",
-      "size": 70828
+      "sha256": "b74afa87c29060a2f72feafebd5a5f8e79285c30e77c7402e3247142426aaeb9",
+      "size": 70828,
+      "version": "1"
     }
   ],
+  "faq": {
+    "updated": "2026-06-25 10:35:22"
+  },
   "files": {
     "about": {
       "schema": 1,
@@ -640,7 +307,7 @@
     },
     "faq": {
       "schema": 1,
-      "version": 1
+      "version": 2
     },
     "layout_schema": {
       "schema": 1,
@@ -658,5 +325,338 @@
       "schema": 1,
       "version": 1
     }
-  }
+  },
+  "modelCopy": {
+    "updated": "2026-05-28 11:05:33"
+  },
+  "presets": [
+    {
+      "brand": "mkp",
+      "compatible": [
+        "A1"
+      ],
+      "fileName": "A1.toml",
+      "name": "A1",
+      "releaseTime": "2026-06-24 22:38:57",
+      "sha256": "297b20ce9c9f8b6c8077af9d2f64105530d2f889953c463b6287adb310d42646",
+      "size": 3571,
+      "version": "2026.06"
+    },
+    {
+      "brand": "mkp",
+      "compatible": [
+        "A1"
+      ],
+      "fileName": "A1F.toml",
+      "name": "A1F",
+      "releaseTime": "2026-06-24 22:38:57",
+      "sha256": "733b01747d2cbc6d31af1a581c164830cb8dca0c36cac9e11e4bab24abf99e04",
+      "size": 3569,
+      "version": "2026.06"
+    },
+    {
+      "brand": "mkp",
+      "compatible": [
+        "A1"
+      ],
+      "fileName": "A1F_260628.toml",
+      "name": "A1F_260628",
+      "releaseTime": "2026-06-24 22:38:58",
+      "sha256": "b633fb03ecc2f891fb55fcd072c113eaa76a165d06e21c1ee04b2b2535e252e5",
+      "size": 3571,
+      "version": "2026.06"
+    },
+    {
+      "brand": "mkp",
+      "compatible": [
+        "A1MINI"
+      ],
+      "fileName": "A1M.toml",
+      "name": "A1M",
+      "releaseTime": "2026-06-24 22:38:58",
+      "sha256": "8a512a1dd538ab1df4e3d7244c0527db32b49fbb921f39254a9261259468bf06",
+      "size": 3579,
+      "version": "2026.06"
+    },
+    {
+      "brand": "mkp",
+      "compatible": [
+        "A1MINI"
+      ],
+      "fileName": "A1MF.toml",
+      "name": "A1MF",
+      "releaseTime": "2026-06-24 22:38:58",
+      "sha256": "c3957a7669cd531046dbd4af2c7265a2484b3976e3bbc8dc7a735e35c889988f",
+      "size": 3572,
+      "version": "2026.06"
+    },
+    {
+      "brand": "mkp",
+      "compatible": [
+        "A1MINI"
+      ],
+      "fileName": "A1MF_260628.toml",
+      "name": "A1MF_260628",
+      "releaseTime": "2026-06-24 22:38:58",
+      "sha256": "e45a33965fcde050a861ce495e26f4c97d1d7a79a08ff8b9ced8a62cf838b1ae",
+      "size": 3576,
+      "version": "2026.06"
+    },
+    {
+      "brand": "mkp",
+      "compatible": [
+        "P1"
+      ],
+      "fileName": "P1.toml",
+      "name": "P1",
+      "releaseTime": "2026-06-24 22:38:58",
+      "sha256": "e5ff5e560ebcd3aba46641c184c45209ad6816942598978d94006d0a71cbc654",
+      "size": 3775,
+      "version": "2026.06"
+    },
+    {
+      "brand": "mkp",
+      "compatible": [
+        "P2"
+      ],
+      "fileName": "P2.toml",
+      "name": "P2",
+      "releaseTime": "2026-06-24 22:38:58",
+      "sha256": "836845b2e97e2d8f43807e88683fb7912f3a9747b1447d201095ce575275c9ad",
+      "size": 3779,
+      "version": "2026.06"
+    },
+    {
+      "brand": "mkp",
+      "compatible": [
+        "X1"
+      ],
+      "fileName": "X1.toml",
+      "name": "X1",
+      "releaseTime": "2026-06-24 22:38:58",
+      "sha256": "0e342b4f80f78c46830734658032106f9c20b182c87ed591cde112c7cf4e1a4f",
+      "size": 3775,
+      "version": "2026.06"
+    },
+    {
+      "brand": "bbs",
+      "fileName": "MKPProcess A1 0.2 0.10.json",
+      "layerHeight": "0.10",
+      "model": "a1",
+      "name": "MKPProcess A1 0.2",
+      "nozzle": "0.2",
+      "relativePath": "presets/bbs/Process/0.2mm/MKPProcess A1 0.2 0.10.json",
+      "releaseTime": "2026-05-25T03:30:54.258Z",
+      "sha256": "2ba10a2d873744f97e75a1697fa9a054b58aacb772993d6d05e973f04fda5004",
+      "size": 1308,
+      "type": "process",
+      "version": "2.0.0.83"
+    },
+    {
+      "brand": "bbs",
+      "fileName": "MKPProcess A1 mini 0.2 0.10.json",
+      "layerHeight": "0.10",
+      "model": "a1 mini",
+      "name": "MKPProcess A1 mini 0.2",
+      "nozzle": "0.2",
+      "relativePath": "presets/bbs/Process/0.2mm/MKPProcess A1 mini 0.2 0.10.json",
+      "releaseTime": "2026-05-25T03:30:54.259Z",
+      "sha256": "e6e66f5c8eb73d3b07efd8bc956df3fb25561431e40fecebc9fbe6ce6ff492db",
+      "size": 1318,
+      "type": "process",
+      "version": "2.1.0.18"
+    },
+    {
+      "brand": "bbs",
+      "fileName": "MKPProcess P1S 0.2 0.10.json",
+      "layerHeight": "0.10",
+      "model": "p1s",
+      "name": "MKPProcess P1S 0.2",
+      "nozzle": "0.2",
+      "relativePath": "presets/bbs/Process/0.2mm/MKPProcess P1S 0.2 0.10.json",
+      "releaseTime": "2026-05-25T03:30:54.259Z",
+      "sha256": "810d4441deef000106366220010d7ca48ae586ac52936af53c84dcb1b3dca8e1",
+      "size": 1906,
+      "type": "process",
+      "version": "1.9.0.26"
+    },
+    {
+      "brand": "bbs",
+      "fileName": "MKPProcess X1 0.2 0.10.json",
+      "layerHeight": "0.10",
+      "model": "x1",
+      "name": "MKPProcess X1 0.2",
+      "nozzle": "0.2",
+      "relativePath": "presets/bbs/Process/0.2mm/MKPProcess X1 0.2 0.10.json",
+      "releaseTime": "2026-05-25T03:30:54.260Z",
+      "sha256": "9d9737d18f8cea34d284031dd544b444a00e56c112a4d0ab74b0813f56e2e9ca",
+      "size": 1904,
+      "type": "process",
+      "version": "1.9.0.26"
+    },
+    {
+      "brand": "bbs",
+      "fileName": "MKPProcess A1 0.4 0.20.json",
+      "layerHeight": "0.20",
+      "model": "a1",
+      "name": "MKPProcess A1",
+      "nozzle": "0.4",
+      "relativePath": "presets/bbs/Process/0.4mm/MKPProcess A1 0.4 0.20.json",
+      "releaseTime": "2026-05-25T03:30:54.260Z",
+      "sha256": "e4696732236194d4035635adce6abc01fe3efb01847249745f4a36c4f6d5977f",
+      "size": 1332,
+      "type": "process",
+      "version": "2.0.0.83"
+    },
+    {
+      "brand": "bbs",
+      "fileName": "MKPProcess A1 mini 0.4 0.20.json",
+      "layerHeight": "0.20",
+      "model": "a1 mini",
+      "name": "MKPProcess A1 mini",
+      "nozzle": "0.4",
+      "relativePath": "presets/bbs/Process/0.4mm/MKPProcess A1 mini 0.4 0.20.json",
+      "releaseTime": "2026-05-25T03:30:54.260Z",
+      "sha256": "1ae5318f97eeb95a3e804619d5102d1d851d06860e53a9a4899dad0db4d717ca",
+      "size": 1301,
+      "type": "process",
+      "version": "2.1.0.18"
+    },
+    {
+      "brand": "bbs",
+      "fileName": "MKPProcess P1S 0.4 0.24.json",
+      "layerHeight": "0.24",
+      "model": "p1s",
+      "name": "MKPProcess P1S",
+      "nozzle": "0.4",
+      "relativePath": "presets/bbs/Process/0.4mm/MKPProcess P1S 0.4 0.24.json",
+      "releaseTime": "2026-05-25T03:30:54.261Z",
+      "sha256": "264addc551633c553828492580eef74fc51f2690a127919ed8da051634d8bc2d",
+      "size": 1872,
+      "type": "process",
+      "version": "1.9.0.26"
+    },
+    {
+      "brand": "bbs",
+      "fileName": "MKPProcess P2S 0.4 0.24.json",
+      "layerHeight": "0.24",
+      "model": "p2s",
+      "name": "MKPProcess P2S",
+      "nozzle": "0.4",
+      "relativePath": "presets/bbs/Process/0.4mm/MKPProcess P2S 0.4 0.24.json",
+      "releaseTime": "2026-05-25T03:30:54.261Z",
+      "sha256": "124f8290aa007567af78d6058f95095e4787c02a30371acb56f489029168499e",
+      "size": 1264,
+      "type": "process",
+      "version": "2.5.0.14"
+    },
+    {
+      "brand": "bbs",
+      "fileName": "MKPProcess X1 0.4 0.24.json",
+      "layerHeight": "0.24",
+      "model": "x1",
+      "name": "MKPProcess X1",
+      "nozzle": "0.4",
+      "relativePath": "presets/bbs/Process/0.4mm/MKPProcess X1 0.4 0.24.json",
+      "releaseTime": "2026-05-25T03:30:54.262Z",
+      "sha256": "1fe7377c92d0f67bb8ed1cda16edb12c32a56e3cb4d864983eaccb6ced0a8fa4",
+      "size": 1925,
+      "type": "process",
+      "version": "1.9.0.26"
+    },
+    {
+      "brand": "bbs",
+      "fileName": "MKPSupport A1 0.4.json",
+      "model": "a1",
+      "name": "MKPSupport A1",
+      "nozzle": "0.4",
+      "relativePath": "presets/bbs/Support/0.4mm/MKPSupport A1 0.4.json",
+      "releaseTime": "2026-05-25T03:30:54.264Z",
+      "sha256": "7c13e8c03eb75ddb7580e622ddb6b94848998b17c57dfc99ac5d66e00f24a0f3",
+      "size": 22049,
+      "type": "support",
+      "version": "2.1.0.18"
+    },
+    {
+      "brand": "bbs",
+      "fileName": "MKPSupport A1 mini 0.4.json",
+      "model": "a1 mini",
+      "name": "MKPSupport A1 mini",
+      "nozzle": "0.4",
+      "relativePath": "presets/bbs/Support/0.4mm/MKPSupport A1 mini 0.4.json",
+      "releaseTime": "2026-05-25T03:30:54.265Z",
+      "sha256": "3bd3b1a846aa94774bb1326c1cab26693e27fdb31fbfb4e662ad1935b736baf8",
+      "size": 25557,
+      "type": "support",
+      "version": "2.1.0.18"
+    },
+    {
+      "brand": "bbs",
+      "fileName": "MKPSupport P1S 0.4.json",
+      "model": "p1s",
+      "name": "MKPSupport P1S",
+      "nozzle": "0.4",
+      "relativePath": "presets/bbs/Support/0.4mm/MKPSupport P1S 0.4.json",
+      "releaseTime": "2026-05-25T03:30:54.265Z",
+      "sha256": "566601a856641f93d82c353a95a0c314f5a25deddbce1a535d989d8b82754dca",
+      "size": 19692,
+      "type": "support",
+      "version": "2.1.0.18"
+    },
+    {
+      "brand": "bbs",
+      "fileName": "MKPSupport P2S 0.4.json",
+      "model": "p2s",
+      "name": "MKPSupport P2S",
+      "nozzle": "0.4",
+      "relativePath": "presets/bbs/Support/0.4mm/MKPSupport P2S 0.4.json",
+      "releaseTime": "2026-05-25T03:30:54.266Z",
+      "sha256": "7b3ea5ee3fa21e4dac287645b2a291622e2165af0cdfb2af03c65c980d4505b3",
+      "size": 337,
+      "type": "support",
+      "version": "2.5.0.14"
+    },
+    {
+      "brand": "bbs",
+      "fileName": "MKPSupport X1 0.4.json",
+      "model": "x1",
+      "name": "MKPSupport X1",
+      "nozzle": "0.4",
+      "relativePath": "presets/bbs/Support/0.4mm/MKPSupport X1 0.4.json",
+      "releaseTime": "2026-05-25T03:30:54.267Z",
+      "sha256": "09496f931cf5b9c244d2a224fb5d5616a461bf600a303eb77c72cd589fc535fc",
+      "size": 21974,
+      "type": "support",
+      "version": "2.0.0.77"
+    },
+    {
+      "brand": "orca",
+      "fileName": "MKPSupport Anycubic Kobra S1.json",
+      "model": "kobra s1",
+      "name": "MKPSupport Anycubic Kobra S1",
+      "nozzle": "0.4",
+      "relativePath": "presets/orca/Support/0.4mm/MKPSupport Anycubic Kobra S1.json",
+      "releaseTime": "2026-04-15T10:47:40.000Z",
+      "sha256": "96f37b4a758b614e1c49cfd316568f3c1380967c7d6966ba9615c78d84b59c0d",
+      "size": 322,
+      "type": "support",
+      "version": "2.3.1.10"
+    },
+    {
+      "brand": "orca",
+      "fileName": "MKPSupport S1C.json",
+      "layerHeight": "0.20",
+      "model": "s1c",
+      "name": "MKPProcess S1C",
+      "nozzle": "0.4",
+      "relativePath": "presets/orca/Support/0.4mm/MKPSupport S1C.json",
+      "releaseTime": "2026-04-15T10:47:40.000Z",
+      "sha256": "c88828d5b4d8b5f32450591ddbf51e82eeac59219ea4ef241c7cda67952f18e6",
+      "size": 2395,
+      "type": "support",
+      "version": "1.3.2412.28"
+    }
+  ],
+  "updated": "2026-06-25T11:48:36+08:00",
+  "version": "2026.06"
 }
