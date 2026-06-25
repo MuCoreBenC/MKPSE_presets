@@ -1,8 +1,8 @@
 {
   "schema": 1,
-  "version": 1,
-  "updatedAt": "2026-06-25T02:35:47+08:00",
-  "hash": "c97afe1b56754019140ea55e492a510858f51bf7daa67a47f251e57cfdd3f353",
+  "version": 6,
+  "updatedAt": "2026-06-25T15:48:22+08:00",
+  "hash": "e5faca01d17df390e71c34c6e79bee41352fa7d7942fa23260848c195ebb284b",
   "groupOrder": {
     "advanced||Z轴抬升": 30,
     "advanced||机型专属": 40,
@@ -97,7 +97,7 @@
         "A1:fastv3.3": 25,
         "A1:standard": 18.6,
         "A1MINI:fast": 24,
-        "A1MINI:fastv3.3": 24,
+        "A1MINI:fastv3.3": 23.2,
         "A1MINI:standard": 18.1,
         "P1:lite": 14,
         "P2:standard": 14,
@@ -148,10 +148,10 @@
       "machineVariants": {
         "A1:fast": 3.6,
         "A1:fastv3.3": 3.6,
-        "A1:standard": 3.8,
+        "A1:standard": 3.6,
         "A1MINI:fast": 3.6,
         "A1MINI:fastv3.3": 3.6,
-        "A1MINI:standard": 3.65,
+        "A1MINI:standard": 3.6,
         "P1:lite": 1.1,
         "P2:standard": 1.1,
         "X1:lite": 1.1,
@@ -279,7 +279,7 @@
       "layout": {
         "group": "自定义G-code",
         "order": 0,
-        "tab": "获取与收起",
+        "tab": "切换",
         "tabId": "gcode"
       },
       "machineFilter": "",
@@ -318,7 +318,7 @@
       "layout": {
         "group": "自定义G-code",
         "order": 1,
-        "tab": "获取与收起",
+        "tab": "切换",
         "tabId": "gcode"
       },
       "machineFilter": "",
@@ -458,6 +458,7 @@
       },
       "machineFilter": "",
       "machineMaxVariants": {
+        "A1:fast": 226,
         "A1:standard": 226,
         "A1MINI:fast": 150,
         "A1MINI:fastv3.3": 150,
@@ -468,6 +469,7 @@
         "X1:lite_copy": 226
       },
       "machineMinVariants": {
+        "A1:fast": 10,
         "A1:standard": 10,
         "A1MINI:fast": 10,
         "A1MINI:fastv3.3": 10,
@@ -2436,7 +2438,7 @@
   ],
   "tabMeta": {
     "advanced": {
-      "icon": "sparkles"
+      "icon": "sliders"
     },
     "fan": {
       "icon": "fan"
@@ -2461,5 +2463,6 @@
     "glue": 30,
     "offset": 10,
     "wiping": 20
-  }
+  },
+  "updated": "2026-06-25 15:48:22"
 }

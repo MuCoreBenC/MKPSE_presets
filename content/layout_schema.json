@@ -1,8 +1,8 @@
 {
   "schema": 1,
-  "version": 1,
-  "updatedAt": "2026-06-25T12:00:00+08:00",
-  "hash": "716c35cce02e87bbf298e684fce7c13a367c6c281b01cfff2c56e01aa5fe4157",
+  "version": 2,
+  "updatedAt": "2026-06-25T15:48:22+08:00",
+  "hash": "b613a143b0f7ac9dc0931cb7fb875d0d64ec392ec86393c0da15bcc5fcc212f3",
   "tabs": [
     {
       "id": "offset",
@@ -234,7 +234,7 @@
     },
     {
       "id": "gcode",
-      "label": "获取与收起",
+      "label": "切换",
       "sections": [
         {
           "id": "自定义G-code",
