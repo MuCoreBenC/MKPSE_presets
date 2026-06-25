@@ -1,7 +1,7 @@
 schema: 1
 version: 1
-updatedAt: "2026-06-25T12:00:00+08:00"
-hash: "7eef44de1f392f656115b40912cc2b97779b72064de978e051f579a7eb716396"
+updatedAt: "2026-06-25T16:30:00+08:00"
+hash: "b5ab167b3e44ce97d16d5f391a78f6810f3ebddb68d0b0f52e38eefc68122d96"
 
 # Preset 根目录（相对于 MKPSE_presets 仓库根）
 preset_roots:
@@ -12,11 +12,11 @@ preset_roots:
 # 各 type 的保存子路径（相对于 preset_roots）
 save_paths:
   bbs:
-    machine: "Support"
-    process: "Process"
+    machine: "machine"
+    process: "process"
   orca:
-    machine: "Support"
-    process: "Process"
+    machine: "machine"
+    process: "process"
 
 # Content 文件相对路径（相对于 MKPSE_presets 仓库根）
 content_files:

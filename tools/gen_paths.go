@@ -40,10 +40,10 @@ const (
 
 // 各 type 保存子路径（相对于 preset root）
 const (
-	SavePathBBSMachine  = "Support"
-	SavePathBBSProcess  = "Process"
-	SavePathOrcaMachine = "Support"
-	SavePathOrcaProcess = "Process"
+	SavePathBBSMachine  = "machine"
+	SavePathBBSProcess  = "process"
+	SavePathOrcaMachine = "machine"
+	SavePathOrcaProcess = "process"
 )
 
 // Content 文件相对路径
@@ -173,10 +173,10 @@ export const PRESET_ROOT_BBS = "presets/bbs"
 export const PRESET_ROOT_ORCA = "presets/orca"
 
 // 各 type 保存子路径
-export const SAVE_PATH_BBS_MACHINE = "Support"
-export const SAVE_PATH_BBS_PROCESS = "Process"
-export const SAVE_PATH_ORCA_MACHINE = "Support"
-export const SAVE_PATH_ORCA_PROCESS = "Process"
+export const SAVE_PATH_BBS_MACHINE = "machine"
+export const SAVE_PATH_BBS_PROCESS = "process"
+export const SAVE_PATH_ORCA_MACHINE = "machine"
+export const SAVE_PATH_ORCA_PROCESS = "process"
 
 // Content 文件相对路径
 export const CONTENT_FILE_MACHINE_CATALOG = "content/machine_catalog.json"

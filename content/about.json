@@ -1,14 +1,14 @@
 {
   "schema": 1,
-  "version": 1,
-  "updatedAt": "2026-06-25T01:23:48+08:00",
-  "hash": "f435cb3ee4fff2208a135189bcc02895be875df74761c32ed510ebdcef6263bb",
+  "version": 2,
+  "updatedAt": "2026-06-25T18:25:09+08:00",
+  "hash": "cd21fa84d4263e04d7d373eb362f514f24964cefbc84d6f9c0d0af22bafec07c",
   "appInfo": {
     "changelogLabel": "更新日志",
     "description": "致力于为单喷嘴 FDM 3D 打印提供支撑面与接触面质量改善方案。通过干预与重构切片参数，在物理层面改善模型支撑接触面的表面光洁度，让底面不再只是妥协。",
     "iconLetter": "M",
     "licenseLabel": "许可协议",
-    "name": "MKP SupportE"
+    "name": "MKP SupportE（非官方）"
   },
   "authors": {
     "co": {
