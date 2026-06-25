@@ -27,3 +27,4 @@ content_files:
   layout_schema: "content/layout_schema.json"
   changelog: "content/changelog.json"
   model_copy: "content/model_copy.json"
+  assets_index: "content/assets_index.json"

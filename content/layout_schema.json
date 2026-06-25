@@ -1,8 +1,8 @@
 {
   "schema": 1,
-  "version": 2,
-  "updatedAt": "2026-06-25T15:48:22+08:00",
-  "hash": "b613a143b0f7ac9dc0931cb7fb875d0d64ec392ec86393c0da15bcc5fcc212f3",
+  "version": 3,
+  "updatedAt": "2026-06-25T19:48:32+08:00",
+  "hash": "99a09326ddd9d083e10bd39ed61bf9afa760125d784c86c8cc5bba75f65a637e",
   "tabs": [
     {
       "id": "offset",
@@ -203,6 +203,42 @@
             },
             {
               "paramKey": "wiping.glue_sparse_ratio"
+            }
+          ]
+        },
+        {
+          "id": "glue_compensation",
+          "title": "涂胶方向补偿",
+          "items": [
+            {
+              "paramKey": "wiping.glue_z_compensation_enabled"
+            },
+            {
+              "paramKey": "wiping.glue_z_compensation_mode"
+            },
+            {
+              "paramKey": "wiping.glue_z_compensation_bed_fl"
+            },
+            {
+              "paramKey": "wiping.glue_z_compensation_bed_fr"
+            },
+            {
+              "paramKey": "wiping.glue_z_compensation_bed_bl"
+            },
+            {
+              "paramKey": "wiping.glue_z_compensation_bed_br"
+            },
+            {
+              "paramKey": "wiping.glue_z_compensation_patch_fl"
+            },
+            {
+              "paramKey": "wiping.glue_z_compensation_patch_fr"
+            },
+            {
+              "paramKey": "wiping.glue_z_compensation_patch_bl"
+            },
+            {
+              "paramKey": "wiping.glue_z_compensation_patch_br"
             }
           ]
         }

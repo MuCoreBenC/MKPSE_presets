@@ -1,0 +1,508 @@
+{
+  "schema": 1,
+  "version": 30,
+  "updatedAt": "2026-06-25T23:18:41+08:00",
+  "hash": "0c97af159e9560409fcd070f794280d9431bf781a5e6b9f9f43ed64774767c9d",
+  "assets": [
+    {
+      "category": "avatars",
+      "fileName": "jhmodel.webp",
+      "isModified": false,
+      "isRegistered": true,
+      "relativePath": "assets/avatars/jhmodel.webp",
+      "releaseTime": "2026-06-17 17:22:38",
+      "sha256": "96f115cd23db59cbf0a8bbbec3a4ccf238d02ef1a2c360fd88fcab60ff591203",
+      "size": 3456
+    },
+    {
+      "category": "avatars",
+      "fileName": "mao.webp",
+      "isModified": false,
+      "isRegistered": true,
+      "relativePath": "assets/avatars/mao.webp",
+      "releaseTime": "2026-06-17 17:22:38",
+      "sha256": "f3c0dc1ebb3cae162cc134c410037929228da2e0dfeea2b1dc2a46e30271965c",
+      "size": 3308
+    },
+    {
+      "category": "avatars",
+      "fileName": "ziyang.webp",
+      "isModified": false,
+      "isRegistered": true,
+      "relativePath": "assets/avatars/ziyang.webp",
+      "releaseTime": "2026-06-17 17:22:38",
+      "sha256": "1bc0eb1c44b6a1c20ad20aeca3aaf1f4e07f28fb4c1985e9321ccefa8a0e34b3",
+      "size": 7690
+    },
+    {
+      "category": "machines",
+      "fileName": "Anycubic Kobra X.webp",
+      "isModified": false,
+      "isRegistered": true,
+      "relativePath": "assets/machines/Anycubic Kobra X.webp",
+      "releaseTime": "2026-06-17 17:22:38",
+      "sha256": "a717f0e229de690ef3134a7d24323c15f94e2857f46874d7fa1c0ef17d81ad13",
+      "size": 22398
+    },
+    {
+      "category": "machines",
+      "fileName": "Creality SPARKX i7.webp",
+      "isModified": false,
+      "isRegistered": true,
+      "relativePath": "assets/machines/Creality SPARKX i7.webp",
+      "releaseTime": "2026-06-17 17:22:38",
+      "sha256": "9790d66c11fa284e8d3c1ebba2c949e232f9002bca95de2d33d63baf808221c7",
+      "size": 18572
+    },
+    {
+      "category": "machines",
+      "fileName": "a1.webp",
+      "isModified": false,
+      "isRegistered": true,
+      "relativePath": "assets/machines/a1.webp",
+      "releaseTime": "2026-06-17 17:22:38",
+      "sha256": "41ba8552907599c80e3e2a110e0898a7d6c39c5d3bca28ee83b20e22c2e6e3f4",
+      "size": 21740
+    },
+    {
+      "category": "machines",
+      "fileName": "a1mini.webp",
+      "isModified": false,
+      "isRegistered": true,
+      "relativePath": "assets/machines/a1mini.webp",
+      "releaseTime": "2026-06-17 17:22:38",
+      "sha256": "b30a6db46e303287753755bfab4a01c0fb197eed0f173f716dc48e6571b9e431",
+      "size": 19160
+    },
+    {
+      "category": "machines",
+      "fileName": "k1c.webp",
+      "isModified": false,
+      "isRegistered": true,
+      "relativePath": "assets/machines/k1c.webp",
+      "releaseTime": "2026-06-17 17:22:38",
+      "sha256": "618067c10a03790cce94be1054046250c7de3c9da20a2a468ccbf933340ee491",
+      "size": 16014
+    },
+    {
+      "category": "machines",
+      "fileName": "k2c.webp",
+      "isModified": false,
+      "isRegistered": true,
+      "relativePath": "assets/machines/k2c.webp",
+      "releaseTime": "2026-06-17 17:22:38",
+      "sha256": "638e41f45e58167df4f8c18ea22fb34bfa175057a76875b697c5f2e77c205063",
+      "size": 8722
+    },
+    {
+      "category": "machines",
+      "fileName": "p1s.webp",
+      "isModified": false,
+      "isRegistered": true,
+      "relativePath": "assets/machines/p1s.webp",
+      "releaseTime": "2026-06-17 17:22:38",
+      "sha256": "0ceb9236e7c20999915a66c1d630cc18e9b648d1e2935039b244e00c0a5e7d84",
+      "size": 12732
+    },
+    {
+      "category": "machines",
+      "fileName": "p2s.webp",
+      "isModified": false,
+      "isRegistered": true,
+      "relativePath": "assets/machines/p2s.webp",
+      "releaseTime": "2026-06-17 17:22:38",
+      "sha256": "9e6ebe2a9e4201958e3ba24a7618801035c85eda2a908afc1666025bcd739f3e",
+      "size": 9180
+    },
+    {
+      "category": "machines",
+      "fileName": "s1c.webp",
+      "isModified": false,
+      "isRegistered": true,
+      "relativePath": "assets/machines/s1c.webp",
+      "releaseTime": "2026-06-17 17:22:38",
+      "sha256": "b592ce817e9c0827e43af0a3455551f84e709cd3f94febef6032e80874576aa5",
+      "size": 40230
+    },
+    {
+      "category": "machines",
+      "fileName": "voron24.webp",
+      "isModified": false,
+      "isRegistered": true,
+      "relativePath": "assets/machines/voron24.webp",
+      "releaseTime": "2026-06-17 17:22:38",
+      "sha256": "23e98522a0c41540be532e92fd3be1c14ace3ac153bd248fad674090be866b2a",
+      "size": 60720
+    },
+    {
+      "category": "machines",
+      "fileName": "x1.webp",
+      "isModified": false,
+      "isRegistered": true,
+      "relativePath": "assets/machines/x1.webp",
+      "releaseTime": "2026-06-17 17:22:38",
+      "sha256": "78abb42998fe139e4cdb709951097b6779842478bf546d56701dec8c8518f96a",
+      "size": 24016
+    },
+    {
+      "category": "models",
+      "fileName": "MKP_support_test_models_1.webp",
+      "isModified": false,
+      "isRegistered": true,
+      "relativePath": "assets/models/MKP_support_test_models_1.webp",
+      "releaseTime": "2026-06-17 17:22:38",
+      "sha256": "fb8e6240e404c237f94efb5ce0615e309482526df38b850e5740ec0e7ab48760",
+      "size": 3258
+    },
+    {
+      "category": "models",
+      "fileName": "MKP_support_test_models_2.webp",
+      "isModified": false,
+      "isRegistered": true,
+      "relativePath": "assets/models/MKP_support_test_models_2.webp",
+      "releaseTime": "2026-06-17 17:22:38",
+      "sha256": "0b88145f1af013383756ad64b336dfe25d72477f86866f9ab7fe2aa024e02457",
+      "size": 2540
+    },
+    {
+      "category": "models",
+      "fileName": "MKP_support_test_models_3.webp",
+      "isModified": false,
+      "isRegistered": true,
+      "relativePath": "assets/models/MKP_support_test_models_3.webp",
+      "releaseTime": "2026-06-17 17:22:38",
+      "sha256": "adfa9f2fa9642d66b6c3c3a7c216cf107460bb5956c861ac61ae7c0412319ae8",
+      "size": 2860
+    },
+    {
+      "category": "models",
+      "fileName": "MKP_support_test_models_4.webp",
+      "isModified": false,
+      "isRegistered": true,
+      "relativePath": "assets/models/MKP_support_test_models_4.webp",
+      "releaseTime": "2026-06-17 17:22:38",
+      "sha256": "2d5f9e80b66ba36685f9deb5512e14ee23ba1af24ab3e796e550f01203c6f469",
+      "size": 3640
+    },
+    {
+      "category": "models",
+      "fileName": "MKP_support_test_models_5.webp",
+      "isModified": false,
+      "isRegistered": true,
+      "relativePath": "assets/models/MKP_support_test_models_5.webp",
+      "releaseTime": "2026-06-17 17:22:38",
+      "sha256": "a22f9e4d9bdf76a4e5c460b1c5d866062400f20dc753119b2594e6b3a690c599",
+      "size": 3772
+    },
+    {
+      "category": "models",
+      "fileName": "MKP_support_test_models_6.webp",
+      "isModified": false,
+      "isRegistered": true,
+      "relativePath": "assets/models/MKP_support_test_models_6.webp",
+      "releaseTime": "2026-06-17 17:22:38",
+      "sha256": "c43f82ab557c8993b92fb78127307b84991656feeae2105519e2583442b79859",
+      "size": 4294
+    },
+    {
+      "category": "models",
+      "fileName": "MKP_support_test_models_7.webp",
+      "isModified": false,
+      "isRegistered": true,
+      "relativePath": "assets/models/MKP_support_test_models_7.webp",
+      "releaseTime": "2026-06-17 17:22:38",
+      "sha256": "1e0e0a09ace0bf5a8c821a8e2dc4872eadebdfb06749d573d60ef3e2c320cbfe",
+      "size": 6296
+    },
+    {
+      "category": "models",
+      "fileName": "MKP_support_test_models_8.webp",
+      "isModified": false,
+      "isRegistered": true,
+      "relativePath": "assets/models/MKP_support_test_models_8.webp",
+      "releaseTime": "2026-06-17 17:22:38",
+      "sha256": "d16020f01fdfcbdd46c53900b44b08ba53bbfea88698a6f358e82d33c4efbf76",
+      "size": 4948
+    },
+    {
+      "category": "faq",
+      "fileName": "faq57_1.webp",
+      "isModified": false,
+      "isRegistered": true,
+      "relativePath": "assets/faq/faq57_1.webp",
+      "releaseTime": "2026-06-25 19:09:05",
+      "sha256": "566052679a34275b4e30fa30087b77608b8d8cf772281890194ed31e05ec39d7",
+      "size": 60984
+    },
+    {
+      "category": "faq",
+      "fileName": "faq57_2.webp",
+      "isModified": false,
+      "isRegistered": true,
+      "relativePath": "assets/faq/faq57_2.webp",
+      "releaseTime": "2026-06-25 20:49:09",
+      "sha256": "3f32ed2f94e4cf2298f6d7d295438ac2ffa7ab546f9e6fb27bf7a21c4471d87c",
+      "size": 124673
+    },
+    {
+      "category": "faq",
+      "fileName": "faq57_3.webp",
+      "isModified": false,
+      "isRegistered": true,
+      "relativePath": "assets/faq/faq57_3.webp",
+      "releaseTime": "2026-06-25 20:52:44",
+      "sha256": "9ccab17afa5e16e42574fbe965ef1ab05a65181fc1996efcbd3b80fcee179e11",
+      "size": 16996
+    },
+    {
+      "category": "faq",
+      "fileName": "faq57_4.webp",
+      "isModified": false,
+      "isRegistered": true,
+      "relativePath": "assets/faq/faq57_4.webp",
+      "releaseTime": "2026-06-25 20:53:15",
+      "sha256": "21da47ccd51111359771fd4650ad892c3b397f6a0b1fd50ba852c9b59aee6bfe",
+      "size": 44084
+    },
+    {
+      "category": "faq",
+      "fileName": "faq57_5.webp",
+      "isModified": false,
+      "isRegistered": true,
+      "relativePath": "assets/faq/faq57_5.webp",
+      "releaseTime": "2026-06-25 21:19:35",
+      "sha256": "b47f96644476eaaf78571246aaafc4839384741f15f167a9c657676e1b43926b",
+      "size": 42114
+    },
+    {
+      "category": "faq",
+      "fileName": "faq57_6.webp",
+      "isModified": false,
+      "isRegistered": true,
+      "relativePath": "assets/faq/faq57_6.webp",
+      "releaseTime": "2026-06-25 21:20:52",
+      "sha256": "08b4836923ea63314dde276c429ee78b7f5056d66257aea3854252e05076b082",
+      "size": 33721
+    },
+    {
+      "category": "faq",
+      "fileName": "faq57_7.webp",
+      "isModified": false,
+      "isRegistered": true,
+      "relativePath": "assets/faq/faq57_7.webp",
+      "releaseTime": "2026-06-25 21:21:43",
+      "sha256": "8e412fefc09e3aa37734a22d3bf607a21ee96c44c1d04dbba414a7032981bb0d",
+      "size": 44965
+    },
+    {
+      "category": "faq",
+      "fileName": "faq57_8.webp",
+      "isModified": false,
+      "isRegistered": true,
+      "relativePath": "assets/faq/faq57_8.webp",
+      "releaseTime": "2026-06-25 21:21:50",
+      "sha256": "8e412fefc09e3aa37734a22d3bf607a21ee96c44c1d04dbba414a7032981bb0d",
+      "size": 44965
+    },
+    {
+      "category": "faq",
+      "fileName": "faq57_9.webp",
+      "isModified": false,
+      "isRegistered": true,
+      "relativePath": "assets/faq/faq57_9.webp",
+      "releaseTime": "2026-06-25 21:33:36",
+      "sha256": "5a2e028959e9164bd6a416de3493f15ca8973b5d596dc55bca1aad09b218ff7b",
+      "size": 220990
+    },
+    {
+      "category": "faq",
+      "fileName": "faq57_10.webp",
+      "isModified": false,
+      "isRegistered": true,
+      "relativePath": "assets/faq/faq57_10.webp",
+      "releaseTime": "2026-06-25 21:39:40",
+      "sha256": "4cbd564269a2bef69ddb875f9a57d23a3718f9e19495509ffe543bcd73295cd1",
+      "size": 122139
+    },
+    {
+      "category": "faq",
+      "fileName": "faq57_11.webp",
+      "isModified": false,
+      "isRegistered": true,
+      "relativePath": "assets/faq/faq57_11.webp",
+      "releaseTime": "2026-06-25 21:42:25",
+      "sha256": "b42a1bb5b9fff148dca8e2615f739424bed95dd8e49968c15cb9ad17928dbc48",
+      "size": 199495
+    },
+    {
+      "category": "faq",
+      "fileName": "faq57_12.webp",
+      "isModified": false,
+      "isRegistered": true,
+      "relativePath": "assets/faq/faq57_12.webp",
+      "releaseTime": "2026-06-25 21:50:28",
+      "sha256": "8c31b0ff49869cbd396ba5372af94914d08059929debc6a4306db866c93ee1f5",
+      "size": 43790
+    },
+    {
+      "category": "faq",
+      "fileName": "faq57_13.webp",
+      "isModified": false,
+      "isRegistered": true,
+      "relativePath": "assets/faq/faq57_13.webp",
+      "releaseTime": "2026-06-25 21:51:38",
+      "sha256": "1c9da6b9f149b1b6c0c95be99a532f0872f3445abbc255fdc29d2b6d7bb7aa60",
+      "size": 36703
+    },
+    {
+      "category": "faq",
+      "fileName": "faq56_1.webp",
+      "isModified": false,
+      "isRegistered": true,
+      "relativePath": "assets/faq/faq56_1.webp",
+      "releaseTime": "2026-06-25 22:31:21",
+      "sha256": "a76f85b8d610df8b6c46edbf32fb2dc5406598e92d5690210fff6a2ae7a72454",
+      "size": 606788
+    },
+    {
+      "category": "faq",
+      "fileName": "faq56_2.webp",
+      "isModified": false,
+      "isRegistered": true,
+      "relativePath": "assets/faq/faq56_2.webp",
+      "releaseTime": "2026-06-25 22:31:46",
+      "sha256": "29bad3e05d76c4c6ef3347c26165f1c75a683533dc76e76ecd3ae3f1ed855496",
+      "size": 305665
+    },
+    {
+      "category": "faq",
+      "fileName": "faq56_3.webp",
+      "isModified": false,
+      "isRegistered": true,
+      "relativePath": "assets/faq/faq56_3.webp",
+      "releaseTime": "2026-06-25 22:33:05",
+      "sha256": "c0955c8578a8bc319ee08e5322e2774d888d48e35665b950ba9a12c01bd0e6d3",
+      "size": 393663
+    },
+    {
+      "category": "faq",
+      "fileName": "faq56_4.webp",
+      "isModified": false,
+      "isRegistered": true,
+      "relativePath": "assets/faq/faq56_4.webp",
+      "releaseTime": "2026-06-25 22:33:51",
+      "sha256": "9c1a2fa851c333f51305625a3dc26f712f114897b830a23e8411c9ed8f686955",
+      "size": 421977
+    },
+    {
+      "category": "faq",
+      "fileName": "faq56_5.webp",
+      "isModified": false,
+      "isRegistered": true,
+      "relativePath": "assets/faq/faq56_5.webp",
+      "releaseTime": "2026-06-25 22:38:00",
+      "sha256": "97597f13d34c56d7270f0b3acd5ac0a258ed6697304f259cbd7a75001f100432",
+      "size": 51191
+    },
+    {
+      "category": "faq",
+      "fileName": "faq56_6.webp",
+      "isModified": false,
+      "isRegistered": true,
+      "relativePath": "assets/faq/faq56_6.webp",
+      "releaseTime": "2026-06-25 22:38:11",
+      "sha256": "97597f13d34c56d7270f0b3acd5ac0a258ed6697304f259cbd7a75001f100432",
+      "size": 51191
+    },
+    {
+      "category": "faq",
+      "fileName": "faq56_7.webp",
+      "isModified": false,
+      "isRegistered": true,
+      "relativePath": "assets/faq/faq56_7.webp",
+      "releaseTime": "2026-06-25 22:43:36",
+      "sha256": "9d34479c38b66e4789178315e406193d203005ad2c4b18c9f29e7ed106300688",
+      "size": 274787
+    },
+    {
+      "category": "faq",
+      "fileName": "faq56_8.webp",
+      "isModified": false,
+      "isRegistered": true,
+      "relativePath": "assets/faq/faq56_8.webp",
+      "releaseTime": "2026-06-25 22:45:03",
+      "sha256": "9d34479c38b66e4789178315e406193d203005ad2c4b18c9f29e7ed106300688",
+      "size": 274787
+    },
+    {
+      "category": "faq",
+      "fileName": "faq56_9.webp",
+      "isModified": false,
+      "isRegistered": true,
+      "relativePath": "assets/faq/faq56_9.webp",
+      "releaseTime": "2026-06-25 22:47:44",
+      "sha256": "1d8cfc9c68e6027f35aab67a62511a2135fe9db0e5b9d8b21e4d8edbfa329580",
+      "size": 294732
+    },
+    {
+      "category": "faq",
+      "fileName": "faq56_10.webp",
+      "isModified": false,
+      "isRegistered": true,
+      "relativePath": "assets/faq/faq56_10.webp",
+      "releaseTime": "2026-06-25 22:52:42",
+      "sha256": "553530f2b6d4af770fd0afb6c3fa4f41b3b4e1d3faeaf8801b307ce14ba5dbdc",
+      "size": 287398
+    },
+    {
+      "category": "faq",
+      "fileName": "faq56_11.webp",
+      "isModified": false,
+      "isRegistered": true,
+      "relativePath": "assets/faq/faq56_11.webp",
+      "releaseTime": "2026-06-25 22:54:43",
+      "sha256": "9d34479c38b66e4789178315e406193d203005ad2c4b18c9f29e7ed106300688",
+      "size": 274787
+    },
+    {
+      "category": "faq",
+      "fileName": "faq56_12.webp",
+      "isModified": false,
+      "isRegistered": true,
+      "relativePath": "assets/faq/faq56_12.webp",
+      "releaseTime": "2026-06-25 22:59:45",
+      "sha256": "505c45ac20e153e313b80053292bc951ed4994860ea5bbacae61013e8e8afcb8",
+      "size": 155140
+    },
+    {
+      "category": "faq",
+      "fileName": "faq56_13.webp",
+      "isModified": false,
+      "isRegistered": true,
+      "relativePath": "assets/faq/faq56_13.webp",
+      "releaseTime": "2026-06-25 23:00:30",
+      "sha256": "19bd18e2278938707ba21a087d09945a6d876b099580f1ecfd40d3479e442906",
+      "size": 171228
+    },
+    {
+      "category": "faq",
+      "fileName": "faq56_14.webp",
+      "isModified": false,
+      "isRegistered": true,
+      "relativePath": "assets/faq/faq56_14.webp",
+      "releaseTime": "2026-06-25 23:01:04",
+      "sha256": "d29840b16019622ef230a0341a3106f2f92058765a44d83c6fdb84982557bf12",
+      "size": 90494
+    },
+    {
+      "category": "faq",
+      "fileName": "faq56_15.webp",
+      "isModified": false,
+      "isRegistered": true,
+      "relativePath": "assets/faq/faq56_15.webp",
+      "releaseTime": "2026-06-25 23:03:22",
+      "sha256": "05c68ce5ee5740bb262aee952128f6de449be399a2677ac66469cb5aa224b153",
+      "size": 185017
+    }
+  ]
+}

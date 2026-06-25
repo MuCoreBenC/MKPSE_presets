@@ -55,6 +55,7 @@ const (
 	ContentFileLayoutSchema   = "content/layout_schema.json"
 	ContentFileChangelog      = "content/changelog.json"
 	ContentFileModelCopy      = "content/model_copy.json"
+	ContentFileAssetsIndex    = "content/assets_index.json"
 )
 
 // URL 前缀（用于生成下载 URL）
@@ -157,6 +158,8 @@ func ContentFilePath(key string) string {
 		return ContentFileChangelog
 	case "model_copy":
 		return ContentFileModelCopy
+	case "assets_index":
+		return ContentFileAssetsIndex
 	default:
 		return ""
 	}
@@ -186,6 +189,7 @@ export const CONTENT_FILE_ABOUT = "content/about.json"
 export const CONTENT_FILE_LAYOUT_SCHEMA = "content/layout_schema.json"
 export const CONTENT_FILE_CHANGELOG = "content/changelog.json"
 export const CONTENT_FILE_MODEL_COPY = "content/model_copy.json"
+export const CONTENT_FILE_ASSETS_INDEX = "content/assets_index.json"
 
 // URL 前缀
 export const URL_PREFIX_MKP = "/presets/mkp"

@@ -1,9 +1,9 @@
 {
   "version": "2026.06",
   "channel": "stable",
-  "updated": "2026-06-25 19:09:05",
+  "updated": "2026-06-25 23:18:41",
   "faq": {
-    "updated": "2026-06-25 10:35:22"
+    "updated": "2026-06-25 23:18:09"
   },
   "modelCopy": {
     "updated": "2026-05-28 11:05:33"
@@ -591,10 +591,10 @@
   "contentFiles": [
     {
       "fileName": "param_registry.json",
-      "version": "6",
-      "sha256": "ff875baac6c587721f262411c4fc258607793f1fd91e40e4c62cecbced207a41",
+      "version": "7",
+      "sha256": "4a429a1da4614ac79d2d41520a59db3560663b224439abde760c5259de505ff8",
       "relativePath": "content/param_registry.json",
-      "size": 70893
+      "size": 82667
     },
     {
       "fileName": "machine_catalog.json",
@@ -605,24 +605,24 @@
     },
     {
       "fileName": "faq.json",
-      "version": "2",
-      "sha256": "d25237e30b6f027158a8b306fac271e6919807af2ccab9c5772335502b4efb30",
+      "version": "3",
+      "sha256": "a8a8037e6a37de736eda79b8c5e92e46effe6e03f12b579ece463574515da7da",
       "relativePath": "content/faq.json",
-      "size": 32075
+      "size": 39550
     },
     {
       "fileName": "about.json",
-      "version": "2",
-      "sha256": "2d80a219e8f05b79bbc4454114403c9080dff64d5dc7860c7a707ca488109693",
+      "version": "3",
+      "sha256": "627bb45218db55530f5420ca18501bfebb764ee480fbc0024dfe25ae0a7b7538",
       "relativePath": "content/about.json",
-      "size": 7033
+      "size": 7460
     },
     {
       "fileName": "layout_schema.json",
-      "version": "2",
-      "sha256": "562565bc103c716f29000e384354800dd1dd0e1e4ecc7f9e2105cc979cc17692",
+      "version": "3",
+      "sha256": "0f4aff50089b7a8dcaea1d105cb5129f444e9640880817ed3b1b934cb65acffb",
       "relativePath": "content/layout_schema.json",
-      "size": 7985
+      "size": 9033
     },
     {
       "fileName": "changelog.json",
@@ -637,12 +637,23 @@
       "sha256": "ba19e852f67c6451df4ffb54994e92077dff27f653fc8a876a457d7f6ca1ab83",
       "relativePath": "content/model_copy.json",
       "size": 3790
+    },
+    {
+      "fileName": "assets_index.json",
+      "version": "30",
+      "sha256": "b1588ee195aa5daf4c4c3aeb925f77824fa0156a2b86eab1144aa6ddc449567a",
+      "relativePath": "content/assets_index.json",
+      "size": 16835
     }
   ],
   "files": {
     "about": {
       "schema": 1,
-      "version": 2
+      "version": 3
+    },
+    "assets_index": {
+      "schema": 1,
+      "version": 30
     },
     "changelog": {
       "schema": 1,
@@ -650,11 +661,11 @@
     },
     "faq": {
       "schema": 1,
-      "version": 2
+      "version": 3
     },
     "layout_schema": {
       "schema": 1,
-      "version": 2
+      "version": 3
     },
     "machine_catalog": {
       "schema": 1,
@@ -666,7 +677,7 @@
     },
     "param_registry": {
       "schema": 1,
-      "version": 6
+      "version": 7
     }
   }
 }
