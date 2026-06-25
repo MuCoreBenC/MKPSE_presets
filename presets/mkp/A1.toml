@@ -1,10 +1,10 @@
-# uuid: 16bc67fe-30af-4660-b7ff-753a9a1c5fe3
-# release_time: 2026-06-24 22:38:57
+# uuid: 9f5b9ae9-8dc9-4292-8f0f-bfa3ff6c4606
+# release_time: 2026-06-25 23:42:48
 # machine: A1
 # variant: standard
 #胶笔配置
 [toolhead]
-offset = { x = -1, y = 18.6, z = 3.8 } # 笔尖偏移
+offset = { x = -1, y = 18.6, z = 3.6 } # 笔尖偏移
 speed_limit = 70 # 涂胶速度限制 (mm/s)
 MKP_retract = 0 # 回抽长度(mm)
 first_pen_revitalization_flag = false # 首笔活化标志
@@ -84,3 +84,13 @@ tower_wipe_mode = "auto" # 擦嘴策略
 tower_safe_z_offset = 0.7 # 塔安全Z偏移(0.3~5.0mm)
 tower_travel_speed = 200 # 塔刮擦速度(50~500mm/s)
 outer_structure = "rib" # 外围结构(none/rib)
+glue_z_compensation_enabled = false # 涂胶方向补偿开关: false=关闭, true=开启(按4角双线性插值)
+glue_z_compensation_mode = "bed" # 补偿范围模式: bed=热床范围(±0.2mm), patch=涂胶面范围(±0.1mm)
+glue_z_compensation_bed_fl = 0 # 热床前左角Z补偿 范围:-0.2~0.2
+glue_z_compensation_bed_fr = 0 # 热床前右角Z补偿 范围:-0.2~0.2
+glue_z_compensation_bed_bl = 0 # 热床后左角Z补偿 范围:-0.2~0.2
+glue_z_compensation_bed_br = 0 # 热床后右角Z补偿 范围:-0.2~0.2
+glue_z_compensation_patch_fl = 0 # 涂胶面前左角Z补偿 范围:-0.1~0.1
+glue_z_compensation_patch_fr = 0 # 涂胶面前右角Z补偿 范围:-0.1~0.1
+glue_z_compensation_patch_bl = 0 # 涂胶面后左角Z补偿 范围:-0.1~0.1
+glue_z_compensation_patch_br = 0 # 涂胶面后右角Z补偿 范围:-0.1~0.1
