@@ -164,53 +164,6 @@ func ContentFilePath(key string) string {
 		return ""
 	}
 }
-
-// Dev 模式目录与路径
-const (
-	DevDir          = "dev"
-	DevPresetRootMKP = "dev/presets/mkp"
-)
-
-// Dev Content 文件相对路径
-const (
-	DevContentFileMachineCatalog = "dev/machine_catalog.json"
-	DevContentFileParamRegistry  = "dev/param_registry.json"
-	DevContentFileFAQ            = "dev/faq.json"
-	DevContentFileAbout          = "dev/about.json"
-	DevContentFileLayoutSchema   = "dev/layout_schema.json"
-	DevContentFileChangelog      = "dev/changelog.json"
-	DevContentFileModelCopy      = "dev/model_copy.json"
-	DevContentFileAssetsIndex    = "dev/assets_index.json"
-)
-
-// DevMKPPresetPath 构造 dev 模式下 mkp toml 的路径，如 "dev/presets/mkp/P1.toml"
-func DevMKPPresetPath(fileName string) string {
-	return filepath.Join(DevPresetRootMKP, fileName)
-}
-
-// DevContentFilePath 返回 dev 模式下 content 文件的相对路径
-func DevContentFilePath(key string) string {
-	switch key {
-	case "machine_catalog":
-		return DevContentFileMachineCatalog
-	case "param_registry":
-		return DevContentFileParamRegistry
-	case "faq":
-		return DevContentFileFAQ
-	case "about":
-		return DevContentFileAbout
-	case "layout_schema":
-		return DevContentFileLayoutSchema
-	case "changelog":
-		return DevContentFileChangelog
-	case "model_copy":
-		return DevContentFileModelCopy
-	case "assets_index":
-		return DevContentFileAssetsIndex
-	default:
-		return ""
-	}
-}
 `
 
 // pathsTSContent 是 paths.ts 的完整内容。
@@ -293,24 +246,6 @@ export function buildPresetURL(type: string, fileName: string, subPath: string =
     default:
       return mkpPresetURL(fileName)
   }
-}
-
-// Dev 模式目录与路径
-export const DEV_DIR = "dev"
-export const DEV_PRESET_ROOT_MKP = "dev/presets/mkp"
-
-// Dev Content 文件相对路径
-export const DEV_CONTENT_FILE_MACHINE_CATALOG = "dev/machine_catalog.json"
-export const DEV_CONTENT_FILE_PARAM_REGISTRY = "dev/param_registry.json"
-export const DEV_CONTENT_FILE_FAQ = "dev/faq.json"
-export const DEV_CONTENT_FILE_ABOUT = "dev/about.json"
-export const DEV_CONTENT_FILE_LAYOUT_SCHEMA = "dev/layout_schema.json"
-export const DEV_CONTENT_FILE_CHANGELOG = "dev/changelog.json"
-export const DEV_CONTENT_FILE_MODEL_COPY = "dev/model_copy.json"
-export const DEV_CONTENT_FILE_ASSETS_INDEX = "dev/assets_index.json"
-
-export function devMKPPresetPath(fileName: string): string {
-  return {{BT}}${DEV_PRESET_ROOT_MKP}/${fileName}{{BT}}
 }
 `
 

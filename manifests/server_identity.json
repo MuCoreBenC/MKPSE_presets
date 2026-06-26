@@ -1,0 +1,6 @@
+{
+  "schema": "mkps-server-identity",
+  "app": "MKPSupportE",
+  "version": 1,
+  "signature": "MKPSE-SRV"
+}

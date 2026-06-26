@@ -1,8 +1,8 @@
 {
   "schema": 1,
-  "version": 11,
-  "updatedAt": "2026-06-26T11:54:15+08:00",
-  "hash": "8a1ab9a9b24485dbd3d2af8d138bc6e66b7594055dcb1d5a36c434135778e4b5",
+  "version": 1,
+  "updatedAt": "2026-06-26T19:46:34+08:00",
+  "hash": "4887dc3ebd1aa0eeaf025efc7193e99e22882c190d421ec9a72d513f7c1e9893",
   "groupOrder": {
     "advanced||Z轴抬升": 30,
     "advanced||机型专属": 40,
@@ -1792,6 +1792,44 @@
     {
       "choices": [
         {
+          "label": "默认",
+          "value": "default"
+        },
+        {
+          "label": "新型",
+          "value": "new"
+        }
+      ],
+      "configKey": "ZCalibrationMode",
+      "defaultValue": "default",
+      "desc": "Z校准模式：默认或新型",
+      "jsonKey": "z_calibration_mode",
+      "key": "wiping.z_calibration_mode",
+      "label": "Z校准模式",
+      "layout": {
+        "group": "机型专属",
+        "order": 3,
+        "tab": "更多",
+        "tabId": "advanced"
+      },
+      "machineFilter": "",
+      "machineVariants": null,
+      "max": null,
+      "mergeGroup": "",
+      "mergeable": true,
+      "min": null,
+      "scope": "universal",
+      "section": "wiping",
+      "selectable": true,
+      "tomlComment": "Z校准模式(default=默认,new=新型)",
+      "tomlKey": "z_calibration_mode",
+      "uiComponent": "segmented",
+      "unit": "",
+      "valueType": "string"
+    },
+    {
+      "choices": [
+        {
           "label": "关闭",
           "value": "off"
         },
@@ -2824,5 +2862,5 @@
     "offset": 10,
     "wiping": 20
   },
-  "updated": "2026-06-26 11:54:15"
+  "updated": "2026-06-26 19:46:34"
 }

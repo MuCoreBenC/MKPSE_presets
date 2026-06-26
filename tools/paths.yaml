@@ -28,17 +28,3 @@ content_files:
   changelog: "content/changelog.json"
   model_copy: "content/model_copy.json"
   assets_index: "content/assets_index.json"
-
-# Dev 模式目录（相对于用户数据目录 ~/Documents/MKPSupportE/）
-dev_dir: "dev"
-dev_preset_roots:
-  mkp: "dev/presets/mkp"
-dev_content_files:
-  machine_catalog: "dev/machine_catalog.json"
-  param_registry: "dev/param_registry.json"
-  faq: "dev/faq.json"
-  about: "dev/about.json"
-  layout_schema: "dev/layout_schema.json"
-  changelog: "dev/changelog.json"
-  model_copy: "dev/model_copy.json"
-  assets_index: "dev/assets_index.json"

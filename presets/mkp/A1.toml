@@ -1,5 +1,5 @@
-# uuid: 9f5b9ae9-8dc9-4292-8f0f-bfa3ff6c4606
-# release_time: 2026-06-25 23:42:48
+# uuid: 347761a2-7bd0-43f3-8945-86215fa069a7
+# release_time: 2026-06-26 19:41:05
 # machine: A1
 # variant: standard
 #胶笔配置
@@ -72,6 +72,7 @@ rib_width = 8 # 斜肋宽度(mm) 范围:0~300
 rib_fillet_wall = true # 外墙倒圆角
 disable_3rd_layer_clog_detect = false # 关闭第三层裹头检测(A1/A1 mini)
 xy_calibration_mode = "default" # XY校准模式(default=默认,new=新型)
+z_calibration_mode = "default" # Z校准模式(default=默认,new=新型)
 min_support_interface_enabled = true # 最小支撑涂胶面过滤
 glue_sparse_ratio = 50 # 涂胶稀疏比(%)
 tower_first_layer_flow = 1 # 擦料塔首层流量 范围:0.5~2

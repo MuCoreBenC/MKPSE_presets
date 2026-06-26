@@ -1,7 +1,7 @@
 {
   "version": "2026.06",
   "channel": "stable",
-  "updated": "2026-06-26 13:19:34",
+  "updated": "2026-06-26 22:50:00",
   "faq": {
     "updated": "2026-06-26 13:19:34"
   },
@@ -17,9 +17,9 @@
         "A1"
       ],
       "version": "2026.06",
-      "size": 4404,
-      "releaseTime": "2026-06-25 23:42:48",
-      "sha256": "b196fc516a20ed4d55e91c047b2c40ef4a120f1f2b5b8dcb921465d31a4eea85"
+      "size": 4479,
+      "releaseTime": "2026-06-26 19:41:05",
+      "sha256": "e9a2907f24b567ef9d8e6b4f2ae75d51739e3efcb6ac2bd62daf8ef492963b5d"
     },
     {
       "fileName": "A1F.toml",
@@ -29,9 +29,9 @@
         "A1"
       ],
       "version": "2026.06",
-      "size": 4402,
-      "releaseTime": "2026-06-25 23:42:48",
-      "sha256": "f4b6edf66110f2196d700847db9ff88ea558b6c5b4a6ec6a74a16c6157f6264e"
+      "size": 4477,
+      "releaseTime": "2026-06-26 19:41:05",
+      "sha256": "e56d85f16df178bf22488d7466452d65ae47f05e639fbe03f6320ee733035a55"
     },
     {
       "fileName": "A1F_260628.toml",
@@ -41,9 +41,9 @@
         "A1"
       ],
       "version": "2026.06",
-      "size": 4404,
-      "releaseTime": "2026-06-25 23:42:48",
-      "sha256": "6f7ae025d6f279ecfb51f9df9e564c1c848fe32de2d9d74f8c1a95bda200fd16"
+      "size": 4479,
+      "releaseTime": "2026-06-26 19:41:05",
+      "sha256": "592545c600bb3f35fc744e954947148b4b4505f6e79c1534d64ff3ca0be1633e"
     },
     {
       "fileName": "A1M.toml",
@@ -53,9 +53,9 @@
         "A1MINI"
       ],
       "version": "2026.06",
-      "size": 4411,
-      "releaseTime": "2026-06-25 23:42:48",
-      "sha256": "7e8b4b2644299da235843eacf0b67eaab1487b169f828a3626ed76f1e330e022"
+      "size": 4486,
+      "releaseTime": "2026-06-26 19:41:05",
+      "sha256": "9a29577df802628c1449f1f4f0d5c5764ce9fd11923572b03c2c75912589d2d4"
     },
     {
       "fileName": "A1MF.toml",
@@ -65,9 +65,9 @@
         "A1MINI"
       ],
       "version": "2026.06",
-      "size": 4405,
-      "releaseTime": "2026-06-25 23:42:48",
-      "sha256": "455254138fdde3e6e50a4d59ff2e0045f4efade28f5b3c7834c47f98ac338035"
+      "size": 4480,
+      "releaseTime": "2026-06-26 19:41:05",
+      "sha256": "d3dbf00eb8e8e4f6b81eed457053a35fffed260bea3d67e16c43c8c163c0a399"
     },
     {
       "fileName": "A1MF_260628.toml",
@@ -77,9 +77,9 @@
         "A1MINI"
       ],
       "version": "2026.06",
-      "size": 4411,
-      "releaseTime": "2026-06-25 23:42:48",
-      "sha256": "3f2600a5c9517086e0b8e72fb22444efa8db73b37f41acea41fd8a5c0876b7e6"
+      "size": 4486,
+      "releaseTime": "2026-06-26 19:41:05",
+      "sha256": "7ea7ab5e0289d1d2d73acda4bc213f8def46cadbae26cb4914508cb7b8da8858"
     },
     {
       "fileName": "P1.toml",
@@ -89,9 +89,9 @@
         "P1"
       ],
       "version": "2026.06",
-      "size": 4608,
-      "releaseTime": "2026-06-25 23:42:48",
-      "sha256": "0b379be152f60fcb65310ef2010a9593028c6cf2c7308b7bbff32f157db9170d"
+      "size": 4683,
+      "releaseTime": "2026-06-26 19:41:05",
+      "sha256": "1c943b560f00da23aaf59f2d57344af81cc3a9e7a69fa1f8e14b4c2696e725ff"
     },
     {
       "fileName": "P2.toml",
@@ -101,9 +101,9 @@
         "P2"
       ],
       "version": "2026.06",
-      "size": 4612,
-      "releaseTime": "2026-06-25 23:42:48",
-      "sha256": "8c6dd06a195818eb4a3942bc94ec44d2749b13aa2a94173ec480c1a449bab8b2"
+      "size": 4687,
+      "releaseTime": "2026-06-26 19:41:05",
+      "sha256": "6cfbc42f6d6ac0640adde107965bbc74855b5b6a1811f25bb8a2df5b8c6f1cfe"
     },
     {
       "fileName": "X1.toml",
@@ -113,9 +113,9 @@
         "X1"
       ],
       "version": "2026.06",
-      "size": 4608,
-      "releaseTime": "2026-06-25 23:42:48",
-      "sha256": "d04926c94a86fede3753082f99c4f940f9da90e614585778b0a45fc81a7eabfd"
+      "size": 4683,
+      "releaseTime": "2026-06-26 19:41:05",
+      "sha256": "e9ff7c3b7d1a99574a56c17f6a3e53b5fad3df57e30666b0e889f159a4e7de6b"
     },
     {
       "fileName": "MKPProcess A1 0.2 0.10.json",
@@ -334,6 +334,21 @@
       "nozzle": "0.4",
       "layerHeight": "0.20",
       "relativePath": "presets/orca/Support/0.4mm/MKPSupport S1C.json"
+    }
+  ],
+  "models": [
+    {
+      "fileName": "MKP_support_test_models.3mf",
+      "name": "MKP_support_test_models",
+      "type": "",
+      "calibrationType": "",
+      "version": "",
+      "size": 3317913,
+      "sha256": "8486199771d639a0e761707a216b204073a9f267d8c37b29dce6bf115ff029aa",
+      "releaseTime": "2026-06-17T17:23:00",
+      "relativePath": "models/MKP_support_test_models.3mf",
+      "isRegistered": true,
+      "isModified": false
     }
   ],
   "assets": [
@@ -628,6 +643,26 @@
       "isModified": false
     },
     {
+      "fileName": "faq56_16.webp",
+      "category": "faq",
+      "relativePath": "assets/faq/faq56_16.webp",
+      "size": 369547,
+      "releaseTime": "2026-06-26 13:15:27",
+      "sha256": "0d2fbe3b11c7382f02e008fa8f3a5dab4502a1470715cb9e1d4d2fac15378deb",
+      "isRegistered": true,
+      "isModified": false
+    },
+    {
+      "fileName": "faq56_17.webp",
+      "category": "faq",
+      "relativePath": "assets/faq/faq56_17.webp",
+      "size": 302626,
+      "releaseTime": "2026-06-26 13:19:17",
+      "sha256": "a3cf8c8d22fb5c886d6a4cf1e61b8315329b5f056d6ce83a2b222bbed67a7ac5",
+      "isRegistered": true,
+      "isModified": false
+    },
+    {
       "fileName": "faq56_2.webp",
       "category": "faq",
       "relativePath": "assets/faq/faq56_2.webp",
@@ -841,38 +876,38 @@
   "contentFiles": [
     {
       "fileName": "param_registry.json",
-      "version": "11",
-      "sha256": "d2252db3ac0ed099eb51be3f102f3e5eefd6cf4cd397d5c2f4c729ad8665d803",
+      "version": "1",
+      "sha256": "5102e464c71a838db8a3280f6a5a4603d4737ca3927d670c983bd8523af2fd1b",
       "relativePath": "content/param_registry.json",
-      "size": 82668
+      "size": 83638
     },
     {
       "fileName": "machine_catalog.json",
-      "version": "3",
-      "sha256": "7c71613e59be27df0b10e21f9a969b2a8c7dd9bd044ee18b04cda8cf876ac681",
+      "version": "1",
+      "sha256": "6bf5b433619f1a1c9ddc3be6761649e64beb28cc0f2b586cea30ad29a61a1961",
       "relativePath": "content/machine_catalog.json",
       "size": 10650
     },
     {
       "fileName": "faq.json",
-      "version": "4",
-      "sha256": "c1977614aba1f096db5cb116cf59e3b6e3d88b58f78a916a6131025a1cfa96a2",
+      "version": "1",
+      "sha256": "13a50e782bc470e2dbfcf57f5ef1237479b935779a6a83c221122a3630941947",
       "relativePath": "content/faq.json",
       "size": 39957
     },
     {
       "fileName": "about.json",
-      "version": "3",
-      "sha256": "627bb45218db55530f5420ca18501bfebb764ee480fbc0024dfe25ae0a7b7538",
+      "version": "1",
+      "sha256": "4fe76313b13e0a7a7c054ec867cec9240760f1e4dcc5ba02f3c16fb03434bd81",
       "relativePath": "content/about.json",
       "size": 7460
     },
     {
       "fileName": "layout_schema.json",
-      "version": "4",
-      "sha256": "cada94d800bc601f734553e73d5e8dc43296f6ad28653323bdd1b3c15882ffbd",
+      "version": "1",
+      "sha256": "b94c9def73bf175c572ac7b344bdc2f39a29bcefa567ba8eefa7db924847d827",
       "relativePath": "content/layout_schema.json",
-      "size": 9034
+      "size": 9117
     },
     {
       "fileName": "changelog.json",
@@ -890,20 +925,20 @@
     },
     {
       "fileName": "assets_index.json",
-      "version": "32",
-      "sha256": "085f54ae6378097b2c7889c46439f1cef1068d152d7ed0a7d1de92c73578d01c",
+      "version": "1",
+      "sha256": "3f4fae4156ffd65fad6b3a877822e37cfcb013e495db63f62577f8c27ba700d5",
       "relativePath": "content/assets_index.json",
-      "size": 17489
+      "size": 17488
     }
   ],
   "files": {
     "about": {
       "schema": 1,
-      "version": 3
+      "version": 1
     },
     "assets_index": {
       "schema": 1,
-      "version": 32
+      "version": 1
     },
     "changelog": {
       "schema": 1,
@@ -911,15 +946,15 @@
     },
     "faq": {
       "schema": 1,
-      "version": 4
+      "version": 1
     },
     "layout_schema": {
       "schema": 1,
-      "version": 4
+      "version": 1
     },
     "machine_catalog": {
       "schema": 1,
-      "version": 3
+      "version": 1
     },
     "model_copy": {
       "schema": 1,
@@ -927,7 +962,7 @@
     },
     "param_registry": {
       "schema": 1,
-      "version": 11
+      "version": 1
     }
   }
 }
