@@ -1,8 +1,8 @@
 {
   "schema": 1,
-  "version": 3,
-  "updatedAt": "2026-06-25T19:48:32+08:00",
-  "hash": "99a09326ddd9d083e10bd39ed61bf9afa760125d784c86c8cc5bba75f65a637e",
+  "version": 4,
+  "updatedAt": "2026-06-26T11:54:15+08:00",
+  "hash": "6331afc59274f2d6a19bdc2191e0af2d75d5acec11c0e5ec67566cf203cef3a9",
   "tabs": [
     {
       "id": "offset",
@@ -207,7 +207,7 @@
           ]
         },
         {
-          "id": "glue_compensation",
+          "id": "涂胶方向补偿",
           "title": "涂胶方向补偿",
           "items": [
             {

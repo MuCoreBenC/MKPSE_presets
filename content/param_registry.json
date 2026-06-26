@@ -1,7 +1,7 @@
 {
   "schema": 1,
-  "version": 7,
-  "updatedAt": "2026-06-25T19:48:32+08:00",
+  "version": 11,
+  "updatedAt": "2026-06-26T11:54:15+08:00",
   "hash": "8a1ab9a9b24485dbd3d2af8d138bc6e66b7594055dcb1d5a36c434135778e4b5",
   "groupOrder": {
     "advanced||Z轴抬升": 30,
@@ -2824,5 +2824,5 @@
     "offset": 10,
     "wiping": 20
   },
-  "updated": "2026-06-25 19:48:32"
+  "updated": "2026-06-26 11:54:15"
 }

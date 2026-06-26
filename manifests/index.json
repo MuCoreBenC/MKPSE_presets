@@ -1,9 +1,9 @@
 {
   "version": "2026.06",
   "channel": "stable",
-  "updated": "2026-06-25 23:42:48",
+  "updated": "2026-06-26 13:19:34",
   "faq": {
-    "updated": "2026-06-25 23:18:09"
+    "updated": "2026-06-26 13:19:34"
   },
   "modelCopy": {
     "updated": "2026-05-28 11:05:33"
@@ -841,10 +841,10 @@
   "contentFiles": [
     {
       "fileName": "param_registry.json",
-      "version": "7",
-      "sha256": "4a429a1da4614ac79d2d41520a59db3560663b224439abde760c5259de505ff8",
+      "version": "11",
+      "sha256": "d2252db3ac0ed099eb51be3f102f3e5eefd6cf4cd397d5c2f4c729ad8665d803",
       "relativePath": "content/param_registry.json",
-      "size": 82667
+      "size": 82668
     },
     {
       "fileName": "machine_catalog.json",
@@ -855,10 +855,10 @@
     },
     {
       "fileName": "faq.json",
-      "version": "3",
-      "sha256": "a8a8037e6a37de736eda79b8c5e92e46effe6e03f12b579ece463574515da7da",
+      "version": "4",
+      "sha256": "c1977614aba1f096db5cb116cf59e3b6e3d88b58f78a916a6131025a1cfa96a2",
       "relativePath": "content/faq.json",
-      "size": 39550
+      "size": 39957
     },
     {
       "fileName": "about.json",
@@ -869,10 +869,10 @@
     },
     {
       "fileName": "layout_schema.json",
-      "version": "3",
-      "sha256": "0f4aff50089b7a8dcaea1d105cb5129f444e9640880817ed3b1b934cb65acffb",
+      "version": "4",
+      "sha256": "cada94d800bc601f734553e73d5e8dc43296f6ad28653323bdd1b3c15882ffbd",
       "relativePath": "content/layout_schema.json",
-      "size": 9033
+      "size": 9034
     },
     {
       "fileName": "changelog.json",
@@ -890,10 +890,10 @@
     },
     {
       "fileName": "assets_index.json",
-      "version": "30",
-      "sha256": "b1588ee195aa5daf4c4c3aeb925f77824fa0156a2b86eab1144aa6ddc449567a",
+      "version": "32",
+      "sha256": "085f54ae6378097b2c7889c46439f1cef1068d152d7ed0a7d1de92c73578d01c",
       "relativePath": "content/assets_index.json",
-      "size": 16835
+      "size": 17489
     }
   ],
   "files": {
@@ -903,7 +903,7 @@
     },
     "assets_index": {
       "schema": 1,
-      "version": 30
+      "version": 32
     },
     "changelog": {
       "schema": 1,
@@ -911,11 +911,11 @@
     },
     "faq": {
       "schema": 1,
-      "version": 3
+      "version": 4
     },
     "layout_schema": {
       "schema": 1,
-      "version": 3
+      "version": 4
     },
     "machine_catalog": {
       "schema": 1,
@@ -927,7 +927,7 @@
     },
     "param_registry": {
       "schema": 1,
-      "version": 7
+      "version": 11
     }
   }
 }

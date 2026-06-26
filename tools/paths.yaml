@@ -1,6 +1,6 @@
 schema: 1
-version: 1
-updatedAt: "2026-06-25T16:30:00+08:00"
+version: 2
+updatedAt: "2026-06-26T10:30:00+08:00"
 hash: "b5ab167b3e44ce97d16d5f391a78f6810f3ebddb68d0b0f52e38eefc68122d96"
 
 # Preset 根目录（相对于 MKPSE_presets 仓库根）
@@ -28,3 +28,17 @@ content_files:
   changelog: "content/changelog.json"
   model_copy: "content/model_copy.json"
   assets_index: "content/assets_index.json"
+
+# Dev 模式目录（相对于用户数据目录 ~/Documents/MKPSupportE/）
+dev_dir: "dev"
+dev_preset_roots:
+  mkp: "dev/presets/mkp"
+dev_content_files:
+  machine_catalog: "dev/machine_catalog.json"
+  param_registry: "dev/param_registry.json"
+  faq: "dev/faq.json"
+  about: "dev/about.json"
+  layout_schema: "dev/layout_schema.json"
+  changelog: "dev/changelog.json"
+  model_copy: "dev/model_copy.json"
+  assets_index: "dev/assets_index.json"

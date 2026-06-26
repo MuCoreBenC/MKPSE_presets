@@ -1,8 +1,8 @@
 {
   "schema": 1,
-  "version": 30,
-  "updatedAt": "2026-06-25T23:18:41+08:00",
-  "hash": "0c97af159e9560409fcd070f794280d9431bf781a5e6b9f9f43ed64774767c9d",
+  "version": 32,
+  "updatedAt": "2026-06-26T13:19:17+08:00",
+  "hash": "2b229aeca61684cf5d95feff3464e637ce059ac2e8824e6f744e93711a5b557a",
   "assets": [
     {
       "category": "avatars",
@@ -503,6 +503,26 @@
       "releaseTime": "2026-06-25 23:03:22",
       "sha256": "05c68ce5ee5740bb262aee952128f6de449be399a2677ac66469cb5aa224b153",
       "size": 185017
+    },
+    {
+      "category": "faq",
+      "fileName": "faq56_16.webp",
+      "isModified": false,
+      "isRegistered": true,
+      "relativePath": "assets/faq/faq56_16.webp",
+      "releaseTime": "2026-06-26 13:15:27",
+      "sha256": "0d2fbe3b11c7382f02e008fa8f3a5dab4502a1470715cb9e1d4d2fac15378deb",
+      "size": 369547
+    },
+    {
+      "category": "faq",
+      "fileName": "faq56_17.webp",
+      "isModified": false,
+      "isRegistered": true,
+      "relativePath": "assets/faq/faq56_17.webp",
+      "releaseTime": "2026-06-26 13:19:17",
+      "sha256": "a3cf8c8d22fb5c886d6a4cf1e61b8315329b5f056d6ce83a2b222bbed67a7ac5",
+      "size": 302626
     }
   ]
 }

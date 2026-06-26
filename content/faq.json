@@ -1,8 +1,8 @@
 {
   "schema": 1,
-  "version": 3,
-  "updatedAt": "2026-06-25T23:18:09+08:00",
-  "hash": "45ec2c3317c8074c243957e30f41a3d5a2c465238cda117d3e62d7b734fa2630",
+  "version": 4,
+  "updatedAt": "2026-06-26T13:19:34+08:00",
+  "hash": "57e0263aa7297d468fa6a58095481602966b70e672c7b57c26174096b86d1ffd",
   "items": [
     {
       "answer": "\u003cp\u003e在关于软件页面有对应的网站和链接，有视频教程和图文教程。\u003c/p\u003e\u003cp\u003e以下仅展示常用链接\u003c/p\u003e\u003cp\u003e\u003ca target=\"_blank\" rel=\"noopener noreferrer\" href=\"https://space.bilibili.com/1475765743\"\u003e\u003cem\u003e\u003cu\u003e江汉模型的个人空间-江汉模型个人主页-哔哩哔哩视频\u003c/u\u003e\u003c/em\u003e\u003c/a\u003e\u003c/p\u003e\u003cimg src=\"https://gitee.com/MuCoreBenC/MKPSE_presets/raw/main/assets/FAQ/faq57_1.webp\"\u003e\u003cp\u003e\u003ca target=\"_blank\" rel=\"noopener noreferrer\" href=\"https://www.bilibili.com/video/BV1rBRJB8EfJ/?vd_source=3acd5988b97df248a1d6d7fe2766764f\"\u003e\u003cem\u003e\u003cu\u003eMKP\u0026nbsp;support教程（3D打印改善支撑面）「快拆版260326」_哔哩哔哩_bilibili\u003c/u\u003e\u003c/em\u003e\u003c/a\u003e\u003c/p\u003e\u003cp\u003e\u003c/p\u003e\u003cimg src=\"https://gitee.com/MuCoreBenC/MKPSE_presets/raw/main/assets/FAQ/faq57_2.webp\"\u003e\u003cp\u003e\u003ca target=\"_blank\" rel=\"noopener noreferrer\" href=\"https://makerworld.com.cn/zh/@ragdoll\"\u003e\u003cem\u003e\u003cu\u003e布偶猫\u0026nbsp;|\u0026nbsp;Home\u0026nbsp;-\u0026nbsp;MakerWorld\u003c/u\u003e\u003c/em\u003e\u003c/a\u003e\u003c/p\u003e\u003cp\u003e\u003ca target=\"_blank\" rel=\"noopener noreferrer\" href=\"https://makerworld.com.cn/zh/models/2059552-kuai-chai-ban-mkp-support-a1he-mini-gai-shan-zhi-c#profileId-2644229\"\u003e\u003cem\u003e\u003cu\u003e快拆版MKP\u0026nbsp;support（A1和mini）改善支撑面，顶部Z距离为0，20260326版\u0026nbsp;-\u0026nbsp;免费\u0026nbsp;3D\u0026nbsp;打印模型\u0026nbsp;-\u0026nbsp;MakerWorld\u003c/u\u003e\u003c/em\u003e\u003c/a\u003e\u003c/p\u003e",
@@ -117,12 +117,12 @@
       "question": "\u003cp\u003eP系列为什么总是报\u003cspan style=\"color: rgb(239, 68, 68);\"\u003e前盖脱落？\u003c/span\u003e\u003c/p\u003e"
     },
     {
-      "answer": "\u003cp\u003e管子连接方法：将软管直接套在笔芯和胶箱上。\u003c/p\u003e\u003cp\u003e长度建议：\u003cstrong\u003e30-50cm\u003c/strong\u003e，不要太长也不要挂太高，可能影响出胶。\u003c/p\u003e\u003cp\u003eA1快拆版还有软支撑，厚一点的凸起那边插进笔芯夹具。\u003c/p\u003e\u003cimg src=\"https://gitee.com/MuCoreBenC/MKPSE_presets/raw/main/assets/FAQ/faq56_4.webp\"\u003e",
+      "answer": "\u003cp\u003e标准版的管子接好之后可以绑在电线也可以悬垂着\u003c/p\u003e\u003cimg src=\"https://gitee.com/MuCoreBenC/MKPSE_presets/raw/main/assets/FAQ/faq56_16.webp\"\u003e\u003cp\u003e快拆版的管子有软支撑，管子可以成一个拱形\u003c/p\u003e\u003cimg src=\"https://gitee.com/MuCoreBenC/MKPSE_presets/raw/main/assets/FAQ/faq56_17.webp\"\u003e\u003cp\u003e管子连接方法：将软管直接套在笔芯和胶箱上。\u003c/p\u003e\u003cp\u003e长度建议：\u003cstrong\u003e30-50cm\u003c/strong\u003e，不要太长也不要挂太高，可能影响出胶。\u003c/p\u003e\u003cp\u003eA1快拆版还有软支撑，厚一点的凸起那边插进笔芯夹具。\u003c/p\u003e\u003cimg src=\"https://gitee.com/MuCoreBenC/MKPSE_presets/raw/main/assets/FAQ/faq56_4.webp\"\u003e",
       "category": "硬件装配",
       "categoryColor": "#22C55E",
       "id": "faq-015",
       "order": 15,
-      "question": "管子怎么接？多长合适？"
+      "question": "\u003cp\u003e管子多长合适？怎么用？\u003c/p\u003e"
     },
     {
       "answer": "\u003cp\u003e安装要点：\u003c/p\u003e\u003cimg src=\"https://gitee.com/MuCoreBenC/MKPSE_presets/raw/main/assets/FAQ/faq56_1.webp\"\u003e\u003cp\u003e1.\u0026nbsp;快拆版软管要套进第一个凸起的环再压紧拧紧\u003c/p\u003e\u003cimg src=\"https://gitee.com/MuCoreBenC/MKPSE_presets/raw/main/assets/FAQ/faq56_2.webp\"\u003e\u003cp\u003e2.\u0026nbsp;要用钳子夹着拧，别用手拧，小心受伤\u003c/p\u003e\u003cimg src=\"https://gitee.com/MuCoreBenC/MKPSE_presets/raw/main/assets/FAQ/faq56_3.webp\"\u003e\u003cp\u003e3.\u0026nbsp;安装好后\u003cstrong\u003e用力拔也拔不出\u003c/strong\u003e才算安装到位\u003c/p\u003e\u003cp\u003e4.\u0026nbsp;未套到位会导致漏胶或脱落\u003c/p\u003e\u003cp\u003e\u003c/p\u003e",
