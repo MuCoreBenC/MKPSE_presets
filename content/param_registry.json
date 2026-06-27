@@ -1830,6 +1830,44 @@
     {
       "choices": [
         {
+          "label": "打印后校准",
+          "value": "print_then_calibrate"
+        },
+        {
+          "label": "直接校准",
+          "value": "direct_calibrate"
+        }
+      ],
+      "configKey": "CalibrationExecutionMode",
+      "defaultValue": "print_then_calibrate",
+      "desc": "校准执行模式：打印后校准或直接校准",
+      "jsonKey": "calibration_execution_mode",
+      "key": "wiping.calibration_execution_mode",
+      "label": "校准执行模式",
+      "layout": {
+        "group": "机型专属",
+        "order": 4,
+        "tab": "更多",
+        "tabId": "advanced"
+      },
+      "machineFilter": "",
+      "machineVariants": null,
+      "max": null,
+      "mergeGroup": "",
+      "mergeable": true,
+      "min": null,
+      "scope": "universal",
+      "section": "wiping",
+      "selectable": true,
+      "tomlComment": "校准执行模式(print_then_calibrate=打印后校准,direct_calibrate=直接校准)",
+      "tomlKey": "calibration_execution_mode",
+      "uiComponent": "segmented",
+      "unit": "",
+      "valueType": "string"
+    },
+    {
+      "choices": [
+        {
           "label": "关闭",
           "value": "off"
         },

@@ -1,9 +1,10 @@
 // gen_paths.go 是 Path SSOT 的 codegen 工具。
 //
 // 它读取 MKPSE_presets/tools/paths.yaml 作为单一真相来源（SSOT），
-// 生成两个文件：
+// 生成三个文件：
 //   - mkp-supporte/internal/paths/generated.go
 //   - mkp-publisher/frontend/src/generated/paths.ts
+//   - mkp-supporte/frontend/src/generated/paths.ts （与 publisher 版本内容一致）
 //
 // 为了零外部依赖（不引入 yaml 库），本工具直接用字符串模板生成固定内容。
 // paths.yaml 的内容是已知常量，若修改 paths.yaml，需要同步更新本文件的模板。
@@ -39,11 +40,26 @@ const (
 )
 
 // 各 type 保存子路径（相对于 preset root）
+// 这是本地保存目录约定，对应 Bambu Studio 本地目录结构（小写）
 const (
 	SavePathBBSMachine  = "machine"
 	SavePathBBSProcess  = "process"
 	SavePathOrcaMachine = "machine"
 	SavePathOrcaProcess = "process"
+)
+
+// 云端仓库（MKPSE_presets repo）目录约定（PascalCase）
+// 与 SavePath*（本地小写）是两套不同语义：
+//   - SavePathBBSMachine = "machine" → 本地 Bambu Studio 配置目录
+//   - CloudRepoPathBBSMachine = "Support" → MKPSE_presets 仓库目录 / catalog downloads[].url
+//
+// mkp-publisher 操作 MKPSE_presets 仓库时使用 CloudRepoPath*；
+// mkp-supporte 操作本地 Bambu Studio 配置目录时使用 SavePath*。
+const (
+	CloudRepoPathBBSMachine  = "Support"
+	CloudRepoPathBBSProcess  = "Process"
+	CloudRepoPathOrcaMachine = "Support"
+	CloudRepoPathOrcaProcess = "Process"
 )
 
 // Content 文件相对路径
@@ -164,6 +180,35 @@ func ContentFilePath(key string) string {
 		return ""
 	}
 }
+
+// PresetScanDirs 返回预设扫描时需要遍历的相对子目录列表。
+// 空串 "" 表示 presetDir 根目录本身。
+// 列表来源：paths.yaml scan_dirs.preset_subdirs，由 gen_paths.go 生成。
+func PresetScanDirs() []string {
+	return []string{
+		"",
+		"mkp",
+		"bbs/machine",
+		"bbs/process",
+		"orca/machine",
+		"orca/process",
+	}
+}
+
+// PresetScanDirsAbs 返回预设扫描时需要遍历的绝对路径列表。
+// presetDir 为 presets/ 根目录的绝对路径。
+func PresetScanDirsAbs(presetDir string) []string {
+	dirs := PresetScanDirs()
+	abs := make([]string, len(dirs))
+	for i, d := range dirs {
+		if d == "" {
+			abs[i] = presetDir
+		} else {
+			abs[i] = filepath.Join(presetDir, d)
+		}
+	}
+	return abs
+}
 `
 
 // pathsTSContent 是 paths.ts 的完整内容。
@@ -175,11 +220,18 @@ export const PRESET_ROOT_MKP = "presets/mkp"
 export const PRESET_ROOT_BBS = "presets/bbs"
 export const PRESET_ROOT_ORCA = "presets/orca"
 
-// 各 type 保存子路径
+// 各 type 保存子路径（本地保存目录约定，小写）
 export const SAVE_PATH_BBS_MACHINE = "machine"
 export const SAVE_PATH_BBS_PROCESS = "process"
 export const SAVE_PATH_ORCA_MACHINE = "machine"
 export const SAVE_PATH_ORCA_PROCESS = "process"
+
+// 云端仓库目录约定（PascalCase）— 与 SAVE_PATH_* 是两套不同语义
+// mkp-publisher 操作 MKPSE_presets 仓库时使用；catalog downloads[].url 也用此约定
+export const CLOUD_REPO_PATH_BBS_MACHINE = "Support"
+export const CLOUD_REPO_PATH_BBS_PROCESS = "Process"
+export const CLOUD_REPO_PATH_ORCA_MACHINE = "Support"
+export const CLOUD_REPO_PATH_ORCA_PROCESS = "Process"
 
 // Content 文件相对路径
 export const CONTENT_FILE_MACHINE_CATALOG = "content/machine_catalog.json"
@@ -247,6 +299,26 @@ export function buildPresetURL(type: string, fileName: string, subPath: string =
       return mkpPresetURL(fileName)
   }
 }
+
+// presetScanDirs 返回预设扫描时需要遍历的相对子目录列表。
+// 空串 "" 表示 presetDir 根目录本身。
+// 列表来源：paths.yaml scan_dirs.preset_subdirs，由 gen_paths.go 生成。
+export function presetScanDirs(): string[] {
+  return [
+    "",
+    "mkp",
+    "bbs/machine",
+    "bbs/process",
+    "orca/machine",
+    "orca/process",
+  ];
+}
+
+// presetScanDirsAbs 返回预设扫描时需要遍历的绝对路径列表。
+// presetDir 为 presets/ 根目录的绝对路径。
+export function presetScanDirsAbs(presetDir: string): string[] {
+  return presetScanDirs().map((d) => (d === "" ? presetDir : {{BT}}${presetDir}/${d}{{BT}}));
+}
 `
 
 // findRepoRoot 从当前工作目录向上查找，直到找到 MKPSE_presets/tools/paths.yaml。
@@ -296,21 +368,28 @@ func main() {
 	// 目标文件路径
 	goOutDir := filepath.Join(repoRoot, "mkp-supporte", "internal", "paths")
 	goOutFile := filepath.Join(goOutDir, "generated.go")
-	tsOutDir := filepath.Join(repoRoot, "mkp-publisher", "frontend", "src", "generated")
-	tsOutFile := filepath.Join(tsOutDir, "paths.ts")
+	tsPublisherOutDir := filepath.Join(repoRoot, "mkp-publisher", "frontend", "src", "generated")
+	tsPublisherOutFile := filepath.Join(tsPublisherOutDir, "paths.ts")
+	tsSupporteOutDir := filepath.Join(repoRoot, "mkp-supporte", "frontend", "src", "generated")
+	tsSupporteOutFile := filepath.Join(tsSupporteOutDir, "paths.ts")
 
 	// 确保目录存在
 	ensureDir(goOutDir)
-	ensureDir(tsOutDir)
+	ensureDir(tsPublisherOutDir)
+	ensureDir(tsSupporteOutDir)
 
 	// 写入 generated.go
 	writeFile(goOutFile, generatedGoContent)
 	fmt.Printf("✓ 生成 Go 常量: %s\n", goOutFile)
 
 	// 写入 paths.ts（替换反引号占位符）
+	// mkp-publisher 和 mkp-supporte 的 generated/paths.ts 内容完全一致，
+	// 都是 paths.yaml 的 TS 常量镜像。
 	tsContent := strings.ReplaceAll(pathsTSContent, "{{BT}}", "`")
-	writeFile(tsOutFile, tsContent)
-	fmt.Printf("✓ 生成 TS 常量: %s\n", tsOutFile)
+	writeFile(tsPublisherOutFile, tsContent)
+	fmt.Printf("✓ 生成 TS 常量 (mkp-publisher): %s\n", tsPublisherOutFile)
+	writeFile(tsSupporteOutFile, tsContent)
+	fmt.Printf("✓ 生成 TS 常量 (mkp-supporte): %s\n", tsSupporteOutFile)
 
 	fmt.Println("\nPath SSOT codegen 完成。")
 }

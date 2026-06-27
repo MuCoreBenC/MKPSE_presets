@@ -359,6 +359,9 @@
             },
             {
               "paramKey": "wiping.z_calibration_mode"
+            },
+            {
+              "paramKey": "wiping.calibration_execution_mode"
             }
           ]
         }

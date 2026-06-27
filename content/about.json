@@ -1,14 +1,11 @@
 {
-  "schema": 1,
-  "version": 1,
-  "updatedAt": "2026-06-25T20:41:36+08:00",
-  "hash": "33846fcc6b6d4a1003a243c2ee7df21e86ba8fd9a282ebf77a2f8516a2640718",
   "appInfo": {
     "changelogLabel": "更新日志",
     "description": "致力于为单喷嘴 FDM 3D 打印提供支撑面与接触面质量改善方案。通过干预与重构切片参数，在物理层面改善模型支撑接触面的表面光洁度，让底面不再只是妥协。",
     "iconLetter": "M",
     "licenseLabel": "许可协议",
-    "name": "MKP SupportE（第三方）"
+    "name": "MKP SupportE（第三方）",
+    "version": "v0.0.6"
   },
   "authors": {
     "co": {
@@ -129,6 +126,7 @@
     "animOnLabel": "微风：开启",
     "copyright": "© 2026 MKP STUDIO. ALL RIGHTS RESERVED."
   },
+  "hash": "33846fcc6b6d4a1003a243c2ee7df21e86ba8fd9a282ebf77a2f8516a2640718",
   "license": {
     "content": "请仔细阅读本协议。通过下载、安装或使用本软件，您即表示已阅读、理解并同意受本协议条款的约束。如果您不同意本协议的任何条款，请勿使用本软件。\n\n本工具由 AI 辅助完成开发 · 个人制作 · 未签名发布",
     "subtitle": "End User License Agreement",
@@ -137,17 +135,38 @@
   "modelLinks": {
     "testModelMakerWorld": "https://makerworld.com.cn/zh/models/2395687-yu-wei-ce-shi-shuang-tou-yi-liao-zhi-cheng-mkp-sup#profileId-2722483"
   },
+  "schema": 1,
   "sectionMeta": {
-    "appInfo": { "icon": "package" },
-    "authors": { "icon": "users" },
-    "designPhilosophy": { "icon": "lightbulb" },
-    "ecosystemLinks": { "icon": "link" },
-    "footer": { "icon": "file-text" },
-    "license": { "icon": "scroll-text" },
-    "modelLinks": { "icon": "box" },
-    "sectionTitles": { "icon": "type" },
-    "shops": { "icon": "shopping-bag" },
-    "supporters": { "icon": "heart" }
+    "appInfo": {
+      "icon": "package"
+    },
+    "authors": {
+      "icon": "users"
+    },
+    "designPhilosophy": {
+      "icon": "lightbulb"
+    },
+    "ecosystemLinks": {
+      "icon": "link"
+    },
+    "footer": {
+      "icon": "file-text"
+    },
+    "license": {
+      "icon": "scroll-text"
+    },
+    "modelLinks": {
+      "icon": "box"
+    },
+    "sectionTitles": {
+      "icon": "type"
+    },
+    "shops": {
+      "icon": "shopping-bag"
+    },
+    "supporters": {
+      "icon": "heart"
+    }
   },
   "sectionTitles": {
     "authors": "项目参与者",
@@ -181,5 +200,8 @@
     "所有提交过建议与测试报告的用户",
     "默默在群里解答新手问题的热心人",
     "以及所有 MKPSupport 社区的参与者"
-  ]
+  ],
+  "updated": "2026-06-27 20:43:02",
+  "updatedAt": "2026-06-25T20:41:36+08:00",
+  "version": 1
 }

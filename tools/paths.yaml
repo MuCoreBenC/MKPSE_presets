@@ -1,7 +1,7 @@
 schema: 1
-version: 2
-updatedAt: "2026-06-26T10:30:00+08:00"
-hash: "b5ab167b3e44ce97d16d5f391a78f6810f3ebddb68d0b0f52e38eefc68122d96"
+version: 3
+updatedAt: "2026-06-27T20:00:00+08:00"
+hash: "21feef7f3dd0ab79562f3fa02f64c32fc4eb57c700f655b4a026c34ac9036b1d"
 
 # Preset 根目录（相对于 MKPSE_presets 仓库根）
 preset_roots:
@@ -10,6 +10,7 @@ preset_roots:
   orca: "presets/orca"
 
 # 各 type 的保存子路径（相对于 preset_roots）
+# 这是本地保存目录约定，对应 Bambu Studio 本地目录结构（小写）
 save_paths:
   bbs:
     machine: "machine"
@@ -17,6 +18,18 @@ save_paths:
   orca:
     machine: "machine"
     process: "process"
+
+# 云端仓库（MKPSE_presets repo）目录约定（PascalCase）
+# 与 save_paths（本地小写）是两套不同语义：
+#   - save_paths.bbs.machine = "machine" → 本地 Bambu Studio 配置目录
+#   - cloud_repo_paths.bbs_machine = "Support" → MKPSE_presets 仓库目录 / catalog downloads[].url
+# mkp-publisher 操作 MKPSE_presets 仓库时使用 cloud_repo_paths；
+# mkp-supporte 操作本地 Bambu Studio 配置目录时使用 save_paths。
+cloud_repo_paths:
+  bbs_machine: "Support"
+  bbs_process: "Process"
+  orca_machine: "Support"
+  orca_process: "Process"
 
 # Content 文件相对路径（相对于 MKPSE_presets 仓库根）
 content_files:
@@ -28,3 +41,15 @@ content_files:
   changelog: "content/changelog.json"
   model_copy: "content/model_copy.json"
   assets_index: "content/assets_index.json"
+
+# 预设扫描时需要遍历的子目录（相对 presetDir）
+# preset_root 为空串表示 presets/ 根目录本身
+# preset_subdirs 是 presets/ 下的子目录列表
+scan_dirs:
+  preset_root: ""
+  preset_subdirs:
+    - "mkp"
+    - "bbs/machine"
+    - "bbs/process"
+    - "orca/machine"
+    - "orca/process"
